@@ -5,7 +5,7 @@ audience: 最终用户
 user-guide-title: 体验平台标识服务帮助
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
    + [参考概述](reference/reference.md)
    + Analytics 参考资料 {#analytics-reference}
       + [分析参考概述](reference/analytics-reference/analytics-reference.md)
-      + [设置Analytics和标识符](reference/analytics-reference/analytics-ids.md)
+      + [设置 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID 操作顺序](reference/analytics-reference/analytics-order-of-operations.md)
       + [标识服务迁移决策点](reference/analytics-reference/migration-decisions.md)
       + [标识服务迁移场景](reference/analytics-reference/migration-scenarios.md)
