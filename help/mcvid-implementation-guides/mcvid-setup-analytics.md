@@ -6,7 +6,7 @@ seo-title: 实施适用于 Analytics 的 Experience Cloud ID 服务
 title: 实施适用于 Analytics 的 Experience Cloud ID 服务
 uuid: fbd6fa0-1713-4232-8600-500fd6fd62709d5
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-如果您不确定如何找到跟踪服务器，请参阅 [常见问题解答](../mcvid-faq-intro/ecid-faq.md) 并 [正确填充trackingServer和trackingServerSecure变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+如果您不确定如何找到跟踪服务器，请参阅 [常见问题解答](../mcvid-faq-intro/mcvid-faq.md) 并 [正确填充trackingServer和trackingServerSecure变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 ## 第步：更新AppMeasurement. js或s_ code. js文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
