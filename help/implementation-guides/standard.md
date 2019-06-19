@@ -6,7 +6,7 @@ seo-title: 使用动态标签管理实现
 title: 使用动态标签管理实现
 uuid: c4f752c4-392e-4909-b178-9170687064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 >[!NOTE]
 >
->目前， [Launch by Adobe](https://docs.adobelaunch.com/) 是首选和推荐的实施工具，因为它有助于简化复杂的标签管理任务，并使代码位置超越DTM的功能。请参阅 [使用Launch实现](../implementation-guides/ecid-implement-with-launch.md)。
+>目前 [，Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是首选和推荐的实施工具，因为它有助于简化复杂的标签管理任务，并使代码位置超越DTM的功能。请参阅 [使用Launch实现](../implementation-guides/ecid-implement-with-launch.md)。
 
 ## 动态标签管理和 ID 服务 {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
