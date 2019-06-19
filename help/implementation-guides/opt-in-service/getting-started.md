@@ -5,7 +5,7 @@ seo-title: 设置参与服务
 title: 设置参与服务
 uuid: f1c27139-cef2-4122-af12-c839 cfc82 e6 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 将选择服务作为Experience Cloud解决方案所使用的单一参考点(称为“参与”中的类别)来确定是否在访客设备上创建cookies。
 
-选择服务是与 [Experience Cloud ID(ECID)绑定的JavaScript库](https://marketing.adobe.com/resources/help/en_US/mcvid/) ，并作为对象存在于全局 `adobe` 对象中的访客JS `adobe.optIn` 中。安装的Opt-in服务允许您指定一个访客是否可以同时加入Adobe解决方案，或以序列形式显示解决方案以获得每个解决方案的权限。参与服务同意管理功能允许您使用各种配置实现特定隐私要求。
+选择服务是与Experience Cloud ID(ECID)绑定的JavaScript库，并作为对象存在于全局 `adobe` 对象中的访客JS `adobe.optIn` 中。安装的Opt-in服务允许您指定一个访客是否可以同时加入Adobe解决方案，或以序列形式显示解决方案以获得每个解决方案的权限。参与服务同意管理功能允许您使用各种配置实现特定隐私要求。
 
 通过选择参与服务，您可以指定一个访客是否可以同时选择加入Adobe解决方案，或者为每个解决方案提供按顺序提供解决方案。批准流程完成并由客户记录后，所有 Adobe 解决方案均可以检索 CMP 访客的批准信息，以响应相关的同意调用。
 
