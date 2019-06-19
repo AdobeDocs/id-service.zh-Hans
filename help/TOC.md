@@ -3,16 +3,16 @@ cloud: experience-cloud
 product: ID 服务
 audience: 最终用户
 user-guide-title: ID服务帮助
-user-guide-url: /content/help/en/id-service/using/mcvid-home.html
+user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
 
 # ID服务帮助 {#using}
 
-+ [Experience Cloud ID 服务](mcvid-home.md)
++ [Experience Cloud ID 服务](home.md)
 + 概述 {#mcvid-introduction}
    + [概述](mcvid-introduction/mcvid-overview.md)
    + [关于ID服务](mcvid-introduction/mcvid-about-id-service.md)
@@ -30,7 +30,7 @@ source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
    + [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud ID 服务](mcvid-implementation-guides/mcvid-setup-aam-analytics-target.md)
    + [在 Target 的 A4T 和服务器端实施中使用 Experience Cloud ID 服务](mcvid-implementation-guides/ecid-a4t-target.md)
    + [与 Experience Cloud ID 服务的直接集成](mcvid-implementation-guides/mcvid-direct-integration.md)
-   + [直接集成用例](mcvid-implementation-guides/mcvid-direct-integration-examples.md)
+   + [直接集成用例](mcvid-implementation-guides/ecid-direct-integration-examples.md)
    + [测试和验证Experience Cloud ID服务](mcvid-implementation-guides/mcvid-test-verify.md)
    + 选择加入文档 {#opt-in-service}
       + [选择服务概述](mcvid-implementation-guides/opt-in-service/mcvid-optin-overview.md)
@@ -99,10 +99,10 @@ source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
    + [视频心率和 Experience Cloud ID 服务](mcvid-reference/mcvid-heartbeat.md)
    + [Data Workbench 和 Experience Cloud ID 服务](mcvid-reference/mcvid-dwb.md)
 + 常见问题解答 {#faqs}
-   + [常见问题解答概述](mcvid-faq-intro/mcvid-faq-intro.md)
-   + [ID 服务常见问题解答](mcvid-faq-intro/mcvid-faq.md)
-   + [Analytics 和 ID 服务常见问题解答](mcvid-faq-intro/mcvid-analytics-faq.md)
-   + [其他 Experience Cloud 解决方案的常见问题解答](mcvid-faq-intro/mcvid-other-faq.md)
+   + [常见问题解答概述](mcvid-faq-intro/ecid-faq-intro.md)
+   + [ID 服务常见问题解答](mcvid-faq-intro/ecid-faq.md)
+   + [Analytics 和 ID 服务常见问题解答](mcvid-faq-intro/ecid-analytics-faq.md)
+   + [其他 Experience Cloud 解决方案的常见问题解答](mcvid-faq-intro/ecid-other-faq.md)
 + ID服务的发行说明 {#release-notes}
    + [2019 版发行说明](mcvid-release-notes/mcvid-release-notes.md)
    + [2018 版发行说明](mcvid-release-notes/mcvid-notes-2018.md)
