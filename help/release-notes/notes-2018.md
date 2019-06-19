@@ -6,7 +6,7 @@ seo-title: 2018 发行说明
 title: 2018 发行说明
 uuid: 771b5b11-a8 e3-464c-b65 e-b1513584 ace
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
  <tbody> 
   <tr> 
    <td colname="col1"> <p>增强了 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在内部安全扫描期间，发现在使用 DTM 库时，用于会话管理的 Cookie 无法指定正确的属性。这可能会导致无意中共享 Cookie 信息。为解决此问题，我们引入了一个配置，它允许客户将 AMCV Cookie 设置为安全。请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col2"> <p>在内部安全扫描期间，发现在使用 DTM 库时，用于会话管理的 Cookie 无法指定正确的属性。这可能会导致无意中共享 Cookie 信息。为解决此问题，我们引入了一个配置，它允许客户将 AMCV Cookie 设置为安全。请参阅 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
