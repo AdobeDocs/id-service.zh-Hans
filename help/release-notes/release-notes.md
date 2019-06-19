@@ -6,7 +6,7 @@ seo-title: 2019 发行说明
 title: 2019 发行说明
 uuid: a5a59410-7f85-48f9-a30 a-fef1 c2 b558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。选择加入是 [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。使用 [Launch](https://docs.adobelaunch.com/)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+**选择加入服务**。选择加入是Experience Cloud ID(ECID)的一个扩展，它允许您控制(然后) Experience Cloud库可以在网页上为访客创建cookies。通过 [使用Experience Platform Launch，](https://docs.adobelaunch.com/)您可以通过启用Analytics、Target、Audience Manager以及其他全部或全部Experience Cloud解决方案来选择同意您的同意管理系统，从而简化收集适用于Experience Cloud解决方案的用户选择加入的同意。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
