@@ -5,7 +5,7 @@ seo-title: 选择服务
 title: 选择服务
 uuid: aabd72ad-4118-471b-9755-d08 a72 ca0 fd
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 选择服务允许您为访客设置协议，以确定您是否可以在访问站点时在用户的设备或浏览器上设置Cookie。
 
-选择服务是 [Experience Cloud ID(ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 服务的扩展，设计用于控制在用户同意之前，体验云解决方案能否在网页上为访客创建cookies。通过选择加入服务，您还可以将协议设置为与同意管理平台(CMP)和现有系统集成，作为更大设计的一部分。
+选择服务是Experience Cloud ID(ECID)的扩展，设计用于控制用户在用户同意之前是否可以在网页上为访客创建cookies。通过选择加入服务，您还可以将协议设置为与同意管理平台(CMP)和现有系统集成，作为更大设计的一部分。
 
 使用参与服务，您可以指定一个访客是否可以同时参与Adobe解决方案，或按顺序提供解决方案以进行权限。批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
