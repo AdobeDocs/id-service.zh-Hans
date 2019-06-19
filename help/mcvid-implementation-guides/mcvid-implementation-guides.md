@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 实施指南
 uuid: null
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -34,6 +34,6 @@ Experience Cloud ID 服务的标准实施和非标准实施的说明和代码示
 * [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud ID 服务](mcvid-setup-aam-analytics-target.md)
 * [在 Target 的 A4T 和服务器端实施中使用 Experience Cloud ID 服务](ecid-a4t-target.md)
 * [与 Experience Cloud ID 服务的直接集成](mcvid-direct-integration.md)
-* [直接集成用例](ecid-direct-integration-examples.md)
+* [直接集成用例](mcvid-direct-integration-examples.md)
 * [测试和验证Experience Cloud ID服务](mcvid-test-verify.md)
 * [选择服务概述](opt-in-service/mcvid-optin-overview.md)
