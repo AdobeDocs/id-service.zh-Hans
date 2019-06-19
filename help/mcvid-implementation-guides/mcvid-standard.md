@@ -6,7 +6,7 @@ seo-title: 使用动态标签管理实现
 title: 使用动态标签管理实现
 uuid: c4f752c4-392e-4909-b178-9170687064
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >此操作使用您的组织ID填充 **[!UICONTROL Experience Cloud组织ID]** 框。如果您的 DTM 帐户尚未与 [!DNL Experience Cloud] 关联，则需要提供此 ID。要关联您的帐户，请参阅[在 Experience Cloud 中关联帐户](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。请参阅[要求](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26)以了解关于如何查找组织 ID 的信息。
 
-1. 在 **[!UICONTROL “跟踪服务器]** ”框中键入跟踪服务器的名称。如果您不确定如何找到跟踪服务器，请参阅 [常见问题解答](../mcvid-faq-intro/mcvid-faq.md) 并 [正确填充trackingServer和trackingServerSecure变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+1. 在 **[!UICONTROL “跟踪服务器]** ”框中键入跟踪服务器的名称。如果您不确定如何找到跟踪服务器，请参阅 [常见问题解答](../mcvid-faq-intro/ecid-faq.md) 并 [正确填充trackingServer和trackingServerSecure变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 1. 单击 **[!UICONTROL 创建工具]** 和 **[!UICONTROL 保存更改]**。
 
    保存更改后，ID 服务在 DTM 中会被设置为一个工具。但您还无法使用该服务。您的 DTM 工具仍然需要完成 DTM 发布/审批流程，您可能还需要配置其他参数。有关 DTM 审批流程的信息，请观看[用户基本知识快速入门](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)视频。有关可以添加到 DTM 的其他参数的信息，请参阅 [DTM 的 Experience Cloud ID 服务设置](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
