@@ -6,7 +6,7 @@ seo-title: 2017 发行说明
 title: 2017 发行说明
 uuid: 79452df0-49db-42b8-96fe-01a7629fbb5
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -177,7 +177,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> ID 服务 API 属性，<span class="codeph">idSyncContainerID</span></p> </td> 
-   <td colname="col2"> <p>此属性可设置由 <span class="keyword">Audience Manager</span> 用来进行 ID 同步的容器 ID。请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsyncontainerid.html" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
+   <td colname="col2"> <p>此属性可设置由 <span class="keyword">Audience Manager</span> 用来进行 ID 同步的容器 ID。请参阅 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID 服务 API 方法，<span class="codeph">appendSupplementalDataIDTo( <span class="varname"> URL </span>, <span class="varname"> SDID</span>)</span></p> </td> 
