@@ -1,19 +1,19 @@
 ---
-description: 查看本节以确保您使用的是Experience Platform Identity Service所需的正确解决方案、服务和代码版本。
+description: 查看本节以确保您使用的是Experience Cloud ID服务所需的正确解决方案、服务和代码版本。
 keywords: ID 服务
-seo-description: 查看本节以确保您使用的是Experience Platform Identity Service所需的正确解决方案、服务和代码版本。
-seo-title: Experience Platform Identity Service的要求
-title: Experience Platform Identity Service的要求
+seo-description: 查看本节以确保您使用的是Experience Cloud ID服务所需的正确解决方案、服务和代码版本。
+seo-title: Experience Cloud ID 服务的要求
+title: Experience Cloud ID 服务的要求
 uuid: 608b1082-6e9e-4101-b6 cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service的要求 {#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud ID 服务的要求 {#requirements-for-the-experience-cloud-id-service}
 
-查看本节以确保您使用的是Experience Platform Identity Service所需的正确解决方案、服务和代码版本。
+查看本节以确保您使用的是Experience Cloud ID服务所需的正确解决方案、服务和代码版本。
 
 ## 要求确保实施成功和支持 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
