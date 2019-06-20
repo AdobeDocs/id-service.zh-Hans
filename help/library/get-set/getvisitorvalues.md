@@ -6,7 +6,7 @@ seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7 e-40e2-a219-07fec28 ad49 c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 语法{#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-此函数使用以下语法(斜体表示变量的占位符)： ` var *`值SID`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`TypeID`*, visitor.FIELDS. *`类型`*]);`
+This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 在此函数的参数中：
 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS区域ID、位置、主机名 </a> 和 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
+   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>See <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names </a> and <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie和体验平台标识服务 </a>。 </p> </td> 
+   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅 <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服务 </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
