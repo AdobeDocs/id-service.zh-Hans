@@ -6,7 +6,7 @@ seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1 ed-4d98 d3320 fd0
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -35,16 +35,16 @@ demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie �
 
 由于可以在 Apple Safari 和其他一些浏览器的第三方上下文中使用第一方 Cookie，CNAME 允许您跟踪主域和其他一些使用相同跟踪服务器的域之间的客户。
 
-例如，您的主站点为 `mymainsite.com`。您将CNAME记录配置为指向安全数据收集服务器： `smetrics.mymainsite.com`。
+例如，您的主站点为 `mymainsite.com`。You configured the CNAME record to point to your secure data collection server: `smetrics.mymainsite.com`.
 
-当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。这是允许的，因为数据收集服务器的域与网站的域相匹配，这是所谓的使用 *第一方上下文中的cookie*，或者只是 *第一方cookie*的已知方法。
+当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。This is allowed since the domain of the data collection server matches the domain of the website, and is what is known as using a cookie in a *first-party context*, or just a *first-party cookie*.
 
-如果您还在其他站点上使用此相同的数据收集服务器(例如， `myothersiteA.com`和 `myothersiteB.com`)，并且访客稍后访问这些站点，则访问过程中设置 `mymainsite.com` 的cookie将在HTTPS请求中发送到数据收集服务器(记住，浏览器将所有HTTPS请求的所有CPS请求发送到该域，即使该域与当前网站的域不匹配)。这称为使用 *第三方上下文*中的cookie，或仅 *使用第三方cookie*，它允许在这些其他域上使用相同的访客ID。请注意，浏览器在第三方上下文中处理cookies的方式与第一方cookie不同。
+If you are also using this same data collection server on other sites (for example, `myothersiteA.com`, and `myothersiteB.com`), and a visitor later visits these sites, the cookie that was set during the visit to `mymainsite.com` is sent in the HTTPS request to the data collection server (remember that browsers send all cookies for a domain with all HTTPS requests to that domain, even if the domain doesn&#39;t match the domain of the current website). This is what is known as using a cookie in a *third-party context*, or just a *third-party cookie*, and it enables the same visitor ID to be used on these other domains. 请注意，浏览器在第三方上下文中处理cookies的方式与第一方cookie不同。
 
 *注意：Safari会阻止第三方上下文中的所有cookies，无论其设置如何。*
 
-因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。如果没有 *用于数据收集域的通用* 域，对数据收集域维护CNAME没有跨域益处。如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
+因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。If there is no *common* domain to use for the data collection domain, there is no cross-domain benefit to maintaining a CNAME for the data collection domain. 如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
 
-## 使用Experience Platform Identity Service支持CNAME支持 {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## 通过 Experience Cloud ID 服务启用 CNAME 支持 {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-通过设置 `visitor.marketingCloudServerSecure` 变量启用数据收集服务器CNAME支持。
+Data collection server CNAME support is enabled by setting the `visitor.marketingCloudServerSecure` variables.
