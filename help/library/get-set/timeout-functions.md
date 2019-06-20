@@ -1,19 +1,19 @@
 ---
-description: 调用这些ID服务函数以确定Experience Platform Identity Service、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+description: 调用这些ID服务函数以确定Experience Cloud ID服务、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 keywords: ID 服务
-seo-description: 调用这些ID服务函数以确定Experience Platform Identity Service、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+seo-description: 调用这些ID服务函数以确定Experience Cloud ID服务、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
 uuid: e5047498-11db-4945-b356-c92 b7 d447573
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # callTimeOut 方法{#calltimeout-methods}
 
-调用这些ID服务函数以确定Experience Platform Identity Service、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+调用这些ID服务函数以确定Experience Cloud ID服务、Analytics或Audience Manager ID请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 
 ## 超时函数 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Platform Identity Service </p> </td> 
+   <td colname="col1"> <p>Experience Cloud ID 服务 </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = reciptor. mCIDCalltimeout()</span> </p> </td> 
   </tr> 
   <tr> 
