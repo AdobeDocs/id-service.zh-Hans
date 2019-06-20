@@ -1,19 +1,19 @@
 ---
-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 keywords: ID 服务
-seo-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
-seo-title: Experience Platform Identity Service中的CORS支持
-title: Experience Platform Identity Service中的CORS支持
+seo-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+seo-title: Experience Cloud ID 服务中的 CORS 支持
+title: Experience Cloud ID 服务中的 CORS 支持
 uuid: e656b573-72a8-4312-a7 d5-5cc3818 f0 a9 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service中的CORS支持 {#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud ID 服务中的 CORS 支持 {#cors-support-in-the-experience-cloud-id-service}
 
-浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 
 ## 同域策略和 ID 服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -60,7 +60,7 @@ CORS 提供了一种安全、有效的方式，可跨越不同的域请求资源
  </tbody> 
 </table>
 
-另请参阅 [useCorsOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+See also [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## 使用 CORS 的其他好处 {#section-6f44f30694c44f95bf9854b8a2af8449}
 
