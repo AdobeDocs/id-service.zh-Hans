@@ -1,19 +1,19 @@
 ---
-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Platform Identity Service代码中，以防止它在浏览器的第三方域中设置cookies。
+description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
 keywords: ID 服务
-seo-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Platform Identity Service代码中，以防止它在浏览器的第三方域中设置cookies。
-seo-title: Experience Platform Identity Service中的COPPA支持
-title: Experience Platform Identity Service中的COPPA支持
+seo-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
+seo-title: Experience Cloud ID 服务中的 COPPA 支持
+title: Experience Cloud ID 服务中的 COPPA 支持
 uuid: 621b5ebbd-92e7-4635be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service中的COPPA支持 {#coppa-support-in-the-experience-cloud-id-service}
+# Experience Cloud ID 服务中的 COPPA 支持 {#coppa-support-in-the-experience-cloud-id-service}
 
-儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Platform Identity Service代码中，以防止它在浏览器的第三方域中设置cookies。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
 
 >[!NOTE]
 >
