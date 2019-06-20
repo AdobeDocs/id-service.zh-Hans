@@ -1,19 +1,19 @@
 ---
-description: 返回Experience Platform Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+description: 返回Experience Cloud ID服务区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 keywords: ID 服务
-seo-description: 返回Experience Platform Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+seo-description: 返回Experience Cloud ID服务区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5 c-a2 bb-0fbb37 f1 e2 f4
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-返回Experience Platform Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+返回Experience Cloud ID服务区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 
 **语法：**` var *`变量名称`* = visitor.getLocationHint()`
 
