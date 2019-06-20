@@ -1,19 +1,19 @@
 ---
-description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+description: 在部署Experience Cloud ID服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 keywords: ID 服务
-seo-description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
-seo-title: 体验平台标识服务迁移决策点
-title: 体验平台标识服务迁移决策点
+seo-description: 在部署Experience Cloud ID服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+seo-title: Experience Cloud ID 服务迁移决策点
+title: Experience Cloud ID 服务迁移决策点
 uuid: ee56b5de-fcf3-4bricycle-9e53-762af7 c4 d2 ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 体验平台标识服务迁移决策点
+# Experience Cloud ID 服务迁移决策点
 
-在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+在部署Experience Cloud ID服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 
 此部分中的问题解答可帮助您确定是否应当执行一些额外的迁移步骤。
 
