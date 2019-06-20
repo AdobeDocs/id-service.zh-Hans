@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo（跨域跟踪）
 title: appendVisitorIDsTo（跨域跟踪）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -25,14 +25,14 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-当某人访问您的站点时，ID服务将第一方和第三方cookie写入浏览器(请参阅 [Cookies和Experience Platform Identity Service](../../introduction/cookies.md) )。第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud ID Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
 
 * 在该网站访客导航到其他域时，重新为其生成唯一 ID。
 * 在您的组织所拥有的不同域中跟踪访客。
 
-为帮助解决此问题，请实施 ` Visitor.appendVisitorIDsTo( *`url`*)`。通过此属性，即使网站访客的浏览器阻止了第三方 Cookie，ID 服务仍可跨多个域跟踪网站访客。它的工作过程如下：
+To help solve this problem, implement ` Visitor.appendVisitorIDsTo( *`url`*)`. 通过此属性，即使网站访客的浏览器阻止了第三方 Cookie，ID 服务仍可跨多个域跟踪网站访客。它的工作过程如下：
 
-* 当访客浏览到其他域时 ` Visitor.appendVisitorIDsTo( *`，该URL`*)` 将MID附加为URL中的查询参数，从原始域重定向到目标域。
+* As a visitor browses to your other domains, the ` Visitor.appendVisitorIDsTo( *`url`*)` appends the MID as a query parameter in the URL redirect from the original domain to the destination domain.
 * 目标域上的 ID 服务代码会从 URL 中提取 MID，而不是向 Adobe 发送请求以获取该访客的 ID。此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
 * 目标页面上的 ID 服务代码使用传入的 MID 跟踪访客。
 
@@ -40,7 +40,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 附加访客 ID 代码示例 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-以下示例可帮助您开始 ` Visitor.appendVisitorIDsTo( *`使用url`*)`。正确实施后，您的 JavaScript 代码可能与以下示例类似。
+The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. 正确实施后，您的 JavaScript 代码可能与以下示例类似。
 
 ```js
 //Code on Domain A 
