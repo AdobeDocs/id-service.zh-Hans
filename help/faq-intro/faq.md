@@ -6,7 +6,7 @@ seo-title: ID 服务常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,21 +23,21 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 **ID 服务为何不进行调用来检索 Experience Cloud ID？**
 
-此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅[内容安全策略和体验平台标识服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅 [内容安全策略和 Experience Cloud ID 服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js 文件存储**
 
 如果您将 VisitorAPI.js 作为本地文件托管在移动应用程序中，则可能会遇到问题。我们建议您在 Web 服务器上托管该文件。
 
-## 页面加载时间和滞后时间 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **ID 服务 VisitorAPI.js 库的位置对页面加载时间有何影响？**
 
-将VisitorAPI. js库放在代码 `<head>` 部分的页面顶部。这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
+Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. 这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
 
 ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)进行的调用。ID 服务调用不会阻止在页面上加载其他元素。
 
-[!DNL Target] 对于客户，在页面中 `<body>` 放置ID服务代码可能会增加阻止 [!DNL Target] 通话的可能性。如果必须将ID服务代码放在页面的正文中，则应将其放置在打开 `<body>` 标记之后。
+[!DNL Target] 对于客户，在页面中 `<body>` 放置ID服务代码可能会增加阻止 [!DNL Target] 通话的可能性。If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
 
 **ID 服务是否会在每次页面加载时都进行服务器调用？**
 
@@ -67,13 +67,13 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 一般而言，与使用 JSONP 相比，使用 CORS 的资源请求更为有益。使用 JSONP 时，某些浏览器会在将请求排入队列后降低其优先级，而优先考虑页面上的其他同步和异步调用。CORS 则有助于确保这些请求在浏览器调用堆栈中得到优先处理。
 
-请参阅[体验平台标识服务中的CORS支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+请参阅 [Experience Cloud ID 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服务是否支持 CORS？**
 
-能。请参阅 [Experience Platform Identity Service中的CORS支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+能。See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **什么是 CORS？**
 
