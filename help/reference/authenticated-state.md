@@ -6,7 +6,7 @@ seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926 b47 e7
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 >
 >`setCustomerIDs` (客户ID同步)是客户属性和核心服务功能要求的。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要 `Visitor.AuthState.AUTHENTICATED` 使用客户属性。请参阅[核心服务 - 如何启用您的解决方案](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)，以了解相关示例。
 
-从Experience Platform Identity Service v1.5+开始 `setCustomerIDs` ，包括可选 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。您可通过表中列出的状态值来设置身份验证状态。身份验证状态将以整数的形式返回。
+Beginning with Experience Cloud ID Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。您可通过表中列出的状态值来设置身份验证状态。身份验证状态将以整数的形式返回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -220,4 +220,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。有关详细信息，请参阅 [!DNL Visitor ID Service][配置合并规则代码](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) 文档中的部分。
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
