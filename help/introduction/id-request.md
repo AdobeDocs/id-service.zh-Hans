@@ -2,22 +2,22 @@
 description: 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 keywords: ID 服务
 seo-description: 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
-seo-title: Experience Platform Identity Service请求的请求和设置ID
-title: Experience Platform Identity Service请求的请求和设置ID
+seo-title: Experience Cloud ID服务请求的请求和设置ID
+title: Experience Cloud ID服务请求的请求和设置ID
 uuid: ff7f5b7e-e959-4391-b75 c-b7 a36286 e0 ea
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service请求的请求和设置ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud ID Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 
 >[!NOTE]
 >
->如果您不熟悉Experience Platform Identity Service如何创建访客ID，请花一点时间审查 [Experience Cloud](../introduction/cookies.md)。
+>If you&#39;re not familiar with how the Experience Cloud ID Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **提示：** 另请参阅我们的[关于跨域跟踪的 ID 服务视频](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
@@ -44,7 +44,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 在下一个示例中您会看到，当我们的访客转至食品公司下属的其他网站时，Demdex ID 和组织 ID 允许 ID 服务创建并返回正确的 MID。
 
-## 跨站点请求和响应 {#section-15ea880453af467abd2874b8b4ed6ee9}
+## Cross-site request and response {#section-15ea880453af467abd2874b8b4ed6ee9}
 
 在本示例中，我们的食品公司访客从比萨饼站点导航至炸玉米饼站点。该食品公司在炸玉米饼站点也实施了 ID 服务代码。这位访客从未访问过炸玉米饼网站。
 
@@ -56,7 +56,7 @@ DCS 收到组织 ID 和 Demdex ID 后，它会为我们的访客创建正确的 
 
 ![](assets/response2.png)
 
-## 来自其他站点的ID请求 {#section-ba9a929e50d64b0aba080630fd83b6f1}
+## ID requests from other sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
 
 在下面的示例中，我们的访客离开食品公司站点，前往体育公司下设的足球站点。当访客来到足球站点时，ID 检查和请求流程会按照上面示例中描述的相同方式运作。然而，因为体育公司有自己的组织 ID，因此 ID 服务会返回一个不同的 MID。新 MID 在由体育公司控制的域中是唯一的，它允许该公司在不同的 [!DNL Experience Cloud] 解决方案中跟踪和共享访客数据。此访客的 Demdex ID 保持不变，因为它包含在第三方 Cookie 中，在其他域中仍然有效。
 
