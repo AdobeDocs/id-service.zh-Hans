@@ -2,16 +2,16 @@
 description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 keywords: ID 服务
 seo-description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
-seo-title: 与Experience Platform Identity Service直接集成
-title: 与Experience Platform Identity Service直接集成
+seo-title: 与Experience Cloud ID服务直接集成
+title: 与Experience Cloud ID服务直接集成
 uuid: de502f7e-cffd-4130-b3 ca-7d6 b9 a9 caae9
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 与Experience Platform Identity Service直接集成 {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud ID Service {#direct-integration-with-the-experience-cloud-id-service}
 
 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 
@@ -21,17 +21,17 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，前缀 `d_` 将调用中的键值对标识为系统级变量。您可以将相当多 `d_` 的参数传递给ID服务，但将焦点放在键值对上，如上面的代码所示。有关其他变量的更多信息，请参阅[支持的 DCS API 调用属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+In this syntax example, the `d_` prefix identifies the key-value pairs in the call as a system-level variable. You can pass quite a few `d_` parameters to the ID service, but stay focused on the key-value pairs as shown in the code above. 有关其他变量的更多信息，请参阅[支持的 DCS API 调用属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
 
 ID 服务支持 HTTP 和 HTTPS 调用。使用 HTTPS 可传递来自安全页面的数据。
 
-## 示例请求 {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Sample request {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 您的请求可能与下面显示的示例类似。长变量已缩短。
 
 ![](assets/directExample.png)
 
-## 示例响应 {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Sample response {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能会有所不同。
 
@@ -44,7 +44,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
 }
 ```
 
-## 定义的请求和响应参数 {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Request and response parameters defined {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **请求参数**
 
@@ -62,18 +62,18 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和体验平台标识服务</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅 <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服务</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅<a href="../reference/requirements.md" format="dita" scope="local"> Experience Platform Identity Service的要求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅 <a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud ID 服务的要求</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>可选参数，将数据提供者ID(DPID)、唯一用户ID(DPUUID)和 <a href="../reference/authenticated-state.md" format="dita" scope="local"> 身份验证状态ID</a> 传递给ID服务。如代码示例中所示，DPID 和 DPUUID 使用非打印控制字符 <span class="codeph">%01</span> 来分隔。 </p> <p> <b>DPID 和 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 参数中，将每个相关的 DPID 和 DPUUID 组合分配到同一个 <span class="codeph">d_cid</span> 参数。这样，您便可以在一个请求中返回多组 ID。此外，需使用非打印控制字符 <span class="codeph">%01</span> 来分隔 DPID、DPUUID 和可选身份验证标记。在以下示例中，提供程序 ID 和用户 ID 均以<b>粗体</b>文本突出显示。 </p> 
+   <td colname="col2"> <p>An optional parameter that passes the Data Provider ID (DPID), the Unique User ID (DPUUID), and an <a href="../reference/authenticated-state.md" format="dita" scope="local"> authenticated state ID</a> to the ID service. 如代码示例中所示，DPID 和 DPUUID 使用非打印控制字符 <span class="codeph">%01</span> 来分隔。 </p> <p> <b>DPID 和 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 参数中，将每个相关的 DPID 和 DPUUID 组合分配到同一个 <span class="codeph">d_cid</span> 参数。这样，您便可以在一个请求中返回多组 ID。此外，需使用非打印控制字符 <span class="codeph">%01</span> 来分隔 DPID、DPUUID 和可选身份验证标记。在以下示例中，提供程序 ID 和用户 ID 均以<b>粗体</b>文本突出显示。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">语法：<span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">示例： <span class="codeph">… d_ cid=123%01456011</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Example: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>身份验证状态</b> </p> <p>这是 <span class="codeph">d_cid</span> 参数中的一个可选 ID。此 ID 以整数形式表示，用于根据用户的身份验证状态来标识用户，如下所示： </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph">0</span>（未知） </li> 
