@@ -1,19 +1,19 @@
 ---
-description: 返回在实施Experience Platform Identity Service之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+description: 返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
 keywords: ID 服务
-seo-description: 返回在实施Experience Platform Identity Service之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+seo-description: 返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8dfc-9fc1-4105-b377-d9 b4 d247 a0 f8
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-返回在实施Experience Platform Identity Service之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
 
 **语法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -33,7 +33,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客户，还可以检查并将 [!DNL Analytics] ID发送到您的函数。例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。在这种情况下，您应收集和返回 [!DNL Experience Cloud][!DNL Analytics] 访客ID。请参阅 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
+>If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. 例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. See [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
 
 **“aid”参数是一个旧版值**
 
@@ -48,7 +48,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **用例 2**
 
-您的单位 `aid` 在完全实施ID服务前使用 [宽限期](../../reference/analytics-reference/grace-period.md) ，您将在查询字符串中看到该参数。如果访问您的站点的用户是新的，并且您没有使用宽限期，则访客将获得 `mid` ( [!DNL Experience Cloud] ID)参数。
+You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
 
 >[!MORE_ LIKE_ This]
 >
