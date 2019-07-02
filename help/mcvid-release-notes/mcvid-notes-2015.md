@@ -5,7 +5,7 @@ seo-description: 2015 版发行说明和更新。
 seo-title: 2015 版发行说明
 title: 2015 版发行说明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,20 +15,20 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 2015 版发行说明和更新。
 
-## 版本1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
+## 版本 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
 2015 年 11 月
 
-儿童在线隐私保护法案(COPPA)禁止13岁以下儿童在线收集个人信息，不可核实地征得家长的同意。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。请参阅 [Experience Cloud ID服务中的COPPA支持](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。适用于版本 1.5.3 或更高版本。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。请参阅 [Experience Cloud ID 服务中的 COPPA 支持](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。适用于版本 1.5.3 或更高版本。
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 2015 年 9 月
 
 * 修复了 Safari 浏览器中存在的一个错误，当用户阻止第三方 Cookie 时，该错误会妨碍同步服务正常工作。(AAM-20764)
-* 对ID服务的调用现在包括 `d_visid_ver=` 参数中的版本ID。返回的 ID 可帮助内部团队进行疑难解答和解决支持问题。(AAM-20824)
+* 现在，调用 ID 服务的过程涉及 `d_visid_ver=` 参数中的版本 ID。返回的 ID 可帮助内部团队进行疑难解答和解决支持问题。(AAM-20824)
 
-## 版本1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
+## 版本 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 2015 年 8 月
 
@@ -44,14 +44,14 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 此版本中的文档修订包括：
 
-* [API方法和代码库](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97)：重新组织内容和文本。在大部分情况下，每个方法都具有它自己的页面。
+* [API 方法和代码库](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97)：重新组织了内容和文本。在大部分情况下，每个方法都具有它自己的页面。
 * [Experience Cloud ID 服务的要求](../mcvid-reference/mcvid-requirements.md)：修订了内容，重新组织了文本。
 
-## 1.5版 {#section-db5edfa11ae143ada07a96e0ab06dc57}
+## 版本 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 2015 年 7 月
 
-[!DNL Experience Cloud] ID 服务支持多个 ID 和身份验证状态。此更改还删除了“将 [!DNL Audience Manager] DPID 映射到 `setCustomerIDs` 函数所用的用户 ID”的已弃用支持。请参阅 [客户ID和身份验证状态](../mcvid-reference/mcvid-authenticated-state.md)
+[!DNL Experience Cloud] ID 服务支持多个 ID 和身份验证状态。此更改还删除了“将 [!DNL Audience Manager] DPID 映射到 `setCustomerIDs` 函数所用的用户 ID”的已弃用支持。请参阅[客户 ID 和身份验证状态](../mcvid-reference/mcvid-authenticated-state.md)
 
 ## 版本 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -79,4 +79,4 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 2015 年 1 月
 
-对 `<head>/<body>` JSONP请求 `<script>` 标签容器进行了重新设计的标签查找， `<script>` 以及创建标记以反映不同的DOM实现(HTML与XHTML)，这些设置可能具有不同的区分大小写设置。(AN-9355)
+重新执行了 `<head>/<body>` 标签查找，以获取 JSONP 请求 `<script>` 标签容器，并且创建了 `<script>` 标签，以考虑根据区分大小写的各种可能设置，而形成的不同 DOM 实施（HTML 与 XHTML）。(AN-9355)
