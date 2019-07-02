@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7 e-40e2-a219-07fec28 ad49 c
-translation-type: tm+mt
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,12 +26,12 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 语法{#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-此函数使用以下语法(斜体表示变量的占位符)： ` var *`值SID`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`TypeID`*, visitor.FIELDS. *`类型`*]);`
+此函数使用以下语法（斜体表示变量的占位符）：` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 在此函数的参数中：
 
-* ` *`回调`*` 表示接收返回的ID的自己的回调代码。
-* *(可选)* ` visitor.FIELDS. *`ID类型`*` 是一个枚举，用于指定您希望此函数返回的 [ID值](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) 。
+* ` *`callback`*` 表示您自己的用于接收所返回 ID 的回调代码。
+* *（可选）*` visitor.FIELDS. *`ID type`*` 是一个枚举，用于指定您希望此函数返回的 [ID 值](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5)。
 
 有关更多信息，请参阅以下用例和定义。
 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS区域ID、位置、主机名 </a> 和 <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
+   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>请参阅 <a href="https://marketing.adobe.com/resources/help/zh_CN/aam/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
