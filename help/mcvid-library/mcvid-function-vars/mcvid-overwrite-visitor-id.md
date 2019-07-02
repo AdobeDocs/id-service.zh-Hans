@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 当访客从一个域导航到另一个域时，此属性将覆盖其 Experience Cloud ID 和 Analytics ID。要覆盖 ID，您必须拥有域，并且已经在每个域上实施了 ID 服务。您无法通过此代码在没有控制权的域上改写 ID。
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: e48127a-ac62-4ea0-9756-2a27 b20 ecbcf
-translation-type: tm+mt
+uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 当访客从一个域导航到另一个域时，此属性将覆盖其 Experience Cloud ID 和 Analytics ID。要覆盖 ID，您必须拥有域，并且已经在每个域上实施了 ID 服务。您无法通过此代码在没有控制权的域上改写 ID。
 
-**语法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (默认为 `false`)
+**语法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false`（默认值为 `false`。）
 
 **代码示例**
 
