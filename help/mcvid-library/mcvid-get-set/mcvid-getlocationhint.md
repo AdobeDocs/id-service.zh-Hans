@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 可返回 Experience Cloud ID 服务的区域 ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 seo-title: getLocationHint
 title: getLocationHint
-uuid: cdc312b7-d270-4a5 c-a2 bb-0fbb37 f1 e2 f4
-translation-type: tm+mt
+uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **语法：**` var *`变量名称`* = visitor.getLocationHint()`
 
-有关区域 ID 及对应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)。
+有关区域 ID 和相应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://marketing.adobe.com/resources/help/zh_CN/aam/dcs-regions.html)。
 
 **代码示例**
 
