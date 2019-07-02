@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 可禁用 ID 同步的可选布尔标记。
 seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: 8bea de8-53c8-4a15-bcf5-f0869763 a32 e
-translation-type: tm+mt
+uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->此配置在 `idSyncDisableSyncs` 2018年月18日 `disableIdSyncs` 版本的v3.0中被重新命名。
+>此配置以前名为 `idSyncDisableSyncs`，之后在 2018 年 1 月 18 日发行的版本 3.0 中被重命名为 `disableIdSyncs`。
 
-**语法：**`disableIdSyncs: true|false` (默认 `false`为。)
+**语法：**`disableIdSyncs: true|false`（默认值为 `false`。）
 
 **代码示例**
 
