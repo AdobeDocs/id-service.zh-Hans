@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 按照这些说明操作，将 Experience Cloud ID 字段集成到 Data Workbench 中。此过程允许您在数据馈送中使用永久性 Experience Cloud ID，从而与 Adobe Experience Cloud 中的其他产品建立更强大的集成关系，并提供增强的访客跟踪功能。
 seo-title: Data Workbench 和 Experience Cloud ID 服务
 title: Data Workbench 和 Experience Cloud ID 服务
-uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764 e
-translation-type: tm+mt
+uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,11 +15,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 按照这些说明操作，将 Experience Cloud ID 字段集成到 Data Workbench 中。此过程允许您在数据馈送中使用永久性 Experience Cloud ID，从而与 Adobe Experience Cloud 中的其他产品建立更强大的集成关系，并提供增强的访客跟踪功能。
 
-要更新 [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/)以使用 ID 服务，请执行以下操作：
+要更新 [Data Workbench](https://marketing.adobe.com/resources/help/zh_CN/insight/)以使用 ID 服务，请执行以下操作：
 
-1. 找到当前的[解码器组](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)配置文件。
+1. 找到当前的[解码器组](https://marketing.adobe.com/resources/help/zh_CN/insight/dataset/c_text_file_dec_groups.html)配置文件。
 
-   通常，该路径 [!DNL Decoder Group] 位于该 [!DNL Profile Manager] 路径中： `Dataset\Log Processing\Decoding Instructions.cfg`。1. 从配置文件复制当前解码器格式。
+   通常情况下，[!DNL Decoder Group] 位于以下路径上的 [!DNL Profile Manager] 中：`Dataset\Log Processing\Decoding Instructions.cfg`。1. 复制配置文件中的当前解码器格式。
 1. 在原始位置下方粘贴解码器格式。
 1. 打开解码器格式，并在列表末尾添加这些新字段位置：
 
