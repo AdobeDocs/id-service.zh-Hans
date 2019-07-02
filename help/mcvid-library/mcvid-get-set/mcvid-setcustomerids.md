@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: setCustomerIDs 可设置一个或多个定义客户 ID 及其身份验证状态的键值对。
 seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4f960f98-cec2-4db6-84ea-0259e2128 ea2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
