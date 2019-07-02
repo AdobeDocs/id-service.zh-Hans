@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: Experience Cloud ID 服务的标准实施和非标准实施的说明和代码示例。
 seo-title: 实施指南
 title: 实施指南
-uuid: d41250e2-09f4-4a8b-8add-54d43e9281c9
-translation-type: tm+mt
+uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,11 +17,11 @@ Experience Cloud ID 服务的标准实施和非标准实施的说明和代码示
 
 >[!IMPORTANT]
 >
->在开始使用这些程序之前，请务必阅读并了解 [ID服务要求](../mcvid-reference/mcvid-requirements.md) 。
+>在开始使用这些程序之前，请务必先阅读并了解 [ID 服务要求](../mcvid-reference/mcvid-requirements.md)。
 
 ## 标准实施 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-标准实施使用 [!DNL Dyanamic Tag Manager] (DTM)帮助您开始使用ID服务，并将其与其他 [!DNL Experience Cloud] 解决方案集成。我们强烈建议您在实施 ID 服务时使用 DTM。若要开始，请参阅[使用 DTM 实现标准实施](../mcvid-implementation-guides/mcvid-standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
+标准实施使用 [!DNL Dyanamic Tag Manager] (DTM) 来帮助您开始使用 ID 服务，并将其与其他 [!DNL Experience Cloud] 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 DTM。若要开始，请参阅[使用 DTM 实现标准实施](../mcvid-implementation-guides/mcvid-standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
 
 ## 非标准实施 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
@@ -29,5 +29,5 @@ Experience Cloud ID 服务的标准实施和非标准实施的说明和代码示
 
 >[!TIP]
 >
->我们建议使用DTM来实施ID服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。此外，通过使用 DTM，您可以为 ID 服务以及后续与其他 Experience Cloud 解决方案的集成采用推荐的实施路径。
+>作为替代方法，我们建议使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。此外，通过使用 DTM，您可以为 ID 服务以及后续与其他 Experience Cloud 解决方案的集成采用推荐的实施路径。
 
