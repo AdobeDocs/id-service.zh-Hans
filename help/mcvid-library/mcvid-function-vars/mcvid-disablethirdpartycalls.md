@@ -1,11 +1,11 @@
 ---
 description: 可阻止 ID 服务对其他域进行调用的可选布尔标记。
-keywords: 跨域跟踪；ID服务
+keywords: 跨域跟踪;ID 服务
 seo-description: 可阻止 ID 服务对其他域进行调用的可选布尔标记。
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 可阻止 ID 服务对其他域进行调用的可选布尔标记。
 
-**语法：**` `disabletthirdParty调用：true| false“(默认为 `false`)”
+**语法：**` `disableThirdPartyCalls: true|false``（默认值为 `false`。）
 
 若 `disableThirdPartyCalls: true`，则 ID 服务将不会对其他域进行调用。
 
