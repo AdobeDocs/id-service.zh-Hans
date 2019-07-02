@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 这些说明适用于那些希望使用 Experience Cloud ID 服务而不使用动态标签管理 (DTM) 的 Target 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 seo-title: 实施适用于 Target 的 Experience Cloud ID 服务
 title: 实施适用于 Target 的 Experience Cloud ID 服务
-uuid: cb3581fa-4c4b-43aa-bb8 e-8db85 a6 a1 ef2
-translation-type: tm+mt
+uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -23,11 +23,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 
 
-## 步骤1：获取ID服务代码 {#section-b32ba0548aa546a79dd38be59832a53e}
+## 步骤 1：获取 ID 服务代码 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-它 [!DNL ID Service] 需要 `VisitorAPI.js` 代码库。联系[客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)，以获取此代码。
+[!DNL ID Service] 需要具备 `VisitorAPI.js` 代码库。请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取此代码。
 
-## 步骤2：将Detailtor. getInstance函数添加到ID服务代码 {#section-287ef2958e9f43858fe9d630ae519e22}
+## 步骤 2：将 Visitor.getInstance 函数添加到 ID 服务代码中 {#section-287ef2958e9f43858fe9d630ae519e22}
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
 
@@ -52,21 +52,21 @@ Version and copyright section
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");
 ```
 
-## 步骤3：将Experience Cloud组织ID添加到Compositor. getInstance {#section-522b1877be9243c39b222859b821f0ce}
+## 步骤 3：将您的 Experience Cloud 组织 ID 添加到 Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-在 `Visitor.getInstance` 函数中，替换 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 为 [!DNL Experience Cloud] 您的单位ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅[管理 - 核心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您编辑的函数看起来类似于下面的示例。
+在 `Visitor.getInstance` 函数中，将 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 替换为您的 [!DNL Experience Cloud] 组织 ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅[管理 - 核心服务](https://marketing.adobe.com/resources/help/zh_CN/mcloud/admin_getting_started.html)。您编辑的函数看起来类似于下面的示例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
 >[!IMPORTANT]
 >
->*请勿* 更改单位ID中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
+>*请不要*更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
 
-## 第步：将访问者API代码添加到页面 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## 步骤 4：将访客 API 代码添加到页面中 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-在对文件的引用之前，将 `VisitorAPI.js` 文件部署到 `<head>` 标记中的站点 `mbox.js` 。[!DNL Experience Cloud] ID服务必须在生成第一个 [!DNL Target] 网络调用之前执行。在测试和验证后将此代码移入生产环境中。
+先将 `VisitorAPI.js` 文件部署到网站上的 `<head>` 标签中，然后再引用 `mbox.js` 文件。[!DNL Experience Cloud] ID 服务必须在生成首个 [!DNL Target] 网络调用之前执行。在测试和验证后将此代码移入生产环境中。
 
-## 第步：测试和部署ID服务代码 {#section-e81ee439bb8a4c2abea43d76f3112e9c}
+## 步骤 5：测试和部署 ID 服务代码 {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 
 您可以按如下方式进行测试和部署。
 
@@ -75,9 +75,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 要测试您的 ID 服务实施，请执行以下操作：
 
 * 在托管页面的域中检查 AMCV Cookie。
-* 验证 `mboxMCGVID` 显示在 [!DNL Target] 您的请求中，并且它包含 [!DNL Experience Cloud] ID(MID)。
+* 验证 `mboxMCGVID` 是否显示在您的 [!DNL Target] 请求中，以及它是否包含 [!DNL Experience Cloud] ID (MID)。
 
-有关AMCV cookie和MID的信息，请参阅 [Cookie和Experience Cloud ID服务](../mcvid-introduction/mcvid-cookies.md) 。
+请参阅 [Cookie 和 Experience Cloud ID 服务](../mcvid-introduction/mcvid-cookies.md)，以了解有关 AMCV Cookie 和 MID 的信息。
 
 **部署**
 
