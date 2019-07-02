@@ -5,7 +5,7 @@ seo-description: 此帮助程序方法允许您将补充数据 ID (SDID) 作为�
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 语法和代码示例 {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**语法：**` appendSupplementalDataIDTo( *`URLSID`*, *``*)`
+**语法：**` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **代码示例**
 
@@ -50,11 +50,11 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 ## 通过 sdidParamExpiry 更改 SDID 超时 {#section-99946715cefa4acc95200b093db5297e}
 
-[sdidParameterPresence](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 配置允许您使用 `appendSupplementalDataIDTo` 辅助功能，在将该ID从一个页面传递到另一个页面时更改默认SSID过期间隔。默认情况下，接收页面上的 ID 服务代码将有 30 秒的时间从反向链接页面发送的 URL 中获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒内检索 SDID，它会请求一个新的 SDID。此功能主要适用于需要在页面间传递 SDID 并希望控制此超时间隔的 A4T 客户。
+通过 [sdidParamExpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 配置，您可以在使用 `appendSupplementalDataIDTo` 帮助程序函数将 SDID 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码将有 30 秒的时间从反向链接页面发送的 URL 中获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒内检索 SDID，它会请求一个新的 SDID。此功能主要适用于需要在页面间传递 SDID 并希望控制此超时间隔的 A4T 客户。
 
 如果您需要更改默认的 SDID 超时，请使用以下语法将 `sdidParamExpiry` 添加到 `Visitor.getInstance` 函数：
 
-**语法：**` sdidParamExpiry: *`时间(以秒计)`*`
+**语法：**` sdidParamExpiry: *`时间（以秒为单位）`*`
 
 **代码示例**
 
