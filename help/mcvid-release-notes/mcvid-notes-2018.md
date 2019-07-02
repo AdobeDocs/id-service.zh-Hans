@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
 seo-title: 2018 发行说明
 title: 2018 发行说明
-uuid: 771b5b11-a8 e3-464c-b65 e-b1513584 ace
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,7 +27,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p>增强了 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在内部安全扫描期间，发现在使用 DTM 库时，用于会话管理的 Cookie 无法指定正确的属性。这可能会导致无意中共享 Cookie 信息。为解决此问题，我们引入了一个配置，它允许客户将 AMCV Cookie 设置为安全。请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col2"> <p>在内部安全扫描期间，发现在使用 DTM 库时，用于会话管理的 Cookie 无法指定正确的属性。这可能会导致无意中共享 Cookie 信息。为解决此问题，我们引入了一个配置，它允许客户将 AMCV Cookie 设置为安全。请参阅 <a href="https://marketing.adobe.com/resources/help/zh_CN/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->建议您在最方便的时候从3.1.0版升级到最新版本。请参阅版本 3.1.2 描述。Adobe Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
+>建议您尽早从版本 3.1.0 升级到最新版本。请参阅版本 3.1.2 描述。Adobe Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
