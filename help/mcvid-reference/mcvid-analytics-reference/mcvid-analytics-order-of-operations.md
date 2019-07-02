@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式识别访客。
 seo-title: Analytics ID 操作顺序
 title: Analytics ID 操作顺序
-uuid: cb1d136e-093f-43b0e1-96f1e61fda0
-translation-type: tm+mt
+uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 部署访客 ID 服务后，可以在 Analytic 以 5 种方式识别访客。
 
-在许多情况下，您可能会在一次调用中看到 2 个或 3 个不同的 ID，但是 Analytics 会将该列表中显示的第一个 ID 用作正式的 [!DNL Experience Cloud] ID。例如，假如您设置了一个自定义访客 ID（包含在 `vid` 查询参数中），将会使用该 ID，而不是同一点击中可能出现的其他 ID。有关更多信息，请参阅 [设置Analytics和Experience Cloud ID](../../mcvid-reference/mcvid-analytics-reference/mcvid-analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) 。
+在许多情况下，您可能会在一次调用中看到 2 个或 3 个不同的 ID，但是 Analytics 会将该列表中显示的第一个 ID 用作正式的 [!DNL Experience Cloud] ID。例如，假如您设置了一个自定义访客 ID（包含在 `vid` 查询参数中），将会使用该 ID，而不是同一点击中可能出现的其他 ID。请参阅[设置 Analytics 和 Experience Cloud ID](../../mcvid-reference/mcvid-analytics-reference/mcvid-analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)，以了解更多信息。
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
@@ -28,13 +28,13 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 1</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>设置 <span class="codeph">s.visitorID</span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 2</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
-   <td colname="col3"> <p>在部署 <span class="keyword"> Experience Cloud</span> ID服务或配置 <a href="../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md" format="dita" scope="local"> 了宽限期</a> 之前，访客有一个现有的s_ vi cookie。 </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud ID 服务</span>之前，访客已拥有 s_vi Cookie，或者您已配置<a href="../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md" format="dita" scope="local">宽限期</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 3</sup></b> </p> </td> 
@@ -43,12 +43,12 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 4</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
-   <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不需要 <span class="codeph"> fid</span> ，因为第一方的 <a href="../../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> AMCV cookie会</a> 使其废弃。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
+   <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不再需要 <span class="codeph">fid</span>，因为第一方 <a href="../../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">AMCV Cookie</a> 使其过时。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 5</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
    <td colname="col3"> <p>访客的浏览器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
