@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 包含服务器示例配置和必需的迁移步骤。
 seo-title: Experience Cloud ID 服务迁移方案
 title: Experience Cloud ID 服务迁移方案
-uuid: e229045-6508-48c4ae39-9537b4941853
-translation-type: tm+mt
+uuid: 9e229045-6508-48c4-ae39-9537b4941853
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -34,7 +34,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 * **Analytics JavaScript 文件**：多个 JavaScript 文件。一个文件用于其主网站，另一个文件用于其在单独 CMS 中维护的支持部分。
 * **其他数据收集方法**：在某个网站部分中使用了硬编码的图像标签
 
-首先，这位客户应当查找其 Adobe Experience Cloud 组织 ID（请参阅[要求](../../mcvid-reference/mcvid-requirements.md)）。接下来，他们应当配置一个迁移宽限期，因为他们当前使用了多个 JavaScript 文件。此客户还将设置访客迁移，然后从 `*.2o7.net` 迁移到 `*.sc.omtrdc.net`迁移。
+首先，这位客户应当查找其 Adobe Experience Cloud 组织 ID（请参阅[要求](../../mcvid-reference/mcvid-requirements.md)）。接下来，他们应当配置一个迁移宽限期，因为他们当前使用了多个 JavaScript 文件。此外，这位客户还应设置访客迁移，然后从 `*.2o7.net` 迁移到 `*.sc.omtrdc.net`。
 
 当这位客户更新至最新的 Analytics JavaScript 代码以便为使用 [!DNL Experience Cloud] ID 服务做准备时，他同时也将更新所有硬编码的图像标签以改为使用 JavaScript。
 
