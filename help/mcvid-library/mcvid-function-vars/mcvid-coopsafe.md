@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。
 seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88 cb53 ad461
-translation-type: tm+mt
+uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,10 +27,10 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 要求 {#section-4883eda6beb8437182bcc82bb58fae41}
 
-要使用 `isCoopSafe` ，您必须：
+要使用 `isCoopSafe`，您必须满足以下条件：
 
 * 使用 ID 服务代码版本 2.4 或更高版本。
-* 参与 [Experience Cloud 设备协作](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 参与 [Experience Cloud 设备协作](https://marketing.adobe.com/resources/help/zh_CN/mcdc/)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
 * 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。不存在启用这些标记的自助途径。
 
@@ -137,7 +137,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/zh_CN/aam/dil-coopsafe.html)
 
