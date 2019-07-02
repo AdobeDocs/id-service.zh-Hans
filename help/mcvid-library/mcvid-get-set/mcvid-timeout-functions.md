@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 调用这些 ID 服务函数，可确定 Experience Cloud ID 服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
-uuid: e5047498-11db-4945-b356-c92 b7 d447573
-translation-type: tm+mt
+uuid: e5047498-11db-4945-b356-c92b7d447573
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,15 +27,15 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID 服务 </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = reciptor. mCIDCalltimeout()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = reciptor. analyticsCalltimeout()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = reciptor. aiascalltimeout()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
