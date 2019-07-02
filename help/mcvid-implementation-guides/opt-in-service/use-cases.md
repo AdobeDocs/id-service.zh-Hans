@@ -1,10 +1,10 @@
 ---
-description: 用于管理参与服务的示例用例和解决方案。
-seo-description: 用于管理参与服务的示例用例和解决方案。
+description: 用于管理选择加入服务的示例用例和解决方案。
+seo-description: 用于管理选择加入服务的示例用例和解决方案。
 seo-title: 选择加入用例
 title: 选择加入用例
-uuid: d75a44d4-b713-43d1-b5 b6-95d1 d0 d213 a7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # 选择加入用例 {#opt-in-use-cases}
 
-用于管理参与服务的示例用例和解决方案。
+用于管理选择加入服务的示例用例和解决方案。
 
 ## 提示和故障诊断 {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -22,7 +22,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 选择加入方案 {#section-1178053c065c430bba26f82ef383a71c}
 
-这些用例是使用选择服务的示例。
+以下用例是使用选择加入服务的示例构思。
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
