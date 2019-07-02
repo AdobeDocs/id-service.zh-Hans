@@ -5,7 +5,7 @@ seo-description: 可阻止 Experience Cloud ID 服务返回第三方 demdex.net 
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,11 +17,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->此配置在 `idSyncDisable3rdPartySyncing` 2018年月18日 `disableThirdPartyCookies` 版本的v3.0中被重新命名。
+>此配置以前名为 `idSyncDisable3rdPartySyncing`，之后在 2018 年 1 月 18 日发行的版本 3.0 中被重命名为 `disableThirdPartyCookies`。
 
-**语法：**`disableThirdPartyCookies: true|false` (默认 `false`为。)`VisitorAPI.js` 对于v1.5.3或更高版本。
+**语法：**`disableThirdPartyCookies: true|false`（默认值为 `false`。）适用于 `VisitorAPI.js` v1.5.3 或更高版本。
 
-当 `disableThirdPartyCookies: true`ID服务时，ID服务不会返回第三方、demdex. net cookie(请参阅 [Cookies和Experience Cloud ID服务](../../mcvid-introduction/mcvid-cookies.md) )。如果网站访客的浏览器中已经具有此 Cookie，则 ID 服务不会使用它来创建新的 Experience Cloud ID (MID) 或返回现有的 ID。作为替代，ID 服务会在第一方 Cookie 中新建一个随机 MID。启用 ID 服务后，您可以通过该服务来收集数据，并在不同的 Experience Cloud 解决方案之间共享该数据。
+当 `disableThirdPartyCookies: true` 时，ID 服务不会返回第三方 demdex.net Cookie（请参阅 [Cookie 和 Experience Cloud ID 服务](../../mcvid-introduction/mcvid-cookies.md)）。如果网站访客的浏览器中已经具有此 Cookie，则 ID 服务不会使用它来创建新的 Experience Cloud ID (MID) 或返回现有的 ID。作为替代，ID 服务会在第一方 Cookie 中新建一个随机 MID。启用 ID 服务后，您可以通过该服务来收集数据，并在不同的 Experience Cloud 解决方案之间共享该数据。
 
 **代码示例**
 
