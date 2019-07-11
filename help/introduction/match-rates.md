@@ -1,21 +1,21 @@
 ---
-description: 概述Experience Cloud ID服务中的ID同步流程和匹配率，包括Adobe Media Optimizer和ID服务。
+description: 关于 Experience Cloud ID 服务（包括 Adobe Media Optimizer 和 ID 服务）中 ID 同步流程和匹配率的概述。
 keywords: ID 服务
-seo-description: 概述Experience Cloud ID服务中的ID同步流程和匹配率，包括Adobe Media Optimizer和ID服务。
-seo-title: 了解ID同步和匹配率
-title: 了解ID同步和匹配率
-uuid: 31bd655f-2b9e-4f8d-9a1f-e81 a6110 eda8
-translation-type: tm+mt
+seo-description: 关于 Experience Cloud ID 服务（包括 Adobe Media Optimizer 和 ID 服务）中 ID 同步流程和匹配率的概述。
+seo-title: 了解 ID 同步和匹配率
+title: 了解 ID 同步和匹配率
+uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Understanding ID synchronization and match rates{#understanding-id-synchronization-and-match-rates}
+# 了解 ID 同步和匹配率 {#understanding-id-synchronization-and-match-rates}
 
-概述Experience Cloud ID服务中的ID同步流程和匹配率，包括Adobe Media Optimizer和ID服务。
+关于 Experience Cloud ID 服务（包括 Adobe Media Optimizer 和 ID 服务）中 ID 同步流程和匹配率的概述。
 
-## ID synchronization and match rates {#section-f652aae7234945e89d26dd833c5215fb}
+## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
 ID 同步将 ID 服务分配的 ID 与由我们客户分配给网站访客的 ID 进行匹配。例如，ID 服务分配了一个访客 ID 1234。另一个平台通过 ID 4321 认识此访客。ID 服务在同步过程中一起映射这些 ID。这些结果会不断增加我们客户对与其站点访客相关的新数据点的了解。如果 ID 服务无法匹配 ID，它会创建一个新 ID 并将该 ID 用于将来的同步。
 
@@ -25,21 +25,21 @@ ID 同步将 ID 服务分配的 ID 与由我们客户分配给网站访客的 ID
 
 **确保高匹配率**
 
-To generate high match rates, it is important to set up the ID service properly (see the [standard implementation guide](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). 适当的实施有助于确保高匹配率，因为这种实施会让 ID 服务来设置它正常工作及与已启用数据合作伙伴同步 ID 所需的 Cookie。但是，有些因素可能会影响 ID 服务收集、同步和匹配 ID 的效率，如 Internet 连接速度缓慢、收集数据来自移动设备或无线网络。这些客户端变量超出了 ID 服务或 [!DNL Adobe] 的控制。
+要生成高匹配率，请务必正确设置 ID 服务（请参阅[标准实施指南](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)）。适当的实施有助于确保高匹配率，因为这种实施会让 ID 服务来设置它正常工作及与已启用数据合作伙伴同步 ID 所需的 Cookie。但是，有些因素可能会影响 ID 服务收集、同步和匹配 ID 的效率，如 Internet 连接速度缓慢、收集数据来自移动设备或无线网络。这些客户端变量超出了 ID 服务或 [!DNL Adobe] 的控制。
 
-## ID synchronization process described {#section-a541a85cbbc74f5682824b1a2ee2a657}
+## 已描述的 ID 同步过程 {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
 ID 服务实时同步 ID。此过程在浏览器中进行，而不是通过服务器到服务器的数据传输进行。下表描述了 ID 同步过程中的步骤。
 
-**步骤1：加载页面**
+**步骤 1：加载页面**
 
-When a visitor comes to your site and loads a page, the `Visitor.getInstance` function makes a [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) or JSON-P call to the ID service. ID 服务将回复一个包含访客 [!DNL Experience Cloud] ID (MID) 的 Cookie。此 MID 是分配给每个网站访客的唯一 ID。另请参阅 [Cookie 和 Experience Cloud ID 服务](../introduction/cookies.md).
+当访客访问您的网站并加载页面时，`Visitor.getInstance` 函数会向 ID 服务发起 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 调用。ID 服务将回复一个包含访客 [!DNL Experience Cloud] ID (MID) 的 Cookie。此 MID 是分配给每个网站访客的唯一 ID。另请参阅 [Cookie 和 Experience Cloud ID 服务](../introduction/cookies.md)。
 
 **步骤 2：加载 iFrame**
 
-在页体加载时，ID 服务会加载一个名为 *`Destination Publishing iFrame`*. The [!DNL Destination Publishing iFrame] loads in a domain separate from the parent page. 此设计有助于确保页面性能并提高安全性，因为此 iFrame 可以：
+在页体加载时，ID 服务会加载一个名为 *`Destination Publishing iFrame`* 的 iFrame。[!DNL Destination Publishing iFrame] 在一个独立于父页面的域中加载。此设计有助于确保页面性能并提高安全性，因为此 iFrame 可以：
 
-* 相对于父页面异步加载。This means the parent page can load independently from the [!DNL Destination Publishing iFrame]. 加载 iFrame 并从 iFrame 之内加载 ID 同步像素不会影响父页面或用户体验。
+* 相对于父页面异步加载。这意味着父页面可以独立于 [!DNL Destination Publishing iFrame] 进行加载。加载 iFrame 并从 iFrame 之内加载 ID 同步像素不会影响父页面或用户体验。
 * 尽可能快地加载。如果它加载得过快，您可以在窗口加载事件之后加载 iFrame（不推荐）。请参阅[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4)，以了解详细信息。
 * 阻止 iFrame 中的代码获取父页面的访问权限或影响父页面。
 
@@ -59,28 +59,28 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 </varname>>
 ```
 
-另请参阅[用于入站数据传输的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
+另请参阅[入站数据传输的 ID 同步](https://marketing.adobe.com/resources/help/zh_CN/aam/c_id_sync_in.html)。
 
 **步骤 4：存储 ID**
 
-已同步的 ID 存储在[边缘和核心数据服务器](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)上。
+同步 ID 存储在[边缘和核心数据服务器](servershttps://marketing.adobe.com/resources/help/zh_CN/aam/c_compedge.html)中。
 
-## Sync services manages ID synchronization {#section-cd5784d7ad404a24aa28ad4816a0119a}
+## 同步服务管理 ID 同步 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-The term *`Sync Services`* refers to internal [!DNL Experience Cloud] technologies responsible for ID synchronization. 此服务在默认情况下处于启用状态。要禁用此服务，请将一个[可选变量](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)添加到 ID 服务 `Visitor.getInstance` 函数。Sync Services matches different [!DNL Experience Cloud] IDs such as:
+术语 *`Sync Services`* 指的是负责 ID 同步的内部 [!DNL Experience Cloud] 技术。此服务在默认情况下处于启用状态。要禁用此服务，请将一个[可选变量](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)添加到 ID 服务 `Visitor.getInstance` 函数。同步服务可匹配不同的 [!DNL Experience Cloud] ID，例如：
 
-* Third-party [!DNL Experience Cloud] cookie IDs to first-party [!DNL Experience Cloud] IDs.
+* 将第三方 [!DNL Experience Cloud] Cookie ID 匹配到第一方 [!DNL Experience Cloud] ID。
 
-* First-party [!DNL Experience Cloud] cookie IDs to [!DNL Adobe Media Optimizer] (AMO) IDs.
+* 将第一方 [!DNL Experience Cloud] Cookie ID 匹配到 [!DNL Adobe Media Optimizer] (AMO) ID。
 
 * 将第三方 [!DNL Experience Cloud] Cookie ID 匹配到第三方数据提供程序和目标平台 ID。这包括各类服务和平台，例如数据提供程序、需求和/或供应端平台、广告网络、交换等。
-* First-party [!DNL Experience Cloud] cookie IDs to cross-device partner IDs.
+* 将第一方 [!DNL Experience Cloud] Cookie ID 匹配到跨设备合作伙伴 ID。
 
-## ID synchronization with Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
+## 与 Adobe Media Optimizer 之间的 ID 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] 是基于iFrame的ID同步过程的例外。Because [!DNL Media Optimizer] is a trusted domain, ID syncs take place from the parent page rather than in the [!DNL Destination Publishing iFrame]. During synchronization, the ID service calls [!DNL Media Optimizer] at `cm.eversttech.net`, which is a legacy domain name used by [!DNL Media Optimizer] prior to its acquisition by Adobe. 将数据发送至 [!DNL Media Optimizer] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
+[!DNL Adobe Media Optimizer] 对基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Media Optimizer] 是一个受信任的域，因此 ID 同步会在父页面中进行，而不是在 [!DNL Destination Publishing iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Media Optimizer]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Media Optimizer]。将数据发送至 [!DNL Media Optimizer] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/cookies_media_optimizer.html)。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [了解 Demdex 域调用](https://marketing.adobe.com/resources/help/zh_CN/aam/demdex-calls.html)。
 
