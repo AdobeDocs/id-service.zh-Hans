@@ -1,11 +1,11 @@
 ---
-description: 返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+description: 可返回在实施 Experience Cloud ID 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 keywords: ID 服务
-seo-description: 返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+seo-description: 可返回在实施 Experience Cloud ID 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6bb8dfc-9fc1-4105-b377-d9 b4 d247 a0 f8
-translation-type: tm+mt
+uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-返回在实施Experience Cloud ID服务之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+可返回在实施 Experience Cloud ID 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 
 **语法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -33,7 +33,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. 例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. See [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
+>如果您是 [!DNL Analytics] 客户，那么还可以检查您的 [!DNL Analytics] ID，并将其发送给您的函数。例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。在这种情况下，您应该收集并返回 [!DNL Experience Cloud] 和 [!DNL Analytics] 访客 ID。请参阅 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
 
 **“aid”参数是一个旧版值**
 
@@ -43,14 +43,14 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 对于下面的情况，您会在查询字符串中看到 `aid` 参数：
 
-* [!DNL Experience Cloud] ID服务部署正确。
-* 访问站点的用户在其 [!DNL Analytics]s_vi Cookie[ 中存储了预先存在的 ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID。
+* [!DNL Experience Cloud] ID 服务已正确部署。
+* 访问网站的用户在 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/?f=cookies_analytics.html) 中存储了预先存在的 [!DNL Analytics] ID。
 
 **用例 2**
 
-You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
+当您的组织在完全实施 ID 服务之前使用[宽限期](../../reference/analytics-reference/grace-period.md)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/cookies_analytics.html)
 
