@@ -1,20 +1,20 @@
 ---
-description: 在网站上启用了选择加入后，使用验证方法测试服务是否按浏览器中的开发人员工具正常工作。
-seo-description: 在网站上启用了选择加入后，使用验证方法测试服务是否按浏览器中的开发人员工具正常工作。
-seo-title: 验证参与服务
-title: 验证参与服务
-uuid: 1743360a-d757-4e50-8697-0fa92 b302 cBC
-translation-type: tm+mt
+description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
+seo-description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
+seo-title: 验证选择加入服务
+title: 验证选择加入服务
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
 
 
-# 验证参与服务{#validating-opt-in-service}
+# 验证选择加入服务{#validating-opt-in-service}
 
-在网站上启用了选择加入后，使用验证方法测试服务是否按浏览器中的开发人员工具正常工作。
+在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
 
-## 使用案例1：启用选择加入 {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## 用例 1：启用选择加入 {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 在上面的示例中，我们在页面上安装了以下 Adobe JS 标签：ECID、AAM、Analytics 和 Target。
 
-**如何证明选择加入的工作方式符合预期：**
+**如何证明选择加入正常工作：**
 
 您不应看到向 Adobe 服务器发出的任何请求：
 
@@ -42,7 +42,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 >[!NOTE]
 >
->您可能会看到一 `http://dpm.demdex.net/optOutStatus`个调用，它是一个只读端点，用于检索访客的退出状态。此端点既不会创建任何第三方 Cookie，也不会从页面收集任何信息。
+>您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。此端点既不会创建任何第三方 Cookie，也不会从页面收集任何信息。
 
 您不应看到 Adobe 标签创建的任何 Cookie：(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
