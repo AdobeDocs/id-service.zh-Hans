@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
-uuid: 93e16220-b5 b3-4d81-9189-30031bc15129
-translation-type: tm+mt
+uuid: 93e16220-b5b3-4d81-9189-30031bc15129
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -31,5 +31,5 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingClouidID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客户，还可以检查并将 [!DNL Analytics] ID发送到您的函数。例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。在这种情况下，您应收集和返回 [!DNL Experience Cloud][!DNL Analytics] 访客ID。请参阅 [获取Analytics访问者ID](../../library/get-set/getanalyticsvisitorid.md)。
+>如果您是 [!DNL Analytics] 客户，那么还可以检查您的 [!DNL Analytics] ID，并将其发送给您的函数。例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。在这种情况下，您应该收集并返回 [!DNL Experience Cloud] 和 [!DNL Analytics] 访客 ID。请参阅[获取 Analytics 访客 ID](../../library/get-set/getanalyticsvisitorid.md)。
 
