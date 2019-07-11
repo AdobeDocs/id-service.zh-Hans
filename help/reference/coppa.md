@@ -1,11 +1,11 @@
 ---
-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
+description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 Experience Cloud ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。
 keywords: ID 服务
-seo-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
+seo-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 Experience Cloud ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。
 seo-title: Experience Cloud ID 服务中的 COPPA 支持
 title: Experience Cloud ID 服务中的 COPPA 支持
-uuid: 621b5ebbd-92e7-4635be85-8d7e36589fcb
-translation-type: tm+mt
+uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # Experience Cloud ID 服务中的 COPPA 支持 {#coppa-support-in-the-experience-cloud-id-service}
 
-儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注COPPA的客户可以将一个可选变量添加到其Experience Cloud ID服务代码中，以防止它在浏览器的第三方域中设置cookies。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 Experience Cloud ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。
 
 >[!NOTE]
 >
@@ -43,8 +43,8 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 当设置为 `true` 时，`disableThirdPartyCookies` 对象会阻止 DCS 返回第三方 demdex.net Cookie。如果网站访客的浏览器中已经具有此 Cookie，则 ID 服务不会使用它来创建新的 [!DNL Experience Cloud] ID 或返回现有的 ID。[!DNL Experience Cloud] ID 服务而是会在第一方 Cookie 中创建一个新的随机 ID。启用 ID 服务后，您可以通过该服务来收集数据，并在不同的 [!DNL Experience Cloud] 解决方案（包括 COPPA 允许的其他内部操作）之间共享该数据。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [Adobe 隐私权中心](http://www.adobe.com/privacy.html)
+>* [Adobe 隐私中心](http://www.adobe.com/cn/privacy.html)
 >* [什么是 COPPA？](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
