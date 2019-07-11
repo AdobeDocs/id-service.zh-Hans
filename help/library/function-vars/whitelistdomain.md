@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 通过这些配置，iFrame 中和父页面上实施的不同 ID 服务代码实例可彼此进行通信。这些配置旨在帮助解决以下 2 个特定用例中存在的问题：在您能够控制或无法控制父页面/域的情况下，将 ID 服务代码加载到您所控制的域的 iFrame 中。这些配置可在 VisitorAPI.js 代码版本 2.2 或更高版本中使用。
 seo-title: whitelistParentDomain 和 whitelistIframeDomains
 title: whitelistParentDomain 和 whitelistIframeDomains
-uuid: 6b66a4d0-fea2-4d98-963e-3c4 f4 ab1 efb6
-translation-type: tm+mt
+uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -38,11 +38,11 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain：“ <span class="varname"> 父页面的域名 </span>” </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: " <span class="varname"> Domain name of parent page </span>" </span> </p> </td> 
    <td colname="col2"> <p>接受作为字符串传入的单个域名。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> whitelistiframeDomains：[ <span class="varname"> “iFrame domain”，“iFrame domain”，“iFrame domain” </span>] </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "iFrame domain","iFrame domain","iFrame domain" </span>] </span> </p> </td> 
    <td colname="col2"> <p>接受作为数组传入的一个或多个 iFrame 域名。 </p> </td> 
   </tr> 
  </tbody> 
@@ -50,7 +50,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 代码示例 {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-您所配置 [!DNL ID service] 的代码可能类似于此示例。
+您配置的 [!DNL ID service] 代码可能与以下示例类似。
 
 ```js
 //Instantiate Visitor 
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->当您使用 [Video心率在iFrame中投放视频时，您也可能希望实施这些配置](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)。视频心率需要 ID 服务 ID (MID) 才能正常运行。
+>当您使用[视频心率](https://marketing.adobe.com/resources/help/zh_CN/sc/appmeasurement/hbvideo/)在 iFrame 中投放视频时，您可能还希望实施这些配置。视频心率需要 ID 服务 ID (MID) 才能正常运行。
 
 **用例 1：浏览器阻止第三方 Cookie，并且 ID 服务在 iFrame 和父页面中实施**
 
