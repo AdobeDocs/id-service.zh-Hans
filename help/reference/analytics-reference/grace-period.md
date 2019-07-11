@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 如果有多个 JavaScript 文件要将数据发送至同一报表包，或者，如果您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
 seo-title: ID 服务宽限期
 title: ID 服务宽限期
-uuid: 10a7db7d-de32-4379-914f-edfear929 ea32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -23,9 +23,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 >[!NOTE]
 >
->宽限期支持需要 [!DNL Experience Cloud] ID服务的1.3版本或更高版本。
+>要实现宽限期支持，必须安装 [!DNL Experience Cloud] ID 服务版本 1.3 或更高版本。
 
-## 我是否需要宽限期？ {#section-fd34c7ff697348a39f49258b7d39eb42}
+## 我需要设置宽限期吗？{#section-fd34c7ff697348a39f49258b7d39eb42}
 
 如果您有一个单独的 Analytics JavaScript 文件并且没有使用任何其他 AppMeasurement 库，则不需要设置宽限期。您可以在这个单独的 JavaScript 文件中执行更新，访问期间将使用 Marketing Cloud ID 来始终如一地识别新的访客。
 
@@ -33,4 +33,4 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 怎样才能启用宽限期？ {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-联系 [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
