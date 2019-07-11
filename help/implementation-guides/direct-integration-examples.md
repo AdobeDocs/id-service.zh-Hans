@@ -2,28 +2,28 @@
 description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。MID 是您的网站访客的唯一永久性 ID。
 keywords: ID 服务
 seo-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。MID 是您的网站访客的唯一永久性 ID。
-seo-title: 直接集成使用案例
-title: 直接集成使用案例
-uuid: de1eb8b-4783-4545-8a64-ab6 b9 ef93432
-translation-type: tm+mt
+seo-title: 直接集成用例
+title: 直接集成用例
+uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Direct integration use cases {#direct-integration-use-cases}
+# 直接集成用例 {#direct-integration-use-cases}
 
 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。MID 是您的网站访客的唯一永久性 ID。
 
 >[!TIP]
 >
->* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
->* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
+>* 在深入研究用例之前，请查看并了解[代码语法和变量](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
+>* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud ID 服务](../introduction/cookies.md)。
 >
 
 
 
-## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## 用例 1：我拥有 MID，但是想要传递我的访客 ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -65,7 +65,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  </tbody> 
 </table>
 
-## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
+## 用例 2：我没有 MID，需要生成一个 MID {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
