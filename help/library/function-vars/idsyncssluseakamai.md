@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 指定目标发布模板是否应当使用 Akamai 进行 HTTPS 连接。
 seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
-uuid: 501cc37-c3 ab-4454-bfcf-3e3 c3 e3 b5 ca3
-translation-type: tm+mt
+uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
