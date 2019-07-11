@@ -1,11 +1,11 @@
 ---
-description: getCustomerID返回Experience Cloud ID服务设置的任何客户ID。
+description: getCustomerIDs 可返回由 Experience Cloud ID 服务设置的所有客户 ID。
 keywords: ID 服务
-seo-description: getCustomerID返回Experience Cloud ID服务设置的任何客户ID。
+seo-description: getCustomerIDs 可返回由 Experience Cloud ID 服务设置的所有客户 ID。
 seo-title: getCustomerIDs
 title: getCustomerIDs
-uuid: eb6ff00-2a92-46b6-b9 a6-8e0 c6 e73 d1
-translation-type: tm+mt
+uuid: 4eb6ff00-2a92-46b6-b9a6-8e0c6e2e73d1
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerID返回Experience Cloud ID服务设置的任何客户ID。
+getCustomerIDs 可返回由 Experience Cloud ID 服务设置的所有客户 ID。
 
 <!--
 Is there anything else we can say about this??
