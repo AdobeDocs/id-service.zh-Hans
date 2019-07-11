@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 您可以使用此变量替代 AMCV Cookie 的默认生存时间间隔。
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd945db3-429a-4625-ac3 f-69ac259377 a3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 您可以使用此变量替代 AMCV Cookie 的默认生存时间间隔。
 
-默认情况下 [!DNL Experience Cloud] ，ID服务cookie在24个月后过期。时间间隔按秒进行设置。
+默认情况下，[!DNL Experience Cloud] ID 服务 Cookie 会在 24 个月后过期。时间间隔按秒进行设置。
 
-**语法：**` cookieLifetime: *`生命周期(以秒为单位)`*`
+**语法：**` cookieLifetime: *`存留期（以秒为单位）`*`
 
 **代码示例**
 
