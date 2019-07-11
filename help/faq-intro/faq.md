@@ -2,10 +2,10 @@
 description: 与使用 ID 服务相关的特性、功能和问题的常见问题解答。
 keywords: ID 服务
 seo-description: 与使用 ID 服务相关的特性、功能和问题的常见问题解答。
-seo-title: ID 服务常见问题解答
+seo-title: ID 服务 常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -29,15 +29,15 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 如果您将 VisitorAPI.js 作为本地文件托管在移动应用程序中，则可能会遇到问题。我们建议您在 Web 服务器上托管该文件。
 
-## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## 页面加载时间和滞后 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **ID 服务 VisitorAPI.js 库的位置对页面加载时间有何影响？**
 
-Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. 这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
+请将 VisitorAPI.js 库放置在页面顶部代码的 `<head>` 部分中。这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
 
-ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)进行的调用。ID 服务调用不会阻止在页面上加载其他元素。
+ID 服务调用是异步调用，是对 [demdex.net 域](https://marketing.adobe.com/resources/help/zh_CN/aam/demdex-calls.html)的唯一调用。ID 服务调用不会阻止在页面上加载其他元素。
 
-[!DNL Target] 对于客户，在页面中 `<body>` 放置ID服务代码可能会增加阻止 [!DNL Target] 通话的可能性。If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
+对于 [!DNL Target] 客户，将 ID 服务代码放置在页面的 `<body>` 中，可能会增加它阻止 [!DNL Target] 调用的可能性。如果必须将 ID 服务代码放置在页面主体中，则应将其放置在 `<body>` 开始标记的后面。
 
 **ID 服务是否会在每次页面加载时都进行服务器调用？**
 
@@ -67,25 +67,25 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 一般而言，与使用 JSONP 相比，使用 CORS 的资源请求更为有益。使用 JSONP 时，某些浏览器会在将请求排入队列后降低其优先级，而优先考虑页面上的其他同步和异步调用。CORS 则有助于确保这些请求在浏览器调用堆栈中得到优先处理。
 
-请参阅 [Experience Cloud ID 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+请参阅 [Experience Cloud ID 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服务是否支持 CORS？**
 
-能。See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+能。请参阅 [Experience Cloud ID 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **什么是 CORS？**
 
-*`Cross-Origin Resource Sharing`*或 CORS 是浏览器用来请求资源的一种方法。在支持 CORS 的浏览器中，ID 服务将始终使用 CORS 来请求资源。在不支持 CORS 的旧版浏览器中，ID 服务将使用 JSON-P 来请求资源。请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`*或 CORS 是浏览器用来请求资源的一种方法。在支持 CORS 的浏览器中，ID 服务将始终使用 CORS 来请求资源。在不支持 CORS 的旧版浏览器中，ID 服务将使用 JSON-P 来请求资源。请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **如果我的安全要求很严格，以至于我从未想要使用 JSONP，该怎么办？**
 
 如果您的安全要求很严格，请将 ID 服务 API 配置设置为 `useCORSOnly: true`。只有在您确信网站访客使用的是支持 CORS 的浏览器时，才应启用此模式。
 
-请参阅[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [UseCorsonly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
 
