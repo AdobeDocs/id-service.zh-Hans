@@ -1,11 +1,11 @@
 ---
 description: 'null'
-keywords: 操作顺序；ID服务
+keywords: 操作顺序;ID 服务
 seo-description: 'null'
 seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
-uuid: ba42c822-b677-4139-b1 ed-4d98 d3320 fd0
-translation-type: tm+mt
+uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -23,7 +23,7 @@ demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie �
 
 ## 数据收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-过去数据收集服务器在设置 Analytics Cookie 时，许多客户都配置了数据收集服务器 CNAME 记录作为[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免浏览器拒绝第三方 Cookie 的问题。这个过程是将您的数据收集服务器域配置成与您的网站域相匹配，从而将访客 ID Cookie 设置为第一方 Cookie。
+过去数据收集服务器在设置 Analytics Cookie 时，许多客户都配置了数据收集服务器 CNAME 记录作为[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/first_party_cookies/)的一部分，以避免浏览器拒绝第三方 Cookie 的问题。这个过程是将您的数据收集服务器域配置成与您的网站域相匹配，从而将访客 ID Cookie 设置为第一方 Cookie。
 
 由于访客 ID 服务使用 JavaScript 直接在当前网站的域上设置访客 Cookie，因此不再需要采用这种配置来设置第一方 Cookie。
 
@@ -35,16 +35,16 @@ demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie �
 
 由于可以在 Apple Safari 和其他一些浏览器的第三方上下文中使用第一方 Cookie，CNAME 允许您跟踪主域和其他一些使用相同跟踪服务器的域之间的客户。
 
-例如，您的主站点为 `mymainsite.com`。You configured the CNAME record to point to your secure data collection server: `smetrics.mymainsite.com`.
+例如，您的主站点为 `mymainsite.com`。您将 CNAME 记录配置为指向安全的数据收集服务器：`smetrics.mymainsite.com`。
 
-当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。This is allowed since the domain of the data collection server matches the domain of the website, and is what is known as using a cookie in a *first-party context*, or just a *first-party cookie*.
+当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。此操作是允许的，因为数据收集服务器的域与网站的域相匹配，也就是我们所说的在*第一方上下文*中使用 Cookie，或者说是使用*第一方 Cookie*。
 
-If you are also using this same data collection server on other sites (for example, `myothersiteA.com`, and `myothersiteB.com`), and a visitor later visits these sites, the cookie that was set during the visit to `mymainsite.com` is sent in the HTTPS request to the data collection server (remember that browsers send all cookies for a domain with all HTTPS requests to that domain, even if the domain doesn&#39;t match the domain of the current website). This is what is known as using a cookie in a *third-party context*, or just a *third-party cookie*, and it enables the same visitor ID to be used on these other domains. 请注意，浏览器在第三方上下文中处理cookies的方式与第一方cookie不同。
+如果您在其他站点（如 `myothersiteA.com` 和 `myothersiteB.com`）上也使用同样的数据收集服务器，那么当访客稍后访问这些站点时，访问 `mymainsite.com` 期间设置的 Cookie 将在 HTTPS 请求中发送给数据收集服务器（记住，浏览器会使用所有 HTTPS 请求将域的所有 Cookie 发送给该域，即使该域与当前网站的域不匹配也不例外）。这就是我们所说的在*第三方上下文*中使用 Cookie，或者说是使用*第三方 Cookie*，从而实现在其他域上使用同样的访客 ID。请注意，浏览器处理第三方上下文中 Cookie 的方式与处理第一方 Cookie 的方式有所不同。
 
-*注意：Safari会阻止第三方上下文中的所有cookies，无论其设置如何。*
+*注意：Safari 会阻止第三方上下文中的所有 Cookie，而不管它们是如何设置的。*
 
-因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。If there is no *common* domain to use for the data collection domain, there is no cross-domain benefit to maintaining a CNAME for the data collection domain. 如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
+因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。如果没有用于数据收集域的*通用*域，那么维护数据收集域的 CNAME 在跨域方面并没有任何优势。如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
 
 ## 通过 Experience Cloud ID 服务启用 CNAME 支持 {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-Data collection server CNAME support is enabled by setting the `visitor.marketingCloudServerSecure` variables.
+通过设置 `visitor.marketingCloudServerSecure` 变量，可以启用数据收集服务器 CNAME 支持。
