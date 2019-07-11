@@ -1,11 +1,11 @@
 ---
-description: 2018年Experience Cloud ID服务的发布、更新或更改。
+description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
 keywords: ID 服务
-seo-description: 2018年Experience Cloud ID服务的发布、更新或更改。
-seo-title: 2018 发行说明
-title: 2018 发行说明
-uuid: 771b5b11-a8 e3-464c-b65 e-b1513584 ace
-translation-type: tm+mt
+seo-description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
+seo-title: 2018 版发行说明
+title: 2018 版发行说明
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # 2018 版发行说明 {#release-notes}
 
-2018年Experience Cloud ID服务的发布、更新或更改。
+关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
 
 ## 版本 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -78,7 +78,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!NOTE]
 >
->建议您在最方便的时候从3.1.0版升级到最新版本。请参阅版本 3.1.2 描述。Adobe Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
+>建议您尽早从版本 3.1.0 升级到最新版本。请参阅版本 3.1.2 描述。Adobe Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
