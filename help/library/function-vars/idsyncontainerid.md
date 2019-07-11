@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 此属性可设置要用于 ID 同步的数据源容器 ID。
 seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e35dc48b-1a1-41e3-91c1-ef1 e9 d2 d8 b90
-translation-type: tm+mt
+uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -25,9 +25,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 语法和代码示例 {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**语法：**` idSyncContainerID: *`容器ID值`*`
+**语法：**` idSyncContainerID: *`容器 ID 值`*`
 
-**代码示例：**
+**代码示例:**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -37,11 +37,11 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## 什么是容器？我何时会使用它？ {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## 什么是容器？我何时会使用它？{#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **容器**
 
-容器是创建的对象 [!DNL Audience Manager]。虽然容器无法从外部访问，但是这些容器列出了满足以下条件的所有数据源：
+容器是由 [!DNL Audience Manager] 创建的对象。虽然容器无法从外部访问，但是这些容器列出了满足以下条件的所有数据源：
 
 * 可供您用于 ID 同步但尚未使用的数据源。
 * 正在用于 ID 同步的数据源。
