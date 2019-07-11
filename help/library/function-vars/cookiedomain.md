@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 对于 URL 最后两个部分中任一部分多于 2 个字符的多部分顶级域，此变量是必需的。
 seo-title: cookieDomain
 title: cookieDomain
-uuid: a57e5477-c07 b-4d 548-aea-8e8 b152 f1423 f1423
-translation-type: tm+mt
+uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,12 +15,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 对于 URL 最后两个部分中任一部分多于 2 个字符的多部分顶级域，此变量是必需的。
 
-**语法：**` cookieDomain: " *`URL`*"` ( `www` 不需要前缀。)
+**语法：**` cookieDomain: " *`URL`*"`（不需要 `www` 前缀。）
 
 **用例**
 
-* 必需: `www.example.com.uk`
-* 不需要： `www.example.co.uk`
+* 必需：`www.example.com.uk`
+* 非必需：`www.example.co.uk`
 
 **代码示例**
 
