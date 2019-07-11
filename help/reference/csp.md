@@ -4,8 +4,8 @@ keywords: ID 服务
 seo-description: 内容安全策略 (CSP) 是一项 HTTP 标头和安全功能，允许浏览器控制在网页上加载的资源类型。如果您使用 ID 服务，并且具有严格的 CSP 以使用白名单接受来自受信任域的资源，请参阅此部分内容。您需要将此处所列的 Adobe 域添加到您的 CSP 白名单中。
 seo-title: 内容安全策略和 Experience Cloud ID 服务
 title: 内容安全策略和 Experience Cloud ID 服务
-uuid: 7399edf3-01c1-4730-834e-e2 dd2 c5791 ff
-translation-type: tm+mt
+uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -53,14 +53,14 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>访客 ID 服务</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p><span class="codeph"> demdex. net</span> 域调用用于生成 <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud ID服务</a> 以及ID同步。另请参阅<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
+   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud ID 服务</a>及 ID 同步。另请参阅<a href="https://marketing.adobe.com/resources/help/zh_CN/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [内容安全策略参考](https://content-security-policy.com/)
->* [MDN：内容安全策略](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN：内容安全策略](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
+>* [维基百科：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
