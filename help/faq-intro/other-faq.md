@@ -2,16 +2,16 @@
 description: 与将其他 Experience Cloud 解决方案和 ID 服务结合使用相关的特性、功能和问题的常见问题解答。
 keywords: ID 服务
 seo-description: 与将其他 Experience Cloud 解决方案和 ID 服务结合使用相关的特性、功能和问题的常见问题解答。
-seo-title: 其他Experience Cloud解决方案的常见问题解答
-title: 其他Experience Cloud解决方案的常见问题解答
-uuid: 7d848663-6cbb-4d80-ab06-7b6 d2 dc20 e2 b
-translation-type: tm+mt
+seo-title: 其他 Experience Cloud 解决方案的常见问题解答
+title: 其他 Experience Cloud 解决方案的常见问题解答
+uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
+# 其他 Experience Cloud 解决方案的常见问题解答{#faqs-for-other-experience-cloud-solutions}
 
 与将其他 Experience Cloud 解决方案和 ID 服务结合使用相关的特性、功能和问题的常见问题解答。
 
