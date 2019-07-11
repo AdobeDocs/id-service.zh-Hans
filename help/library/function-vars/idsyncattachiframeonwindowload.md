@@ -1,11 +1,11 @@
 ---
-description: 可选的布尔标记，用于控制Experience Cloud ID服务如何加载ID同步iFrame。
+description: 可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
 keywords: ID 服务
-seo-description: 可选的布尔标记，用于控制Experience Cloud ID服务如何加载ID同步iFrame。
+seo-description: 可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-可选的布尔标记，用于控制Experience Cloud ID服务如何加载ID同步iFrame。
+可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
 
-**语法：**` `idSyncattachFrameOnWindowWindows= true| false“(默认为 `false`)。
+**语法：**` `idSyncAttachIframeOnWindowLoad= true|false``（默认值为 `false`。）
 
 当 `idSyncAttachIframeOnWindowLoad: true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务将尽快加载 ID 同步 iFrame，而不是在加载窗口时加载。
 
