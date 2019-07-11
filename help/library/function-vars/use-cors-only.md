@@ -1,11 +1,11 @@
 ---
-description: 可选的布尔标志，用于控制浏览器如何从Experience Cloud ID服务请求资源。
+description: 可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
 keywords: ID 服务
-seo-description: 可选的布尔标志，用于控制浏览器如何从Experience Cloud ID服务请求资源。
+seo-description: 可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607dc035-dffc-4f4 d-be51-08ef6 c0 a8 fad
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # useCORSOnly{#usecorsonly}
 
-可选的布尔标志，用于控制浏览器如何从Experience Cloud ID服务请求资源。
+可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
 
-**语法：**`useCORSOnly: true|false` (默认 `false`为。)
+**语法：**`useCORSOnly: true|false`（默认值为 `false`。）
 
 **概述**
 
@@ -23,7 +23,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` 如果您有严格的安全要求。只有在您确信所有访客都使用支持 CORS 的浏览器时，才应启用此模式。不支持 CORS 的浏览器不会影响用户体验。但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
+>如果您具有严格的安全要求，则 `Set useCORSOnly: true`。只有在您确信所有访客都使用支持 CORS 的浏览器时，才应启用此模式。不支持 CORS 的浏览器不会影响用户体验。但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
 
 **代码示例**
 
