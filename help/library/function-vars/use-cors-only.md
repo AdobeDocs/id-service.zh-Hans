@@ -1,19 +1,19 @@
 ---
-description: 可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
+description: 可选的布尔标记，用于控制浏览器如何从Experience Platform Identity Service请求资源。
 keywords: ID 服务
-seo-description: 可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
+seo-description: 可选的布尔标记，用于控制浏览器如何从Experience Platform Identity Service请求资源。
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-可控制浏览器如何从 Experience Cloud ID 服务请求资源的可选布尔标记。
+可选的布尔标记，用于控制浏览器如何从Experience Platform Identity Service请求资源。
 
 **语法：**`useCORSOnly: true|false`（默认值为 `false`。）
 
