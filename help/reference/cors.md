@@ -1,19 +1,19 @@
 ---
-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID 服务支持可启用这些客户端跨域资源请求的 CORS 标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 keywords: ID 服务
-seo-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID 服务支持可启用这些客户端跨域资源请求的 CORS 标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
-seo-title: Experience Cloud ID 服务中的 CORS 支持
-title: Experience Cloud ID 服务中的 CORS 支持
+seo-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+seo-title: Experience Platform Identity Service中的CORS支持
+title: Experience Platform Identity Service中的CORS支持
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID 服务中的 CORS 支持 {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud ID 服务支持可启用这些客户端跨域资源请求的 CORS 标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。体验平台标识服务支持支持这些客户端、跨源资源请求的CORS标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 
 ## 同域策略和 ID 服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -76,7 +76,7 @@ CORS 提供了一种安全、有效的方式，可跨越不同的域请求资源
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>安全性提升</b> </p> </td> 
-   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。这种方法比 JSONP 请求更加安全。它可以确保没有办法执行可能包含在 DCS 响应中的任何 JavaScript。CORS XMLHttpRequest 响应负载由 ID 服务 JavaScript 解析，而不是简单地在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer（版本 10 及更高版本）、Opera 和 Safari 都支持此属性。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。这种方法比 JSONP 请求更加安全。它可以确保没有办法执行可能包含在 DCS 响应中的任何 JavaScript。CORS XMLHttpRequest 响应负载由 ID 服务 JavaScript 解析，而不是简单地在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer（版本 10 及更高版本）、Opera 和 Safari 都支持此属性。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>性能改进</b> </p> </td> 
