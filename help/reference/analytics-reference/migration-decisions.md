@@ -1,19 +1,19 @@
 ---
-description: 在部署 Experience Cloud ID 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
+description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 keywords: ID 服务
-seo-description: 在部署 Experience Cloud ID 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
-seo-title: Experience Cloud ID 服务迁移决策点
-title: Experience Cloud ID 服务迁移决策点
+seo-description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+seo-title: 体验平台标识服务迁移决策点
+title: 体验平台标识服务迁移决策点
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID 服务迁移决策点
+# 体验平台标识服务迁移决策点
 
-在部署 Experience Cloud ID 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
+在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 
 此部分中的问题解答可帮助您确定是否应当执行一些额外的迁移步骤。
 
@@ -60,10 +60,10 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    <td colname="col1"> <p>单个域 </p> </td> 
    <td colname="col2"> <p>使用单个域意味着当您不再希望管理它时，可以从使用 CNAME 的数据收集中迁移出来然而，如果您的 CNAME 可以正常使用，则无需进行更改。 </p> <p>如果您确实要删除 CNAME，请遵循以下说明： </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">确保您的新跟踪服务器<a href="https://marketing.adobe.com/resources/help/zh_CN/whitepapers/rdc/" format="https" scope="external">符合 RDC</a>。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">确保您的新跟踪服务器<a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">符合 RDC</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">要迁移到 <span class="keyword">Experience Cloud</span> ID 服务，请提前几个月从 CNAME 移至 RDC 跟踪服务器。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>请不要</i>使用 <span class="codeph">*.2o7.net</span> 跟踪服务器。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">请联系<a href="https://helpx.adobe.com/cn/marketing-cloud/contact-support.html" format="https" scope="external">客户关怀</a>，以设置访客迁移。这有助于确保访客计数的一致性。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">请联系<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">客户关怀</a>，以设置访客迁移。这有助于确保访客计数的一致性。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
