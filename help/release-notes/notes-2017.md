@@ -1,21 +1,21 @@
 ---
-description: 关于 2017 版 Experience Cloud ID 服务的功能发布、更新或更改。
+description: 2017年Experience Platform Identity Service的发布、更新或更改。
 keywords: ID 服务
-seo-description: 关于 2017 版 Experience Cloud ID 服务的功能发布、更新或更改。
+seo-description: 2017年Experience Platform Identity Service的发布、更新或更改。
 seo-title: 2017 版发行说明
 title: 2017 版发行说明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2017 版发行说明 {#release-notes}
 
-关于 2017 版 Experience Cloud ID 服务的功能发布、更新或更改。
+2017年Experience Platform Identity Service的发布、更新或更改。
 
-[Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/)中也介绍了这些更改。有关旧版 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/?f=c_legacy_releases.html)或本页底部的链接。
+您也可以在 [Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)中找到这些更改。有关早期的 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或访问此页面底部的链接。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 修复了一个与 Chrome 相关的问题：在该浏览器中单击返回按钮时，会导致 ID 服务引发错误。
 * 现在，当事件调用响应中的区域 ID 发生更改时，ID 服务会重新触发 ID 同步。
-* 新添了[内容安全策略和 Experience Cloud ID 服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)文档，该文档说明了如何将对 ID 服务所使用 Adobe 域的调用添加到白名单。
+* 新添了[内容安全策略和Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，用于解释如何对ID服务使用的Adobe域进行白名单。
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -192,7 +192,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **新文档**
 
-[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/zh_CN/mcloud/dns-prefetch.html)
+[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
