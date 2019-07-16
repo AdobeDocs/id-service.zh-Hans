@@ -4,19 +4,19 @@ seo-description: 使用 Adobe Experience Platform Launch 简化为选择加入�
 seo-title: 使用 Launch 配置选择加入
 title: 使用 Launch 配置选择加入
 uuid: d35ed917-c4bd-4868-9026-1461f1a8f13e
-translation-type: ht
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
-# 使用 Launch 配置选择加入 {#configuring-opt-in-with-launch}
+# Configuring Opt-in with Experience Platform Launch {#configuring-opt-in-with-launch}
 
 使用 Adobe Experience Platform Launch 简化为选择加入启用 Experience Cloud 解决方案的过程。
 
-## 使用 Launch 配置选择加入方案 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
+## Configure an Opt-in scenario with Experience Platform Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-通过 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/)，可以轻松配置和设置涉及 Adobe 解决方案的选择加入方案。您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 使您能够使用Adobe解决方案轻松配置和设置方案。您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
 
 **配置 Experience Cloud ID 扩展**
 
