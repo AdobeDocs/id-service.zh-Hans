@@ -2,16 +2,16 @@
 description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 keywords: ID 服务
 seo-description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
-seo-title: 与 Experience Cloud ID 服务的直接集成
-title: 与 Experience Cloud ID 服务的直接集成
+seo-title: 与Experience Platform Identity Service直接集成
+title: 与Experience Platform Identity Service直接集成
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# 与 Experience Cloud ID 服务的直接集成 {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 
@@ -21,7 +21,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://marketing.adobe.com/resources/help/zh_CN/aam/dcs-keys.html)。
+在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅[支持的 DCS API 调用属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
 
 ID 服务支持 HTTP 和 HTTPS 调用。使用 HTTPS 可传递来自安全页面的数据。
 
@@ -58,15 +58,15 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的旧版域。请参阅<a href="https://marketing.adobe.com/resources/help/zh_CN/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
+   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的旧版域。请参阅<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅 <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服务</a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和体验平台标识服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅 <a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud ID 服务的要求</a>. </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅<a href="../reference/requirements.md" format="dita" scope="local"> Experience Platform Identity Service的要求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +88,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服务是一个地域分布广泛且负载均衡的系统。ID 用于标识处理调用的数据中心所处的区域。请参阅 <a href="https://marketing.adobe.com/resources/help/zh_CN/aam/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服务是一个地域分布广泛且负载均衡的系统。ID 用于标识处理调用的数据中心所处的区域。请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
