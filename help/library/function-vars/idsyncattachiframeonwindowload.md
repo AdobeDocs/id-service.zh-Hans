@@ -1,19 +1,19 @@
 ---
-description: 可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
+description: 可选的布尔标志，用于控制Experience Platform Identity Service如何加载ID同步iFrame。
 keywords: ID 服务
-seo-description: 可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
+seo-description: 可选的布尔标志，用于控制Experience Platform Identity Service如何加载ID同步iFrame。
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-可控制 Experience Cloud ID 服务如何加载 ID 同步 iFrame 的可选布尔标记。
+可选的布尔标志，用于控制Experience Platform Identity Service如何加载ID同步iFrame。
 
 **语法：**` `idSyncAttachIframeOnWindowLoad= true|false``（默认值为 `false`。）
 
