@@ -1,19 +1,19 @@
 ---
-description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
+description: 2018年Experience Platform Identity Service的发布、更新或更改。
 keywords: ID 服务
-seo-description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
+seo-description: 2018年Experience Platform Identity Service的发布、更新或更改。
 seo-title: 2018 版发行说明
 title: 2018 版发行说明
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2018 版发行说明 {#release-notes}
 
-关于 2018 版 Experience Cloud ID 服务的功能发布、更新或更改。
+2018年Experience Platform Identity Service的发布、更新或更改。
 
 ## 版本 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
  <tbody> 
   <tr> 
    <td colname="col1"> <p>独特访客计数不切实际地增加 </p> </td> 
-   <td colname="col2"> <p>在 Experience Cloud ID 服务 3.1.0 中，我们发现一个问题，即在实施此版本后，独特访客计数会不切实际地增加。此行为仅在使用最新版本的 ECID v3.1.0，并且用户在 Safari 浏览器的隐私设置中选择了“仅允许来自当前的网站”选项时出现。版本 3.1.2 修复了此问题。 </p> </td> 
+   <td colname="col2"> <p>随着Experience Platform Identity Service3.1.0的发布，我们发现了一个问题，该问题导致实施此版本时独特访客计数不现实。此行为仅在使用最新版本的 ECID v3.1.0，并且用户在 Safari 浏览器的隐私设置中选择了“仅允许来自当前的网站”选项时出现。版本 3.1.2 修复了此问题。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
