@@ -5,8 +5,8 @@ seo-description: 这些说明适用于具有 Target、Analytics 和 ID 服务混
 seo-title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -47,7 +47,7 @@ A4T（和其他客户）在需要执行以下操作时可以使用此版本的 I
 
 >[!NOTE]
 >
->此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一次调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
+>此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一个调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
 
 您的负载请求应当类似于以下代码示例。在此代码示例中，`visitor.setCustomerIDs` 函数是可选的。请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)以了解更多信息。
 
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-另请参阅 [DTM 的 Experience Cloud ID 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+另请参阅[体验平台标识服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **在没有使用 DTM 的情况下获取服务器状态**
 
@@ -199,5 +199,5 @@ Response.send("
 
 >[!MORE_LIKE_THIS]
 >
->* [节点包管理器中的服务器端 ID 服务包](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [来自节点包管理器的服务器端 ID 服务包](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
