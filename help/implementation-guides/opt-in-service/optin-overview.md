@@ -4,8 +4,8 @@ seo-description: 选择加入服务允许您为访客设置协议，以确定在
 seo-title: 选择加入服务
 title: 选择加入服务
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: ht
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
-通过将 [Adobe Launch](https://docs.adobelaunch.com/) 与[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)结合使用，可轻松实施和配置选择加入服务。您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). 您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
 
 请参阅[设置选择加入服务](../../implementation-guides/opt-in-service/getting-started.md)以开始操作。
 
