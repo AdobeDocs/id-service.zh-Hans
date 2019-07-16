@@ -4,8 +4,8 @@ seo-description: 选择加入 API 库和配置设置参考。
 seo-title: 选择加入参考
 title: 选择加入参考
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: ht
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -27,7 +27,7 @@ adobe.OptInCategories = {
 
 ## 选择加入配置参数 {#section-d66018342baf401389f248bb381becbf}
 
-本节讨论如何使用 API 来配置选择加入。大部分配置和实施都可以使用 Launch 扩展来完成。
+本节讨论如何使用 API 来配置选择加入。大部分配置和实施都可以使用Experience Platform Launch扩展完成。
 
 选择加入配置在访客 JavaScript `getInstance()` 函数中提供，该函数可实例化全局 `adobe` 对象。下面列出了与选择加入服务相关的访客 JS 配置。
 
