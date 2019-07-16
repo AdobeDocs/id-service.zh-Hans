@@ -5,8 +5,8 @@ seo-description: 与将其他 Experience Cloud 解决方案和 ID 服务结合�
 seo-title: 其他 Experience Cloud 解决方案的常见问题解答
 title: 其他 Experience Cloud 解决方案的常见问题解答
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ## Analytics 和 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**在实施 Experience Cloud ID 服务后，用户的访问历史记录是否将会从[!DNL Adobe Analytics]导出到[!DNL Audience Manager]？**
+**在我实施Experience Platform Identity Service后，用户的访问历史记录是否会从[!DNL Adobe Analytics]中[!DNL Audience Manager]导出？**
 
 下面提供了两种选项：
 
