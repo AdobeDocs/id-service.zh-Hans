@@ -1,27 +1,27 @@
 ---
-description: 关于其他 Experience Cloud ID 服务特性和功能的信息。
+description: 有关其他Experience Platform Identity Service特点和功能的信息。
 keywords: ID 服务
-seo-description: 关于其他 Experience Cloud ID 服务特性和功能的信息。
+seo-description: 有关其他Experience Platform Identity Service特点和功能的信息。
 seo-title: 参考
 title: 参考
 uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 参考 {#reference}
 
-关于其他 Experience Cloud ID 服务特性和功能的信息。
+有关其他Experience Platform Identity Service特点和功能的信息。
 
 * [Analytics 引用概述](analytics-reference/analytics-reference.md)
-* [内容安全策略和 Experience Cloud ID 服务](csp.md)
-* [Experience Cloud ID 服务中的 COPPA 支持](coppa.md)
-* [Experience Cloud ID 服务中的 CORS 支持](cors.md)
+* [内容安全策略和体验平台标识服务](csp.md)
+* [Experience Platform Identity Service中的COPPA支持](coppa.md)
+* [Experience Platform Identity Service中的CORS支持](cors.md)
 * [客户 ID 和身份验证状态](authenticated-state.md)
 * [从 AMCV Cookie 或 ID 服务获取区域 ID 和用户 ID](regions.md)
-* [Experience Cloud ID 服务的要求](requirements.md)
-* [视频心率和 Experience Cloud ID 服务](heartbeat.md)
-* [Data Workbench 和 Experience Cloud ID 服务](dwb.md)
+* [Experience Platform Identity Service的要求](requirements.md)
+* [Video Heartbat和Experience Platform Identity Service](heartbeat.md)
+* [Data Workbench和Experience Platform Identity Service](dwb.md)
 
