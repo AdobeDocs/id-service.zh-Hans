@@ -1,19 +1,19 @@
 ---
-description: 关于 Experience Cloud ID 服务的功能发布、更新或更改。
+description: 功能发布、更新或对Experience Platform Identity Service的更改。
 keywords: ID 服务
-seo-description: 关于 Experience Cloud ID 服务的功能发布、更新或更改。
+seo-description: 功能发布、更新或对Experience Platform Identity Service的更改。
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2019 发行说明 {#release-notes}
 
-关于 Experience Cloud ID 服务的功能发布、更新或更改。
+功能发布、更新或对Experience Platform Identity Service的更改。
 
 ## 2019 发行说明 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -21,7 +21,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。使用 [Experience Platform Launch](https://docs.adobelaunch.com/)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
