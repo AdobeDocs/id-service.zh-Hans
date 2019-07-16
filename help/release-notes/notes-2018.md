@@ -5,8 +5,8 @@ seo-description: 关于 2018 版 Experience Cloud ID 服务的功能发布、更
 seo-title: 2018 版发行说明
 title: 2018 版发行说明
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -78,7 +78,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!NOTE]
 >
->建议您尽早从版本 3.1.0 升级到最新版本。请参阅版本 3.1.2 描述。Adobe Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
+>建议您尽早从版本 3.1.0 升级到最新版本。请参阅版本 3.1.2 描述。最新捆绑包可在Adobe Experience Platform Launch、DTM和AppMeasurement中使用。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
