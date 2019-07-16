@@ -2,16 +2,16 @@
 description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
 keywords: PlayStation;ID 服务
 seo-description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
-seo-title: Cookie 和 Experience Cloud ID 服务
-title: Cookie 和 Experience Cloud ID 服务
+seo-title: Cookie和体验平台标识服务
+title: Cookie和体验平台标识服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Cookie 和 Experience Cloud ID 服务{#cookies-and-the-experience-cloud-id-service}
+# Cookies and the Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
 
@@ -114,7 +114,7 @@ AMCV Cookie 是在浏览器内的第一方域中设置的。这意味着它是�
  </tbody> 
 </table>
 
-有关相关信息，请参阅[了解 Demdex 域调用](https://marketing.adobe.com/resources/help/zh_CN/aam/demdex-calls.html)。
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ ID 服务会在页面加载时开始创建 MID。在此过程中，由 `visitorA
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
-请参阅 [Experience Cloud ID 服务如何请求和设置 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+See [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
