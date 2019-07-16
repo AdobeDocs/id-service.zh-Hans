@@ -5,8 +5,8 @@ seo-description: 这是一个异步 API，在默认情况下可返回 Analytics 
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>请参阅 <a href="https://marketing.adobe.com/resources/help/zh_CN/aam/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
+   <td colname="col2"> <p>数据收集区域 ID。这是特定 ID 服务数据中心地理位置的数字标识符。 </p> <p>请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅 <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服务 </a>. </p> </td> 
+   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie和体验平台标识服务 </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
