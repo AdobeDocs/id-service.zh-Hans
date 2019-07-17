@@ -6,7 +6,7 @@ seo-title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -153,7 +153,7 @@ Response.send("
 
 **DTM 设置**
 
-将它们作为名称-值对添加到 ID 服务实例的 **[!UICONTROL 常规 &gt; 设置]部分中：**
+将它们作为名称-值对添加到 ID 服务实例的&#x200B;**[!UICONTROL 常规 &gt; 设置]部分中：**
 
 * **[!UICONTROL 名称：]** serverState
 * **[!UICONTROL 值：]**%serverState%
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-另请参阅[体验平台标识服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+另请参阅[适用于DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)的Experience Cloud Identity Service设置。
 
 **在没有使用 DTM 的情况下获取服务器状态**
 
