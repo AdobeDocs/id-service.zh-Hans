@@ -1,19 +1,19 @@
 ---
-description: 概述Experience Platform Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
+description: 概述Experience Cloud Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
 keywords: ID 服务
-seo-description: 概述Experience Platform Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
+seo-description: 概述Experience Cloud Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
 seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 了解 ID 同步和匹配率 {#understanding-id-synchronization-and-match-rates}
 
-概述Experience Platform Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
+概述Experience Cloud Identity Service中ID同步流程和匹配率的概述，包括Adobe Media Optimizer和ID服务。
 
 ## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ ID 服务实时同步 ID。此过程在浏览器中进行，而不是通过服�
 
 **步骤 1：加载页面**
 
-当访客访问您的网站并加载页面时，`Visitor.getInstance` 函数会向 ID 服务发起 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 调用。ID 服务将回复一个包含访客 [!DNL Experience Cloud] ID (MID) 的 Cookie。此 MID 是分配给每个网站访客的唯一 ID。See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+当访客访问您的网站并加载页面时，`Visitor.getInstance` 函数会向 ID 服务发起 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 调用。ID 服务将回复一个包含访客 [!DNL Experience Cloud] ID (MID) 的 Cookie。此 MID 是分配给每个网站访客的唯一 ID。See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **步骤 2：加载 iFrame**
 
@@ -43,7 +43,7 @@ ID 服务实时同步 ID。此过程在浏览器中进行，而不是通过服�
 * 尽可能快地加载。如果它加载得过快，您可以在窗口加载事件之后加载 iFrame（不推荐）。请参阅[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4)，以了解详细信息。
 * 阻止 iFrame 中的代码获取父页面的访问权限或影响父页面。
 
-另请参阅[体验平台标识服务请求和集ID的方法….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+另请参阅[Experience Cloud标识服务请求和集ID的方法….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **步骤 3：触发 ID 同步**
 
