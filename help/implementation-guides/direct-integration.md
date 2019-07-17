@@ -2,22 +2,22 @@
 description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 keywords: ID 服务
 seo-description: 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
-seo-title: 与Experience Platform Identity Service直接集成
-title: 与Experience Platform Identity Service直接集成
+seo-title: 与Experience Cloud Identity Service直接集成
+title: 与Experience Cloud Identity Service直接集成
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 通过此实施，客户可以在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。这包括游戏控制台、智能电视或其他启用 Internet 的设备。有关语法、代码示例和定义，请参阅此部分内容。
 
 ## 语法{#section-a4754afec5ad40b6be00d6f1011d68bb}
 
-无法使用 VisitorAPI.js 或 SDK 代码库的设备可以直接调用 ID 服务所使用的数据收集服务器 (DCS)。为此，您需要调用 `dpm.demdex.net`，并将请求设置为如下所示的格式。*斜体*表示变量占位符。
+无法使用 VisitorAPI.js 或 SDK 代码库的设备可以直接调用 ID 服务所使用的数据收集服务器 (DCS)。为此，您需要调用 `dpm.demdex.net`，并将请求设置为如下所示的格式。*斜体*&#x200B;表示变量占位符。
 
 ![](assets/directSyntax.png)
 
@@ -62,11 +62,11 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和体验平台标识服务</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅<a href="../reference/requirements.md" format="dita" scope="local"> Experience Platform Identity Service的要求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。要获取有关如何查找此 ID 的帮助，请参阅<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity Service的要求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
