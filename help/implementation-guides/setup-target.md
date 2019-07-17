@@ -1,19 +1,19 @@
 ---
-description: 这些说明针对希望使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+description: 这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 keywords: ID 服务
-seo-description: 这些说明针对希望使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
-seo-title: 为Target实施Experience Platform Identity Service
-title: 为Target实施Experience Platform Identity Service
+seo-description: 这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+seo-title: 为Target实施Experience Cloud Identity Service
+title: 为Target实施Experience Cloud Identity Service
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
+# Implement the Experience Cloud Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
 
-这些说明针对希望使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的目标客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 >[!IMPORTANT]
 >
->*请不要*更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
+>*请不要*&#x200B;更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
 
 ## 步骤 4：将访客 API 代码添加到页面中 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
@@ -77,7 +77,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 * 在托管页面的域中检查 AMCV Cookie。
 * 验证 `mboxMCGVID` 是否显示在您的 [!DNL Target] 请求中，以及它是否包含 [!DNL Experience Cloud] ID (MID)。
 
-See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
+See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **部署**
 
