@@ -1,19 +1,19 @@
 ---
-description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+description: 在部署Experience Cloud标识服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 keywords: ID 服务
-seo-description: 在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
-seo-title: 体验平台标识服务迁移决策点
-title: 体验平台标识服务迁移决策点
+seo-description: 在部署Experience Cloud标识服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+seo-title: Experience Cloud标识服务迁移决策点
+title: Experience Cloud标识服务迁移决策点
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# 体验平台标识服务迁移决策点
+# Experience Cloud标识服务迁移决策点
 
-在部署Experience Platform Identity Service之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
+在部署Experience Cloud标识服务之前，您应该了解如果您使用不同的方法或JavaScript文件收集数据，则此服务会影响多个域上的访客跟踪和潜在问题。
 
 此部分中的问题解答可帮助您确定是否应当执行一些额外的迁移步骤。
 
@@ -42,7 +42,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 如果您具备数据收集 CNAME，那么您是否拥有多个域？
 
-如果有多个域要将数据发送至*同一报表包*，那么我们建议选取使用 CNAME 的数据收集。这可以帮助您跨域跟踪访客。如果您是在一个域上收集数据，那么使用数据收集 CNAME 并没有任何优势。
+如果有多个域要将数据发送至&#x200B;*同一报表包*，那么我们建议选取使用 CNAME 的数据收集。这可以帮助您跨域跟踪访客。如果您是在一个域上收集数据，那么使用数据收集 CNAME 并没有任何优势。
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -71,7 +71,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 您是否拥有多个 Analytics JavaScript 文件，或者您是否跟踪 Flash 应用程序或视频？
 
-如果您在网站上拥有多个 Analytics JavaScript 文件、Flash 应用程序或视频，且它们要将数据发送至*同一报表包*，则您应当配置一个宽限期，以便在您使用 [!DNL Experience Cloud] ID 服务时，访客可以继续由 Analytics ID 识别。
+如果您在网站上拥有多个 Analytics JavaScript 文件、Flash 应用程序或视频，且它们要将数据发送至&#x200B;*同一报表包*，则您应当配置一个宽限期，以便在您使用 [!DNL Experience Cloud] ID 服务时，访客可以继续由 Analytics ID 识别。
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
