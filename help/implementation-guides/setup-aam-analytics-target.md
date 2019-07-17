@@ -1,25 +1,25 @@
 ---
-description: 这些说明适用于需要使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+description: 这些说明适用于需要使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 keywords: ID 服务
-seo-description: 这些说明适用于需要使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
-seo-title: 为Analytics、Audience Manager和Target实施Experience Platform Identity Service
-title: 为Analytics、Audience Manager和Target实施Experience Platform Identity Service
+seo-description: 这些说明适用于需要使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+seo-title: 为Analytics、Audience Manager和Target实施Experience Cloud Identity Service
+title: 为Analytics、Audience Manager和Target实施Experience Cloud Identity Service
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implement the Experience Cloud Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-这些说明适用于需要使用Experience Platform Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+这些说明适用于需要使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics、Audience Manager和Target客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 
 >[!IMPORTANT]
 >
 >在开始之前，先阅读 ID 服务[要求](../reference/requirements.md)，并记下特定于此实施的以下要求：&gt;
 >* 使用 s_code 的客户无法完成此过程。升级到 mbox 代码 v61 以完成此流程。
->* 请在生产环境中实施此代码*之前*，首先在开发环境中对它进行配置和测试。
+>* 请在生产环境中实施此代码&#x200B;*之前*，首先在开发环境中对它进行配置和测试。
 >
 
 
@@ -40,8 +40,8 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
 
-1. 转到 **[!UICONTROL 管理员 &gt; 代码管理器]**。
-1. 在“代码管理器”中，单击 **[!UICONTROL JavaScript（新版）]** 或 **[!UICONTROL JavaScript（旧版）]**。此下载文件对代码库进行了压缩。
+1. 转到&#x200B;**[!UICONTROL 管理员 &gt; 代码管理器]**。
+1. 在“代码管理器”中，单击 **[!UICONTROL JavaScript（新版）]**&#x200B;或 **[!UICONTROL JavaScript（旧版）]**。此下载文件对代码库进行了压缩。
 
 1. 解压缩代码文件，并打开 `VisitorAPI.js` 文件。
 
@@ -102,7 +102,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 
 >[!IMPORTANT]
 >
->*请不要*更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
+>*请不要*&#x200B;更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
 
 ## 步骤 5：将您的跟踪服务器添加到 Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
@@ -178,7 +178,7 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 在您的实施可以捕获 MID 而不是读取 s_vi Cookie 时，就可以中止宽限期。
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **点击流数据集成**
 
@@ -203,7 +203,7 @@ See also, [Cookies and the Experience Platform Identity Service](../introduction
 * [托管页面的域中的 AMCV Cookie](../introduction/cookies.md)。
 * 使用 [!DNL Adobe] 调试器或首选调试工具检查 [!DNL Experience Cloud] ID (MID)。
 
-For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **Analytics**
 
