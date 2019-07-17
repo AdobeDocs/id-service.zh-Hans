@@ -2,24 +2,24 @@
 description: 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 keywords: ID 服务
 seo-description: 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
-seo-title: Experience Platform Identity Service请求的请求和设置ID
-title: Experience Platform Identity Service请求的请求和设置ID
+seo-title: Experience Cloud Identity Service请求的请求和设置ID
+title: Experience Cloud Identity Service请求的请求和设置ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Platform Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 概述 ID 请求和响应过程。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 
 >[!NOTE]
 >
->If you&#39;re not familiar with how the Experience Platform Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
-**提示：** 另请参阅我们的[关于跨域跟踪的 ID 服务视频](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)。
+**提示：**&#x200B;另请参阅我们的[关于跨域跟踪的 ID 服务视频](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
 ## 请求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
