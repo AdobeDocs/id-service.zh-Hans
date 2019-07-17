@@ -1,19 +1,19 @@
 ---
-description: Experience Platform Identity Service替换旧版Analytics访客ID方法。
+description: Experience Cloud Identity Service替换旧版Analytics访客ID方法。
 keywords: ID 服务
-seo-description: Experience Platform Identity Service替换旧版Analytics访客ID方法。
+seo-description: Experience Cloud Identity Service替换旧版Analytics访客ID方法。
 seo-title: 设置 Analytics 和 Experience Cloud ID
 title: 设置 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 设置 Analytics 和 Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Experience Platform Identity Service替换旧版Analytics访客ID方法。
+Experience Cloud Identity Service替换旧版Analytics访客ID方法。
 
 实施 ID 服务后，此代码可在 AppMeasurement 之前执行。ID 服务可检索 Experience Cloud ID 和 Analytics ID，以便在加载 AppMeasurement 时，将这些值准备就绪。
 
