@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo（跨域跟踪）
 title: appendVisitorIDsTo（跨域跟踪）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
 
 * 在该网站访客导航到其他域时，重新为其生成唯一 ID。
 * 在您的组织所拥有的不同域中跟踪访客。
