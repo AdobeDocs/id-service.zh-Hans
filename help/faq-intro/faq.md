@@ -6,7 +6,7 @@ seo-title: ID 服务常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **ID 服务为何不进行调用来检索 Experience Cloud ID？**
 
-此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅[内容安全策略和体验平台标识服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅[内容安全策略和Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
 **VisitorAPI.js 文件存储**
 
@@ -67,17 +67,17 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 一般而言，与使用 JSONP 相比，使用 CORS 的资源请求更为有益。使用 JSONP 时，某些浏览器会在将请求排入队列后降低其优先级，而优先考虑页面上的其他同步和异步调用。CORS 则有助于确保这些请求在浏览器调用堆栈中得到优先处理。
 
-请参阅[体验平台标识服务中的CORS支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+请参阅[Experience Cloud Identity Service中的CORS支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服务是否支持 CORS？**
 
-能。See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+能。See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **什么是 CORS？**
 
-*`Cross-Origin Resource Sharing`*或 CORS 是浏览器用来请求资源的一种方法。在支持 CORS 的浏览器中，ID 服务将始终使用 CORS 来请求资源。在不支持 CORS 的旧版浏览器中，ID 服务将使用 JSON-P 来请求资源。请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+*`Cross-Origin Resource Sharing`*&#x200B;或 CORS 是浏览器用来请求资源的一种方法。在支持 CORS 的浏览器中，ID 服务将始终使用 CORS 来请求资源。在不支持 CORS 的旧版浏览器中，ID 服务将使用 JSON-P 来请求资源。请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **如果我的安全要求很严格，以至于我从未想要使用 JSONP，该怎么办？**
 
