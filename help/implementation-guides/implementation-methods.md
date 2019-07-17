@@ -1,19 +1,19 @@
 ---
-description: 体验平台标识服务标准和非标准实施的说明和代码范例。
+description: Experience Cloud Identity Service标准和非标准实施的说明和代码范例。
 keywords: ID 服务
-seo-description: 体验平台标识服务标准和非标准实施的说明和代码范例。
+seo-description: Experience Cloud Identity Service标准和非标准实施的说明和代码范例。
 seo-title: 实施指南
 title: 实施指南
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 实施方法
 
-体验平台标识服务标准和非标准实施的说明和代码范例。
+Experience Cloud Identity Service标准和非标准实施的说明和代码范例。
 
 >[!IMPORTANT]
 >
