@@ -1,19 +1,19 @@
 ---
-description: 2016年Experience Platform Identity Service的发布、更新或更改。
+description: 2016年Experience Cloud Identity Service的发布、更新或更改。
 keywords: ID 服务
-seo-description: 2016年Experience Platform Identity Service的发布、更新或更改。
+seo-description: 2016年Experience Cloud Identity Service的发布、更新或更改。
 seo-title: 2016 版发行说明
 title: 2016 版发行说明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2016 发行说明 {#release-notes}
 
-2016年Experience Platform Identity Service的发布、更新或更改。
+2016年Experience Cloud Identity Service的发布、更新或更改。
 
 您也可以在 [Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)中找到这些更改。关于早期公告，请参阅[以前的发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)。[!DNL Experience Cloud]
 
@@ -24,7 +24,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 >[!IMPORTANT]
 >
 >* 版本 1.10 需要使用 [!DNL AppMeasurement] 1.8.0。
->* 使用Experience Platform Identity Service Library2.0.0+，默认情况下，Adobe Media Optimizer将开始同步ID。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
+>* 使用Experience Cloud Identity Service Library2.0.0+，默认情况下，Adobe Media Optimizer将开始同步ID。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
 
 
 **修复和改进功能**
@@ -69,7 +69,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **修复和改进功能**
 
-* 添加了 `idSyncAttachIframeOnWindowLoad` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。当 `idSyncAttachIframeOnWindowLoad= true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务会尽快加载 iFrame。此标记*取代*了已弃用的 `idSyncAttachIframeASAP`。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
+* 添加了 `idSyncAttachIframeOnWindowLoad` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。当 `idSyncAttachIframeOnWindowLoad= true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务会尽快加载 iFrame。此标记&#x200B;*取代*&#x200B;了已弃用的 `idSyncAttachIframeASAP`。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
 
 * 添加了支持跨域跟踪 [!DNL Experience Cloud] ID 以及本机应用程序和混合应用程序向 Web 转换的功能。请参阅[附加访客 ID 辅助函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
@@ -77,7 +77,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **新文档和修订的文档**
 
-Revised: [Requirements for the Experience Platform Identity Service](../reference/requirements.md)
+Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
 
 **已知问题**
 
@@ -101,9 +101,9 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
  <tbody> 
   <tr> 
    <td colname="col1"> <p>跨域资源共享 (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS 允许浏览器从某个域而非当前域请求资源。Experience Platform Identity Service支持CORS标准以启用客户端、跨源资源请求。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
+   <td colname="col2"> <p>CORS 允许浏览器从某个域而非当前域请求资源。Experience Cloud Identity Service支持CORS标准以启用客户端、跨源资源请求。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Platform Identity Service中的CORS支持 </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud Identity Service中的CORS支持 </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,13 +123,13 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **新建**
 
-* [实施Experience Platform Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [为Analytics、Audience Manager和Target实施Experience Platform Identity Service](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [实施Experience Cloud Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [为Analytics、Audience Manager和Target实施Experience Cloud Identity Service](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **已修订**
 
-* [Experience Platform Identity Service的要求](../reference/requirements.md)
-* [测试和验证体验平台标识服务](../implementation-guides/test-verify.md)
+* [Experience Cloud Identity Service的要求](../reference/requirements.md)
+* [测试和验证Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -165,8 +165,8 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 **文档更新**
 
 * [Android 和 iOS 的 SDK 要求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench和Experience Platform Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [测试和验证体验平台标识服务](../implementation-guides/test-verify.md)
+* [Data Workbench和Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [测试和验证Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **文档更新**
 
-[为Target实施Experience Platform Identity Service](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[为Target实施Experience Cloud Identity Service](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **文档更新**
 
-* [实施Experience Platform Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) ：描述如何设置ID服务的新过程 [!DNL Analytics]。
+* [实施Experience Cloud Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) ：描述如何设置ID服务的新过程 [!DNL Analytics]。
 
-* [体验平台标识服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) ：修改文本以实现清晰性。使用单个域意味着当您不再希望管理它时，可以从使用 CNAME 的数据收集中迁移出来然而，如果您的 CNAME 可以正常使用，则无需进行更改。
+* [Experience Cloud标识服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) ：修改文本以实现清晰性。使用单个域意味着当您不再希望管理它时，可以从使用 CNAME 的数据收集中迁移出来然而，如果您的 CNAME 可以正常使用，则无需进行更改。
 
 ## 版本 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
