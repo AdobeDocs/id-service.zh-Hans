@@ -1,18 +1,18 @@
 ---
-description: Adobe Experience Platform Launch是用于设置、部署Experience Platform Identity Service和与其他Experience Cloud解决方案集成的主要工具。
-seo-description: Adobe Experience Platform Launch是用于设置、部署Experience Platform Identity Service和与其他Experience Cloud解决方案集成的主要工具。
+description: Adobe Experience Platform Launch是用于设置、部署Experience Cloud Identity Service并与其他Experience Cloud解决方案集成的主要工具。
+seo-description: Adobe Experience Platform Launch是用于设置、部署Experience Cloud Identity Service并与其他Experience Cloud解决方案集成的主要工具。
 seo-title: 使用 Launch 实施
 title: 使用 Launch 实施
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 使用 Launch 实施{#implement-with-launch}
 
-Adobe Experience Platform Launch是用于设置、部署Experience Platform Identity Service和与其他Experience Cloud解决方案集成的主要工具。
+Adobe Experience Platform Launch是用于设置、部署Experience Cloud Identity Service并与其他Experience Cloud解决方案集成的主要工具。
 
 ## 关于 Launch {#section-611711602854464ea351a4af80a8dafe}
 
