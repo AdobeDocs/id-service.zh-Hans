@@ -6,7 +6,7 @@ seo-title: 2015 版发行说明
 title: 2015 版发行说明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 2015 年 11 月
 
-儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). 适用于版本 1.5.3 或更高版本。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). 适用于版本 1.5.3 或更高版本。
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -35,17 +35,17 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 * 修复了在没有可同步或可激发的数据时造成 ID 服务无法请求 iframe 的错误。(AAM-20164)
 * 修复了造成 ID 服务无法正确设置多部分顶级域名 Cookie 的错误。例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
 
-   此问题仅影响*全部*满足以下条件的少数客户：
+   此问题仅影响&#x200B;*全部*&#x200B;满足以下条件的少数客户：
 
    * 使用 ID 服务。
-   * 启用了[宽限期](../reference/analytics-reference/grace-period.md)*或者*正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
+   * 启用了[宽限期](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
 
    * 拥有使用多部分顶级域名的页面。
 
 此版本中的文档修订包括：
 
 * [API 方法和代码库](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：重新组织了内容和文本。在大部分情况下，每个方法都具有它自己的页面。
-* [Experience Platform Identity Service的要求](../reference/requirements.md)：修改内容和重新组织的文本。
+* [Experience Cloud Identity Service的要求](../reference/requirements.md)：修改内容和重新组织的文本。
 
 ## 版本 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
