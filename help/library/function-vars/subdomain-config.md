@@ -1,19 +1,19 @@
 ---
-description: 使用这些配置将体验平台标识服务调用使用的默认域名更改为您自己的子域名。
+description: 使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
 keywords: ID 服务
-seo-description: 使用这些配置将体验平台标识服务调用使用的默认域名更改为您自己的子域名。
+seo-description: 使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
 seo-title: audienceManagerServer 和 audienceManagerServerSecure
 title: audienceManagerServer 和 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer 和 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-使用这些配置将体验平台标识服务调用使用的默认域名更改为您自己的子域名。
+使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
 
 **语法：**
 
@@ -30,7 +30,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 * 您的公司记录的 [!DNL Audience Manager] 子域名。可向您的顾问确认或获取此域名。
 * 与您的 [!DNL Organization ID] 关联的子域名。
-* 包含相同子域名的*两个*配置参数。
+* 包含相同子域名的&#x200B;*两个*&#x200B;配置参数。
 
 **代码示例**
 
