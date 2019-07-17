@@ -1,19 +1,19 @@
 ---
-description: 功能发布、更新或对Experience Platform Identity Service的更改。
+description: 功能发布、更新或对Experience Cloud Identity Service的更改。
 keywords: ID 服务
-seo-description: 功能发布、更新或对Experience Platform Identity Service的更改。
+seo-description: 功能发布、更新或对Experience Cloud Identity Service的更改。
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2019 发行说明 {#release-notes}
 
-功能发布、更新或对Experience Platform Identity Service的更改。
+功能发布、更新或对Experience Cloud Identity Service的更改。
 
 ## 2019 发行说明 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
