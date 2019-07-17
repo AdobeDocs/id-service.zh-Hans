@@ -6,7 +6,7 @@ seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -37,14 +37,14 @@ demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie �
 
 例如，您的主站点为 `mymainsite.com`。您将 CNAME 记录配置为指向安全的数据收集服务器：`smetrics.mymainsite.com`。
 
-当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。此操作是允许的，因为数据收集服务器的域与网站的域相匹配，也就是我们所说的在*第一方上下文*中使用 Cookie，或者说是使用*第一方 Cookie*。
+当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。此操作是允许的，因为数据收集服务器的域与网站的域相匹配，也就是我们所说的在&#x200B;*第一方上下文*&#x200B;中使用 Cookie，或者说是使用&#x200B;*第一方 Cookie*。
 
-如果您在其他站点（如 `myothersiteA.com` 和 `myothersiteB.com`）上也使用同样的数据收集服务器，那么当访客稍后访问这些站点时，访问 `mymainsite.com` 期间设置的 Cookie 将在 HTTPS 请求中发送给数据收集服务器（记住，浏览器会使用所有 HTTPS 请求将域的所有 Cookie 发送给该域，即使该域与当前网站的域不匹配也不例外）。这就是我们所说的在*第三方上下文*中使用 Cookie，或者说是使用*第三方 Cookie*，从而实现在其他域上使用同样的访客 ID。请注意，浏览器处理第三方上下文中 Cookie 的方式与处理第一方 Cookie 的方式有所不同。
+如果您在其他站点（如 `myothersiteA.com` 和 `myothersiteB.com`）上也使用同样的数据收集服务器，那么当访客稍后访问这些站点时，访问 `mymainsite.com` 期间设置的 Cookie 将在 HTTPS 请求中发送给数据收集服务器（记住，浏览器会使用所有 HTTPS 请求将域的所有 Cookie 发送给该域，即使该域与当前网站的域不匹配也不例外）。这就是我们所说的在&#x200B;*第三方上下文*&#x200B;中使用 Cookie，或者说是使用&#x200B;*第三方 Cookie*，从而实现在其他域上使用同样的访客 ID。请注意，浏览器处理第三方上下文中 Cookie 的方式与处理第一方 Cookie 的方式有所不同。
 
 *注意：Safari 会阻止第三方上下文中的所有 Cookie，而不管它们是如何设置的。*
 
-因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。如果没有用于数据收集域的*通用*域，那么维护数据收集域的 CNAME 在跨域方面并没有任何优势。如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
+因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。如果没有用于数据收集域的&#x200B;*通用*&#x200B;域，那么维护数据收集域的 CNAME 在跨域方面并没有任何优势。如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
 
-## Enable CNAME support with the Experience Platform Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Enable CNAME support with the Experience Cloud Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
 通过设置 `visitor.marketingCloudServerSecure` 变量，可以启用数据收集服务器 CNAME 支持。
