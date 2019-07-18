@@ -4,7 +4,7 @@ seo-description: 选择加入 API 库和配置设置参考。
 seo-title: 选择加入参考
 title: 选择加入参考
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -27,7 +27,7 @@ adobe.OptInCategories = {
 
 ## 选择加入配置参数 {#section-d66018342baf401389f248bb381becbf}
 
-本节讨论如何使用 API 来配置选择加入。大部分配置和实施都可以使用Experience Platform Launch扩展完成。
+本节讨论如何使用 API 来配置选择加入。大部分配置和实施都可以使用 Experience Platform Launch 扩展来完成。
 
 选择加入配置在访客 JavaScript `getInstance()` 函数中提供，该函数可实例化全局 `adobe` 对象。下面列出了与选择加入服务相关的访客 JS 配置。
 
@@ -77,7 +77,7 @@ adobe.OptInCategories = {
 
 ## 选择加入工作流程参数 {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-选择加入支持可以通过多个请求周期收集权限的工作流程，例如一次提供一个首选项。如果使用以下函数并将 * 设置为 *true`shouldWaitForComplete`，您的解决方案便能够收集一个解决方案或总类别子集的同意情况，然后收集下一个解决方案或类别子集的同意情况。从第一次调用开始，`adobe.optIn.status` 属性将处于 pending 状态，直到在工作流程结束时调用 `adobe.optIn.complete()` 为止。调用后，状态将设置为 *Complete*。
+选择加入支持可以通过多个请求周期收集权限的工作流程，例如一次提供一个首选项。如果使用以下函数并将 *设置为* true`shouldWaitForComplete`，您的解决方案便能够收集一个解决方案或总类别子集的同意情况，然后收集下一个解决方案或类别子集的同意情况。从第一次调用开始，`adobe.optIn.status` 属性将处于 pending 状态，直到在工作流程结束时调用 `adobe.optIn.complete()` 为止。调用后，状态将设置为 *Complete*。
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -105,7 +105,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-异步检索权限列表。权限授予/拒绝流程完成后，即使用权限列表调用回调。若将 * 设置为值 *true`shouldAutoSubscribe`，则可为将来的任何选择加入更改注册回调。以下是 `adobe.OptIn` 的属性：
+异步检索权限列表。权限授予/拒绝流程完成后，即使用权限列表调用回调。若将 *设置为值* true`shouldAutoSubscribe`，则可为将来的任何选择加入更改注册回调。以下是 `adobe.OptIn` 的属性：
 
 **`permissions`**
 
@@ -159,7 +159,7 @@ True 或 false，取决于状态值。当工作流程式的同意已经开始但
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-用于检索权限列表的异步 API。权限授予/拒绝流程完成后，即使用权限列表调用回调。**`shouldAutoSubscribe`：** 一个助手实用程序，将自动订阅所有未来事件的回调。这意味着每次在选择加入中出现批准或拒绝触发器时，都会调用回调。这样您就可以随时更新，而无需自己订阅事件
+用于检索权限列表的异步 API。权限授予/拒绝流程完成后，即使用权限列表调用回调。**`shouldAutoSubscribe`：**&#x200B;一个助手实用程序，将自动订阅所有未来事件的回调。这意味着每次在选择加入中出现批准或拒绝触发器时，都会调用回调。这样您就可以随时更新，而无需自己订阅事件
 
 **示例**
 
