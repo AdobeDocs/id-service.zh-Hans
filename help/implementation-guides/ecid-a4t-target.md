@@ -5,7 +5,7 @@ seo-description: 这些说明适用于具有 Target、Analytics 和 ID 服务混
 seo-title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -36,7 +36,7 @@ A4T（和其他客户）在需要执行以下操作时可以使用此版本的 I
 
 ## 步骤 1：请求页面 {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-服务器端活动开始于访客发起加载网页的 HTTP 请求之时。在此步骤期间，您的服务器会收到此请求并检查 [AMCV Cookie](../introduction/cookies.md). AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
+服务器端活动开始于访客发起加载网页的 HTTP 请求之时。在此步骤期间，您的服务器会收到此请求并检查 [AMCV Cookie](../introduction/cookies.md)。AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
 
 ## 步骤 2：生成 ID 服务负载 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
@@ -47,7 +47,7 @@ A4T（和其他客户）在需要执行以下操作时可以使用此版本的 I
 
 >[!NOTE]
 >
->此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一个调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
+>此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一次调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
 
 您的负载请求应当类似于以下代码示例。在此代码示例中，`visitor.setCustomerIDs` 函数是可选的。请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)以了解更多信息。
 
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-另请参阅[适用于DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)的Experience Cloud Identity Service设置。
+另请参阅[适用于 DTM 的 Experience Cloud Identity 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **在没有使用 DTM 的情况下获取服务器状态**
 
@@ -199,5 +199,5 @@ Response.send("
 
 >[!MORE_LIKE_THIS]
 >
->* [来自节点包管理器的服务器端 ID 服务包](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [节点包管理器中的服务器端 ID 服务包](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
