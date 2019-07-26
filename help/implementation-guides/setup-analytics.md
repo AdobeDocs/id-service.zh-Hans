@@ -1,19 +1,19 @@
 ---
-description: 这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 keywords: ID 服务
-seo-description: 这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
-seo-title: 实施Experience Cloud Identity Service for Analytics
-title: 实施Experience Cloud Identity Service for Analytics
+seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
+title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# 实施适用于 Analytics 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics}
 
-这些说明适用于希望使用Experience Cloud Identity Service且不使用Dynamic Tag Management(DTM)的Analytics客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
 
 >[!IMPORTANT]
 >
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 步骤 3：将您的 Experience Cloud 组织 ID 添加到 Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-在 `Visitor.getInstance` 函数中，将 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 替换为您的 [!DNL Experience Cloud] 组织 ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅[管理 - 核心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您编辑的函数看起来类似于下面的示例。
+在 `Visitor.getInstance` 函数中，将 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 替换为您的 [!DNL Experience Cloud] 组织 ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅[管理 - 核心服务](https://marketing.adobe.com/resources/help/zh_CN/mcloud/admin_getting_started.html)。您编辑的函数看起来类似于下面的示例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)和[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
 
 ## 步骤 5：更新您的 AppMeasurement.js 或 s_code.js 文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步骤 7：（可选）配置宽限期 {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 宽限期可长达 180 天。您可以在必要时延长宽限期。
+如果这些用例中的任何一个用例适用于您的情况，请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)以设置临时[宽限期](../reference/analytics-reference/grace-period.md)。宽限期可长达 180 天。您可以在必要时延长宽限期。
 
 **部分实施**
 
@@ -178,13 +178,13 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 在您的实施可以捕获 MID 而不是读取 s_vi Cookie 时，就可以中止宽限期。
 
-请参阅[Cookie和Experience Cloud Identity Service](../introduction/cookies.md)。
+请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
 
 如果您将来自点击流数据馈送和使用 `visid_high` 及 `visid_low` 列的流程中的数据发送至内部系统，则需要设置宽限期。
 
 当您的数据获取流程可以使用 `post_visid_high` 和 `post_visid_low` 列之后，就可以中止宽限期。
 
-请参阅[点击流数据列引用](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)。
+请参阅[点击流数据列引用](https://marketing.adobe.com/resources/help/zh_CN/sc/clickstream/datafeeds_reference.html)。
 
 **点击流数据获取**
 
@@ -197,9 +197,9 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 要测试 ID 服务的实施状况，请检查以下环节：
 
 * 在托管页面的域中查找 [AMCV Cookie](../introduction/cookies.md)。
-* 使用 [!DNL Analytics]Adobe 调试器工具[在 ](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) 图像请求中查找 MID 值。
+* 使用 [Adobe 调试器工具](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/debugger.html)查找 [!DNL Analytics] 图像请求中的 MID 值。
 
-See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+另请参阅[测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)。
 
 **部署代码**
 
