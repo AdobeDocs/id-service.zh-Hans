@@ -1,11 +1,11 @@
 ---
-description: 2016年Experience Cloud Identity Service的发布、更新或更改。
+description: 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 keywords: ID 服务
-seo-description: 2016年Experience Cloud Identity Service的发布、更新或更改。
+seo-description: 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 seo-title: 2016 版发行说明
 title: 2016 版发行说明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 2016 发行说明 {#release-notes}
 
-2016年Experience Cloud Identity Service的发布、更新或更改。
+关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-您也可以在 [Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)中找到这些更改。关于早期公告，请参阅[以前的发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)。[!DNL Experience Cloud]
+[Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/)中也介绍了这些更改。请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/?f=c_legacy_releases.html)以查看较早的 [!DNL Experience Cloud] 公告。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -24,7 +24,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 >[!IMPORTANT]
 >
 >* 版本 1.10 需要使用 [!DNL AppMeasurement] 1.8.0。
->* 使用Experience Cloud Identity Service Library2.0.0+，默认情况下，Adobe Media Optimizer将开始同步ID。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
+>* 使用 Experience Cloud Identity 服务库 2.0.0 及更高版本时，Adobe Media Optimizer 会默认开始进行 ID 同步。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
 
 
 **修复和改进功能**
@@ -32,7 +32,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 * 添加了有关如何在服务器端环境中实施 ID 服务的说明。
 * 添加了 `Visitor.overwriteCrossDomainMCIDAndAID` 布尔函数，此函数允许覆盖您所拥有的其他域中的 Experience Cloud ID 和 Analytics ID。请参阅[覆盖访客 ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
 
-* 添加了 `TS = UTC` =  时间戳 作为 `visitor.appendVisitorIDsTo` 函数的属性。ID 服务使用该时间戳按 5 分钟的时间间隔来确定是否应在重定向 URL 中使用 ID。请参阅 [附加访客 ID 函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* 添加了 `TS = UTC` =  时间戳 作为 `visitor.appendVisitorIDsTo` 函数的属性。ID 服务使用该时间戳按 5 分钟的时间间隔来确定是否应在重定向 URL 中使用 ID。请参阅[附加访客 ID 函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
 * 添加了返回区域 ID 的新函数 `Visitor.getLocationHint,`。请参阅[获取区域 ID（位置提示）](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
 
@@ -77,7 +77,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **新文档和修订的文档**
 
-Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
+修订的文档：[Experience Cloud Identity 服务的要求](../reference/requirements.md)
 
 **已知问题**
 
@@ -101,9 +101,9 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
  <tbody> 
   <tr> 
    <td colname="col1"> <p>跨域资源共享 (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS 允许浏览器从某个域而非当前域请求资源。Experience Cloud Identity Service支持CORS标准以启用客户端、跨源资源请求。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
+   <td colname="col2"> <p>CORS 允许浏览器从某个域而非当前域请求资源。Experience Cloud Identity 服务支持可启用客户端跨域资源请求的 CORS 标准。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud Identity Service中的CORS支持 </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud Identity 服务中的 CORS 支持</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,13 +123,13 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 
 **新建**
 
-* [实施Experience Cloud Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [为Analytics、Audience Manager和Target实施Experience Cloud Identity Service](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [实施适用于 Analytics 的 Experience Cloud Identity 服务](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **已修订**
 
-* [Experience Cloud Identity Service的要求](../reference/requirements.md)
-* [测试和验证Experience Cloud Identity Service](../implementation-guides/test-verify.md)
+* [Experience Cloud Identity 服务的要求](../reference/requirements.md)
+* [测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -145,7 +145,7 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
  <tbody> 
   <tr> 
    <td colname="col1"> <p>对 <span class="codeph">iframe.sandbox</span> 属性的更改 </p> </td> 
-   <td colname="col2"> <p>iFrame 现在已设置为 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>仅允许使用这 2 个令牌可帮助提高安全性，还可为 ID 服务提供 ID 同步所需的基本功能。 </p> <p>Internet Explorer 版本 9 或更早版本中不支持 sandbox 属性。有关详细信息，请参阅此 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文档</a>中的“属性”部分。 </p> </td> 
+   <td colname="col2"> <p>iFrame 现在已设置为 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>仅允许使用这 2 个令牌可帮助提高安全性，还可为 ID 服务提供 ID 同步所需的基本功能。 </p> <p>Internet Explorer 版本 9 或更早版本中不支持 sandbox 属性。有关详细信息，请参阅此 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文档</a>中的“属性”部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID (MID) 编码 </p> </td> 
@@ -165,8 +165,8 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 **文档更新**
 
 * [Android 和 iOS 的 SDK 要求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench和Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [测试和验证Experience Cloud Identity Service](../implementation-guides/test-verify.md)
+* [Data Workbench 和 Experience Cloud Identity 服务](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 
 **文档更新**
 
-[为Target实施Experience Cloud Identity Service](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[实施适用于 Target 的 Experience Cloud Identity 服务](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 
 **文档更新**
 
-* [实施Experience Cloud Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) ：描述如何设置ID服务的新过程 [!DNL Analytics]。
+* [实施适用于 Analytics 的 Experience Cloud Identity 服务](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：新增了描述如何使用 [!DNL Analytics] 设置 ID 服务的操作步骤。
 
-* [Experience Cloud标识服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) ：修改文本以实现清晰性。使用单个域意味着当您不再希望管理它时，可以从使用 CNAME 的数据收集中迁移出来然而，如果您的 CNAME 可以正常使用，则无需进行更改。
+* [Experienc Cloud Identity 服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：为清晰起见，修订了相应文本。使用单个域意味着当您不再希望管理它时，可以从使用 CNAME 的数据收集中迁移出来然而，如果您的 CNAME 可以正常使用，则无需进行更改。
 
 ## 版本 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
