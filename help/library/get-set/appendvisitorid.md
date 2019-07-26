@@ -5,7 +5,7 @@ seo-description: 通过此函数，在浏览器阻止第三方 Cookie 时，您�
 seo-title: appendVisitorIDsTo（跨域跟踪）
 title: appendVisitorIDsTo（跨域跟踪）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
+当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud Identity 服务](../../introduction/cookies.md)）。第一方 Cookie 包含 MID，即该访客的唯一 ID。第三方 Cookie 包含 ID 服务用来生成 MID 的其他 ID。如果浏览器阻止第三方 Cookie，ID 服务将无法执行以下操作：
 
 * 在该网站访客导航到其他域时，重新为其生成唯一 ID。
 * 在您的组织所拥有的不同域中跟踪访客。
@@ -72,14 +72,14 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中设置 appendVisitorIDTo 函数 </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://helpx.adobe.com/cn/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中设置 appendVisitorIDTo 函数 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/mc_methods.html" format="https" scope="external"> Android ID 服务方法 </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID 服务方法 </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/zh_CN/mobile/android/mc_methods.html" format="https" scope="external"> Android ID 服务方法 </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/zh_CN/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID 服务方法 </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
