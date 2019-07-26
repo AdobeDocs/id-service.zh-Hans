@@ -1,19 +1,19 @@
 ---
-description: 'Experience Cloud Identity Service提供通用的永久ID，可用于在Experience Cloud中的所有解决方案中识别访客。 '
+description: 'Experience Cloud Identity 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。 '
 keywords: ID 服务
-seo-description: Adobe Experience Cloud Identity Service(ID服务)提供一个通用的永久ID，可在Experience Cloud中的所有解决方案中识别访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
-seo-title: Experience Cloud Identity Service
-title: Experience Cloud Identity Service
+seo-description: Adobe Experience Cloud Identity 服务（ID 服务）提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
+seo-title: Experience Cloud Identity 服务
+title: Experience Cloud Identity 服务
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
+# Adobe Experience Cloud Identity 服务{#experience-cloud-id-service}
 
-Adobe Experience Cloud Identity Service(ID服务)提供一个通用的永久ID，可在Experience Cloud中的所有解决方案中识别访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
+Adobe Experience Cloud Identity 服务（ID 服务）提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -21,9 +21,9 @@ Adobe Experience Cloud Identity Service(ID服务)提供一个通用的永久ID�
    <td colname="col1"> <p> <b>入门指南</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> 概述 </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity Service的要求 </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity 服务的要求 </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> 使用 DTM 实现标准实施 </a> </li> 
-     </ul> </p> <p><b>Experience Cloud ID Javascript 库</b> </p> <p>JavaScript for the Experience Cloud Identity Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>新增项目或特色项目</b> </p> <p> 
+     </ul> </p> <p><b>Experience Cloud ID Javascript 库</b> </p> <p>用于 Experience Cloud Identity 服务的 JavaScript 位于：<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>新增项目或特色项目</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> 选择加入服务</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
@@ -35,7 +35,7 @@ Adobe Experience Cloud Identity Service(ID服务)提供一个通用的永久ID�
      <p> <b>公告：</b> </p> 
      <p> <p>重要信息：ID 服务已弃用 Internet Explorer 6、7、8，并将在未来版本中停止对这些浏览器版本的支持。 </p> </p> 
     </draft-comment> </td> 
-   <td colname="col2"> <p> <b>发行说明</b> </p> <p><b>版本 4.0</b> 2019 年 2 月 12 日发行版包括<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">选择加入服务</a>，用于确定当用户访问网站时您是否可以在其设备或浏览器上放置 Cookie。 </p> <p>2018 年 1 月 18 日版本包含 3.0.0 JavaScript 更新以及 API 方法更新。请参阅 <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local">disableIdSyncs</a> 和 <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local">disableThirdPartyCookies</a>。 </p> 
+   <td colname="col2"> <p> <b>发行说明</b> </p> <p><b>版本 4.0</b> 2019 年 2 月 12 日发行版包括<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">选择加入服务</a>，用于确定当用户访问网站时您是否可以在其设备或浏览器上放置 Cookie。 </p> <p>2018 年 1 月 18 日版本包含 3.0.0 JavaScript 更新以及 API 方法更新。请参阅 <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local">disableIdSyncs</a> 和 <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local">disableThirdPartyCookies</a>。 </p> 
     <draft-comment> 
      <p>2017 年 10 月发行版未对 ID 服务进行任何代码更改或更新。v2.5 中的 ID 服务代码保持不变。 </p> 
     </draft-comment> 
@@ -43,14 +43,14 @@ Adobe Experience Cloud Identity Service(ID服务)提供一个通用的永久ID�
      <p> 2017 年 9 月发行版将 ID 服务代码增加到 v2.5。 </p> 
     </draft-comment> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
-      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 有关新增功能和修复，请参阅最新的 <a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
+      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 有关新增功能和修复，请参阅最新的 <a href="https://marketing.adobe.com/resources/help/zh_CN/whatsnew/" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
       <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">有关早期版本的信息，请参阅<a href="https://marketing-stage.adobe.com/resources/help/en_US/whatsnew/c_legacy_releases.html" format="html" scope="external">之前的发行说明</a>。 </li> 
      </ul> </p> <p> <b>Experience Cloud 资源</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隐私权中心</a> </li> 
-      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="http://www.adobe.com/marketing-cloud.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
-      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培训和教程</a> </li> 
-      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https"> 产品文档主页</a> </li> 
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/cn/privacy.html" format="http" scope="external"> Adobe 隐私权中心</a> </li> 
+      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="http://www.adobe.com/cn/marketing-cloud.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
+      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/cn/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培训和教程</a> </li> 
+      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/zh_CN/home/index.html" scope="external" format="https"> 产品文档主页</a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
