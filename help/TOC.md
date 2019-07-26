@@ -2,15 +2,15 @@
 cloud: platform-cloud
 product: ID 服务
 audience: 最终用户
-user-guide-title: Experience Cloud标识服务帮助
+user-guide-title: Experience Cloud Identity 服务帮助
 user-guide-url: /content/help/cn/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Experience Cloud Identity 服务帮助{#using}
 
 + [ID 服务帮助](home.md)
 + 概述 {#intro}
@@ -22,7 +22,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 + 实施指南 {#implementation-guides}
    + [实施指南](implementation-guides/implementation-guides.md)
    + [实施方法](implementation-guides/implementation-methods.md)
-   + [利用Experience Platform Launch实现](implementation-guides/ecid-implement-with-launch.md)
+   + [使用 Experience Platform Launch 实施](implementation-guides/ecid-implement-with-launch.md)
    + [使用 DTM 实施](implementation-guides/standard.md)
    + [适用于 Analytics 的实施](implementation-guides/setup-analytics.md)
    + [适用于 Target 的实施](implementation-guides/setup-target.md)
@@ -36,7 +36,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
       + [选择加入服务概述](implementation-guides/opt-in-service/optin-overview.md)
       + [设置选择加入服务](implementation-guides/opt-in-service/getting-started.md)
       + [验证选择加入服务](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [使用Experience Platform Launch配置选择加入](implementation-guides/opt-in-service/launch.md)
+      + [使用 Experience Platform Launch 配置选择加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 配置选择加入](implementation-guides/opt-in-service/optin-dtm.md)
       + [选择加入用例](implementation-guides/opt-in-service/use-cases.md)
       + [选择加入参考](implementation-guides/opt-in-service/api.md)
