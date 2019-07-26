@@ -2,16 +2,16 @@
 description: 包含服务器示例配置和必需的迁移步骤。
 keywords: ID 服务
 seo-description: 包含服务器示例配置和必需的迁移步骤。
-seo-title: Experience Cloud身份服务迁移情景
-title: Experience Cloud身份服务迁移情景
+seo-title: Experience Cloud Identity 服务迁移方案
+title: Experience Cloud Identity 服务迁移方案
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identity 服务迁移方案{#experience-cloud-id-service-migration-scenarios}
 
 包含服务器示例配置和必需的迁移步骤。
 
