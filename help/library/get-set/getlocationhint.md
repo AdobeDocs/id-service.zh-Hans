@@ -1,11 +1,11 @@
 ---
-description: 返回Experience Cloud Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 keywords: ID 服务
-seo-description: 返回Experience Cloud Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+seo-description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,11 +13,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getLocationHint{#getlocationhint}
 
-返回Experience Cloud Identity Service区域ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
+可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是特定 ID 服务数据中心地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，需要区域 ID。
 
 **语法：**` var *`变量名称`* = visitor.getLocationHint()`
 
-有关区域 ID 及对应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)。
+有关区域 ID 和相应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)。
 
 **代码示例**
 
