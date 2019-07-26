@@ -1,11 +1,11 @@
 ---
-description: 使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
+description: 通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
 keywords: ID 服务
-seo-description: 使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
+seo-description: 通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
 seo-title: audienceManagerServer 和 audienceManagerServerSecure
 title: audienceManagerServer 和 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # audienceManagerServer 和 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-使用这些配置将对Experience Cloud Identity Service调用使用的默认域名更改为您自己的子域名。
+通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
 
 **语法：**
 
