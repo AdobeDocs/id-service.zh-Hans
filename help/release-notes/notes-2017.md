@@ -1,11 +1,11 @@
 ---
-description: 2017年Experience Cloud Identity Service的发布、更新或更改。
+description: 关于 2017 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 keywords: ID 服务
-seo-description: 2017年Experience Cloud Identity Service的发布、更新或更改。
+seo-description: 关于 2017 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 seo-title: 2017 版发行说明
 title: 2017 版发行说明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 2017 版发行说明 {#release-notes}
 
-2017年Experience Cloud Identity Service的发布、更新或更改。
+关于 2017 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-您也可以在 [Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)中找到这些更改。有关早期的 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或访问此页面底部的链接。
+[Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/)中也介绍了这些更改。有关旧版 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/?f=c_legacy_releases.html)或本页底部的链接。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 <span class="codeph">visitor.FIELDS</span> 枚举来控制要返回哪些 ID。请参阅 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 <span class="codeph">visitor.FIELDS</span> 枚举来控制要返回哪些 ID。请参阅 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 修复了一个与 Chrome 相关的问题：在该浏览器中单击返回按钮时，会导致 ID 服务引发错误。
 * 现在，当事件调用响应中的区域 ID 发生更改时，ID 服务会重新触发 ID 同步。
-* 新添了[内容安全策略和Experience Cloud标识服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，该服务解释了如何对ID服务使用的Adobe域进行白名单。
+* 新添了[内容安全策略和 Experience Cloud Identity 服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)文档，该文档说明了如何将 ID 服务使用的 Adobe 域调用添加到白名单。
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -123,7 +123,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 5 月份的文档更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## 5 月份的文档更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -192,7 +192,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **新文档**
 
-[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/zh_CN/mcloud/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -208,6 +208,6 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 修复了一个在以下情况中 ID 服务无法立即失败的错误：访客启用了广告拦截器，并且将其配置为排除 demdex.net 域。这种错误非常少见，因为大多数广告拦截工具并不拦截 demdex.net 域。(MCID-233)
 * 修复了因 ID 服务代码与客户网站上自定义脚本之间的交互而引起的错误。此问题会阻止 Internet Explorer 9 加载 Web 页面。(MCID-206)
 
-## 之前的年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 之前的年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 ID 服务的早期发行说明。
