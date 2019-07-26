@@ -5,7 +5,7 @@ seo-description: 这是一个异步 API，在默认情况下可返回 Analytics 
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud Identity Service </a>。 </p> </td> 
+   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅 <a href="../../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
