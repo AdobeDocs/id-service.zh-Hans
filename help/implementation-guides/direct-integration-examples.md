@@ -5,7 +5,7 @@ seo-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud 
 seo-title: 直接集成用例
 title: 直接集成用例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 >[!TIP]
 >
 >* 在深入研究用例之前，请查看并了解[代码语法和变量](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
->* For more information about the MID, see [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+>* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
 >
 
 
