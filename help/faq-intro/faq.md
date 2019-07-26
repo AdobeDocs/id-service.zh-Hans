@@ -5,7 +5,7 @@ seo-description: 与使用 ID 服务相关的特性、功能和问题的常见�
 seo-title: ID 服务常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,11 +19,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **ID 服务提供了哪种功能或哪些功能？**
 
-请参阅 [概述](../introduction/overview.md).
+请参阅[概述](../introduction/overview.md)。
 
 **ID 服务为何不进行调用来检索 Experience Cloud ID？**
 
-此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅[内容安全策略和Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+此问题的原因可能很难诊断。不过，您可以检查一下您网站上的内容安全策略标头。如果您具有严格的安全策略，这些设置可能会阻止 ID 服务进行的第三方调用。请参阅[内容安全策略和 Experience Cloud Identity 服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
 **VisitorAPI.js 文件存储**
 
@@ -35,7 +35,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 请将 VisitorAPI.js 库放置在页面顶部代码的 `<head>` 部分中。这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
 
-ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)进行的调用。ID 服务调用不会阻止在页面上加载其他元素。
+ID 服务调用是异步调用，是对 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)的唯一调用。ID 服务调用不会阻止在页面上加载其他元素。
 
 对于 [!DNL Target] 客户，将 ID 服务代码放置在页面的 `<body>` 中，可能会增加它阻止 [!DNL Target] 调用的可能性。如果必须将 ID 服务代码放置在页面主体中，则应将其放置在 `<body>` 开始标记的后面。
 
@@ -43,7 +43,7 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 不会。仅在页面首次渲染时才进行此调用，之后每 7 天进行一次。同时，服务器调用并不是必需的。ID 服务在客户端模式下运行，因此不需要进行服务器调用即可返回 ID。
 
-请参阅 [概述](../introduction/overview.md).
+请参阅[概述](../introduction/overview.md)。
 
 **使用 ID 服务时，什么原因可能会导致页面加载时间缓慢或影响用户体验？**
 
@@ -67,13 +67,13 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 一般而言，与使用 JSONP 相比，使用 CORS 的资源请求更为有益。使用 JSONP 时，某些浏览器会在将请求排入队列后降低其优先级，而优先考虑页面上的其他同步和异步调用。CORS 则有助于确保这些请求在浏览器调用堆栈中得到优先处理。
 
-请参阅[Experience Cloud Identity Service中的CORS支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+请参阅 [Experience Cloud Identity 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服务是否支持 CORS？**
 
-能。See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+能。请参阅 [Experience Cloud Identity 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **什么是 CORS？**
 
@@ -83,9 +83,9 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 如果您的安全要求很严格，请将 ID 服务 API 配置设置为 `useCORSOnly: true`。只有在您确信网站访客使用的是支持 CORS 的浏览器时，才应启用此模式。
 
-请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORE_LIKE_THIS]
 >
->* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
 
