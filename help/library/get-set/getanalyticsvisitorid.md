@@ -1,11 +1,11 @@
 ---
-description: 返回在Experience Cloud Identity Service实施之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+description: 可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 keywords: ID 服务
-seo-description: 返回在Experience Cloud Identity Service实施之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+seo-description: 可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-返回在Experience Cloud Identity Service实施之前存储在s_ vi cookie中的旧版Analytics ID(如果有)。如果从未为访客分配 Analytics ID，则返回空符串。
+可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 
 **语法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -44,7 +44,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 对于下面的情况，您会在查询字符串中看到 `aid` 参数：
 
 * [!DNL Experience Cloud] ID 服务已正确部署。
-* 访问站点的用户在其 [!DNL Analytics]s_vi Cookie[ 中存储了预先存在的 ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID。
+* 访问网站的用户在 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/?f=cookies_analytics.html) 中存储了预先存在的 [!DNL Analytics] ID。
 
 **用例 2**
 
@@ -52,5 +52,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORE_LIKE_THIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/cookies_analytics.html)
 
