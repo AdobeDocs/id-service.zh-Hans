@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID服务(EID)支持SHA-256哈希哈希算法�
 seo-title: SHA256散列支持setCustomerID
 title: SHA256散列支持setCustomerID
 translation-type: tm+mt
-source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
+source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
 
@@ -15,8 +15,8 @@ source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
 Experience Cloud ID服务(EID)支持SHA-256哈希哈希算法，它允许您传递客户ID或电子邮件地址，并传递散列的ID。这是一种可选的Javascript方法，用于将哈希标识符发送到Experience Cloud。在发送客户ID之前，您可以继续使用自己的哈希散列方法。
 有两种方法可使用setCustomerID实现散列支持，如下面的部分所述：
 
-* 使用EID中的setCustomerID方法
-* 在Adobe Experience Platform Launch中添加操作
+* [使用EID中的setCustomerID方法](/help/reference/hashing-support.md#use-setcustomerids-method)
+* [在Adobe Experience Platform Launch中添加操作](/help/reference/hashing-support.md#add-action-launch)
 
 ## Use the `setCustomerIDs` method in ECID {#use-setcustomerids-method}
 
