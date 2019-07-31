@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID服务(EID)支持SHA-256哈希哈希算法�
 seo-title: SHA256散列支持setCustomerID
 title: SHA256散列支持setCustomerID
 translation-type: tm+mt
-source-git-commit: c670939cbeaebf4530df0e7d12e992ca5f0963bd
+source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
 
 ---
 
@@ -31,11 +31,13 @@ The first method leverages using the [`setCustomerIDs`](/help/library/get-set/se
 visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256");
 ```
 
+<br> 
+
 除了Experience Cloud访客ID之外，您还可以与每个访客关联额外的客户ID、身份验证状态和哈希类型(SHA-256)。如果不提供任何哈希类型，它将被视为不哈希。
 
 `setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
 
-Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs](/help/library/get-set/getcustomerids.md), as shown below:
+Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), as shown below:
 
 ```
 > visitor.getCustomerIDs();
@@ -43,6 +45,8 @@ Customer IDs, authenticated states and hash type *are not* stored in a cookie to
     email: {id: "a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097", authState: 1, hashType: "SHA-256"}
     __proto__: Object
 ```
+
+<br> 
 
 Using the `setCustomerIDs` method results in a call to the Experience Cloud ID Service, to `dpm.demdex.net`, with the addition of the `d_cid_ic` query parameter, which contains the hashed customer ID. 示例调用可能类似于下面的一个调用。添加换行符以清楚起见。
 
@@ -53,6 +57,8 @@ d_blob=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&
 d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%011&
 ts=1563299964843
 ```
+
+<br> 
 
 See the table below for a description of the `d_cid_ic` parameter and authentication state.
 
@@ -67,6 +73,8 @@ Experience Platform Launch是Adobe新一代标签管理功能。Read more about 
 To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
 
 ![](/help/reference/assets/hashing-support.png)
+
+<br> 
 
 确认配置后，Launch将数据打包到对象中，如下所示：
 
