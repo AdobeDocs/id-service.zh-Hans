@@ -6,7 +6,7 @@ seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
 
@@ -92,7 +92,7 @@ source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 >* ID 区分大小写。
 >* 仅将未编码的值应用于您的 ID。
 >* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。必须针对每个页面或应用程序上下文设置它们。
->* 您不应当在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID库支持散列用户标识符。See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
+>* 您不应当在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID库支持散列用户标识符。请参阅 [SHA256散列支持setCustomerID](/help/reference/hashing-support.md)。
 >
 
 
@@ -220,4 +220,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。更多信息，请参阅[配置合并规则代码](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html)文档中的[!UICONTROL 访客 ID 服务]部分。
