@@ -5,8 +5,8 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -26,13 +26,13 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)。有关更多信息，请参阅[服务器端转发文档](https://marketing.adobe.com/resources/help/zh_CN/analytics/audiences/ssf.html)。
+除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码），并将其替换为[受众管理模块](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)。请参阅[服务器端转发文档](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html)，以了解更多信息。
 
 迁移到服务器端转发需要规划和协作。此过程包含对网站代码的外部更改，以及 Adobe 必须执行来配置帐户的内部步骤。事实上，其中的许多迁移过程需要并行完成并一起发布。您的实施路径应当遵循以下事件顺序：
 
 1. 与您的 [!DNL Analytics] 和 [!DNL Audience Manager] 联系人一起计划您的 ID 服务和服务器端转发迁移。将选择跟踪服务器作为此计划的重要环节。
 
-1. 配置 [!DNL Profiles & Audiences]。完成[集成和设置站点](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)上的表单以开始操作。
+1. 完成[迁移和配置网站](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)上的表单，以开始使用。
 
 1. 同时实施 ID 服务和 [!DNL Audience Management Module]。若要正常工作，必须为同一组页面同时发布 [!DNL Audience Management Module]（服务器端转发）和 ID 服务。
 
@@ -133,11 +133,11 @@ Analytics 使用跟踪服务器进行数据收集。
 * Experience Cloud 服务器 URL = 跟踪服务器 URL
 * Experience Cloud 服务器安全 URL = 跟踪服务器安全 URL
 
-如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)和[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
+如果您不确定如何查找跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 ## 步骤 6：更新您的 AppMeasurement.js 文件 {#section-5517e94a09bc44dfb492ebca14b43048}
 
-此步骤需要使用 [!DNL AppMeasurement]。如果您仍使用 s_code，则无法继续。
+此步骤需要 [!UICONTROL AppMeasurement]。如果您仍使用 s_code，则无法继续。
 
 将如下所示的 `Visitor.getInstance` 函数添加到您的 `AppMeasurement.js` 文件中。将该函数放置在包含 `linkInternalFilters`、`charSet`、`trackDownloads` 等配置的部分中：
 
@@ -145,7 +145,7 @@ Analytics 使用跟踪服务器进行数据收集。
 
 >[!IMPORTANT]
 >
->此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://marketing.adobe.com/resources/help/zh_CN/reference/ssf.html)。
+>此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。请参阅[实施服务器端转发](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)，以获取相关说明。
 
 ***（可选，但是推荐）*创建自定义 prop**
 
@@ -158,14 +158,14 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步骤 7：将访客 API 代码添加到页面中 {#section-c2bd096a3e484872a72967b6468d3673}
 
-将 ` [!DNL VisitorAPI.js]` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
+将 ` [!UICONTROL VisitorAPI.js]` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
 
 * 将它放在 `<head>` 部分的开头处，使其显示在其他解决方案标记之前。
 * 它必须在 AppMeasurement 以及其他 [!DNL Experience Cloud] 解决方案的代码之前执行。
 
 ## 步骤 8：（可选）配置宽限期 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-如果以下任何一个用例适用于您的情况，请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)以设置临时[宽限期](../reference/analytics-reference/grace-period.md)。宽限期可长达 180 天。您可以在必要时延长宽限期。
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 宽限期可长达 180 天。您可以在必要时延长宽限期。
 
 **部分实施**
 
@@ -187,7 +187,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 当您的数据获取流程可以使用 `post_visid_high` 和 `post_visid_low` 列之后，就可以中止宽限期。
 
-另请参阅[点击流数据列引用](https://marketing.adobe.com/resources/help/zh_CN/sc/clickstream/datafeeds_reference.html)。
+另请参阅[点击流数据列引用](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)。
 
 ## 步骤 9：测试和部署 ID 服务代码 {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,10 +198,10 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 要测试 ID 服务的实施状况，请检查以下环节：
 
 * [在托管页面的域中查找 AMCV Cookie](../introduction/cookies.md)。
-* 使用 [Adobe 调试器](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/debugger.html)查找 Analytics 图像请求中的 MID 值。
+* 使用 [Adobe 调试器](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)在 Analytics 图像请求中查找 MID 值。
 * 另请参阅[测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)。
 
-要验证服务器端转发，请参阅[如何验证服务器端转发实施](https://marketing.adobe.com/resources/help/zh_CN/reference/ssf-verify.html)。
+要验证服务器端转发，请参阅[如何验证服务器端转发的实施情况](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html)。
 
 **部署**
 
