@@ -5,8 +5,8 @@ seo-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud 
 seo-title: 直接集成用例
 title: 直接集成用例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 
 
-## 用例 1：我拥有 MID，但是想要传递我的访客 ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
+## Use case 1: I have an Experience Cloud ID (MID) but want to pass my visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
