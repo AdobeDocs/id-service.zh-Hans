@@ -5,8 +5,8 @@ seo-description: 此属性可设置要用于 ID 同步的数据源容器 ID。
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: ht
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -82,7 +82,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 ## 使用 DIL 和 VisitorAPI.js 时设置容器 ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-如果您在同一页面上部署了 [!DNL DIL]* 和* VisitorAPI.js，则：
+如果您在同一页面上部署了 [!UICONTROL DIL] *和* VisitorAPI.js，则：
 
 * 对于 ID 同步，访客 ID 服务代码会优先于 DIL。
 * 仅在 ID 服务代码中设置 `idSyncContainerID` 配置。
