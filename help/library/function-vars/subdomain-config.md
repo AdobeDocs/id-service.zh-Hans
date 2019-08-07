@@ -5,8 +5,8 @@ seo-description: 通过这些配置，可将 Experience Cloud Identity 服务调
 seo-title: audienceManagerServer 和 audienceManagerServerSecure
 title: audienceManagerServer 和 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 这些配置要求您使用以下各项：
 
 * 您的公司记录的 [!DNL Audience Manager] 子域名。可向您的顾问确认或获取此域名。
-* 与您的 [!DNL Organization ID] 关联的子域名。
+* 与您的[!UICONTROL 组织 ID] 关联的子域名。
 * 包含相同子域名的&#x200B;*两个*&#x200B;配置参数。
 
 **代码示例**
