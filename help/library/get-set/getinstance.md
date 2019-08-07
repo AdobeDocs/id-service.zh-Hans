@@ -5,8 +5,8 @@ seo-description: getInstance 可返回指定的 Experience Cloud 组织 ID 对�
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: ht
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -33,7 +33,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->当 `var visitor = new Visitor` 时，*请不要*实例化访客功能。您必须使用此处介绍的正确函数调用。适用于 [!DNL VisitorAPI.js] 代码库版本 3.0 或更高版本。
+>当 `var visitor = new Visitor` 时，*请不要*&#x200B;实例化访客功能。您必须使用此处介绍的正确函数调用。适用于 [!UICONTROL VisitorAPI.js] 代码库版本 3.0 或更高版本。
 
 **ActionScript / Flash**
 
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 未找到现有实例，则会创建并返回一个新实例。这类似于 [!DNL AppMeasurement] 中的 [`s_gi()` 函数](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=function_s_gi.html)。
+如果 `getInstance` 未找到现有实例，则会创建并返回一个新实例。This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
 
 **常见用法**
 
