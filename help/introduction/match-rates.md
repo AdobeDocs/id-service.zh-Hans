@@ -5,8 +5,8 @@ seo-description: 关于 Experience Cloud Identity 服务（包括 Adobe Media Op
 seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -37,9 +37,9 @@ ID 服务实时同步 ID。此过程在浏览器中进行，而不是通过服�
 
 **步骤 2：加载 iFrame**
 
-在页体加载时，ID 服务会加载一个名为 *`Destination Publishing iFrame`* 的 iFrame。[!DNL Destination Publishing iFrame] 在一个独立于父页面的域中加载。此设计有助于确保页面性能并提高安全性，因为此 iFrame 可以：
+在页体加载时，ID 服务会加载一个名为 *`Destination Publishing iFrame`* 的 iFrame。[!UICONTROL 目标发布 iFrame] 在一个独立于父页面的域中加载。此设计有助于确保页面性能并提高安全性，因为此 iFrame 可以：
 
-* 相对于父页面异步加载。这意味着父页面可以独立于 [!DNL Destination Publishing iFrame] 进行加载。加载 iFrame 并从 iFrame 之内加载 ID 同步像素不会影响父页面或用户体验。
+* 相对于父页面异步加载。这意味着父页面可以独立于[!UICONTROL 目标发布 iFrame] 进行加载。加载 iFrame 并从 iFrame 之内加载 ID 同步像素不会影响父页面或用户体验。
 * 尽可能快地加载。如果它加载得过快，您可以在窗口加载事件之后加载 iFrame（不推荐）。请参阅 [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4)，以了解详细信息。
 * 阻止 iFrame 中的代码获取父页面的访问权限或影响父页面。
 
@@ -49,21 +49,13 @@ ID 服务实时同步 ID。此过程在浏览器中进行，而不是通过服�
 
 ID 同步是一个在目标发布 iFrame 中触发的 URL。正如该一般示例所示，ID 同步 URL 包含合作伙伴的 ID 同步端点和重定向 URL，后者是一个可返回到 [!DNL Adobe] 的重定向，其中还包含它们的 ID。
 
-```
-http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
-<varname>
-  ADOBE_PARTNER_ID
-</varname>>&dpuuid=<
-<varname>
-  PARTNER_UUID
-</varname>>
-```
+`http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-另请参阅[入站数据传输的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
+另请参阅[用于入站数据传输的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
 
 **步骤 4：存储 ID**
 
-同步 ID 存储在[边缘和核心数据服务器](servershttps://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)中。
+已同步的 ID 存储在[边缘和核心数据服务器](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)上。
 
 ## 同步服务管理 ID 同步 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -78,9 +70,9 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 
 ## 与 Adobe Media Optimizer 之间的 ID 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] 对基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Media Optimizer] 是一个受信任的域，因此 ID 同步会在父页面中进行，而不是在 [!DNL Destination Publishing iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Media Optimizer]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Media Optimizer]。将数据发送至 [!DNL Media Optimizer] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/cookies_media_optimizer.html)。
+[!DNL Adobe Media Optimizer] 对基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Media Optimizer] 是一个受信任的域，因此 ID 同步会从父页面中进行，而不是在[!UICONTROL 目标发布 iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Media Optimizer]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Media Optimizer]。将数据发送至 [!DNL Media Optimizer] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
 
 >[!MORE_LIKE_THIS]
 >
->* [了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
+>* [了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
