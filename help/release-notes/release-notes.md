@@ -5,7 +5,7 @@ seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 ---
@@ -23,25 +23,25 @@ source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 **新功能**
 
-[SHA256散列支持setCustomerID](/help/reference/hashing-support.md)。Experience Cloud ID服务(EID)支持SHA-256哈希哈希算法，它允许您传递客户ID或电子邮件地址，并传递散列的ID。
+[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。
 
-**修复、增强和改进**
+**修复、增强功能和改进功能**
 
-* We made a configuration update to `cookieDomain`. The ECID library now filters out the empty string `cookieDomain` in `initConfig` and uses the top level cookie domain, which is returned by the getDomain method. (CORE-29223)
-* We fixed a bug related to `getVisitorValues` in `localVisitor`. (CORE-31287)
-* We fixed a bug where there was an inconsistency for the MCOPTOUT value in the Safari browser, returned by the `getVisitorValue` method. (CORE-29719)
-* We updated the Opt-in library by adding `optIn.off` to unsubscribe from events.
-* We fixed a bug related to the setTimeout function, where `setTimeout` violated the Content Security Policy (CSP) on some customer sites. (CORE-30623)
+* 我们对 `cookieDomain` 进行了配置更新。现在，ECID 库过滤出了 `initConfig` 中的空字符串 `cookieDomain`，且使用顶级 Cookie 域，该域是通过 getDomain 方法返回的。(CORE-29223)
+* 我们修复了与 `localVisitor` 中的 `getVisitorValues` 相关的错误。(CORE-31287)
+* 我们修复了 Safari 浏览器中的 MCOPTOUT 值（通过 `getVisitorValue` 方法返回）存在不一致的错误。(CORE-29719)
+* 我们通过添加 `optIn.off` 以取消订阅事件，更新了“选择加入”库。
+* 我们修复了一个与 setTimeout 函数相关的错误，其中 `setTimeout` 在某些客户站点上违反了内容安全策略 (CSP)。(CORE-30623)
 
 ## 版本 4.3 {#version-4point3}
 
-**支持ITP2.1**。如果在第一方CNAME中设置了跟踪服务器，则将使用EID值放置新cookie(s_ ecid)。ECID库引用该值，将ID保留在天之外。See [ECID library methods in a Safari ITP world](/help/reference/ecid-library-methods.md).
+**支持 ITP 2.1**。如果在第一方 CNAME 中设置了跟踪服务器，则会使用 ECID 值放置新的 cookie (s_ecid)。ECID 库会引用该值，以便将 ID 保留超过 7 天。请参阅 [Safari ITP 中的 ECID 库方法](/help/reference/ecid-library-methods.md)。
 
-**Secretokie config错误修复。**
+**修复了 secureCookie 配置的错误。**
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。使用 [Experience Platform Launch](https://docs.adobelaunch.com/)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
