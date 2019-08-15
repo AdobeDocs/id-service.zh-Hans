@@ -1,10 +1,10 @@
 ---
-description: Experience Platform Identity Service在Adobe Experience Cloud中的角色。
-seo-description: Experience Platform Identity Service为Experience Cloud核心服务、解决方案以及客户属性和受众提供通用标识框架。
+description: Experience Platform Identity 服务在 Adobe Experience Cloud 中的角色。
+seo-description: Experience Platform Identity 服务允许将通用识别框架用于 Experience Cloud 的多项核心服务、解决方案、客户属性以及受众。
 seo-title: ID 服务概述
 title: 概述
 uuid: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -12,13 +12,13 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # 概述
 
-Experience Platform Identity Service为Platform Identity Service中的Experience Cloud核心服务、解决方案以及客户属性和受众提供通用标识框架。(您可能会看到对以前名称或缩写的引用，例如Experience Cloud ID服务、EID、Marketing Cloud ID服务、MID和访问者ID服务)。标识服务通过向站点访问者分配唯一的永久ID来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+Experience Platform Identity 服务允许将通用识别框架用于 Experience Cloud 的多项核心服务、解决方案、客户属性，以及 Platform Identity 服务中的受众。（您可能会看到对以前名称或缩写的引用，例如 Experience Cloud ID 服务、ECID、Marketing Cloud ID 服务、MID 和访客 ID 服务）。ID 服务通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
 ![](assets/ecid.png)
 
 此外，ID 服务还可替代特定于不同解决方案的 ID（例如 Analytics AID）。并且，通过[客户 ID 和身份验证状态](/help/reference/authenticated-state.md)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是请记住，ID 服务只能在您已经订阅的解决方案中使用。它不提供对其他未注册产品的访问权限。
 
-今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。当前，ID 服务支持 [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) 和 [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html)。另外，如果您要参与 Adobe Experience Cloud 设备协作，也需要使用该服务。如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Experience Cloud Identity 服务](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。目前，ID 服务支持 [Analytics](https://www.adobe.com/cn/analytics/adobe-analytics.html)、[Audience Manager](http://www.adobe.com/cn/marketing-cloud/data-management-platform.html) 和 [Target]( http://www.adobe.com/cn/marketing-cloud/testing-targeting.html)。另外，如果您要参与 Adobe Experience Cloud 设备协作，也需要使用该服务。如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Experience Cloud Identity 服务](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
 ## 功能摘要
 
