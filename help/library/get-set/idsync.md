@@ -5,7 +5,7 @@ seo-description: 通过 ID 服务函数 idSyncByURL 和 idSyncByDataSource，可
 seo-title: 通过 URL 或数据源进行 ID 同步
 title: 通过 URL 或数据源进行 ID 同步
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -91,9 +91,9 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 这两个函数都接受以下宏：
 
-* `%TIMESTAMP%`：生成时间戳(以毫秒为单位)。用于缓存无效的情况。
-* `%DID%`：插入用户的Audience Manager ID。
-* `%HTTP_PROTO%`：设置通信协议( `http` 或 `https`)。
+* `%TIMESTAMP%`：生成时间戳（以毫秒为单位）。用于缓存无效的情况。
+* `%DID%`：为用户插入 Audience Manager ID。
+* `%HTTP_PROTO%`：设置通信协议（`http` 或 `https`）。
 
 ## 示例代码和输出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
@@ -151,5 +151,5 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://marketing.adobe.com/resources/help/zh_CN/aam/r_dil_idsync.html)
 
