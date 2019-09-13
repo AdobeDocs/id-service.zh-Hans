@@ -6,7 +6,7 @@ seo-title: 通过 URL 或数据源进行 ID 同步
 title: 通过 URL 或数据源进行 ID 同步
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
+source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
 
 ---
 
@@ -14,13 +14,6 @@ source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
 # 通过 URL 或数据源进行 ID 同步{#id-synchronization-by-url-or-data-source}
 
 通过 ID 服务函数 idSyncByURL 和 idSyncByDataSource，可手动在目标发布 iFrame 中实施 ID 同步。这些函数可在 VisitorAPI.js 版本 1.10 或更高版本中使用。
-
-目录：
-
-<ul class="simplelist"> 
- <li> <a href="../../library/get-set/idsync.md#section-90ac61617482463aaf4c57009b830332" format="dita" scope="local"> 语法、属性和宏 </a> </li> 
- <li> <a href="../../library/get-set/idsync.md#section-0115615c37584a19a2ab11e917c4e7e9" format="dita" scope="local"> 示例代码和输出 </a> </li> 
-</ul>
 
 ## 语法、属性和宏 {#section-90ac61617482463aaf4c57009b830332}
 
@@ -99,60 +92,46 @@ source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
 
 如果运行成功，这两个函数都将返回 `Successfully queued`。如果失败，则将返回错误消息字符串。
 
-**visitor.idSyncByURL**
+### visitor.idSyncByURL
 
-<table id="table_56AD8291DF9445C69CC2BF50435E1626"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 示例代码 </th> 
-   <th colname="col2" class="entry"> 示例输出 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+**示例代码**
 
-    //使用宏replacerevorder.
-    idSyncByURL触发url({
-    dpid：'24'，//必须是stringurl
-    ：'//su.addthis.com/red/usync?pid=16&amp;puid=%DID%&amp;url=%HTTP_PROTO%://dpm.demdex.net/ibs:dpid=420&amp;dpuuid={{uid}}'、
-    search TestLive：20160//可选，默认为20160分钟(14天)
-    })；
-    
-    &lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-<td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+```javascript
+   //Instatiate Visitor
+    var visitor = Visitor.getInstance
+    ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+   // Fires url with macros replaced 
+    visitor.idSyncByURL({ 
+    dpid: '24', // must be a string 
+    url: '//su.addthis.com/red/usync?pid=16&puid=%DID%&url=%HTTP_PROTO%://
+    dpm.demdex.net/ibs:dpid=420&dpuuid={{uid}}', 
+    minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
 
-**visitor.idSyncByDataSource**
+**示例输出**
 
-<table id="table_90D61A7E715D47238AAFF2808B33C2F0"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 示例代码 </th> 
-   <th colname="col2" class="entry"> 示例输出 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
 
-    //将“http:/https:'+”//dpm.demdex.net/ibs:dpid=&lt; dpid&gt;&amp; dpuid=&lt; dpuuid&gt;'
-    访客. idsyncbyDataSource({
-    dpid：'24'，//必须是stringpuuid
-    ：'98765'，//必须是StringAsTestLive
-    ：20160//可选，默认为20160分钟(14天)
-    })；
-    &lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-<td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### visitor.idSyncByDataSource
+
+**示例代码**
+
+```javascript
+  //Instantiate Visitor
+   var visitor = Visitor.getInstance
+   ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+  // Fires 'http:/https:' + '//dpm.demdex.net/ibs:dpid=&dpuuid='
+   visitor.idSyncByDataSource({ 
+     dpid: '24', // must be a string
+     dpuuid: '98765', // must be a string 
+     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
+
+**示例输出**
+
+`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
