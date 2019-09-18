@@ -6,7 +6,7 @@ seo-title: 通过 URL 或数据源进行 ID 同步
 title: 通过 URL 或数据源进行 ID 同步
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
+source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
 
@@ -29,10 +29,7 @@ source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>通过自定义 ID 同步 URL 在不同数据合作伙伴和 <span class="keyword">Audience Manager</span> 之间同步。 </p> <p> 
-     <draft-comment>
-       在不同的数据合作伙伴和 Audience Manager 之间同步。例如，合作伙伴 x 将使用此功能将用户 ID 与合作伙伴 y 同步，然后将其发送给 Audience Manager。 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>通过自定义 ID 同步 URL 在不同数据合作伙伴和 <span class="keyword">Audience Manager</span> 之间同步。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
@@ -110,7 +107,9 @@ source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
 
 **示例输出**
 
-`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
+```
+http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
+```
 
 ### visitor.idSyncByDataSource
 
@@ -129,7 +128,9 @@ source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
 
 **示例输出**
 
-`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
+```
+http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
+```
 
 >[!MORE_LIKE_THIS]
 >
