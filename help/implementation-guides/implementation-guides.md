@@ -6,7 +6,7 @@ seo-title: ID 服务实施指南
 solution: Experience Cloud
 title: 实施指南
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -20,7 +20,7 @@ Experience Cloud Identity 服务的标准实施和非标准实施的说明和代
 
 ## 标准实施
 
-标准实施使用 [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
+A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. 我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
 
 ## 实施资源
 
