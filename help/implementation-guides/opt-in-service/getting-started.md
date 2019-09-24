@@ -4,7 +4,7 @@ seo-description: 将选择加入服务作为 Experience Cloud 解决方案（在
 seo-title: 设置选择加入服务
 title: 设置选择加入服务
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 1. ECID 版本 4.0。
 
-   [下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases)最新版本的 ECID。
+   [下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
 
 1. 支持的库：
 
@@ -42,7 +42,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 1. 贵公司的隐私要求具体取决于您选择以何种方式遵守 GDPR 的规定。了解贵公司隐私团队允许在同意前使用哪些库。
 
-如果使用 [Adobe Launch](https://docs.adobelaunch.com/)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
+如果使用的是 [Adobe Launch](https://docs.adobelaunch.com/)，请使用 [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
