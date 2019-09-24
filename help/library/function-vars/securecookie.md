@@ -5,7 +5,7 @@ seo-description: 一个可选的布尔标记，用于向 AMCV Cookie 添加“�
 seo-title: secureCookie
 title: secureCookie
 uuid: 995d19f6-9c9d-4493-9c9c-545b0b5696b0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
