@@ -5,7 +5,7 @@ seo-description: getInstance 可返回指定的 Experience Cloud 组织 ID 对�
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 未找到现有实例，则会创建并返回一个新实例。这类似于 [!DNL AppMeasurement] 中的 [`s_gi()` 函数](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=function_s_gi.html)。
+如果 `getInstance` 未找到现有实例，则会创建并返回一个新实例。This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
 
 **常见用法**
 
