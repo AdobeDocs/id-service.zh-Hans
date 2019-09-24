@@ -5,7 +5,7 @@ seo-description: 要使用视频心率，必须安装 Experience Cloud Identity 
 seo-title: 视频心率和 Experience Cloud Identity 服务
 title: 视频心率和 Experience Cloud Identity 服务
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -17,5 +17,5 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 >[!MORE_LIKE_THIS]
 >
->* [在 Analytics 中使用视频心率测量视频](https://marketing.adobe.com/resources/help/zh_CN/sc/appmeasurement/hbvideo/)
+>* [在 Analytics 中使用视频心率测量视频](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
 
