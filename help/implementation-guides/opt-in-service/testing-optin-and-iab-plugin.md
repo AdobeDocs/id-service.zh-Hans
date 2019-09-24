@@ -4,7 +4,7 @@ seo-description: 在网站上启用了选择加入后，在浏览器中使用开
 seo-title: 验证选择加入服务
 title: 验证选择加入服务
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -59,7 +59,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-用例 2 的唯一区别在于，您将会看到一个新 Cookie**，其中将包含访客提供的选择加入权限：**adobeujs-optin**
+用例 2 的唯一区别在于，您将会看到一个新 Cookie **，其中将包含访客提供的选择加入权限：**adobeujs-optin**
 
 ## 用例 3：启用选择加入并预先批准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
