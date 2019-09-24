@@ -5,7 +5,7 @@ seo-description: 在一些实施过程中，访客 ID 是经由 JavaScript 传�
 seo-title: 结合了 JavaScript 技术的服务器端实施
 title: 结合了 JavaScript 技术的服务器端实施
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -29,7 +29,7 @@ ID 服务 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 在 `<marketingCloudVisitorID>` 元素中包括 Experience Cloud 访客 ID。
 
-请参阅[支持的 XML 标记](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)。
+请参阅[支持的 XML 标签](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)。
 
 ## Java AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
