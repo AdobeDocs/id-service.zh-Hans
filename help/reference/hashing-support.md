@@ -4,7 +4,7 @@ keywords: ID 服务
 seo-description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。
 seo-title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 title: 对 setCustomerIDs 的 SHA256 哈希处理支持
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
@@ -34,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID、身份验证状态以及哈希类型 (SHA-256) 与每位访客关联。如果您不提供任何哈希类型，则将被视为不进行哈希处理。
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/customer-attributes/attributes.html)上传到 Experience Cloud，并跨不同的解决方案访问这些数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
 
 客户 ID、身份验证状态以及哈希类型&#x200B;*不会*&#x200B;存储在 Cookie 中以供稍后使用。客户 ID、身份验证状态以及哈希类型而是应存储在实例变量中，以便使用 [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) 进行检索，如下所示：
 
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 
-Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。有关 Launch 的更多信息，请参阅 [Launch 产品文档](https://docs.adobe.com/content/help/en/launch/using/overview.html)。
+Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/en/launch/using/overview.html).
 
-要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html)并查看下面的屏幕截图：
+To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
 
 ![](/help/reference/assets/hashing-support.png)
 
