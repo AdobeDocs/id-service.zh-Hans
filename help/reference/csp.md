@@ -5,7 +5,7 @@ seo-description: 内容安全策略 (CSP) 是一项 HTTP 标头和安全功能�
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 内容安全策略 (CSP) 是一项 HTTP 标头和安全功能，允许浏览器控制在网页上加载的资源类型。如果您使用 ID 服务，并且具有严格的 CSP 以使用白名单接受来自受信任域的资源，请参阅此部分内容。您需要将此处所列的 Adobe 域添加到您的 CSP 白名单中。
 
-## CSP 内容回顾 {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 内容回顾 {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上接受或加载的资源类型。应用 CSP 可帮助您防止以下情况发生：
 
@@ -61,6 +61,6 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
 >[!MORE_LIKE_THIS]
 >
 >* [内容安全策略参考](https://content-security-policy.com/)
->* [MDN：内容安全策略](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
->* [维基百科：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN：内容安全策略](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
