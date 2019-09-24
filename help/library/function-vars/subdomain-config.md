@@ -5,7 +5,7 @@ seo-description: 通过这些配置，可将 Experience Cloud Identity 服务调
 seo-title: audienceManagerServer 和 audienceManagerServerSecure
 title: audienceManagerServer 和 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
