@@ -5,7 +5,7 @@ seo-description: 概述 Experience Cloud Identity 服务如何处理旧版 Analy
 seo-title: Analytics 和 Experience Cloud ID 请求
 title: Analytics 和 Experience Cloud ID 请求
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 浏览器中未设置 AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-如果 [!DNL Experience Cloud] (AMCV) Cookie 不存在，则对 [!DNL Adobe] 的 ID 服务调用会生成一个响应，该响应将依据旧版 Analytics ID 的存在与否而有所变化。旧版 [!DNL Analytics] ID 存储在 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/?f=cookies_analytics.html) 中。下表描述了如何根据 s_vi Cookie 的状态，将 ID 写入 AMCV Cookie。
+如果 [!DNL Experience Cloud] (AMCV) Cookie 不存在，则对 [!DNL Adobe] 的 ID 服务调用会生成一个响应，该响应将依据旧版 Analytics ID 的存在与否而有所变化。旧版 [!DNL Analytics] ID 存储在 [s_vi Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) 中。下表描述了如何根据 s_vi Cookie 的状态，将 ID 写入 AMCV Cookie。
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -48,7 +48,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 >[!NOTE]
 >
->对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。有关更多信息，请参阅 [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/?f=cookies_analytics.html)。
+>对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。更多信息，请参阅 [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html)。
 
 ## 浏览器中已设置 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
