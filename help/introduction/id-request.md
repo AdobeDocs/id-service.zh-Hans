@@ -5,7 +5,7 @@ seo-description: 概述 ID 请求和响应过程。下面的示例涵盖了各�
 seo-title: Experience Cloud Identity 服务如何请求和设置 ID
 title: Experience Cloud Identity 服务如何请求和设置 ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 >
 >如果您不熟悉 Experience Cloud Identity 服务如何创建访客 ID，请花些时间查阅 [Experience Cloud](../introduction/cookies.md)。
 
-**提示：**&#x200B;另请观看我们的[有关跨域跟踪的 ID 服务视频](https://helpx.adobe.com/cn/marketing-cloud-core/kb/MCID/CrossDomain.html)。
+**提示：**&#x200B;另请参阅我们的[关于跨域跟踪的 ID 服务视频](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
 ## 请求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 在这个示例中，一位新访客来到了由食品公司管理的比萨饼网站。此食品公司在比萨饼网站实施了 ID 服务代码。当加载比萨饼网站时，ID 服务代码将会在比萨饼域中检查 AMCV Cookie。
 
 * 如果设置了 AMCV Cookie，则表明该网站访客拥有 Experience Cloud ID。在这种情况下，Cookie 会跟踪访客并与其他 Experience Cloud 解决方案共享数据。
-* 如果未设置 AMCV Cookie，则 ID 服务代码将在 `dpm.demdex.net/id` 中调用地区[数据收集服务器](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html ) (DCS)（另请参阅[了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)）。此调用包括食品公司的组织 ID。组织 ID 是在 ID 服务代码的 `Visitor.getInstance` 函数中设置的。
+* 如果未设置 AMCV Cookie，则 ID 服务代码会调用 [ 中的区域](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html)数据收集服务器`dpm.demdex.net/id` (DCS)（另请参阅[了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)）。此调用包括食品公司的组织 ID。组织 ID 是在 ID 服务代码的 `Visitor.getInstance` 函数中设置的。
 
 ![](assets/request1.png)
 
