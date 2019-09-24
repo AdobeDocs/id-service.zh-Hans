@@ -5,7 +5,7 @@ seo-description: 如果有多个 JavaScript 文件要将数据发送至同一报
 seo-title: ID 服务宽限期
 title: ID 服务宽限期
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -29,8 +29,8 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 如果您有一个单独的 Analytics JavaScript 文件并且没有使用任何其他 AppMeasurement 库，则不需要设置宽限期。您可以在这个单独的 JavaScript 文件中执行更新，访问期间将使用 Marketing Cloud ID 来始终如一地识别新的访客。
 
-如果有多个 JavaScript 文件要将数据发送至*同一报表包*，或者，如果您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
+如果有多个 JavaScript 文件要将数据发送至&#x200B;*同一报表包*，或者，如果您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
 
 ## 怎样才能启用宽限期？ {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
