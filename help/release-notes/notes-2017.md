@@ -5,7 +5,7 @@ seo-description: 关于 2017 版 Experience Cloud Identity 服务的功能发布
 seo-title: 2017 版发行说明
 title: 2017 版发行说明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 关于 2017 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-[Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/)中也介绍了这些更改。有关旧版 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/zh_CN/whatsnew/?f=c_legacy_releases.html)或本页底部的链接。
+您也可以在 [Experience Cloud 发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)中找到这些更改。有关早期的 ID 服务发行说明，请参阅[之前的发行说明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或访问此页面底部的链接。
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 5 月份的文档更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## 5 月份的文档更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -192,7 +192,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **新文档**
 
-[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/zh_CN/mcloud/dns-prefetch.html)
+[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -208,6 +208,6 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 修复了一个在以下情况中 ID 服务无法立即失败的错误：访客启用了广告拦截器，并且将其配置为排除 demdex.net 域。这种错误非常少见，因为大多数广告拦截工具并不拦截 demdex.net 域。(MCID-233)
 * 修复了因 ID 服务代码与客户网站上自定义脚本之间的交互而引起的错误。此问题会阻止 Internet Explorer 9 加载 Web 页面。(MCID-206)
 
-## 之前的年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 之前的年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 ID 服务的早期发行说明。
