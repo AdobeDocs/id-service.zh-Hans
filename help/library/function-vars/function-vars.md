@@ -5,7 +5,7 @@ seo-description: 通过将这些属性传递至 Visitor.getInstance 静态方法
 seo-title: 配置
 title: 配置
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript 库*最近发生了移动。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 上找到最新版本的 ECID JS 库。
+>*Experience Cloud ID Javascript 库*&#x200B;最近发生了移动。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 上找到最新版本的 ECID JS 库。
 
 相关文章：
 
