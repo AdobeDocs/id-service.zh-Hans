@@ -5,7 +5,7 @@ seo-description: 通过此函数，在浏览器阻止第三方 Cookie 时，您�
 seo-title: appendVisitorIDsTo（跨域跟踪）
 title: appendVisitorIDsTo（跨域跟踪）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -72,14 +72,14 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/cn/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中设置 appendVisitorIDTo 函数 </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中设置 appendVisitorIDTo 函数 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/zh_CN/mobile/android/mc_methods.html" format="https" scope="external"> Android ID 服务方法 </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/zh_CN/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID 服务方法 </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/mc_methods.html" format="https" scope="external"> Android ID 服务方法 </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID 服务方法 </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
