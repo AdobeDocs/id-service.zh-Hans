@@ -5,7 +5,7 @@ seo-description: 此配置允许您根据要更新的 ID 服务版本清除孤�
 seo-title: 'resetBeforeVersion '
 title: 'resetBeforeVersion '
 uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
