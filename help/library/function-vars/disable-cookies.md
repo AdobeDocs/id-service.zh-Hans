@@ -5,7 +5,7 @@ seo-description: 可阻止 Experience Cloud Identity 服务返回第三方 demde
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
