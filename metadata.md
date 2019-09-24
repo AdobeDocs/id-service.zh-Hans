@@ -11,7 +11,7 @@ tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/id-service.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1ca22b8be325e037eae943f6ecb08c30f6d8bfe1
 
 ---
