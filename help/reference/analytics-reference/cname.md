@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie 相同级别的跨域跟踪，不过，某些浏览器会接受 demdex.net Cookie 并跨域使用，但是其他一些浏览器则拒绝。
 
-## 数据收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
+## 数据收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
 过去数据收集服务器在设置 Analytics Cookie 时，许多客户都配置了数据收集服务器 CNAME 记录作为[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免浏览器拒绝第三方 Cookie 的问题。这个过程是将您的数据收集服务器域配置成与您的网站域相匹配，从而将访客 ID Cookie 设置为第一方 Cookie。
 
