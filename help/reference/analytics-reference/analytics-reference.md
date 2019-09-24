@@ -5,7 +5,7 @@ seo-description: Adobe Analytics 独有的 ID 服务特征或功能。
 seo-title: Analytics 参考资料
 title: Analytics 参考资料
 uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
