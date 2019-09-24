@@ -5,7 +5,7 @@ seo-description: 可阻止 ID 服务对其他域进行调用的可选布尔标�
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
