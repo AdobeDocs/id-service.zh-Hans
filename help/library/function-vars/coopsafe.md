@@ -5,7 +5,7 @@ seo-description: 这是一个可选的布尔型配置，用于确定 ID 服务�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -30,7 +30,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 要使用 `isCoopSafe`，您必须满足以下条件：
 
 * 使用 ID 服务代码版本 2.4 或更高版本。
-* 参与 [Experience Cloud 设备协作](https://marketing.adobe.com/resources/help/zh_CN/mcdc/)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 参与 [Experience Cloud 设备协作](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
 * 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。不存在启用这些标记的自助途径。
 
@@ -67,9 +67,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 布尔选项可确定设备协作是否可以使用客户数据。
 
-* `isCoopSafe: true`：通过 Mobile SDK 或网站收集的访客数据*可以*用来帮助构建设备图。
+* `isCoopSafe: true`：通过 Mobile SDK 或网站收集的访客数据&#x200B;*可以*&#x200B;用来帮助构建设备图。
 
-* `isCoopSafe: false`：通过 Mobile SDK 或网站收集的访客数据*不能*用来帮助构建设备图。
+* `isCoopSafe: false`：通过 Mobile SDK 或网站收集的访客数据&#x200B;*不能*&#x200B;用来帮助构建设备图。
 
 **代码示例**
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/zh_CN/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
 
