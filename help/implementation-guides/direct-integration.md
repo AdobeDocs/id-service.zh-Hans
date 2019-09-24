@@ -5,7 +5,7 @@ seo-description: 通过此实施，客户可以在无法接受或使用我们的
 seo-title: 与 Experience Cloud Identity 服务的直接集成
 title: 与 Experience Cloud Identity 服务的直接集成
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅[支持的 DCS API 调用属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
 
 ID 服务支持 HTTP 和 HTTPS 调用。使用 HTTPS 可传递来自安全页面的数据。
 
@@ -100,7 +100,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您的响应可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>必需。此参数用于设置 API 版本号。请将此参数保留设置为 <span class="codeph">d_ver=2</span>。 </p> </td> 
+   <td colname="col2"> <p>必需. 此参数用于设置 API 版本号。请将此参数保留设置为 <span class="codeph">d_ver=2</span>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
