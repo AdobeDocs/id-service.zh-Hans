@@ -5,7 +5,7 @@ seo-description: 2015 版发行说明和更新。
 seo-title: 2015 版发行说明
 title: 2015 版发行说明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -79,4 +79,4 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 2015 年 1 月
 
-重新执行了 `<head>/<body>` 标签查找，以获取 JSONP 请求 `<script>` 标签容器，并且创建了 `<script>` 标签，以考虑根据区分大小写的各种可能设置，而形成的不同 DOM 实施（HTML 与 XHTML）。(AN-9355)
+重新执行了 `<head>/<body>` 标签查找，以获取 JSONP 请求 `<script>` 标签容器，并且创建了 `<script>` 标签，以考虑根据区分大小写的各种可能设置，而形成的不同 DOM 实施（HTML �
