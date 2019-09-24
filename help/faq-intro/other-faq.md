@@ -5,7 +5,7 @@ seo-description: 与将其他 Experience Cloud 解决方案和 ID 服务结合�
 seo-title: 其他 Experience Cloud 解决方案的常见问题解答
 title: 其他 Experience Cloud 解决方案的常见问题解答
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
