@@ -5,7 +5,7 @@ seo-description: 与将 Analytics 和 Identity 服务结合使用相关的特性
 seo-title: Analytics 和 Identity 服务常见问题解答
 title: Analytics 和 Identity 服务常见问题解答
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 但是，客户有时可能会将他们的 Analytics AppMeasurement 文件拆分为多个不同的文件。例如，有些客户可能会将配置变量放置在一个文件中，将插件放置在第二个文件中，再将 AppMeasurement 代码放置在第三个文件中。不建议客户采取这种做法。
 
-如果您找不到自己的跟踪服务器信息，则可能是因为您的 Analytics 实例配置不正确。如果找不到跟踪服务器信息，请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
+如果您找不到自己的跟踪服务器信息，则可能是因为您的 Analytics 实例配置不正确。如果您找不到自己的跟踪服务器信息，请联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
 
 **如果我在使用 Identity 服务时更改了我的跟踪服务器，会发生什么？**
 
@@ -35,7 +35,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 如果您有一个主要的登录网站，可以在客户访问其他域之前识别客户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器（如 Safari）中启用跨域跟踪。
 
-在接受第三方 Cookie 的浏览器中，在检索访客 ID 的请求期间，会在 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)中设置 Cookie。该 Cookie 允许 Identity 服务在使用同一组织 ID 配置的所有域上返回相同的 Experience Cloud 访客 ID。在拒绝第三方 Cookie 的浏览器中，将会为每个域分配一个新的 Experience Cloud 访客 ID。
+在接受第三方 Cookie 的浏览器中，会在请求检索访客 ID 期间，在 [demdex.net 域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)中设置一个 Cookie。该 Cookie 允许 Identity 服务在使用同一组织 ID 配置的所有域上返回相同的 Experience Cloud 访客 ID。在拒绝第三方 Cookie 的浏览器中，将会为每个域分配一个新的 Experience Cloud 访客 ID。
 
 即使配置了 CNAME，如果在不支持第三方 Cookie 的浏览器中最先访问的不是主登录网站，那么访客在辅助网站和主登录网站上将被视为不同的访客。
 
@@ -51,7 +51,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **什么是宽限期？如何配置宽限期？**
 
-请参阅 [Identity 服务宽限期](../reference/analytics-reference/grace-period.md)并联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
+请参 [阅Identity Service Grace Period](../reference/analytics-reference/grace-period.md) （身份服务宽限期） [，并联](https://helpx.adobe.com/marketing-cloud/contact-support.html)系客户关怀。
 
 **为何需要迁移到实时数据收集 (RDC) 才能使用 Identity 服务？**
 
@@ -90,5 +90,5 @@ RDC 除了具有全局性能的优势之外，还可以确保您的实施能够�
 
 >[!MORE_LIKE_THIS]
 >
->* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
+>* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
