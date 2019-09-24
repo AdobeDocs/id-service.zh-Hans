@@ -5,7 +5,7 @@ seo-description: 当访客从一个域导航到另一个域时，此属性将覆
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
 uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
