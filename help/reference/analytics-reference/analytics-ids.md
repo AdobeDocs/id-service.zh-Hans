@@ -5,7 +5,7 @@ seo-description: Experience Platform Identity 服务取代了旧版 Analytics �
 seo-title: 设置 Analytics 和 Experience Cloud ID
 title: 设置 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -31,7 +31,7 @@ Experience Cloud Identity 服务取代了旧版 Analytics 访客 ID 方法。
 
 但是，某些浏览器（例如 Apple Safari）不接受第三方 Cookie。这些浏览器中设置的 Cookie 均来自于域，而并非当前网站。此外，如果访客此前未曾访问该域，Safari 则会阻止第三方域上的 Cookie。例如，如果您在 `mysite.com` 上，您的数据收集服务器为 `mysite.omtrdc.net`，那么从 `mysite.omtrdc.net` 的 HTTP 标头中返回的 Cookie 可能会遭到浏览器的拒绝。
 
-要避免此问题，许多客户为其数据收集服务器实施了 CNAME 记录。这会成为[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)策略的有效部分。如果 CNAME 记录被配置为将客户域上的主机名映射至数据收集服务器（例如，将 `metrics.mysite.com` 映射至 `mysite.omtrdc.net`），则可以存储 [!DNL Experience Cloud] ID Cookie，因为数据收集域现在与网站的域相匹配。这增加了存储 ID 服务 Cookie 的可能性。但是，这也会带来一些开销，因为您需要为数据收集服务器配置 CNAME 记录并维护 SSL 证书。
+要避免此问题，许多客户为其数据收集服务器实施了 CNAME 记录。这是[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)策略的一个有效部分。如果 CNAME 记录被配置为将客户域上的主机名映射至数据收集服务器（例如，将 `metrics.mysite.com` 映射至 `mysite.omtrdc.net`），则可以存储 [!DNL Experience Cloud] ID Cookie，因为数据收集域现在与网站的域相匹配。这增加了存储 ID 服务 Cookie 的可能性。但是，这也会带来一些开销，因为您需要为数据收集服务器配置 CNAME 记录并维护 SSL 证书。
 
 **JavaScript**
 
@@ -60,12 +60,12 @@ JavaScript 可读写在第一方域（当前网站的域）中设置的 Cookie�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>已设置 s.visitorID </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud ID 服务</span>之前，访客已拥有 s_vi Cookie，或者您已配置<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">宽限期</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -75,12 +75,12 @@ JavaScript 可读写在第一方域（当前网站的域）中设置的 Cookie�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
    <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不再需要 <span class="codeph">fid</span>，因为第一方 <a href="../../introduction/cookies.md" format="dita" scope="local">AMCV Cookie</a> 使其过时。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
    <td colname="col3"> <p>访客的浏览器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
