@@ -5,7 +5,7 @@ seo-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当�
 seo-title: Experience Cloud Identity 服务中的 CORS 支持
 title: Experience Cloud Identity 服务中的 CORS 支持
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 如果两个页面共享这些特征，则浏览器将允许请求成功，否则将阻止资源请求。
 
-## CORS 可解决同域策略问题 {#section-76c87ec3295d447bab220c84f138c235}
+## CORS 可解决同域策略问题 {#section-76c87ec3295d447bab220c84f138c235}
 
 CORS 提供了一种安全、有效的方式，可跨越不同的域请求资源。CORS 规范包括一组 HTTP 标头，浏览器将使用这些标头来发送、接收和评估资源请求。评估资源请求被称为 *`preflight check`*。浏览器和服务器可通过此检查确定允许或阻止的请求。预检检查对请求资源的应用程序、API 或脚本来说是透明的。在资源请求流程中，两个重要的标头是：
 
@@ -76,7 +76,7 @@ CORS 提供了一种安全、有效的方式，可跨越不同的域请求资源
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>安全性提升</b> </p> </td> 
-   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。这种方法比 JSONP 请求更加安全。它可以确保没有办法执行可能包含在 DCS 响应中的任何 JavaScript。CORS XMLHttpRequest 响应负载由 ID 服务 JavaScript 解析，而不是简单地在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer（版本 10 及更高版本）、Opera 和 Safari 都支持此属性。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。这种方法比 JSONP 请求更加安全。它可以确保没有办法执行可能包含在 DCS 响应中的任何 JavaScript。CORS XMLHttpRequest 响应负载由 ID 服务 JavaScript 解析，而不是简单地在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer（版本 10 及更高版本）、Opera 和 Safari 都支持此属性。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>性能改进</b> </p> </td> 
