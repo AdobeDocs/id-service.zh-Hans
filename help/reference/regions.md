@@ -5,7 +5,7 @@ seo-description: AMCV Cookie 包含网站访客的 Experience Cloud ID (MID) 和
 seo-title: 从 AMCV Cookie 或 ID 服务获取区域 ID 和用户 ID
 title: 从 AMCV Cookie 或 ID 服务获取区域 ID 和用户 ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 AMCV Cookie 包含网站访客的 Experience Cloud ID (MID) 和区域 ID。这些 ID 作为键值对存储。mid:user ID 包含访客的 Experience Cloud ID。aamlh:region ID 包含网站访客的区域 ID。您可以通过解析 AMCV Cookie 来恢复此信息。
 
-有关更多信息，请参阅[通过 Experience Cloud Identity 服务获取用户 ID 和区域](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html)。
+For more information, see [Get User IDs and Regions Through the Experience Cloud Identity Service](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
 
 如果您是 [!DNL Audience Manager] 客户，则可以从数据收集服务器 (DCS) 发送的响应中获取区域 ID。请参阅[从 DCS 响应中获取用户 ID 和区域](https://marketing.adobe.com/resources/help/en_US/aam/dcs-aam-ids.html)。
 
