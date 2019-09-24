@@ -5,7 +5,7 @@ seo-description: 以毫秒为单位设置超时间隔。用于告知其他解决
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 **语法：**` loadTimeout: *` 时间间隔（以毫秒为单位）`*`
 
-默认值为 30,000 毫秒（30 秒）。我们强烈建议您*不要*更改默认值。
+默认值为 30,000 毫秒（30 秒）。我们强烈建议您&#x200B;*不要*&#x200B;更改默认值。
 
 >[!NOTE]
 >
