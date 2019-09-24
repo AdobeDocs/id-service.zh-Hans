@@ -5,7 +5,7 @@ seo-description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式�
 seo-title: Analytics ID 操作顺序
 title: Analytics ID 操作顺序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -28,12 +28,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 1</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>设置 <span class="codeph">s.visitorID</span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 2</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud ID 服务</span>之前，访客已拥有 s_vi Cookie，或者您已配置<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">宽限期</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -43,12 +43,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 4</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
    <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不再需要 <span class="codeph">fid</span>，因为第一方 <a href="../../introduction/cookies.md" format="dita" scope="local">AMCV Cookie</a> 使其过时。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><sup>第 5</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_CN/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
    <td colname="col3"> <p>访客的浏览器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
