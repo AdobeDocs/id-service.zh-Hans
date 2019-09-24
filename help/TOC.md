@@ -4,7 +4,7 @@ product: ID 服务
 audience: 最终用户
 user-guide-title: Experience Cloud Identity 服务帮助
 user-guide-url: /content/help/zh-Hans/id-service/using/home.html
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
