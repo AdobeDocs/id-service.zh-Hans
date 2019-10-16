@@ -6,7 +6,7 @@ seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
+source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
 
@@ -17,11 +17,11 @@ source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ## 身份验证状态 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=attributes.html)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
 
 >[!IMPORTANT]
 >
->客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)，以了解相关示例。
+>客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)，以了解相关示例。
 
 从 Experience Cloud Identity 服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。您可通过表中列出的状态值来设置身份验证状态。身份验证状态将以整数的形式返回。
 
@@ -90,7 +90,7 @@ source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 >[!IMPORTANT]
 >
 >* ID 区分大小写。
->* 仅将未编码的值应用于您的 ID。
+>* 仅对您的ID使用未编码的值。
 >* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。必须针对每个页面或应用程序上下文设置它们。
 >* 您不应当在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID 库支持对用户标识符进行哈希处理。请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。请参阅以下代码库：
 
-* [Android SDK 方法](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_marketing_cloud.html)
-* [iOS SDK 方法](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=marketing_cloud.html)
+* [Android SDK 方法](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
+* [iOS SDK 方法](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。更多信息，请参阅[配置合并规则代码](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html)文档中的[!UICONTROL 访客 ID 服务]部分。
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。更多信息，请参阅[配置合并规则代码](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)文档中的[!UICONTROL 访客 ID 服务]部分。
