@@ -6,7 +6,7 @@ seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
+source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
@@ -122,9 +122,9 @@ Experience Cloud ID (MID) 是通过数学方法从您的组织 ID 和 Demdex ID 
 
 ID 服务会在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.js` 代码库提供的代码会在事件调用中将您的组织 ID 发送至 ID 服务。ID 服务会创建 MID 和 Demdex ID，并将其分别在 AMCV Cookie 和 Demdex Cookie 中返回。
 
-## Cookie的安全标记
+## Cookie标记
 
-下表描述了Experience Cloud Cookies如何使用安全标志运行：
+下表介绍了Experience Cloud Cookies的标记：
 
 | Cookie（设置方式） | httpOnly | 安全 | SameSite |
 |--- |--- |--- |--- |
