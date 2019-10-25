@@ -5,7 +5,7 @@ seo-description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie �
 seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
@@ -59,7 +59,7 @@ mid|20265673158980419722735089753036633573
 
 此永久性标识符允许进行跨解决方案数据共享。
 
-**Domain**
+**域**
 
 AMCV Cookie 是在浏览器的第一方域中设置的。这意味着它是在用户当前访问网站的域中设置的。因此，ID 服务代码和其他 Experience Cloud 代码库都可以读取 AMCV Cookie 中存储的 MID。
 
@@ -81,7 +81,7 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 AMCVS Cookie 可作为指示会话已初始化的标志。它的值始终为 `1`，并会在会话结束时失效。
 
-**Domain**
+**域**
 
 AMCV Cookie 是在浏览器内的第一方域中设置的。这意味着它是在用户当前访问网站的域中设置的。
 
@@ -108,13 +108,13 @@ AMCV Cookie 是在浏览器内的第一方域中设置的。这意味着它是�
    <td colname="col2"> <p>Demdex Cookie 包含由 DCS 生成的 Demdex ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Domain</b> </p> </td> 
+   <td colname="col1"> <p> <b>名称</b> </p> </td> 
    <td colname="col2"> <p>Demdex Cookie 是在浏览器内的第三方 demdex.net 域中设置的。此域与用户当前访问的网站无关。 </p> <p>与第一方 AMCV Cookie 不同的是，Demdex Cookie 和 ID 可在不同的域之间持续存在。Demdex ID 和您的组织 ID 是通用值，可允许 ID 服务返回并识别具有正确访客 ID 的网站访客。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+有关相关信息，请参阅[了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
 
 ## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -122,17 +122,17 @@ Experience Cloud ID (MID) 是通过数学方法从您的组织 ID 和 Demdex ID 
 
 ID 服务会在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.js` 代码库提供的代码会在事件调用中将您的组织 ID 发送至 ID 服务。ID 服务会创建 MID 和 Demdex ID，并将其分别在 AMCV Cookie 和 Demdex Cookie 中返回。
 
-## Cookie标记
+## Cookie 标记
 
-下表介绍了Experience Cloud Cookies的标记：
+下表介绍了 Experience Cloud Cookie 标记：
 
-| Cookie（设置方式） | httpOnly | 安全 | SameSite |
+| Cookie（设置方式） | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
-| demdex（http响应） | 否 | 是 | "None" |
-| AMCV(Javascript) | 否 | 可配置 | 取消设置（默认为Lax） |
-| AMCVS(Javascript) | 否 | 可配置 | 取消设置（默认为Lax） |
+| demdex（http 响应） | 否 | 是 | "无" |
+| AMCV (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
+| AMCVS (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 
-*注意：有关使用安全属性配置AMCV和AMCVS cookie的信息，请参阅[secureCookie主题](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html)。*
+*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅[secureCookie](https://docs.adobe.com/content/help/zh-hans/id-service/using/id-service-api/configurations/securecookie.html)主题。*
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
