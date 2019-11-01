@@ -6,7 +6,7 @@ seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -72,7 +72,7 @@ ID 同步是一个在目标发布 iFrame 中触发的 URL。正如该一般示�
 
 [!DNL Adobe Media Optimizer] 对基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Media Optimizer] 是一个受信任的域，因此 ID 同步会从父页面中进行，而不是在[!UICONTROL 目标发布 iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Media Optimizer]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Media Optimizer]。将数据发送至 [!DNL Media Optimizer] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [了解 Demdex 域调用](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
