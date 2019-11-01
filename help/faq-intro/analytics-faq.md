@@ -6,7 +6,7 @@ seo-title: Analytics 和 Identity 服务常见问题解答
 title: Analytics 和 Identity 服务常见问题解答
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -88,7 +88,7 @@ RDC 除了具有全局性能的优势之外，还可以确保您的实施能够�
 >
 >在默认设置下使用 VisitorAPI.js 和 AppMeasurement.js 的最新更新，应该可以避免上述三种情况（虽不太可能出现）所产生的任何严重或重大影响。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
