@@ -6,7 +6,7 @@ seo-title: 使用 Dynamic Tag Management 实施
 title: 使用 Dynamic Tag Management 实施
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. 单击&#x200B;**[!UICONTROL 创建工具]**&#x200B;和&#x200B;**[!UICONTROL 保存更改]**。
 
    保存更改后，ID 服务在 DTM 中会被设置为一个工具。但您还无法使用该服务。您的 DTM 工具仍然需要完成 DTM 发布/审批流程，您可能还需要配置其他参数。有关 DTM 审批流程的信息，请观看[用户基本知识快速入门](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)视频。有关可添加到 DTM 的其他参数的信息，请参阅[适用于 DTM 的 Experience Cloud Identity 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
-
->[!MORE_LIKE_THIS]
->
->* [Web 属性](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## 适用于 DTM 的 Experience Cloud Identity 服务设置{#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ mid=20265673158980419722735089753036633573
 ![](assets/charles_response_unsuccessful.png)
 
 有关错误代码的更多信息，请参阅 [DCS 错误代码、消息和示例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)。
+
+>[!MORELIKETHIS]
+>
+>* [Web 属性](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
