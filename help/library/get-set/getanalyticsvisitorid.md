@@ -6,7 +6,7 @@ seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -50,7 +50,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 当您的组织在完全实施 ID 服务之前使用[宽限期](../../reference/analytics-reference/grace-period.md)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
