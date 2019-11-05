@@ -5,7 +5,7 @@ seo-description: 这些说明适用于具有 Target、Analytics 和 ID 服务混
 seo-title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
