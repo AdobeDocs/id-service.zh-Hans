@@ -5,7 +5,7 @@ seo-description: 与使用 ID 服务相关的特性、功能和问题的常见�
 seo-title: ID 服务常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -87,5 +87,5 @@ ID 服务调用是异步的，它是仅对 [demdex.net 域](https://marketing.ad
 
 >[!MORELIKETHIS]
 >
->* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
 
