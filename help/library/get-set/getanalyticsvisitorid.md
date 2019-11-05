@@ -5,7 +5,7 @@ seo-description: 可返回在实施 Experience Cloud Identity 服务之前存储
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -44,7 +44,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 对于下面的情况，您会在查询字符串中看到 `aid` 参数：
 
 * [!DNL Experience Cloud] ID 服务已正确部署。
-* 访问站点的用户在其 [!DNL Analytics]s_vi Cookie[ 中存储了预先存在的 ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID。
+* 访问站点的用户在其 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/?f=cookies_analytics.html) 中存储了预先存在的 [!DNL Analytics] ID。
 
 **用例 2**
 
@@ -52,5 +52,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_CN/whitepapers/cookies/cookies_analytics.html)
 
