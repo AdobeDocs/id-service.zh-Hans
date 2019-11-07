@@ -5,7 +5,7 @@ audience: 最终用户
 user-guide-title: Experience Cloud Identity 服务帮助
 user-guide-url: /content/help/zh-Hans/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
+source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
    + [Cookie 和 ID 服务](introduction/cookies.md)
    + [ ID 服务如何请求和设置 ID](introduction/id-request.md)
    + [了解 同步和匹配率](introduction/match-rates.md)
-+ 实施指南 {#implementation-guides}
-   + [实施指南](implementation-guides/implementation-guides.md)
++ 实施 {#implementation}
    + [实施方法](implementation-guides/implementation-methods.md)
+   + [实施指南](implementation-guides/implementation-guides.md)
    + [使用 Experience Platform Launch 实施](implementation-guides/ecid-implement-with-launch.md)
    + [使用 DTM 实施](implementation-guides/standard.md)
    + [适用于 Analytics 的实施](implementation-guides/setup-analytics.md)
