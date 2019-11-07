@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 实施指南
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Experience Cloud Identity 服务的标准实施和非标准实施的说明和代码示例。
 
-重要信息：在开始使用这些程序之前，请务必阅读并了解 ID 服务要求。
+>[!IMPORTANT]
+>
+>在开始使用这些程序之前，请务必先阅读并了解 [ID 服务要求](../reference/requirements.md)。
 
 ## 标准实施
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## 实施资源
 
-* [实施指南](implementation-guides.md)
 * [实施方法](implementation-methods.md)
 * [使用 Experience Platform Launch 实施](ecid-implement-with-launch.md)
 * [使用 Dynamic Tag Management 实施](standard.md)
