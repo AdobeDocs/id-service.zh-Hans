@@ -1,11 +1,11 @@
 ---
 cloud: platform-cloud
-product: ID 服务
-audience: 最终用户
-user-guide-title: Experience Cloud Identity 服务帮助
-user-guide-url: /content/help/zh-Hans/id-service/using/home.html
-translation-type: ht
-source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
+product: ID Service
+audience: end-user
+user-guide-title: Experience Cloud Identity Service Help
+user-guide-url: /content/help/en/id-service/using/home.html
+translation-type: tm+mt
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
    + [直接与 ID 服务集成](implementation-guides/direct-integration.md)
    + [直接集成用例](implementation-guides/direct-integration-examples.md)
    + [测试和验证 ID 服务](implementation-guides/test-verify.md)
-   + 选择加入文档 {#opt-in-service}
+   + 选择加入服务 {#opt-in-service}
       + [选择加入服务概述](implementation-guides/opt-in-service/optin-overview.md)
       + [设置选择加入服务](implementation-guides/opt-in-service/getting-started.md)
       + [验证选择加入服务](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
