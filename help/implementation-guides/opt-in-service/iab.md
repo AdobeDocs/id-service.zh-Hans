@@ -1,20 +1,20 @@
 ---
-description: 将他们的同意管理平台 (CMP) 与选择加入的 IAB 插件连接起来。
-seo-description: 将他们的同意管理平台 (CMP) 与选择加入的 IAB 插件连接起来。
+description: 将他们的同意管理平台(CMP)与Opt-in的Audience Manager插件(IAB透明度和同意框架(TCF))连接。
+seo-description: 将他们的同意管理平台(CMP)与Audience Manager插件(用于IAB透明度和同意框架(TCF))连接。
 seo-title: （Beta 版）在 IAB 框架中使用选择加入服务
 title: （Beta 版）在 IAB 框架中使用选择加入服务
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
 
 # （Beta 版）在 IAB 框架中使用选择加入服务{#beta-using-opt-in-services-with-iab-framework}
 
-将他们的同意管理平台 (CMP) 与选择加入的 IAB 插件连接起来。
+将他们的同意管理平台(CMP)与Audience Manager的Opt-in的IAB插件连接。
 
-Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. 选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。使用 ECID 库实施 IAB 插件时，IAB 兼容 CMP 中的访客首选项会自动映射到选择加入。这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
+使用 [](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) IAB透明度和同意框架(TCF)的Audience manager客户可以将其同意管理平台(CMP)与Opt-in的Audience Manager Plugin for IAB TCF相连。 选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。使用 ECID 库实施 IAB 插件时，IAB 兼容 CMP 中的访客首选项会自动映射到选择加入。这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
 
 ## 实施支持 IAB 的 CMP {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
