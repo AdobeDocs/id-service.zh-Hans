@@ -4,7 +4,7 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [关于 ID 服务](introduction/about-id-service.md)
    + [Cookie 和 ID 服务](introduction/cookies.md)
    + [ ID 服务如何请求和设置 ID](introduction/id-request.md)
-   + [了解 同步和匹配率](introduction/match-rates.md)
+   + [了解同步和匹配率](introduction/match-rates.md)
 + 实施 {#implementation}
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
