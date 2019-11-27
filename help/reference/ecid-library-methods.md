@@ -4,7 +4,7 @@ seo-title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
 translation-type: tm+mt
-source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
@@ -28,6 +28,10 @@ ITP 的规则侧重于将控制权交还给开发人员。仅通过 JavaScript �
 **为什么当其他 Analytics 访客跟踪方法与 CNAME 结合使用时，Adobe 会重点使用 ECID 库？**
 
 ECID 库、AMCV Cookie 和 ECID（又称为 MID）均可以将所有 Adobe 解决方案集成到一个 ID 下。此 ID 将继续是 Adobe 产品路线图中具有高优先级的 Cookie 级别 ID，并且是 Adobe Experience Platform 的默认 Cookie ID。
+
+**CNAME 可以帮助客户启用多域跟踪吗？**
+
+CNAME 以前已有的相同规则和警告现在仍然存在。在某些情况下，CNAME 有助于客户启用多域方案。如果您有一个主要的登录网站，可以在用户访问其他域之前识别用户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器中启用多域跟踪。尽管 CNAME 有助于启用某些多域方案，但是将 ECID 转换为 CNAME 实施的目的是为了获取持久访客识别，而不是多域跟踪。有关 CNAME 和多域的更多信息，请参阅[数据收集 CNAME 和跨域跟踪](/help/reference/analytics-reference/cname.md)。
 
 由于已发布其他 ITP 更改，因此将在此处添加更多常见问题解答。For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
