@@ -5,16 +5,16 @@ seo-title: （Beta 版）在 IAB 框架中使用选择加入服务
 title: （Beta 版）在 IAB 框架中使用选择加入服务
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 65947bf4078222561060501178bf28b3c6cfed7c
+source-git-commit: ab85467ad0f9f661c472eb373809c699c4b9130f
 
 ---
 
 
 # （Beta 版）在 IAB 框架中使用选择加入服务{#beta-using-opt-in-services-with-iab-framework}
 
-将同意管理平台(CMP)与选择加入的Audience Manager Plugin for IAB TCF连接。
+将同意管理平台(CMP)与Opt-in的Audience Manager Plugin for IAB TCF连接。
 
-使用 [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Audience Manager 客户，可以将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB TCF 的 Audience Manager 插件连接起来。选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。当使用ECID库实施IAB TCF的Audience Manager插件时，符合IAB规范的CMP的访客偏好会自动映射到选择加入。 这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
+使用 [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Audience Manager 客户，可以将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB TCF 的 Audience Manager 插件连接起来。选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。使用 ECID 库实施适用于 IAB TCF 的 Audience Manager 插件时，IAB 兼容 CMP 中的访客首选项会自动映射到选择加入。这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
 
 ## 实施支持 IAB 的 CMP {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -25,13 +25,13 @@ source-git-commit: 65947bf4078222561060501178bf28b3c6cfed7c
 
 有关更多详细信息，请阅读[互动广告局文档](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md)。
 
-## 在ECID Javascript库中为IAB启用Audience Manager插件 {#section-77bf1b9ed67241a59e56c21ab752e82f}
+## Enable the Audience Manager plug-in for IAB TCF within your ECID Javascript Library {#section-77bf1b9ed67241a59e56c21ab752e82f}
 
 >[!NOTE]
 >
 >选择加入仅适用于 ECID 4.0 以上版本
 
-使用Adobe Experience Platform Launch为您的站点实施IAB TCF的Opt-in和Audience Manager插件。 为选择加入手动启用 IAB 时，请检查以确保在访客对象中将以下设置设为 true：
+使用 Adobe Experience Platform Launch 为您的站点同时实施选择加入和适用于 IAB TCF 的 Audience Manager 插件。为选择加入手动启用 IAB 时，请检查以确保在访客对象中将以下设置设为 true：
 
 ```
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -46,7 +46,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 >
 >Audience Manager 需要获取目的 1、2 和 5 的同意，以及供应商同意&#x200B;**&#x200B;才能部署 Cookie 并启动 ID 同步或使之生效。在此处阅读Audience Manager文档，进一步了解IAB TCF的Audience Manager插 [件](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)。
 
-For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
+For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB TCF, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
 ## 相关文档 {#section-55da1110051a4b39b1037803f4a7b264}
 
