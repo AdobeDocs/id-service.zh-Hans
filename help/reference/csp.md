@@ -6,7 +6,7 @@ seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: e3d63e2ad5f1f58f5444f2aa353b4144b0454fc4
+source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ---
 
@@ -62,7 +62,6 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
 </table>
 
 >[!MORELIKETHIS]
->
 >* [内容安全策略参考](https://content-security-policy.com/)
 >* [MDN：内容安全策略](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
