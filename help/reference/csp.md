@@ -5,7 +5,7 @@ seo-description: 内容安全策略 (CSP) 是一项 HTTP 标头和安全功能�
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ---
@@ -56,13 +56,13 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
    <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>及 ID 同步。另请参阅<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map 插件</b> </p> </td> 
- <td colname="col2"> <p>修改CSP以包含*.adobe.com。 **注意**:如果您在2020年1月之前已安装Activity Map，您的浏览器仍会看到对*.omniture.com的初始请求，但会被重定向到*.adobe.com。 </p></td> 
+ <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 月之前已经安装 Activity Map，您的浏览器仍会看到对 *.omniture.com 的初始请求，但会被重定向到 *.adobe.com。 </p></td> 
  </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >* [内容安全策略参考](https://content-security-policy.com/)
->* [MDN：内容安全策略](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [MDN：内容安全策略](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
 >* [Wikipedia：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
