@@ -1,18 +1,18 @@
 ---
-description: Experience Platform Identity 服务在 Adobe Experience Cloud 中的角色。
-seo-description: Experience Platform Identity 服务允许将通用识别框架用于 Experience Cloud 的多项核心服务、解决方案、客户属性以及受众。
+description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
+seo-description: Experience Cloud Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案、客户属性和受众。
 seo-title: ID 服务概述
 title: 概述
 uuid: null
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
 
 # 概述
 
-Experience Platform Identity 服务允许将通用识别框架用于 Experience Cloud 的多项核心服务、解决方案、客户属性，以及 Platform Identity 服务中的受众。（您可能会看到对以前名称或缩写的引用，例如 Experience Cloud ID 服务、ECID、Marketing Cloud ID 服务、MID 和访客 ID 服务）。ID 服务通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+Experience Cloud Identity service支持Experience cloud核心服务、解决方案以及平台标识服务中的客户属性和受众的通用标识框架。 （您可能会看到对以前名称或缩写的引用，例如 Experience Cloud ID 服务、ECID、Marketing Cloud ID 服务、MID 和访客 ID 服务）。ID 服务通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
 ![](assets/ecid.png)
 
