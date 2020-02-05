@@ -1,18 +1,26 @@
 ---
-description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
-seo-description: Experience Cloud Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案、客户属性和受众。
-seo-title: ID 服务概述
-title: 概述
-uuid: null
+description: Experience Cloud identity服务在Adobe Experience cloud中的角色。
+seo-description: Experience Cloud Identity Service（以前称为访客ID服务或Marketing Cloud ID服务）支持Experience Cloud服务的通用标识框架，如客户属性和受众。
+seo-title: Experience Cloud ID服务概述
+title: Experience Cloud ID服务概述
 translation-type: tm+mt
-source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
+source-git-commit: 9e020c3292a7c9f14ec77615a54ec61a37762eec
 
 ---
 
 
-# 概述
+# Experience Cloud ID服务概述
 
-Experience Cloud Identity service支持Experience cloud核心服务、解决方案以及平台标识服务中的客户属性和受众的通用标识框架。 （您可能会看到对以前名称或缩写的引用，例如 Experience Cloud ID 服务、ECID、Marketing Cloud ID 服务、MID 和访客 ID 服务）。ID 服务通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+The [!UICONTROL Experience Cloud Identity Service] enables the common identification framework for Experience Cloud Core Services (such as customer attributes and audiences) solutions in the Experience Platform Identity Service.
+
+>[!NOTE]
+>
+> 您可能会看到对以前名称或缩写词的引用，如ECID、Marketing Cloud ID Service(MID)和访客ID Service。 这些服务涉及 [!UICONTROL Experience Cloud Identity Service]。 您还可能会看 [!UICONTROL 到Experience Platform Identity Service]。 澄清：
+
+* [!UICONTROL Experience Platform Identity Service]:链接身份的服务。 它是面向基于人的体验管理的设备链接服务。
+* [!UICONTROL Experience Cloud ID服务] (ECID):分配给站点访客的唯一永久ID。 它是可由平台标识服务使用的特定实体。
+
+在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
 ![](assets/ecid.png)
 
