@@ -6,7 +6,7 @@ seo-title: 关于 ID 服务
 title: 概述
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
+source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
 
@@ -23,7 +23,7 @@ mcvid-functionality.xml
 
 Experience Cloud Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案、客户属性和受众。它通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
-![](assets/ecid.png)
+![](assets/ecid-new.png)
 
 此外，ID 服务还可替代特定于不同解决方案的 ID（例如 Analytics AID）。并且，通过[客户 ID 和身份验证状态](../reference/authenticated-state.md)功能，ID 服务允许您将自己的客户 ID 传递到 [!DNL Experience Cloud]。但是请记住，ID 服务只能在您已经订阅的解决方案中使用。它不提供对其他未注册产品的访问权限。
 
