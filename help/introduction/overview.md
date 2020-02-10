@@ -4,7 +4,7 @@ seo-description: Experience Cloud Identity Service（以前称为访客ID服务�
 seo-title: Experience Cloud ID服务概述
 title: Experience Cloud ID服务概述
 translation-type: tm+mt
-source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
+source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
 
 ---
 
@@ -22,7 +22,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
-![](assets/ecid.png)
+![](assets/ecid-new.png)
 
 此外，ID 服务还可替代特定于不同解决方案的 ID（例如 Analytics AID）。并且，通过[客户 ID 和身份验证状态](/help/reference/authenticated-state.md)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是请记住，ID 服务只能在您已经订阅的解决方案中使用。它不提供对其他未注册产品的访问权限。
 
