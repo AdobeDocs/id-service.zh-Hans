@@ -1,12 +1,12 @@
 ---
 description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
+source-git-commit: ba84c4dac9023ab13f5176c5665adbbdaeb00d33
 
 ---
 
@@ -38,6 +38,20 @@ source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 **支持 ITP 2.1**。如果在第一方 CNAME 中设置了跟踪服务器，则会使用 ECID 值放置新的 cookie (s_ecid)。ECID 库会引用该值，以便将 ID 保留超过 7 天。请参阅 [Safari ITP 中的 ECID 库方法](/help/reference/ecid-library-methods.md)。
 
 **修复了 secureCookie 配置的错误。**
+
+## 版本 4.1
+
+根据 `publishDestinations` 新API更改进行更新。 通过此更新，可以根据需要在 ID 同步期间公开此页面的反向链接信息。(CORE-23693)
+
+## 版本 4.2
+
+支持IAB TCF的Audience Manager插件，可通过ECID选择加入对象获得。
+
+**修复**
+
+* IAB + OptIn未能获得MID以重新访问客户(CORE-26022)
+* 修复了DTM中选择加入doesOptInApply配置的错误(DTM-12958)
+* ECID退出会禁用ID同步(CORE-23814)
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
