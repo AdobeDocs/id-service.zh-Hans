@@ -5,7 +5,7 @@ seo-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud 
 seo-title: 直接集成用例
 title: 直接集成用例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # 直接集成用例 {#direct-integration-use-cases}
 
-这些示例涵盖与直接集成和Experience Cloud ID（ECID或MID）相关的2个常见用例。 此ID是网站访客的唯一永久ID。
+以下示例介绍了 2 个与直接集成和 Experience Cloud ID（ECID 或 MID）有关的常见用例。此 ID 是您的网站访客的唯一永久性 ID。
 
 >[!TIP]
 >
