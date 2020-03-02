@@ -5,24 +5,24 @@ seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience Cloud release notes - 2019 {#release-notes}
+# Experience Cloud 发行说明 - 2019 版{#release-notes}
 
 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 
 ## 版本 4.4.1
 
-在ECID启动扩展中为媒体分析添加预先选择批准复选框(CORE-33185)
+在 ECID Launch 扩展中，为“媒体分析”添加了预先准备的选择加入批准复选框 (CORE-33185)
 
 **修复**
 
-* ECID启动扩展preOptInApprovals输入字符串解析问题(CORE-34041)
-* 使用trackingServer时的性能下降(CORE-32387)
+* 解析 ECID Launch 扩展 preOptInApprovals 输入字符串时出现问题 (CORE-34041)
+* 使用 trackingServer 时性能下降 (CORE-32387)
 
 ## 版本 4.4 {#version-4point4}
 
@@ -46,21 +46,21 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ## 版本 4.1
 
-根据 `publishDestinations` 新API更改进行更新。 通过此更新，可以根据需要在 ID 同步期间公开此页面的反向链接信息。(CORE-23693)
+根据新 API 更改，对 `publishDestinations` 进行更新。通过这项更新，可以根据需要在 ID 同步期间公开此页面的反向链接信息。(CORE-23693)
 
 ## 版本 4.2
 
-支持IAB TCF的Audience Manager插件，可通过ECID选择加入对象获得。
+支持适用于 IAB TCF 的 Audience Manager 插件，该插件可通过 ECID 选择加入对象获取。
 
 **修复**
 
-* IAB + OptIn未能获得MID以重新访问客户(CORE-26022)
-* 修复了DTM中选择加入doesOptInApply配置的错误(DTM-12958)
-* ECID退出会禁用ID同步(CORE-23814)
+* IAB + OptIn 无法获得重新访问客户的 MID (CORE-26022)
+* 修复了 DTM 中选择加入 doesOptInApply 配置的错误 (DTM-12958)
+* ECID 选择退出会禁用 ID 同步 (CORE-23814)
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。借助 [Experience Platform Launch](https://docs.adobelaunch.com/)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
