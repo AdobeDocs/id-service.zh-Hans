@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
       + [使用 DTM 配置选择加入](implementation-guides/opt-in-service/optin-dtm.md)
       + [选择加入用例](implementation-guides/opt-in-service/use-cases.md)
       + [选择加入参考](implementation-guides/opt-in-service/api.md)
-      + [（Beta 版）在 IAB 框架中使用选择加入服务](implementation-guides/opt-in-service/iab.md)
+      + [将选择加入服务与IAB Framework结合使用](implementation-guides/opt-in-service/iab.md)
 + ID 服务 API {#id-service-api}
    + [ID 服务 API 概述](library/library.md)
    + 配置 {#configurations}
