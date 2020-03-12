@@ -5,7 +5,7 @@ seo-description: 内容安全策略 (CSP) 是一项 HTTP 标头和安全功能�
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7255228470a59a537251c3a3eec686f52a2b76ec
 
 ---
@@ -52,14 +52,14 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
    <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.tt.omtrdc.net</span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Experience Cloud ID服务和Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>修改您的CSP以包含以下域。</p> 
+   <td colname="col1"> <p> <b>Experience Cloud ID 服务和 Audience Manager</b> </p> </td> 
+   <td colname="col2"> <p>修改您的 CSP 以包含以下域。</p> 
    <p><ul>
    <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>如果您使用Adobe Launch部署标记，则还必须 <code>https://assets.adobedtm.com</code> 添加到域列表。</li></ul></p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>及 ID 同步。另请参阅<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> </tr> 
+   <li>如果您使用 Adobe Launch 来部署标记，则还必须将 <code>https://assets.adobedtm.com</code> 添加到域列表。</li></ul></p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>及 ID 同步。另请参阅<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map 插件</b> </p> </td> 
  <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 月之前已经安装 Activity Map，您的浏览器仍会看到对 *.omniture.com 的初始请求，但会被重定向到 *.adobe.com。 </p></td> 
@@ -69,6 +69,6 @@ CSP 的使用很常见且易于理解。本文档的目的并不在于详细介�
 
 >[!MORELIKETHIS]
 >* [内容安全策略参考](https://content-security-policy.com/)
->* [MDN：内容安全策略](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [MDN：内容安全策略](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
 >* [Wikipedia：内容安全策略](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
