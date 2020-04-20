@@ -5,8 +5,8 @@ seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ## 版本 4.4.1
 
-在 ECID Launch 扩展中，为“媒体分析”添加了预先准备的选择加入批准复选框 (CORE-33185)
+在 ECID Launch 扩展中，为“媒体分析”添加了预先准备的选择加入批准复选框.
 
 **修复**
 
-* 解析 ECID Launch 扩展 preOptInApprovals 输入字符串时出现问题 (CORE-34041)
-* 使用 trackingServer 时性能下降 (CORE-32387)
+* ECID启动扩展preOptInApprovals输入字符串解析的问题。
+* 使用trackingServer时的性能下降。
 
 ## 版本 4.4 {#version-4point4}
 
@@ -32,11 +32,11 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 **修复、增强功能和改进功能**
 
-* 我们对 `cookieDomain` 进行了配置更新。现在，ECID 库过滤出了 `initConfig` 中的空字符串 `cookieDomain`，且使用顶级 Cookie 域，该域是通过 getDomain 方法返回的。(CORE-29223)
-* 我们修复了与 `localVisitor` 中的 `getVisitorValues` 相关的错误。(CORE-31287)
-* 我们修复了 Safari 浏览器中的 MCOPTOUT 值（通过 `getVisitorValue` 方法返回）存在不一致的错误。(CORE-29719)
+* 我们对 `cookieDomain` 进行了配置更新。现在，ECID 库过滤出了 `initConfig` 中的空字符串 `cookieDomain`，且使用顶级 Cookie 域，该域是通过 getDomain 方法返回的。
+* 我们修复了与 `getVisitorValues` 中的 `localVisitor` 相关的错误。
+* 我们修复了 Safari 浏览器中的 MCOPTOUT 值（通过 `getVisitorValue` 方法返回）存在不一致的错误。
 * 我们通过添加 `optIn.off` 以取消订阅事件，更新了“选择加入”库。
-* 我们修复了一个与 setTimeout 函数相关的错误，其中 `setTimeout` 在某些客户站点上违反了内容安全策略 (CSP)。(CORE-30623)
+* 我们修复了一个与 setTimeout 函数相关的错误，其中 `setTimeout` 在某些客户站点上违反了内容安全策略 (CSP)。
 
 ## 版本 4.3 {#version-4point3}
 
@@ -46,7 +46,7 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ## 版本 4.1
 
-根据新 API 更改，对 `publishDestinations` 进行更新。通过这项更新，可以根据需要在 ID 同步期间公开此页面的反向链接信息。(CORE-23693)
+根据新 API 更改，对 `publishDestinations` 进行更新。通过此更新，可以根据需要在 ID 同步期间公开此页面的反向链接信息。
 
 ## 版本 4.2
 
@@ -54,9 +54,9 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 **修复**
 
-* IAB + OptIn 无法获得重新访问客户的 MID (CORE-26022)
-* 修复了 DTM 中选择加入 doesOptInApply 配置的错误 (DTM-12958)
-* ECID 选择退出会禁用 ID 同步 (CORE-23814)
+* IAB + OptIn 无法获得重新访问客户的 MID.
+* 修复了DTM中选择加入doesOptInApply配置的错误。
+* ECID 选择退出会禁用 ID 同步.
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 | 项目 | 描述 |
 |---|---|
 | `disableIdSyncs` 标记在传递字符串时不起作用。 | 已修复。现在接受对 `getInstance` 函数的 `disableidSyncs` 参数设置的值。 |
-| 第三方 iFrame 没有获得 ECID | 修复了 Safari Mobil 上的 ECID 以及各种 iFrame 中的 ECID 不起作用的问题。 |
+| 第三方iFrames未获得ECID | 修复了Safari Mobil和各种iFrames中不起作用的ECID。 |
