@@ -5,7 +5,7 @@ seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -21,8 +21,8 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 **修复**
 
-* ECID启动扩展preOptInApprovals输入字符串解析的问题。
-* 使用trackingServer时的性能下降。
+* 解析 ECID Launch 扩展 preOptInApprovals 输入字符串时出现问题。
+* 使用 trackingServer 时性能下降。
 
 ## 版本 4.4 {#version-4point4}
 
@@ -55,7 +55,7 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 **修复**
 
 * IAB + OptIn 无法获得重新访问客户的 MID.
-* 修复了DTM中选择加入doesOptInApply配置的错误。
+* 修复了 DTM 中选择加入 doesOptInApply 配置的错误。
 * ECID 选择退出会禁用 ID 同步.
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
@@ -67,4 +67,4 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 | 项目 | 描述 |
 |---|---|
 | `disableIdSyncs` 标记在传递字符串时不起作用。 | 已修复。现在接受对 `getInstance` 函数的 `disableidSyncs` 参数设置的值。 |
-| 第三方iFrames未获得ECID | 修复了Safari Mobil和各种iFrames中不起作用的ECID。 |
+| 第三方 iFrame 无法获得 ECID | 修复了 Safari Mobil 和各种 iFrame 中的 ECID 不起作用的问题。 |
