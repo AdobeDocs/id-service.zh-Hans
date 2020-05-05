@@ -6,7 +6,7 @@ seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
 
 ---
 
@@ -31,19 +31,17 @@ When the Analytics cookie was set by the data collection server, many customers 
 
 但是，使用CNAME进行数据收集还有一个好处，它允许您在不接受第三方cookie的浏览器中跟踪主登录域和其他域之间的访客。 具有多个Web属性（多个域）的客户可能从维护数据收集CNAME中受益。 以下部分介绍跨域访客跟踪的工作方式。
 
-## CNAME 如何启用跨域跟踪 {#section-78925af798e24917b9abed79de290ad9}
+## 跨域跟踪 {#section-78925af798e24917b9abed79de290ad9}
 
-由于可以在 Apple Safari 和其他一些浏览器的第三方上下文中使用第一方 Cookie，CNAME 允许您跟踪主域和其他一些使用相同跟踪服务器的域之间的客户。
+访客ID服务使用demdex.net作为其域，以在用户的隐私和浏览器设置允许的情况下跨域(但在同一拥有公司内)跟踪访客。
 
-例如，您的主站点为 `mymainsite.com`。您将 CNAME 记录配置为指向安全的数据收集服务器：`smetrics.mymainsite.com`。
+CNAME不提供其他跨域优势。 例如，您的主站点为 `mymainsite.com`。您将 CNAME 记录配置为指向安全的数据收集服务器：`smetrics.mymainsite.com`。
 
 当用户访问 `mymainsite.com` 时，数据收集服务器将设置 ID 服务 Cookie。此操作是允许的，因为数据收集服务器的域与网站的域相匹配，也就是我们所说的在&#x200B;*第一方上下文*&#x200B;中使用 Cookie，或者说是使用&#x200B;*第一方 Cookie*。
 
-如果您在其他站点（如 `myothersiteA.com` 和 `myothersiteB.com`）上也使用同样的数据收集服务器，那么当访客稍后访问这些站点时，访问 `mymainsite.com` 期间设置的 Cookie 将在 HTTPS 请求中发送给数据收集服务器（记住，浏览器会使用所有 HTTPS 请求将域的所有 Cookie 发送给该域，即使该域与当前网站的域不匹配也不例外）。这就是我们所说的在&#x200B;*第三方上下文*&#x200B;中使用 Cookie，或者说是使用&#x200B;*第三方 Cookie*，从而实现在其他域上使用同样的访客 ID。请注意，浏览器处理第三方上下文中 Cookie 的方式与处理第一方 Cookie 的方式有所不同。
+如果您在其他站点（如 `myothersiteA.com` 和 `myothersiteB.com`）上也使用同样的数据收集服务器，那么当访客稍后访问这些站点时，访问 `mymainsite.com` 期间设置的 Cookie 将在 HTTPS 请求中发送给数据收集服务器（记住，浏览器会使用所有 HTTPS 请求将域的所有 Cookie 发送给该域，即使该域与当前网站的域不匹配也不例外）。这称为在第三方上下文中 *使用cookie*，或仅 *是第三方cookie*，即使您使用的是CNAME。 Adobe建议每个唯一域使用一个CNAME。
 
 *注意：Safari 会阻止第三方上下文中的所有 Cookie，而不管它们是如何设置的。*
-
-因此，您的收集域应当为人们通常访问的域，以便系统能够在多个域上对访客进行识别。如果没有用于数据收集域的&#x200B;*通用*&#x200B;域，那么维护数据收集域的 CNAME 在跨域方面并没有任何优势。如果最先访问的不是主登录网站，那么访客在二级网站和主网站上将被视为不同的访客。
 
 ## 通过 Experience Cloud Identity 服务启用 CNAME 支持{#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
