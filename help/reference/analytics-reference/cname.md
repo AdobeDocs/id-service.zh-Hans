@@ -5,8 +5,8 @@ seo-description: 'null'
 seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,21 +15,21 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 如果您有一个主要的登录网站，可以在客户访问其他域之前识别客户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器（如 Safari）中启用跨域跟踪。
 
-在接受第三方 Cookie 的浏览器中，Cookie 是由数据收集服务器在访客 ID 请求期间设置的。该 Cookie 允许访客 ID 服务在使用同一 Experience Cloud 组织 ID 配置的所有域上返回相同的 Experience Cloud 访客 ID。
+在接受第三方Cookie的浏览器中，数据收集服务器在请求访客ID期间设置Cookie。 此Cookie允许访客ID服务在使用相同Experience Cloud组织ID配置的所有域上返回相同的Experience Cloud访客ID。
 
-在拒绝第三方 Cookie 的浏览器中，将会为每个域分配一个新的 Experience Cloud 访客 ID。
+在拒绝第三方Cookie的浏览器中，将为每个域分配一个新的Experience Cloud访客ID。
 
-demdex.net Cookie 允许访客 ID 服务提供与 Analytics 中的 s_vi Cookie 相同级别的跨域跟踪，不过，某些浏览器会接受 demdex.net Cookie 并跨域使用，但是其他一些浏览器则拒绝。
+demdex.net cookie使访客ID服务能够提供与Analytics中s_vi cookie相同级别的跨域跟踪，其中某些浏览器接受cookie并在域之间使用cookie，但其他浏览器拒绝。
 
-## 数据收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
+## Data Collection CNAMEs {#section-48fd186d376a48079769d12c4bd9f317}
 
-过去数据收集服务器在设置 Analytics Cookie 时，许多客户都配置了数据收集服务器 CNAME 记录作为[第一方 Cookie 实施](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免浏览器拒绝第三方 Cookie 的问题。这个过程是将您的数据收集服务器域配置成与您的网站域相匹配，从而将访客 ID Cookie 设置为第一方 Cookie。
+When the Analytics cookie was set by the data collection server, many customers have configured data collection server CNAME records as part of a [first-party cookie implementation](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-first-party.html) to avoid issues with browsers that reject third-party cookies. 此过程将您的访客收集服务器域配置为与您的网站域匹配，因此将数据ID cookie设置为第一方cookie。
 
-由于访客 ID 服务使用 JavaScript 直接在当前网站的域上设置访客 Cookie，因此不再需要采用这种配置来设置第一方 Cookie。
+由于访客ID服务使用JavaScript直接在当前网站的域上设置访客cookie，因此不再需要此配置来设置第一方cookie。
 
 具有单一 Web 属性（单一域）的客户可以从使用数据收集 CNAME 中迁移出来，改为使用其默认的数据收集主机名（`omtrdc.net` 或 `2o7.net`）。
 
-然而，使用 CNAME 进行数据收集有一个额外的好处，即，您可以在不接受第三方 Cookie 的浏览器中跟踪往来于主登录域和其他域之间的访客。拥有多个 Web 属性（多个域）的客户可以从继续使用数据收集 CNAME 获益。以下部分解释了跨域访客跟踪的工作原理。
+但是，使用CNAME进行数据收集还有一个好处，它允许您在不接受第三方cookie的浏览器中跟踪主登录域和其他域之间的访客。 具有多个Web属性（多个域）的客户可能从维护数据收集CNAME中受益。 以下部分介绍跨域访客跟踪的工作方式。
 
 ## CNAME 如何启用跨域跟踪 {#section-78925af798e24917b9abed79de290ad9}
 
