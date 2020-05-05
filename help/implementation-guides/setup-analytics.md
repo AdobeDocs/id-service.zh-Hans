@@ -1,19 +1,19 @@
 ---
-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
-keywords: ID 服务
-seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用DTM来实施ID服务。 DTM简化了实施工作流程，并自动确保正确的代码放置和排序。
+keywords: ID Service
+seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用DTM来实施ID服务。 DTM简化了实施工作流程，并自动确保正确的代码放置和排序。
 seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # 实施适用于 Analytics 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics}
 
-这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施此 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序的正确性。
+这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用DTM来实施ID服务。 DTM简化了实施工作流程，并自动确保正确的代码放置和排序。
 
 >[!IMPORTANT]
 >
@@ -38,7 +38,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 [!UICONTROL ID 服务] 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
 
-1. 转到&#x200B;**[!UICONTROL 管理员]** &gt; **[!UICONTROL 代码管理器]**。
+1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
 1. 在[!UICONTROL 代码管理器]中，单击 **[!UICONTROL JavaScript（新版）]**&#x200B;或 **[!UICONTROL JavaScript（旧版）]**。
 
    此下载文件对代码库进行了压缩。
@@ -49,13 +49,13 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 >[!IMPORTANT]
 >
->* ID 服务 API 的早期版本将此函数放置在其他位置，并且需要使用不同的语法。如果您要从[版本 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) 之前的版本迁移，请注意此处记录的新放置位置和语法。
->* 全部大写的代码是一个对应实际值的占位符。将此文本替换为您的组织 ID、跟踪服务器 URL 或其他指定值。
+>* 先前版本的ID服务API将此函数放置在不同的位置，并需要不同的语法。 如果您是从版本1.4之前的 [版本迁移](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572)，请注意此处介绍的新位置和语法。
+>* ALL CAPS中的代码是实际值的占位符。 将此文本替换为您的组织ID、跟踪服务器URL或其他命名值。
 >
 
 
 
-**第 1 部分：复制下面的 Visitor.getInstance 函数**
+**第1部分： 复制下面的访客.getInstance函数**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 
@@ -69,7 +69,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-**第 2 部分：将函数代码添加到 VisitorAPI.js 文件中**
+**第2部分： 将函数代码添加到VisitorAPI.js文件**
 
 将 `Visitor.getInstance` 函数放置在位于文件末尾的代码块后面。您编辑的文件应该类似于下面的样子：
 
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 步骤 3：将您的 Experience Cloud 组织 ID 添加到 Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-在 `Visitor.getInstance` 函数中，将 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 替换为您的 [!DNL Experience Cloud] 组织 ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅[管理 - 核心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您编辑的函数看起来类似于下面的示例。
+在 `Visitor.getInstance` 函数中，将 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 替换为您的 [!DNL Experience Cloud] 组织 ID。如果您不知道自己的组织 ID，可以在 [!DNL Experience Cloud] 管理页面上查找。另请参阅 [管理——核心服务](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html)。 您编辑的函数看起来类似于下面的示例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -115,26 +115,26 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 * `s.trackingServer`
 * `s.trackingServerSecure`
 
-**第 2 部分：设置跟踪服务器变量**
+**第2部分： 设置跟踪服务器变量**
 
-要确定需要使用哪些跟踪服务器变量，请执行以下操作：
+要确定要使用的跟踪服务器变量，请执行以下操作：
 
-1. 回答以下决策矩阵中的问题。使用与您的回答相对应的变量。
-1. 将跟踪服务器占位符替换为您的跟踪服务器 URL。
+1. 在下面的决策矩阵中回答问题。 使用与答案对应的变量。
+1. 将跟踪服务器占位符替换为跟踪服务器URL。
 1. 从代码中删除未使用的跟踪服务器和 [!DNL Experience Cloud] 服务器变量。
 
 ![](assets/tracking-server-matrix.png)
 
 >[!NOTE]
 >
->在使用时，请将 [!DNL Experience Cloud] 服务器 URL 与它们相对应的跟踪服务器 URL 相匹配，如下所示：&gt;
+>在使用时，请将 [!DNL Experience Cloud] 服务器 URL 与它们相对应的跟踪服务器 URL 相匹配，如下所示：>
 >* [!DNL Experience Cloud] 服务器 URL = 跟踪服务器 URL
 >* [!DNL Experience Cloud] 服务器安全 URL = 跟踪服务器安全 URL
 >
 
 
 
-If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)和[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
 
 ## 步骤 5：更新您的 AppMeasurement.js 或 s_code.js 文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -144,7 +144,7 @@ If you're not sure how to find your tracking server see the [FAQ](../faq-intro/f
 
 将这个代码放置在包含 `linkInternalFilters`、`charSet`、`trackDownloads` 等配置的相同部分中。
 
-***（可选，但是推荐）*创建自定义 prop**
+***（可选，但是推荐）*创建自定义 prop **
 
 在 `AppMeasurement.js` 或 `s_code.js` 中设置自定义 prop 以测量覆盖范围。将此自定义 prop 添加到 `AppMeasurement.js` 或 `s_code.js` 文件的 `doPlugins` 函数中：
 
@@ -164,27 +164,27 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步骤 7：（可选）配置宽限期 {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 宽限期可长达 180 天。您可以在必要时延长宽限期。
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 宽限期最长可为180天。 您可以根据需要续订宽限期。
 
 **部分实施**
 
-如果您的某些页面使用 ID 服务而某些页面没有使用，并且它们全部报告到同一个 [!DNL Analytics] 报表包中，那么就需要设置宽限期。这对于一个跨域报告的全局报表包来说，设置宽限期是很常见的。
+如果您的某些页面使用 ID 服务而某些页面没有使用，并且它们全部报告到同一个 [!DNL Analytics] 报表包中，那么就需要设置宽限期。如果您有一个跨域报告的全局报告套件，则这种情况很常见。
 
-当报告到同一报表包中的所有网页都部署了 ID 服务后，就可以中止宽限期。
+在将ID服务部署到报告到同一报表包的所有网页后，停止宽限期。
 
-**s_vi Cookie 要求**
+**s_vi Cookie要求**
 
-如果在迁移到 ID 服务后，您要求新访客具有 s_vi Cookie，则需要设置宽限期。当您的实施需要读取 s_vi Cookie 并将其存储在变量中时，设置宽限期是很常见的。
+如果您需要新访客在迁移到ID服务后具有s_vi cookie，则需要宽限期。 如果您的实现读取s_vi cookie并将其存储在变量中，则这是常见的。
 
-在您的实施可以捕获 MID 而不是读取 s_vi Cookie 时，就可以中止宽限期。
+在实施可捕获MID而不是读取s_vi cookie后，停止宽限期。
 
-请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
+See, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 如果您将来自点击流数据馈送和使用 `visid_high` 及 `visid_low` 列的流程中的数据发送至内部系统，则需要设置宽限期。
 
 当您的数据获取流程可以使用 `post_visid_high` 和 `post_visid_low` 列之后，就可以中止宽限期。
 
-请参阅[点击流数据列引用](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)。
+请参 [阅Clickstream Data Column Reference](https://docs.adobe.com/content/help/zh-Hans/analytics/export/analytics-data-feed/data-feed-overview.html)。
 
 **点击流数据获取**
 
@@ -196,16 +196,16 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 要测试 ID 服务的实施状况，请检查以下环节：
 
-* 在托管页面的域中查找 [AMCV Cookie](../introduction/cookies.md)。
-* 使用 [!DNL Analytics]Adobe 调试器工具[在 ](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) 图像请求中查找 MID 值。
+* [托管页面](../introduction/cookies.md) 的域中的AMCV cookie。
+* 使用Adobe调试器 [!DNL Analytics] 工具在图像请求 [中输入MID值](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)。
 
 另请参阅[测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)。
 
 **部署代码**
 
-部署通过了测试的代码。
+通过测试后部署代码。
 
-如果您在 [步骤 7](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3) 中启用了宽限期：
+如果您在步骤7中启用了 [宽限期](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3):
 
 * 请确保 [!DNL Analytics] ID (AID) 和 MID 都在图像请求中。
 * 当您符合中止宽限期的条件时，请记住禁用宽限期。
