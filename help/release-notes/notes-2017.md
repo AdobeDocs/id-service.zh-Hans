@@ -5,8 +5,11 @@ seo-description: 关于 2017 版 Experience Cloud Identity 服务的功能发布
 seo-title: 2017 版发行说明
 title: 2017 版发行说明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 关于 2017 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html)。
+[Experience Cloud 发行说明](https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html)中也记录了这些更改。
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
-2017年9月
+2017 年 9 月
 
 <!--
 <p>
@@ -42,20 +45,20 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 <span class="codeph">visitor.FIELDS</span> 枚举来控制要返回哪些 ID。请参 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> 阅getVisitorValues</a>。 </p> </td> 
+   <td colname="col2"> <p>这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 <span class="codeph">visitor.FIELDS</span> 枚举来控制要返回哪些 ID。请参阅 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local">getVisitorValues</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **错误修复和其他更改**
 
-* 修复了一个与Chrome相关的错误，该错误导致ID服务在该浏览器中单击“返回”按钮时抛出错误。
-* ID服务现在在事件呼叫响应中的区域ID发生更改时重新触发ID同步。
-* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
+* 修复了一个与 Chrome 相关的错误，在该浏览器中单击“返回”按钮时，该错误会导致 ID 服务出错。
+* 现在，当事件调用响应中的区域 ID 发生更改时，ID 服务会重新触发 ID 同步。
+* 新增了[内容安全策略和 Experience Cloud Identity 服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)文档，该文档说明了如何将 ID 服务使用的 Adobe 域调用添加到白名单中。
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-2017年8月
+2017 年 8 月
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
@@ -74,7 +77,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修订的文档**
 
-更新并修改了常见问 [题解答](/help/faq-intro/faq-intro.md) ，以包含不同解决方案的单独 [!DNL Experience Cloud] 常见问题解答。
+更新并修改了[常见问题解答](/help/faq-intro/faq-intro.md)，以包含针对不同 [!DNL Experience Cloud] 解决方案的单独常见问题解答。
 
 ## 版本 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -101,8 +104,8 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **错误修复和其他更改**
 
-* 修复了VisitorAPI.js v2.2中阻止ID服务和目标在Internet Explorer中协同工作的错误。
-* 修改了代码，以帮助改进ID服务向目标发布iFrame发送数据的方式。 这有助于降低CPU使用。
+* 修复了 VisitorAPI.js v2.2 中 ID 服务和 Target 无法在 Internet Explorer 中一起使用的错误。
+* 修改了代码，以帮助改进 ID 服务向 Destination Publishing iFrame 发送数据的方式。这有助于降低 CPU 使用量。
 
 ## 版本 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -118,12 +121,12 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain 和 whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>这些配置允许在iFrame中实现的ID服务代码的不同实例和父页面上的不同实例相互通信。 它们旨在帮助解决以下两种特定用例的问题：您可能控制父页面／域，并且您在您控制的域的iFrame中加载了ID服务代码。 </p> </td> 
+   <td colname="col2"> <p>通过这些配置，在 iFrame 中和父页面上实施的 ID 服务代码的不同实例可以相互通信。它们旨在帮助解决以下两种特定用例中出现的问题：您可能会（也可能不会）控制父页面/域，以及您在自己控制的域的 iFrame 中加载 ID 服务代码。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Documentation Updates for May {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## 5 月份的文档更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -188,11 +191,11 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修复**
 
-修复了导致ID服务对ID进行冗余服务器调用而不是使用存储在AMCV cookie中的ID的错误。 (MCID-296)
+修复了导致以下问题的错误：ID 服务进行冗余服务器调用以获取 ID，而不使用存储在 AMCV Cookie 中的 ID。(MCID-296)
 
 **新文档**
 
-[将DNS预取与不同的Experience Cloud解决方案和服务结合使用](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[将 DNS 预获取用于不同的 Experience Cloud 解决方案和服务](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/more-resources/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -204,10 +207,10 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修复和改进功能**
 
-* 修复了阻止AppMeasurement向Analytics发出跟踪调用的错误。 (MCID-254、MCID-256、MCID-286)
-* 修复了在访客启用广告阻止程序且该阻止程序配置为排除demdex.net域时，阻止ID服务立即失败的错误。 这是一个罕见且不寻常的错误，因为大多数广告阻止工具不会阻止demdex.net域。 (MCID-233)
-* 修复了由客户网站上的ID服务代码和自定义脚本之间的交互导致的错误。 此问题阻止Internet Explorer 9加载网页。 (MCID-206)
+* 修复了导致 AppMeasurement 无法对 Analytics 发起跟踪调用的错误。（MCID-254、MCID-256、MCID-286）
+* 修复了一个在以下情况中 ID 服务无法立即失败的错误：访客启用了广告拦截器，并且将其配置为排除 demdex.net 域。这种错误非常少见，因为大多数广告拦截工具并不拦截 demdex.net 域。(MCID-233)
+* 修复了由 ID 服务代码和客户网站上的自定义脚本之间的交互而导致的错误。此问题导致 Internet Explorer 9 无法加载网页。(MCID-206)
 
-## 前几年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 早期年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 ID 服务的早期发行说明。
