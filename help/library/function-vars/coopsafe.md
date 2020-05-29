@@ -5,8 +5,11 @@ seo-description: 这是一个可选的布尔型配置，用于确定 ID 服务�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '604'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 要使用 `isCoopSafe`，您必须满足以下条件：
 
 * 使用 ID 服务代码版本 2.4 或更高版本。
-* 参与 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)。 潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 参与 [Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/about/overview.html)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
 * 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。不存在启用这些标记的自助途径。
 
@@ -47,15 +50,15 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>已验证访客</b> </p> </td> 
+   <td colname="col1"> <p> <b>已通过身份验证的访客</b> </p> </td> 
    <td colname="col2"> <p>将 <span class="codeph">isCoopSafe</span> 添加到您的 ID 服务代码，以控制设备协作如何使用经过身份验证的访客（已接受或未接受使用条款协议）的数据来构建设备图。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方网站上的 DIL</b> </p> </td> 
    <td colname="col2"> <p>将 <span class="codeph">isCoopSafe</span> 添加到您的 ID 服务代码以供在第三方网站上使用，在这些网站中： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">无法确保已验证的访客有或未接受使用期限协议。 </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制设备合作社如何使用该数据来构建设备图。 </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">无法确保已通过身份验证的访客是否接受了使用条款协议。 </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制设备协作如何使用该数据来构建设备图。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -73,7 +76,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **代码示例**
 
-在ID服务代码实例化时设置此设置：
+在 ID 服务代码实例化时进行此设置：
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
@@ -95,7 +98,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 配置状态 </th> 
-   <th colname="col2" class="entry"> POST参数 </th> 
+   <th colname="col2" class="entry"> POST 参数 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -112,7 +115,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## 实例化后 API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-这些 API 允许您覆盖 `isCoopSafe` 状态。这是必需的，因为它们允许您更改访客在站点或页面未刷新的单页应用程序中的实例化后／登录后状态。 例如，如果用户对您的站点或应用程序进行身份验证，并稍后接受允许设备合作社使用其数据的使用条款策略，则您需要调用这些API。
+这些 API 允许您覆盖 `isCoopSafe` 状态。这些 API 是必需的，因为它们允许您在网站或页面不刷新的单页应用程序中更改访客的实例化后/登录后状态。例如，如果用户在您的网站或应用程序中进行身份验证，并且稍后接受允许设备协作使用其数据的使用条款策略，则您需要调用这些 API。
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -139,5 +142,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
