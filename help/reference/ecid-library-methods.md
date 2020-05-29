@@ -3,8 +3,11 @@ title: Safari ITP 中的 ECID 库方法
 seo-title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +42,7 @@ CNAME 以前已有的相同规则和警告现在仍然存在。在某些情况�
 
 由于已为 Safari 中的跟踪创建其他方法，因此，它们将被作为参考内容添加为此页面。
 
->[!NOTE]*在下面的所有文档中，ECID* = *MID* = *MCID*。
+>[!NOTE] 在下面的所有文档中，*ECID* = *MID* = *MCID*。
 
 请参阅下文，了解与 ITP 和 ECID 库使用相关的事项。
 
@@ -57,7 +60,7 @@ ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提�
 
 此新 `s_ecid` Cookie 采用与 AMCV Cookie 相同的选择退出状态。如果从 `s_ecid` Cookie 读取 ecid，则系统始终会立即调用 demdex 以检索该 ID 的最新选择退出状态并将其存储在 AMCV Cookie 中。
 
-此外，如果您的消费者已通过此[方法](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html)选择退出 Analytics 跟踪，则此 `s_ecid` Cookie 将被删除。
+此外，如果您的消费者已通过此[方法](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/opt-out.html)选择退出 Analytics 跟踪，则此 `s_ecid` Cookie 将被删除。
 
 使用 trackingServer 或 trackingServerSecure 初始化库时，应将跟踪服务器名称提供给 VisitorJS 库。此操作应该与 Analytics 配置中的 trackingServer 配置匹配。
 
