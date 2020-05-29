@@ -1,19 +1,22 @@
 ---
-description: 此实现允许客户在无法接受或使用我们的JavaScript或SDK代码的设备上使用ID服务。 这包括游戏控制台、智能电视或其他支持Internet的设备。 有关语法、代码示例和定义，请参阅本节。
+description: 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
 keywords: ID Service
-seo-description: 此实现允许客户在无法接受或使用我们的JavaScript或SDK代码的设备上使用ID服务。 这包括游戏控制台、智能电视或其他支持Internet的设备。 有关语法、代码示例和定义，请参阅本节。
+seo-description: 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
 seo-title: 与 Experience Cloud Identity 服务的直接集成
 title: 与 Experience Cloud Identity 服务的直接集成
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '712'
+ht-degree: 100%
 
 ---
 
 
 # 与 Experience Cloud Identity 服务的直接集成 {#direct-integration-with-the-experience-cloud-id-service}
 
-此实现允许客户在无法接受或使用我们的JavaScript或SDK代码的设备上使用ID服务。 这包括游戏控制台、智能电视或其他支持Internet的设备。 有关语法、代码示例和定义，请参阅本节。
+通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
 
 ## 语法{#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +24,19 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
 
-ID服务支持HTTP和HTTPS调用。 使用HTTPS从安全页面传递数据。
+ID 服务支持 HTTP 和 HTTPS 调用。使用 HTTPS 可从安全页面传递数据。
 
 ## 示例请求 {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-您的请求可能与下面显示的示例类似。 长变量已缩短。
+您的请求可能与下面显示的示例类似。长变量已缩短。
 
 ![](assets/directExample.png)
 
 ## 示例响应 {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-ID服务返回JSON对象中的数据，如下所示。 您的回应可能不同。
+ID 服务会在 JSON 对象中返回数据，如下所示。您收到的响应可能略有不同。
 
 ```js
 {
@@ -62,11 +65,11 @@ ID服务返回JSON对象中的数据，如下所示。 您的回应可能不同�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud访客ID。 See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 访客 ID。请参阅 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的Experience Cloud组织ID。 有关查找此ID的帮助，请参 <a href="../reference/requirements.md" format="dita" scope="local"> 阅Experience Cloud Identity Service的要求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。有关查找此 ID 的帮助信息，请参阅 <a href="../reference/requirements.md" format="dita" scope="local">Experience Cloud Identity 服务的要求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +91,7 @@ ID服务返回JSON对象中的数据，如下所示。 您的回应可能不同�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID服务是一个地理上分布的负载平衡系统。 该ID标识处理呼叫的数据中心的区域。 请参阅 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服务是一个地理上广泛分布的负载均衡系统。ID 可标识处理调用的数据中心所在的区域。请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,18 +99,18 @@ ID服务返回JSON对象中的数据，如下所示。 您的回应可能不同�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>加密的JavaScript元数据块。 大小限制将blob限制为512字节或更少。 </p> </td> 
+   <td colname="col2"> <p>加密的 JavaScript 元数据块。blob 大小限制在 512 字节以内。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>必需. 这将设置API版本号。 请将此参数保留设置为 <span class="codeph">d_ver=2</span>。 </p> </td> 
+   <td colname="col2"> <p>必需。这将设置 API 版本号。请将此参数保留设置为 <span class="codeph">d_ver=2</span>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **响应参数**
 
-某些响应参数是请求的一部分，已在上节中定义。
+某些响应参数是请求的一部分，且已在上一部分中定义。
 
 <table id="table_58D0E8876DDC4A81B1F24F845E87EC18"> 
  <thead> 
@@ -119,7 +122,7 @@ ID服务返回JSON对象中的数据，如下所示。 您的回应可能不同�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>以秒为单位指定的重新同步时间间隔。 默认时间间隔为604,800秒（7天）。 </p> </td> 
+   <td colname="col2"> <p>以秒为单位指定的重新同步时间间隔。默认时间间隔为 604,800 秒（7 天）。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
