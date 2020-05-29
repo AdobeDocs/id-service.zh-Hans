@@ -1,47 +1,50 @@
 ---
-description: 内容安全策略(CSP)是HTTP头和安全功能，它使浏览器能够控制在网页上加载的资源类型。 如果您使用ID服务并有严格的CSP，则请查看本节，这些CSP使用白名单来接受来自受信任域的资源。 您需要将此处列出的Adobe域添加到您的CSP白名单中。
+description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
 keywords: ID Service
-seo-description: 内容安全策略(CSP)是HTTP头和安全功能，它使浏览器能够控制在网页上加载的资源类型。 如果您使用ID服务并有严格的CSP，则请查看本节，这些CSP使用白名单来接受来自受信任域的资源。 您需要将此处列出的Adobe域添加到您的CSP白名单中。
+seo-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '539'
+ht-degree: 100%
 
 ---
 
 
 # 内容安全策略和 Experience Cloud Identity 服务{#content-security-policies-and-the-experience-cloud-id-service}
 
-内容安全策略(CSP)是HTTP头和安全功能，它使浏览器能够控制在网页上加载的资源类型。 如果您使用ID服务并有严格的CSP，则请查看本节，这些CSP使用白名单来接受来自受信任域的资源。 您需要将此处列出的Adobe域添加到您的CSP白名单中。
+内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
 
-## CSP评论 {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 审查 {#section-5fde5c00a678455c914b8307a8caab82}
 
-CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上接受或加载的资源类型。应用CSP可以帮助您防止：
+CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上接受或加载的资源类型。应用 CSP 可帮助阻止以下情况：
 
-* 如果源未知或未包含在白名单中，则从加载JavaScript文件。
-* 跨站点脚本(XXS)攻击。
+* 当源未知或未包含在白名单中时，阻止加载 JavaScript 文件。
+* 跨站点脚本 (XXS) 攻击。
 * 数据注入攻击。
-* 现场破坏攻击。
+* 网站篡改攻击。
 * 恶意软件分发。
 
-CSP的使用是常见的，也是众所周知的。 本文档并非详细说明CSP的目的（有关详细信息，请参见下面的相关信息链接）。 重要的是，如果您使用CSP并有严格的安全策略，您应该添加哪些Adobe域名。 添加这些域后，访问您网站的访客浏览器会对您使用的Experience Cloud资源进行重要调用。
+CSP 得到了广泛使用和认可。本文档并非旨在详细介绍 CSP（有关更多信息，请访问下面提供的相关信息链接）。让您了解在使用严格 CSP 策略时应该将哪些 Adobe 域名添加到 CSP 白名单中才是本文档的重点。添加这些域后，访问您网站的访客浏览器便可以对您使用的 Experience Cloud 资源进行重要调用。
 
 ## 要添加到白名单的 Experience Cloud 域 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-为您使用的每个列表Experience Cloud解决方案或服务将这些域名或URL添加到您的CSP。
+对于您使用的每个 Experience Cloud 解决方案或服务，将这些域名或 URL 添加到您的 CSP 白名单中。
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud解决方案或服务 </th> 
+   <th colname="col1" class="entry"> Experience Cloud 解决方案或服务 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>修改CSP以包含以下内容： </p> <p> 
+   <td colname="col2"> <p>修改您的 CSP 白名单以包含以下域： </p> <p> 
      <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
       <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
       <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
