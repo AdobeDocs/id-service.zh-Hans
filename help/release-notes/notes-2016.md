@@ -5,8 +5,11 @@ seo-description: 关于 2016 版 Experience Cloud Identity 服务的功能发布
 seo-title: 2016 版发行说明
 title: 2016 版发行说明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html)。
+[Experience Cloud 发行说明](https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html)中也记录了这些更改。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -32,7 +35,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 * 添加了有关如何在服务器端环境中实施 ID 服务的说明。
 * 添加了 `Visitor.overwriteCrossDomainMCIDAndAID` 布尔函数，此函数允许覆盖您所拥有的其他域中的 Experience Cloud ID 和 Analytics ID。请参阅[覆盖访客 ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
 
-* 添加了 `TS = UTC` =  时间戳 作为 `visitor.appendVisitorIDsTo` 函数的属性。ID服务使用时间戳来确定是否应基于5分钟的帐龄间隔使用重定向URL中的ID。 See [Append Visitor ID Function](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* 添加了 `TS = UTC` 时间戳作为 `visitor.appendVisitorIDsTo` 函数的属性。ID 服务使用时间戳来确定是否应基于 5 分钟的时间间隔使用重定向 URL 中的 ID。请参阅[附加访客 ID 函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
 * 添加了返回区域 ID 的新函数 `Visitor.getLocationHint,`。请参阅[获取区域 ID（位置提示）](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
 
@@ -43,13 +46,13 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
-2016年10月
+2016 年 10 月
 
 **修复和改进功能**
 
-* 修复了将受众管理器唯一用户ID(AAMUUID)作为Experience Cloud ID传递给ID服务的错误。
-* 如果AMCV cookie的生存时间(TTL)已过期，则只要cookie包含Experience Cloud ID,ID服务仍会将该信息返回给服务器。 此调用后，ID服务进行异步调用以更新cookie。 这有助于提高性能，因为ID服务不必等待服务器响应。 它可以使用现有AMCV cookie值，然后请求更新。
-* ID服务会直接在页面上自动将Experience Cloud ID(MID)与Adobe Media Optimizer和其他内部Adobe域同步。 已为所有现有帐户和新帐户启用自动同步。这有助于提高Media Optimizer的匹配率。 适用于 VisitorAPI.js 版本 1.8 或更高版本。另请参阅[了解 ID 同步和匹配率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
+* 修复了将 Audience Manager 独特用户 ID (AAMUUID) 作为 Experience Cloud ID 传递到 ID 服务的错误。
+* 如果 AMCV Cookie 的生存时间 (TTL) 到期，那么在 Cookie 包含 Experience Cloud ID 的情况下，ID 服务仍会将该信息返回到服务器。完成此调用后，ID 服务会进行异步调用以更新 Cookie。这有助于提高性能，因为 ID 服务不必等待服务器响应。它可以使用现有 AMCV Cookie 值，然后请求更新。
+* ID 服务会直接在页面上自动将 Experience Cloud ID (MID) 与 Adobe Media Optimizer 和其他内部 Adobe 域同步。已为所有现有帐户和新帐户启用自动同步。这有助于提高 Media Optimizer 的匹配率。适用于 VisitorAPI.js 版本 1.8 或更高版本。另请参阅[了解 ID 同步和匹配率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **新文档和修订的文档**
 
@@ -57,7 +60,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
-2016年9月
+2016 年 9 月
 
 **修复和改进功能**
 
@@ -65,7 +68,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
-2016年8月
+2016 年 8 月
 
 **修复和改进功能**
 
@@ -81,7 +84,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 **已知问题**
 
-在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。请参 [阅secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html)。
+在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。请参阅 [secureDataCollection](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/dil-api/dil-overview.html)。
 
 ## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,8 +103,8 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>跨来源资源共享(CORS) </p> </td> 
-   <td colname="col2"> <p>CORS允许浏览器从当前域以外的域请求资源。 Experience Cloud Identity 服务支持可启用客户端跨域资源请求的 CORS 标准。ID服务在不支持CORS的浏览器上还原为JSONP请求。 </p> <p>请参阅： </p> 
+   <td colname="col1"> <p>跨源资源共享 (CORS) </p> </td> 
+   <td colname="col2"> <p>CORS 允许浏览器从当前域以外的域请求资源。Experience Cloud Identity 服务支持可启用客户端跨域资源请求的 CORS 标准。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud Identity 服务中的 CORS 支持</a> </li> 
     </ul> </td> 
@@ -111,10 +114,10 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 **修复和改进功能**
 
-* 向 `d_fieldgroup` 的 ID 同步调用添加了 `dpm.demdex.net` 参数。此新参数用于内部故障排除和调试目的。
+* 向 `d_fieldgroup` 的 ID 同步调用添加了 `dpm.demdex.net` 参数。此新参数用于进行内部故障诊断和调试。
 
-* 为ID服务iFrame添加了标题属性。 iFrame标题可帮助屏幕阅读器向与在线内容交互时需要帮助的用户提供页面信息。 iFrame title 属性设置为 `Adobe ID Syncing iFrame`。
-* 添加了 `idSyncAttachIframeASAP: true` 作为可选标记，您可以在 `Visitor.getInstance` 函数中设置此标记。设置为 `true` 时，ID 服务会尽可能快地加载 ID 同步 iFrame。这旨在帮助提高ID同步匹配率。 默认情况下，ID服务在加载窗口时加载iFrame。 请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
+* 向 ID 服务 iFrame 添加了标题属性。iFrame 标题有助于屏幕阅读器向与在线内容交互时需要帮助的用户提供页面信息。iFrame title 属性设置为 `Adobe ID Syncing iFrame`。
+* 添加了 `idSyncAttachIframeASAP: true` 作为可选标记，您可以在 `Visitor.getInstance` 函数中设置此标记。设置为 `true` 时，ID 服务会尽可能快地加载 ID 同步 iFrame。这旨在帮助提高 ID 同步匹配率。默认情况下，ID 服务会在加载窗口时加载 iFrame。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
 
 * 修复了一个回调函数导致 AppMeasurement 陷入无限循环的错误。
 * 已将 `loadTimeout` 的默认间隔值从 500 毫秒更改为 30,000 毫秒。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
@@ -133,7 +136,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
-2016年6月
+2016 年 6 月
 
 <table id="table_5D604D0820C84EC996ACB99126C8A3DF"> 
  <thead> 
@@ -156,7 +159,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 **修复**
 
-当没有旧版Analytics访客ID时，访客API不再强制受众管理器进行额外的重新同步调用。
+当不存在旧版 Analytics 访客 ID 时，访客 API 不再通过 Audience Manager 强制执行额外的重新同步调用。
 
 ## 版本 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -164,13 +167,13 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 **文档更新**
 
-* [Android和iOS的SDK要求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
+* [Android 和 iOS 的 SDK 要求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
 * [Data Workbench 和 Experience Cloud Identity 服务](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
 * [测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
-2016年4月
+2016 年 4 月
 
 **文档更新**
 
@@ -178,7 +181,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 ## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
-2016年3月
+2016 年 3 月
 
 <table id="table_F4ED1F88709E4D3BA69C747879A4E18F"> 
  <thead> 
@@ -189,7 +192,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>退出支持 </p> </td> 
+   <td colname="col1"> <p>支持选择退出 </p> </td> 
    <td colname="col2"> <p><span class="keyword">Experience Cloud</span> ID 服务支持访客的选择退出请求。 </p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +206,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
 
 * [实施适用于 Analytics 的 Experience Cloud Identity 服务](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：新增了描述如何使用 [!DNL Analytics] 设置 ID 服务的操作步骤。
 
-* [Experienc Cloud Identity 服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：为清晰起见，修订了相应文本。使用单个域意味着，如果您不再希望管理数据收集CNAME，您可以从该CNAME迁移出来。 但是，如果您的CNAME正在工作，则无需进行更改。
+* [Experienc Cloud Identity 服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：为清晰起见，修订了相应文本。使用单个域意味着，如果您不再希望管理数据收集 CNAME，则可以从其中迁移出来。但是，如果您的 CNAME 正在工作，则无需进行更改。
 
 ## 版本 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
@@ -221,7 +224,7 @@ Experience Cloud发行说明中还 [捕获了这些更改](https://docs.adobe.co
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> 客户 ID 和身份验证状态 </a> </p> </td> 
-   <td colname="col2"> <p>修订文本。 客户ID必须仅作为未编码值传入。 编码ID将创建多次编码的标识符。 </p> </td> 
+   <td colname="col2"> <p>修订了文本。客户 ID 必须仅作为未编码值传入。编码 ID 将创建双重编码的标识符。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
