@@ -5,8 +5,11 @@ seo-description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式�
 seo-title: Analytics ID 操作顺序
 title: Analytics ID 操作顺序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '329'
+ht-degree: 100%
 
 ---
 
@@ -20,34 +23,34 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 已使用订单 </th> 
+   <th colname="col1" class="entry"> 使用顺序 </th> 
    <th colname="col2" class="entry"> 查询参数（收集方法） </th> 
-   <th colname="col3" class="entry"> 在 </th> 
+   <th colname="col3" class="entry"> 前提条件 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>1<sup>st</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col1"> <p> <b>第 1<sup></sup></b> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>设置 <span class="codeph">s.visitorID</span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><sup>第 2</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col1"> <p> <b>第 2<sup></sup></b> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud ID 服务</span>之前，访客已拥有 s_vi Cookie，或者您已配置<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">宽限期</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><sup>第 3</sup></b> </p> </td> 
+   <td colname="col1"> <p> <b>第 3<sup></sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="../../introduction/cookies.md#section-7ff7d96d6e4141b08a84a75a63d7814c" format="dita" scope="local">Experience Cloud ID (MID)</a> </p> </td> 
-   <td colname="col3"> <p>访客的浏览器接受第一方 Cookie. 这由AMCV cookie设置。 </p> </td> 
+   <td colname="col3"> <p>访客的浏览器接受第一方 Cookie。这由 AMCV Cookie 设置。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>第4<sup>名</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
+   <td colname="col1"> <p> <b>第 4<sup></sup></b> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
    <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不再需要 <span class="codeph">fid</span>，因为第一方 <a href="../../introduction/cookies.md" format="dita" scope="local">AMCV Cookie</a> 使其过时。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>第5<sup>名</sup></b> </p> </td> 
+   <td colname="col1"> <p> <b>第 5<sup></sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
    <td colname="col3"> <p>访客的浏览器不接受 Cookie。 </p> </td> 
   </tr> 
