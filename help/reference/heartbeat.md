@@ -5,8 +5,11 @@ seo-description: 要使用视频心率，必须安装 Experience Cloud Identity 
 seo-title: 视频心率和 Experience Cloud Identity 服务
 title: 视频心率和 Experience Cloud Identity 服务
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '150'
+ht-degree: 100%
 
 ---
 
