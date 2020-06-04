@@ -4,11 +4,11 @@ seo-description: 将他们的同意管理平台 (CMP) 与适用于 IAB 透明度
 seo-title: 在 IAB 框架中使用选择加入服务
 title: 在 IAB 框架中使用选择加入服务
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb61c33491cb67795d58575c5dca5fa2ba4c372f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '502'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 61%
 
 将同意管理平台 (CMP) 与选择加入的适用于 IAB TCF 的 Audience Manager 插件连接起来。
 
-使用 [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Audience Manager 客户，可以将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB TCF 的 Audience Manager 插件连接起来。选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。当使用ECID库实现IAB TCF的受众管理器插件时，您的CMP中支持IAB TCF的访客首选项将自动映射到选择加入。 这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
+使用 [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Audience Manager 客户，可以将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB TCF 的 Audience Manager 插件连接起来。选择加入是 (ECID) JavaScript 库中嵌入的一项功能，可根据 CMP 中设置的访客首选项来禁用单个 Adobe 解决方案库。使用 ECID 库实施适用于 IAB TCF 的 Audience Manager 插件时，支持 IAB TCF 的 CMP 中的访客首选项会自动映射到选择加入。这些首选项将在收到同意后启用基于 Audience Manager 的库（DIL 和 ECID）以及相关联的调用。
 
 ## 实施支持 IAB 的 CMP {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
-为了让选择加入与IAB TCF集成，您需要完成以下工作：
+要将选择加入与 IAB TCF 相集成，您需要完成以下操作：
 
-1. Implement a CMP that supports IAB and is [registered as an IAB vendor](https://vendorlist.consensu.org/vendorlist.json) or develop an in-house CMP that implements the IAB TCF spec, and register as a CMP with IAB TCF.
+1. 实施支持 IAB 并[注册为 IAB 供应商](https://vendorlist.consensu.org/vendorlist.json)的 CMP，或开发一个实施 IAB TCF 规范的内部 CMP，并在 IAB TCF 注册为 CMP。
 1. 在加载 Adobe JS 之前定义/加载 `__cmp`
 
 有关更多详细信息，请阅读[互动广告局文档](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md)。
@@ -32,9 +32,9 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->选择加入仅在ECID 4.0+中可用。
+>选择加入仅适用于 ECID 4.0 以上版本。
 
-使用 Adobe Experience Platform Launch 为您的站点同时实施选择加入和适用于 IAB TCF 的 Audience Manager 插件。手动启用IAB以加入时，请检查以确保在访客对象中将以下设置设置为true:
+使用 Adobe Experience Platform Launch 为您的站点同时实施选择加入和适用于 IAB TCF 的 Audience Manager 插件。为选择加入手动启用 IAB 时，检查以确保在访客对象中将以下设置设置为 true：
 
 ```
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -43,11 +43,11 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-正确配置设置后，将根据CMP和IAB TCF的同意标准启用／禁用ECID和DIL库。
+正确配置设置后，将根据 CMP 和 IAB TCF 中的同意标准启用/禁用 ECID 和 DIL 库。
 
 >[!IMPORTANT]
 >
->Audience Manager needs consent for *Purpose 1 and Purpose 10, plus vendor consent* in order to deploy cookies and initiate or honor ID syncs. 有关适用于 IAB TCF 的 Audience Manager 插件的更多信息，请阅读[此处](https://docs.adobe.com/help/zh-Hans/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)的 Audience Manager 文档。
+>Audience Manager 需要获取&#x200B;*目的 1、和目的 10 的同意，以及供应商同意*&#x200B;才能部署 Cookie 并启动 ID 同步或使之生效。有关适用于 IAB TCF 的 Audience Manager 插件的更多信息，请阅读[此处](https://docs.adobe.com/help/zh-Hans/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)的 Audience Manager 文档。
 
 有关如何验证选择加入和适用于 IAB TCF 的 Audience Manager 插件的更多信息，请在[此处](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)查看验证指南中的用例 4。
 
@@ -55,6 +55,6 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 * [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - 介绍了 IAB 标准的详细信息
 * [Adobe 选择加入](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - 介绍了选择加入的详细信息，它是平台解决方案中用于同意管理的所需组件
-* IAB Transparency and Consent Framework (TCF) Support [in Audience Manager](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
-* [您的隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse) -用户可选择的另一个隐私选项是能够使用选择退出其他全局选择退出工具收集所有数据。 全局退出优先于选择加入和IAB TCF验证
+* [Audience Manager](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) 中的 IAB 透明度和同意框架 (TCF) 支持
+* [您的隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse) - 用户可以使用的另一个隐私选项是，可以使用其他全局选择退出工具选择退出所有数据收集。全局选择退出的优先权高于选择加入和 IAB TCF 验证
 
