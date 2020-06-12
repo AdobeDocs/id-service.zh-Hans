@@ -5,11 +5,11 @@ seo-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能�
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ CSP 得到了广泛使用和认可。本文档并非旨在详细介绍 CSP（有
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>如果您对查询字符串参数具有控件，请务必将参数“s_kwcid”和“ef_id”列入白名单。 从技术上讲，Advertising Analytics只使用“s_kwcid”，但如果您获取Ad Cloud Search或DSP，它也使用“ef_id”。 这些查询字符串参数是字母数字。 “s_kwcid”参数使用“!” 字符和“ef_id”参数使用“:”字符。 如果您阻止“!” 字符，您还需要将其列入白名单。</p></td> 
+ <td colname="col2"> <p>如果您对查询字符串参数应用了控制，请务必将参数“s_kwcid”和“ef_id”列入白名单。从技术上讲，Advertising Analytics 仅使用“s_kwcid”，但如果您选取 Ad Cloud Search 或 DSP，则它也使用“ef_id”。这些查询字符串参数采用的是字母数字。“s_kwcid”参数使用“!”字符，“ef_id”参数使用“:”字符。如果您在 URL 中阻止“!”字符，则还需要将该字符列入白名单。</p></td> 
  </tr>
  </tbody> 
 </table>
