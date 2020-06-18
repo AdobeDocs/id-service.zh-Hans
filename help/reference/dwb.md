@@ -5,9 +5,9 @@ seo-description: 请按照以下说明将 Experience Cloud ID 字段集成到 Da
 seo-title: Data Workbench 和 Experience Cloud Identity 服务
 title: Data Workbench 和 Experience Cloud Identity 服务
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -28,6 +28,7 @@ ht-degree: 100%
 
    * `x-mcvisid`
    * `x-tnt-action`
+
    如果您还未准备好使用或定义它们，请将字段留空。**解码指令**
 
 请参阅下面的完整解码器内容，包括上面所述的新字段。
