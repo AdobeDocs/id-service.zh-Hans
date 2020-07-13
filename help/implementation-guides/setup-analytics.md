@@ -5,11 +5,11 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,8 +22,6 @@ ht-degree: 100%
 >
 >* 请在开始之前[阅读相关要求](../reference/requirements.md)。
 >* 请在生产环境中实施此代码之前，首先在开发环境中对它进行配置和测试。
->
-
 
 
 请按照以下步骤为 Adobe Analytics 实施 ID 服务：
@@ -54,8 +52,6 @@ ht-degree: 100%
 >
 >* 早期版本的 ID 服务 API 将此函数放置在不同的位置，并且需要使用不同的语法。如果您是从[版本 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) 之前的版本迁移，请注意此处介绍的函数新位置和语法。
 >* ALL CAPS 中的代码是实际值的占位符。请将此文本替换为您的组织 ID、跟踪服务器 URL 或其他命名值。
->
-
 
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
@@ -130,11 +126,10 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!NOTE]
 >
->在使用时，请将 [!DNL Experience Cloud] 服务器 URL 与它们相对应的跟踪服务器 URL 相匹配，如下所示：>
+>When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this:
+>
 >* [!DNL Experience Cloud] 服务器 URL = 跟踪服务器 URL
 >* [!DNL Experience Cloud] 服务器安全 URL = 跟踪服务器安全 URL
->
-
 
 
 如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
