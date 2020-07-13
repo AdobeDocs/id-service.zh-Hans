@@ -3,9 +3,9 @@ title: Safari ITP 中的 ECID 库方法
 seo-title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -42,7 +42,9 @@ CNAME 以前已有的相同规则和警告现在仍然存在。在某些情况�
 
 由于已为 Safari 中的跟踪创建其他方法，因此，它们将被作为参考内容添加为此页面。
 
->[!NOTE] 在下面的所有文档中，*ECID* = *MID* = *MCID*。
+>[!NOTE]
+>
+>*在下面的所有文档中，ECID* = *MID* = *MCID*。
 
 请参阅下文，了解与 ITP 和 ECID 库使用相关的事项。
 
