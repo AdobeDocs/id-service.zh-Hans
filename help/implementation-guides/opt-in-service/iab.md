@@ -4,9 +4,9 @@ seo-description: 将他们的同意管理平台 (CMP) 与适用于 IAB 透明度
 seo-title: 在 IAB 框架中使用选择加入服务
 title: 在 IAB 框架中使用选择加入服务
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # 在 IAB 框架中使用选择加入服务{#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] 以下文档仅适用于 IAB 2.0。用户需要使用 Visitor.js 版本 5.0 才能与 IAB 2.0 一起使用。
+>[!IMPORTANT]
+>
+> 以下文档仅适用于 IAB 2.0。用户需要使用 Visitor.js 版本 5.0 才能与 IAB 2.0 一起使用。
 
 将同意管理平台 (CMP) 与选择加入的 IAB 透明度和同意框架 (TCF) 插件相连接。
 
