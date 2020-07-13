@@ -1,12 +1,15 @@
 ---
 description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
 seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
-source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >
 >客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/about-core-services/core-services.html)，以了解相关示例。
 
-从 Experience Cloud Identity 服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。您可通过表中列出的状态值来设置身份验证状态。身份验证状态将以整数的形式返回。
+从 Experience Cloud Identity 服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。设置身份验证状态，状态值列在表中。 身份验证状态以整数形式返回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -54,7 +57,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ## 身份验证状态的用例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-您可以根据用户对您的 Web 属性执行的操作以及是否进行身份验证来为他们分配身份验证状态。请参阅下表中的一些示例：
+您可以根据用户对Web属性执行的操作以及是否通过身份验证，将身份验证状态分配给用户。 请参见下表中的一些示例：
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -66,10 +69,10 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>此状态可用于以下情况： </p> <p> 
+   <td colname="col2"> <p>此状态可用于以下场景： </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">阅读电子邮件（此操作可能意味着读者是预期的收件人，但也可能表示电子邮件已被转发）。 </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">从电子邮件点进到登录页面。 </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">阅读电子邮件(此操作可能意味着读者是预期的收件人，但电子邮件也可能已转发)。 </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">从电子邮件点进到登陆页。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -78,7 +81,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>用户已经过身份验证，但已主动注销。用户想要并打算与已经过身份验证状态断开连接。用户不想再被当为已经过身份验证处理。 </p> </td> 
+   <td colname="col2"> <p>用户已通过身份验证，但已主动注销。 用户希望并打算断开与已验证状态的连接。 用户不再希望被视为已验证。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,10 +94,8 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >
 >* ID 区分大小写。
 >* 仅将未编码的值应用于您的 ID。
->* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。必须针对每个页面或应用程序上下文设置它们。
->* 您不应当在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID 库支持对用户标识符进行哈希处理。请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
->
-
+>* 访客ID和身份验证状态不存储在客户ID Cookie中。 必须为每个页面或应用程序上下文设置它们。
+>* 您不应在客户ID中包含任何个人识别信息(PII)。 如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID 库支持对用户标识符进行哈希处理。请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
 
 
 ```js
@@ -146,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## 返回客户 ID 和身份验证状态 {#section-71a610546188478fa9a3185a01d6e83b}
 
-使用 `getCustomerIDs` 可返回客户 ID 和相关的身份验证状态。此方法可按照整数的形式返回访客的身份验证状态。
+使用 `getCustomerIDs` 可返回客户 ID 和相关的身份验证状态。此方法将访客的已验证状态返回为整数。
 
 **语法**
 
@@ -168,7 +169,7 @@ visitor.setCustomerIDs({
 
 **示例**
 
-返回的客户 ID 和身份验证状态数据看起来应该类似于以下示例。
+返回的客户ID和身份验证状态数据应类似于以下示例。
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -216,7 +217,7 @@ Object customerIDs = visitor.getCustomerIDs();
 [!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。请参阅以下代码库：
 
 * [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/overview.html)
-* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/overview.html)
+* [iOS SDK方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/overview.html)
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
