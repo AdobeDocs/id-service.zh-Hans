@@ -5,9 +5,9 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -23,8 +23,6 @@ ht-degree: 100%
 >* 请在开始之前[阅读相关要求](../reference/requirements.md)。
 >* 此过程需要使用 AppMeasurement。使用 s_code 的客户无法完成此过程。
 >* 请在生产环境中实施此代码之前，首先在开发环境中对它进行配置和测试。
->
-
 
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
@@ -55,8 +53,6 @@ ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请�
 >
 >* 早期版本的 ID 服务 API 将此函数放置在不同的位置，并且需要使用不同的语法。如果您是从[版本 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) 之前的版本迁移，请注意此处介绍的函数新位置和语法。
 >* ALL CAPS 中的代码是实际值的占位符。请将此文本替换为您的组织 ID、跟踪服务器 URL 或其他命名值。
->
-
 
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
