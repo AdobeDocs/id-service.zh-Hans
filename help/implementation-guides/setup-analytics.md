@@ -5,11 +5,11 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!NOTE]
 >
->When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this:
+>在使用时，请将 [!DNL Experience Cloud] 服务器 URL 与它们相对应的跟踪服务器 URL 相匹配，如下所示：
 >
 >* [!DNL Experience Cloud] 服务器 URL = 跟踪服务器 URL
 >* [!DNL Experience Cloud] 服务器安全 URL = 跟踪服务器安全 URL
