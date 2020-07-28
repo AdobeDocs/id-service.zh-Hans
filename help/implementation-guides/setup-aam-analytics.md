@@ -5,9 +5,9 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1303'
 ht-degree: 100%
 
