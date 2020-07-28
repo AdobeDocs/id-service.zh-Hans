@@ -5,11 +5,11 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation:
+>在开始之前，请先阅读 ID 服务[要求](../reference/requirements.md)，并记下特定于此实施的以下要求：
 >
 >* 使用 s_code 的客户无法完成此过程。请升级到 mbox 代码 v61 以完成此过程。
 >* 在生产环境中实施此代码&#x200B;*之前*，请先在开发环境中对其进行配置和测试。
