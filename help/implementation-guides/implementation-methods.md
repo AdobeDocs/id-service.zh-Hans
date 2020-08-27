@@ -1,12 +1,15 @@
 ---
 description: Experience Cloud Identity Service 的标准实施方法与非标准实施方法。
-keywords: ID 服务
+keywords: ID Service
 seo-description: Experience Cloud Identity Service 的标准实施方法与非标准实施方法。
 seo-title: 实施方法
 title: 实施方法
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: ht
-source-git-commit: 6c1ff82104bc021d047bb066829328d5fd9eedbf
+translation-type: tm+mt
+source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 72%
 
 ---
 
@@ -21,8 +24,8 @@ source-git-commit: 6c1ff82104bc021d047bb066829328d5fd9eedbf
 
 ## 标准实施 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe 强烈建议使 [!DNL Experience Platform Launch](https://docs.adobe.com/content/help/zh-Hans/launch/using/implement/solutions/idservice-save.html) 来实施 ID 服务。此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
+Adobe强烈建 [议使用[!DNLExperience Platform Launch](https://docs.adobe.com/content/help/zh-Hans/launch/using/implement/solutions/idservice-save.html) ]实现ID服务。 此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
 
 ## 非标准实施 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
-本指南中的过程和代码示例可帮助您以手动或非标准方式来设置 [!DNL Experience Cloud] ID 服务。请注意，这些实施通常在技术上具有一定的难度且很复杂。它们可能需要您自身就很缺乏的工程技术资源，或耗费 Adobe 顾问的约定支持时间。
+本指南中的过程和代码示例可帮助您以手动或非标准方式来设置 [!DNL Experience Cloud] ID 服务。请注意，这些实施通常在技术上具有挑战性和复杂性。 他们可能需要您稀缺的工程资源，或与Adobe顾问共享合同支持时间。
