@@ -5,10 +5,10 @@ seo-description: Adobe Experience Cloud Identity 服务（ID 服务）提供了�
 seo-title: Experience Cloud Identity 服务
 title: Experience Cloud Identity 服务
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '322'
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -34,10 +34,10 @@ Adobe Experience Cloud Identity 服务（ID 服务）提供了一个通用的永
       <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
-    <draft-comment> 
-     <p> <b>公告：</b> </p> 
-     <p> <p>重要信息：ID 服务已弃用 Internet Explorer 6、7、8，并将在未来版本中停止对这些浏览器版本的支持。 </p> </p> 
-    </draft-comment> </td> 
+     <!-- 
+     <p> <b>Announcements:</b> </p> 
+     <p> <p>Important:  ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release. </p> </p> 
+     --> </td> 
    <td colname="col2"> <p> <b>发行说明</b> </p> <p><b>版本 4.4</b> 2019 年 7 月 17 日发行版包括对 <a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 哈希算法</a>的支持，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。</p><p><b>版本 4.0</b> 2019 年 2 月 12 日发行版包括<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">选择加入服务</a>，用于确定当用户访问网站时您是否可以在其设备或浏览器上放置 Cookie。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
