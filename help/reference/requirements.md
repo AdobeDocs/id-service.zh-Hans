@@ -5,10 +5,10 @@ seo-description: 查看此部分内容，确保使用 Experience Cloud Identity 
 seo-title: Experience Cloud Identity 服务的要求
 title: Experience Cloud Identity 服务的要求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '783'
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -125,10 +125,7 @@ ht-degree: 100%
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">数据集成库</a> (DIL)。 </p> </td> 
-   <td colname="col4"> <p>5.0 </p> <p> 
-     <draft-comment>
-       已从 4.9 更新 
-     </draft-comment> </p> </td> 
+   <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
