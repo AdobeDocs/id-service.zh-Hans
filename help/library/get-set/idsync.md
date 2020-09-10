@@ -1,22 +1,22 @@
 ---
-description: ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中手动实现ID同步。 VisitorAPI.js版本1.10或更高版本中提供了这些功能。
+description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 keywords: ID Service
-seo-description: ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中手动实现ID同步。 VisitorAPI.js版本1.10或更高版本中提供了这些功能。
+seo-description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 seo-title: 通过 URL 或数据源进行 ID 同步
 title: 通过 URL 或数据源进行 ID 同步
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
 # 通过 URL 或数据源进行 ID 同步{#id-synchronization-by-url-or-data-source}
 
-ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中手动实现ID同步。 VisitorAPI.js版本1.10或更高版本中提供了这些功能。
+ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 
 ## 语法、属性和宏 {#section-90ac61617482463aaf4c57009b830332}
 
@@ -26,7 +26,7 @@ ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中�
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 代码 </th> 
-   <th colname="col2" class="entry"> 同步用户ID </th> 
+   <th colname="col2" class="entry"> 同步用户 ID </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -43,7 +43,7 @@ ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中�
 
 **资产**
 
-下表列表了两个函数的可用属性。
+下表列出并定义了两个函数的可用属性。
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,22 +57,22 @@ ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中�
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>由Audience Manager分配的数据提供程序ID。 </p> </td> 
+   <td colname="col3"> <p>由 Audience Manager 分配的数据提供程序 ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>用户的数据提供者的唯一ID。 </p> </td> 
+   <td colname="col3"> <p>用户的数据提供程序的唯一 ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 数值 </td> 
-   <td colname="col3"> <p> <i>（可选）设</i> 置Cookie过期时间。 必须为整数。 默认为20160分钟（14天）。 </p> </td> 
+   <td colname="col3"> <p> <i>（可选）</i>设置 Cookie 过期时间。必须为整数。默认值为 20160 分钟（14 天）。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>目标URL。 </p> </td> 
+   <td colname="col3"> <p>目标 URL。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
