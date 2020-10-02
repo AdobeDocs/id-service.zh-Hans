@@ -4,7 +4,7 @@ seo-title: Google Chrome SameSite标签更改
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
 translation-type: tm+mt
-source-git-commit: f74a028532e95ab17f5d2e64697d69eb64e03391
+source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 4%
@@ -64,7 +64,9 @@ Adobe产品已发布服务器端更新，以设置具有相应属性的第三方
 
 为了适应此更改，Analytics现在将cookie的SameSite值显 `s_vi` 式设置为 `lax`。 要在友好的第三方上下文中使用此Cookie，请将SameSite值设 `none`置为，这也意味着您必须始终使用HTTPS。 请联系客户服务部门，更改您的安全CNAME的SameSite值。
 
-> [!IMPORTANT] 使用ECID的Analytics客户、对其每个域使用单独CNAME的客户或仅使用第三方Analytics数据收集的客户不需要执行此操作。
+>[!IMPORTANT]
+>
+>使用ECID的Analytics客户、对其每个域使用单独CNAME的客户或仅使用第三方Analytics数据收集的客户不需要执行此操作。
 
 ## Adobe标准访客Cookie
 
