@@ -6,11 +6,11 @@ user-guide-title: Experience Cloud Identity 服务帮助
 breadcrumb-title: Identity Service Guide
 user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 47a32f41de23391cf24529c32a5d1098aa010c07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 98%
       + [数据收集 CNAME 和跨域跟踪](reference/analytics-reference/cname.md)
       + [结合了 JavaScript 技术的服务器端实施](reference/analytics-reference/server-side.md)
       + [ID 服务宽限期](reference/analytics-reference/grace-period.md)
-   + [Google Chrome SameSite标签更改](reference/chrome-samesite-labelling.md)
+   + [Google Chrome SameSite 标签更改](reference/chrome-samesite-labelling.md)
    + [内容安全策略和 ID 服务](reference/csp.md)
    + [ID 服务中的 COPPA 支持](reference/coppa.md)
    + [ID 服务中的 CORS 支持](reference/cors.md)
