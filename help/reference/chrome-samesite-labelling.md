@@ -66,7 +66,7 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 
 >[!IMPORTANT]
 >
-> 使用 ECID 的 Analytics 客户、对其每个域使用单独的 CNAME 的客户，或者仅使用第三方 Analytics 数据收集的客户，均不需要执行此操作。
+>使用 ECID 的 Analytics 客户、对其每个域使用单独的 CNAME 的客户，或者仅使用第三方 Analytics 数据收集的客户，均不需要执行此操作。
 
 ## Adobe 标准访客 Cookie
 
