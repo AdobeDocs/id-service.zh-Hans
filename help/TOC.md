@@ -7,7 +7,7 @@ breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
+source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 97%
@@ -43,7 +43,7 @@ ht-degree: 97%
       + [验证选择加入服务](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [使用 Experience Platform Launch 配置选择加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 配置选择加入](implementation-guides/opt-in-service/optin-dtm.md)
-      + [基于用户同意控制Experience Cloud活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent)
+      + [基于用户同意控制Experience Cloud活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [选择加入用例](implementation-guides/opt-in-service/use-cases.md)
       + [选择加入参考](implementation-guides/opt-in-service/api.md)
       + [在 IAB 框架中使用选择加入服务](implementation-guides/opt-in-service/iab.md)
