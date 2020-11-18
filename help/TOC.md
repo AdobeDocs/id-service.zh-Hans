@@ -2,7 +2,7 @@
 cloud: platform-cloud
 product: ID Service
 audience: end-user
-user-guide-title: Experience Cloud Identity 服务帮助
+user-guide-title: Experience Cloud Identity Service 帮助
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
@@ -10,19 +10,19 @@ translation-type: tm+mt
 source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Experience Cloud Identity 服务帮助 {#using}
+# Experience Cloud Identity Service 帮助 {#using}
 
 + [ID 服务帮助](home.md)
 + 概述 {#intro}
    + [概述](introduction/overview.md)
    + [关于 ID 服务](introduction/about-id-service.md)
    + [Cookie 和 ID 服务](introduction/cookies.md)
-   + [ ID 服务如何请求和设置 ID](introduction/id-request.md)
+   + [ID 服务如何请求和设置 ID](introduction/id-request.md)
    + [了解同步和匹配率](introduction/match-rates.md)
 + 实施 {#implementation}
    + [实施方法](implementation-guides/implementation-methods.md)
@@ -43,7 +43,7 @@ ht-degree: 97%
       + [验证选择加入服务](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [使用 Experience Platform Launch 配置选择加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 配置选择加入](implementation-guides/opt-in-service/optin-dtm.md)
-      + [基于用户同意控制Experience Cloud活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [在用户同意的基础上控制 Experience Cloud 活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [选择加入用例](implementation-guides/opt-in-service/use-cases.md)
       + [选择加入参考](implementation-guides/opt-in-service/api.md)
       + [在 IAB 框架中使用选择加入服务](implementation-guides/opt-in-service/iab.md)
