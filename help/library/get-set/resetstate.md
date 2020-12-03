@@ -1,12 +1,15 @@
 ---
 description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 66%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 作为使用 ID 服务的 A4T 客户，当您需要执行以下操作时，您可能要使用 `visitor.resetState()` 函数：
 
-* 通过重定向将补充数据 ID (SDID) 或任何其他 ID 从一个页面或屏幕传递到另一个页面或屏幕。通常情况下，如果没有此函数，ID 服务将不会传递此 ID。
-* 使用可通过 Ajax 调用仅更新页面或应用程序特定部分的代码，并且您想要跟踪这些操作。例如，假设您有一个页面，单击其中的某个对象只会加载或更改特定部分。在这种情况下，ID 服务无法请求其他 ID，除非重新加载页面。但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
+* 通过重定向将补充数据ID(SDID)或任何其他ID从一个页面或屏幕传递到另一个页面或屏幕。 通常，如果没有此函数，ID服务将无法传递此ID。
+* 使用只通过Ajax调用更新页面或应用程序的特定部分的代码，您希望跟踪这些操作。 例如，假设您有一个页面，在该页面上单击对象只加载或更改特殊部分。 在这种情况下，除非重新加载页面，否则ID服务无法请求其他ID。 但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
 
 请参阅下面的代码示例。
 
@@ -30,7 +33,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 代码示例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的 ID 服务实施会影响您使用此函数的方式。有关示例，请参阅下表。
+您的ID服务实现会影响您使用此函数的方式。 有关示例，请参阅下表。
 
 **服务器端实施**
 
@@ -63,7 +66,7 @@ visitor.resetState(serverState);
 
 **非标准实施**（不传递 ID）
 
-在这种情况下，`visitor.resetState()` 可用于生成新的 ID。在单页应用程序中，如果当用户在未刷新页面的情况下导航到新屏幕时，您需要一个新的 ID，这可能会很有用。
+在这种情况下，`visitor.resetState()` 可用于生成新的 ID。当用户导航到新屏幕而不刷新页面并且您需要新ID时，这在单页应用程序中非常有用。
 
 ```js
  
