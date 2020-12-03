@@ -1,12 +1,15 @@
 ---
 description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 Experience Cloud Identity 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 Experience Cloud Identity 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。
 seo-title: Experience Cloud Identity 服务中的 COPPA 支持
 title: Experience Cloud Identity 服务中的 COPPA 支持
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 77%
 
 ---
 
@@ -21,14 +24,14 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 **Cookie 与跟踪**
 
-加载网页时，[!DNL Experience Cloud] ID 服务会调用 [!DNL Adobe] 数据收集服务器 (DCS)。DCS 响应包含 Experience Cloud Cookie 和 demdex.net Cookie。
+加载网页时，[!DNL Experience Cloud] ID 服务会调用 [!DNL Adobe] 数据收集服务器 (DCS)。DCS响应包括Experience Cloudcookie和demdex.net cookie。
 
-* Experience Cloud Cookie 是在第一方域中设置的。它无法用来跟踪跨不同域的访客，除非这些域彼此之间允许相互访问。
-* demdex.net Cookie 是在第三方域中设置的。它包含一个唯一的标识符，可用于跟踪跨不同域的访客。
+* Experience Cloudcookie在第一方域中设置。 它不能用于跟踪不同域的访客，除非这些域协同工作以允许访问。
+* demdex.net cookie在第三方域中设置。 它包含一个唯一标识符，可用于跟踪不同域的访客。
 
-**Cookie 与 COPPA 合规性**
+**Cookie和COPPA合规性**
 
-可在面向（或部分面向）儿童的网站上跟踪跨不同域访客的第三方 Cookie 会触发 COPPA 父母同意要求。为了更易于符合 COPPA 对内部网站分析的规定，请将变量 `disableThirdPartyCookies:true` 添加到 `Visitor.getInstance` 函数中，如下所示。
+第三方Cookie跟踪针对（或主要针对）儿童的网站上不同域的访客，触发COPPA家长同意要求。 为了更易于符合 COPPA 对内部网站分析的规定，请将变量 `disableThirdPartyCookies:true` 添加到 `Visitor.getInstance` 函数中，如下所示。
 
 ```js
 //Call the ID service 
