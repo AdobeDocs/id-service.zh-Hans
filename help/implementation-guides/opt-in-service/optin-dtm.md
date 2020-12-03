@@ -6,6 +6,9 @@ title: 使用 DTM 配置选择加入
 uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
 translation-type: tm+mt
 source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 必需：
 
-* 升级到 ECID 4.0.0 或更高版本。See [ECID Download](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+* 升级到ECID 4.0.0或更高版本。 请参 [阅ECID下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases)。
 
 在“常规 DTM”页面中输入[配置字段](/help/implementation-guides/opt-in-service/api.md)。
 
