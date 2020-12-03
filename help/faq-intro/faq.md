@@ -5,9 +5,9 @@ seo-description: 与使用 ID 服务相关的特性、功能和问题的常见�
 seo-title: ID 服务常见问题解答
 title: ID 服务常见问题解答
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 
