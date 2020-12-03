@@ -5,9 +5,9 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 将这个代码放置在包含 `linkInternalFilters`、`charSet`、`trackDownloads` 等配置的相同部分中。
 
-***（可选，但是推荐）*创建自定义 prop **
+***（可选，但是推荐）*&#x200B;创建自定义 prop **
 
 在 `AppMeasurement.js` 或 `s_code.js` 中设置自定义 prop 以测量覆盖范围。将此自定义 prop 添加到 `AppMeasurement.js` 或 `s_code.js` 文件的 `doPlugins` 函数中：
 
