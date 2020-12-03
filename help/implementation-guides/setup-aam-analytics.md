@@ -5,9 +5,9 @@ seo-description: 这些说明适用于那些想要使用 Experience Cloud Identi
 seo-title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ Analytics 使用跟踪服务器进行数据收集。
 >
 >此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
-***（可选，但是推荐）*创建自定义 prop **
+***（可选，但是推荐）*&#x200B;创建自定义 prop **
 
 在 `AppMeasurement.js` 中设置自定义 prop 来测量范围。将此自定义 prop 添加到 `doPlugins` 文件的 `AppMeasurement.js` 函数中：
 
