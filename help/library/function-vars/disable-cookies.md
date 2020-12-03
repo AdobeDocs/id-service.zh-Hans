@@ -1,12 +1,15 @@
 ---
 description: 可阻止 Experience Cloud Identity 服务返回第三方 demdex.net Cookie 的可选布尔标记。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 可阻止 Experience Cloud Identity 服务返回第三方 demdex.net Cookie 的可选布尔标记。
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 **语法：**`disableThirdPartyCookies: true|false`（默认值为 `false`。）适用于 `VisitorAPI.js` v3.0.0 或更高版本。
 
-当 `disableThirdPartyCookies: true` 时，ID 服务不会返回第三方 demdex.net Cookie（请参阅 [Cookie 和 Experience Cloud Identity 服务](../../introduction/cookies.md)）。如果网站访客的浏览器中已经具有此 Cookie，则 ID 服务不会使用它来创建新的 Experience Cloud ID (MID) 或返回现有的 ID。作为替代，ID 服务会在第一方 Cookie 中新建一个随机 MID。启用 ID 服务后，您可以通过该服务来收集数据，并在不同的 Experience Cloud 解决方案之间共享该数据。
+当 `disableThirdPartyCookies: true` 时，ID 服务不会返回第三方 demdex.net Cookie（请参阅 [Cookie 和 Experience Cloud Identity 服务](../../introduction/cookies.md)）。如果站点访客的浏览器中已包含此cookie，则ID服务将不会使用它创建新Experience CloudID(MID)或返回现有ID。 相反，ID服务会在第一方Cookie中创建新的随机MID。 启用后，您可以通过ID服务收集数据并在不同的Experience Cloud解决方案之间共享它。
 
 **代码示例**
 
