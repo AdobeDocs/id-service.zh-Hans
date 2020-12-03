@@ -5,9 +5,9 @@ seo-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能�
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
