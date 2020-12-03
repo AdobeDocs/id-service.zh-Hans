@@ -6,6 +6,9 @@ title: 验证选择加入服务
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 27%
 
 ---
 
@@ -24,15 +27,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_1.png)
 
-在加载页面之前，请清除缓存和 Cookie。
+在加载页面之前，请清除缓存和cookie。
 
-在 Chrome 中，右键单击网页并选择“检查”。如上面的屏幕截图所示，选择 *Network* 选项卡以查看从浏览器中发出的请求。
+在Chrome中，右键单击网页并选择Inspect。 如上面的屏幕截图所示，选择 *“网络* ”选项卡以视图从浏览器发出的请求。
 
-在上面的示例中，我们在页面上安装了以下 Adobe JS 标签：ECID、AAM、Analytics 和 Target。
+在上面的示例中，页面上安装了以下AdobeJS标记：ECID、AAM、分析和目标。
 
 **如何证明选择加入正常工作：**
 
-您不应看到向 Adobe 服务器发出的任何请求：
+您不应看到对Adobe服务器的任何请求：
 
 * demdex.net/id
 * demdex.net/event
@@ -42,15 +45,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 >[!NOTE]
 >
->您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。此端点既不会创建任何第三方 Cookie，也不会从页面收集任何信息。
+>您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。此端点不会导致创建任何第三方Cookie，也不会从页面收集任何信息。
 
-您不应看到 Adobe 标签创建的任何 Cookie：(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
+您不应看到由Adobe标记创建的任何Cookie:(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
-在 Chrome 中，转到 *Application* 选项卡，展开 *Storage* 下的 *Cookies* 部分，然后选择您网站的域名：
+在Chrome中，转至“应 *用程序* ”选项卡，展开“ *存储* ”下的 *“Cookies*”部分，然后选择您网站的域名：
 
 ![](assets/use_case_1_2.png)
 
-## 用例 2：启用选择加入和存储 {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 用例2:启用加入和存储 {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -59,9 +62,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-用例 2 的唯一区别在于，您将会看到一个新 Cookie **，其中将包含访客提供的选择加入权限：**adobeujs-optin**
+用例2的唯一区别是您将看到 *一个新Cookie* ，其中将包含访客提供的加入权限： **adobeujs-optin**
 
-## 用例 3：启用选择加入并预先批准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## 用例3:启用加入和预先批准Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -73,15 +76,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-由于 Adobe Analytics 已预先批准选择加入，因此您会在“Network”选项卡中看到向跟踪服务器发出的请求：
+由于Adobe Analytics已预先加入，您将在“网络”选项卡中看到跟踪服务器的请求：
 
 ![](assets/use_case_3_1.png)
 
-并且将在“Application”选项卡中看到以下 Analytics Cookie：
+您将在“应用程序”选项卡中看到Analytics cookie:
 
 ![](assets/use_case_3_2.png)
 
-## 用例 4：启用选择加入和 IAB {#section-64331998954d4892960dcecd744a6d88}
+## 用例4:启用加入和IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -90,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**如何在页面上查看您当前的 IAB 同意：**
+**如何在页面上视图您当前的IAB同意：**
 
-打开开发人员工具，然后选择 *Console* 选项卡。粘贴以下代码段并按 Enter 键：
+打开开发人员工具并选择“控 *制台* ”选项卡。 粘贴以下代码片段并按Enter:
 
 ```
 <codeblock>
@@ -102,15 +105,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
   
 ```
 
-以下是当目的 1、2 和 5 以及 Audience Manager 供应商 ID 已获批准时的示例输出：
+以下是批准用途1、2和5且批准Audience Manager供应商ID时的输出示例：
 
-* demdex.net/id：存在此调用表明 ECID 已从 demdex.net 申请了一个 ID
-* demdex.net/event：存在此调用表明 DIL 数据收集调用正按预期工作。
-* demdex.net/dest5.html：存在此调用表明“ID 同步”正被触发。
+* demdex.net/id:此调用的存在证明ECID已从demdex.net请求ID
+* demdex.net/event:此调用的存在证明DIL数据收集调用正按预期工作。
+* demdex.net/dest5.html:此调用的存在证明ID同步正在被触发。
 
 ![](assets/use_case_4_1.png)
 
-如果以下某项无效，您将不会看到向 Adobe 服务器发出的任何请求，也不会看到任何 Adobe Cookie：
+如果以下某项无效，您将看不到任何向Adobe服务器发出的请求，也看不到Adobecookie:
 
-* 目的 1、2 或 5 未获批准。
-* Audience Manager 供应商 ID 未获批准。
+* 用途1、2或5未获得批准。
+* Audience Manager供应商ID未获批准。
