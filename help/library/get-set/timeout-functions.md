@@ -1,12 +1,15 @@
 ---
 description: 调用这些 ID 服务函数，可确定 Experience Cloud Identity 服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 调用这些 ID 服务函数，可确定 Experience Cloud Identity 服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
 uuid: e5047498-11db-4945-b356-c92b7d447573
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 95%
 
 ---
 
