@@ -1,12 +1,15 @@
 ---
 description: 对于 URL 最后两个部分中任一部分多于 2 个字符的多部分顶级域，此变量是必需的。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 对于 URL 最后两个部分中任一部分多于 2 个字符的多部分顶级域，此变量是必需的。
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 100%
 
 ---
 
