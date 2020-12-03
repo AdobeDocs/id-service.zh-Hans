@@ -5,9 +5,9 @@ seo-description: 通过这些配置，在 iFrame 中和父页面上实施的 ID 
 seo-title: whitelistParentDomain 和 whitelistIframeDomains
 title: whitelistParentDomain 和 whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 100%
 
