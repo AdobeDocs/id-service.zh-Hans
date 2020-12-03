@@ -1,12 +1,15 @@
 ---
 description: 可阻止 ID 服务对其他域进行调用的可选布尔标记。
-keywords: 跨域跟踪;ID 服务
+keywords: cross domain tracking;ID Service
 seo-description: 可阻止 ID 服务对其他域进行调用的可选布尔标记。
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 58%
 
 ---
 
@@ -21,15 +24,15 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 **用途**
 
-此变量专为拥有以下需求的用户设计：
+此变量针对需要：
 
-* 阻止 ID 服务从其经过身份验证的安全页面进行调用。
-* 网站访客拥有 Experience Cloud ID (MID)。
-* 其他 Experience Cloud 解决方案可正常使用。
+* 防止ID服务从其安全、经过身份验证的页面发出调用。
+* 站点访客具有Experience CloudID(MID)。
+* 其他Experience Cloud解决方案可正常工作。
 
-**实施策略**
+**实施战略**
 
-由于其他 Experience Cloud 解决方案依赖于 MID，因此 ID 服务将调用 Adobe 以返回并设置此 ID。如果您需要停止 ID 服务从网站经过身份验证的部分进行调用，请首先从不需要身份验证的页面进行所需调用。您的网站访客拥有 MID 后，可以在经过身份验证的网站区域的 ID 服务代码中设置 `disableThirdPartyCalls= true`。在此假设大部分（如果不是全部）客户在获得网站中安全部分的访问权限之前，都会导航到身份验证页面。
+由于其他Experience Cloud解决方案依赖于MID，因此ID服务会调用Adobe返回并设置此ID。 如果您需要停止 ID 服务从网站经过身份验证的部分进行调用，请首先从不需要身份验证的页面进行所需调用。您的网站访客拥有 MID 后，可以在经过身份验证的网站区域的 ID 服务代码中设置 `disableThirdPartyCalls= true`。这里的假设是，大多数客户在访问网站的安全部分之前都会导航到身份验证页面。
 
 **代码示例**
 
