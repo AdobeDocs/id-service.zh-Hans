@@ -5,9 +5,9 @@ seo-description: 'null'
 seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
 
