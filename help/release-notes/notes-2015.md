@@ -1,12 +1,15 @@
 ---
 description: 2015 版发行说明和更新。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 2015 版发行说明和更新。
 seo-title: 2015 版发行说明
 title: 2015 版发行说明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 65%
 
 ---
 
@@ -23,22 +26,22 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
-2015 年 9 月
+2015年9月
 
-* 修复了 Safari 浏览器中存在的一个错误，当用户阻止第三方 Cookie 时，该错误会妨碍同步服务正常工作。(AAM-20764)
-* 现在，调用 ID 服务的过程涉及 `d_visid_ver=` 参数中的版本 ID。返回的 ID 可帮助内部团队进行疑难解答和解决支持问题。(AAM-20824)
+* 修复了Safari浏览器中的一个错误，该错误导致当用户阻止第三方Cookie时同步服务无法正常工作。 (AAM-20764)
+* 现在，调用 ID 服务的过程涉及 `d_visid_ver=` 参数中的版本 ID。返回的ID可帮助内部团队解决疑难解答和支持问题。 (AAM-20824)
 
 ## 版本 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
-2015 年 8 月
+2015年8月
 
-* 修复了在没有可同步或可激发的数据时造成 ID 服务无法请求 iframe 的错误。(AAM-20164)
-* 修复了造成 ID 服务无法正确设置多部分顶级域名 Cookie 的错误。例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
+* 修复了一个错误，可防止ID服务在没有要同步或触发的数据时请求iframe。 (AAM-20164)
+* 修复了ID服务无法正确设置多部分顶级域cookie的错误。 例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
 
-   此问题仅影响&#x200B;*全部*&#x200B;满足以下条件的少数客户：
+   这只影响到满足以下所 *有条件* 的少数客户：
 
-   * 使用 ID 服务。
-   * 启用了[宽限期](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
+   * 使用ID服务。
+   * 启用了[宽限期&#x200B;](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
 
    * 拥有使用多部分顶级域名的页面。
 
@@ -71,9 +74,9 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 ## 版本 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
-2015 年 2 月
+2015年2月
 
-修复了对 AAM Blob 和位置提示请求的超时处理。现在，对于超时而言，系统将可以正确地把当前页面的这些字段留空并执行所有回调。该超时将被认为是一个错误条件，因此会在下一页面进行重试。（AN-94473、AN-94474）
+修复了对AAM Blob和位置提示请求的超时处理。 现在，在超时时，系统会将当前页面的这些字段正确留空并进行所有回调。 超时被视为错误条件，因此将在下一页重试。 （AN-94473、AN-94474）
 
 ## 版本 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
