@@ -5,9 +5,9 @@ seo-description: 除了 Experience Cloud 访客 ID 之外，您还可以将其�
 seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
 
