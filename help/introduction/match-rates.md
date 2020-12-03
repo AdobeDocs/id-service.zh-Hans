@@ -5,9 +5,9 @@ seo-description: 关于 Experience Cloud Identity 服务（包括 Adobe Media Op
 seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
 
