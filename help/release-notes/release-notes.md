@@ -4,9 +4,9 @@ keywords: ID Service
 seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 seo-title: 2020 版发行说明
 title: 2020 版发行说明
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
