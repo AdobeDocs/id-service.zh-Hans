@@ -4,9 +4,9 @@ seo-description: 将他们的同意管理平台 (CMP) 与适用于 IAB 透明度
 seo-title: 在 IAB 框架中使用选择加入服务
 title: 在 IAB 框架中使用选择加入服务
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
