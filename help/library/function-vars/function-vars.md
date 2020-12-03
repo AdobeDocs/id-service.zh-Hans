@@ -1,12 +1,15 @@
 ---
 description: 通过将这些属性传递至 Visitor.getInstance 静态方法来配置 ID 服务。
-keywords: 组织 ID;ID 服务
+keywords: Organization ID;ID Service
 seo-description: 通过将这些属性传递至 Visitor.getInstance 静态方法来配置 ID 服务。
 seo-title: 配置
 title: 配置
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript 库*&#x200B;最近发生了移动。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 上找到最新版本的 ECID JS 库。
+>*Experience Cloud ID Javascript 库*&#x200B;最近发生了移动。The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 相关文章：
 
