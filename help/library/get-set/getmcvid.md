@@ -1,12 +1,15 @@
 ---
 description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
-keywords: ID 服务
+keywords: ID Service
 seo-description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +20,7 @@ getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 
 **语法：**` var *`变量名称`* = visitor.getMarketingCloudVisitorID()`
 
-这种方法通常用在要求读取访客 ID 的自定义解决方案中。标准实施中并不使用此方法。`getMarketingCloudVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
+此方法通常与需要读取访客ID的自定义解决方案一起使用。 标准实施不使用该函数。`getMarketingCloudVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
 
 ```js
 //callback function 
