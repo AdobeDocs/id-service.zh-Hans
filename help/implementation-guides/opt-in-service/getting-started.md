@@ -6,6 +6,9 @@ title: 设置选择加入服务
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 78%
 
 ---
 
@@ -22,27 +25,27 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 1. ECID 版本 4.0。
 
-   [下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
+   [下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新ECID版本。
 
-1. 支持的库：
+1. 支持库：
 
-   * ECID 4.0 或更高版本
-   * AppMeasurement 2.11 或更高版本
+   * ECID 4.0或更高版本
+   * AppMeasurement 2.11或更高版本
    * DIL 9.0
-   * AT.js 版本 1.7.0
-   * AT.js Launch 扩展版本 9.0
-   * 对于 Analytics，App Measurement 2.11 和扩展版本 1.6
-   * 对于 Target，扩展版本 0.9.1
+   * AT.js版本1.7.0
+   * AT.js启动扩展9.0版
+   * 对于Analytics,App Measurement 2.11（扩展为1.6）
+   * 对于目标，扩展0.9.1
 
-1. 熟悉您将与选择加入功能一起使用的同意管理框架，并了解所有其他先决条件。
+1. 精通同意管理框架（随选择加入而使用）并了解任何其他先决条件。
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. 贵公司的隐私要求具体取决于您选择以何种方式遵守 GDPR 的规定。了解贵公司隐私团队允许在同意前使用哪些库。
+1. 您的公司的隐私要求将特定于您选择如何遵守GDPR。 了解您的公司隐私团队在事先同意状态下可以使用的库。
 
-如果使用的是 [Adobe Launch](https://docs.adobelaunch.com/)，请使用 [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+If using [Adobe Launch](https://docs.adobelaunch.com/), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -64,7 +67,7 @@ adobe.OptInCategories = {
 
 选择加入服务配置在访客 JS `getInstance()` 函数中提供，该函数可实例化全局 `adobe` 对象。下面列出了选择加入服务的访客 JS [配置设置](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)。
 
-**初始化全局`Visitor`对象的选择加入配置示例**
+**初始化全局 `Visitor` 对象的选择加入配置示例**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -89,7 +92,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 **处理对同意的更改**
 
-在访客访问您的网站期间，可以随时对首选项进行首次设置或使用您的 CMP 更改其首选项。使用初始设置初始化访客 JS 后，可以对访客的权限进行更改。请参阅[对同意的更改](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)，以获取管理同意函数的列表。
+在访客在您网站上的体验中，他们可随时首次设置首选项，也可使用您的CMP更改其首选项。 使用初始设置初始化访客JS后，访客的权限即可更改。 请参阅[对同意的更改](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)，以获取管理同意函数的列表。
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -109,9 +112,9 @@ adobe.optIn.complete();
 
 ## 检查访客的选择加入权限 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-当访客对其权限进行更改时，您需要洞悉由此产生的权限，以便将您的同意存储与选择加入服务中所做的更改同步。使用[权限函数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)检查访客的首选项，例如：
+当访客对其权限进行更改时，您需要洞悉由此产生的权限，以便将您的同意存储与选择加入服务中所做的更改同步。Inspect访客使用权限 [功能](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)，例如：
 
-**fetchPermissions sample**
+**fetchPermissions示例**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -133,13 +136,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-请参阅[API 文档](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以了解有关这些内容以及本文档中提到的任何函数、属性或配置的更多详细信息。
+See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
 
 ## 存储访客首选项 {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 选择加入服务提供了一个选项，可用于存储适合开发人员环境或无法使用 CRM 的环境的同意首选项。将配置属性 `isOptInStorageEnabled` 指定为 *true* 会触发选择加入服务，以在域中访客系统上创建 Cookie。
 
-`adobe.optIn` 对象是无状态的，并且不提供存储机制。如果其允许存储自定义数据，则可以在现有的“同意管理平台 (CMP)”中管理 Adobe 同意设置。或者，您可以将访客首选项存储在访客浏览器的 Cookie 中。您有两个选项可用于将用户首选项提供给选择加入服务：
+`adobe.optIn` 对象是无状态的，并且不提供存储机制。相反，如果允许存储自定义Adobe，您应管理现有同意管理平台(CMP)中的同意设置。 或者，您可以在访客浏览器的Cookie中存储访客首选项。 您有两个选项可用于将用户首选项提供给选择加入服务：
 
 * 无论您的同意持久性解决方案是 CMP 还是访客浏览器上的 Cookie，如果允许及时检索访客首选项，则可以在访客初始化期间将这些首选项提供给选择加入服务。
 * 但是，如果检索是一个非常漫长的过程，或者最好作为异步流程进行，您可以在成功加载设置后，使用服务的 `approve()` 函数来提供这些设置。
