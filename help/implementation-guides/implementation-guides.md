@@ -1,13 +1,16 @@
 ---
 description: Experience Cloud Identity 服务的标准实施和非标准实施的说明和代码示例。
-keywords: ID 服务
+keywords: ID Service
 seo-description: Experience Cloud Identity 服务的标准实施和非标准实施的说明和代码示例。
 seo-title: ID 服务实施指南
 solution: Experience Cloud
 title: 实施指南
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
 
