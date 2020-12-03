@@ -5,9 +5,9 @@ seo-description: ID 请求和响应过程概述。下面的示例涵盖了各种
 seo-title: Experience Cloud Identity 服务如何请求和设置 ID
 title: Experience Cloud Identity 服务如何请求和设置 ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 
