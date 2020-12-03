@@ -1,12 +1,15 @@
 ---
 description: 可控制浏览器如何从 Experience Cloud Identity 服务请求资源的可选布尔标记。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 可控制浏览器如何从 Experience Cloud Identity 服务请求资源的可选布尔标记。
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 66%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **概述**
 
-在设置为 `false` 时，浏览器通过 CORS 或 JSONP 执行资源检查。但是，ID 服务会始终尝试首先通过 CORS 请求资源。它会在不支持 CORS 的早期浏览器中还原为 JSONP。如果您需要强制浏览器仅使用 CORS，请在 `useCORSOnly:true` 函数调用中设置 `Visitor.getInstance`。
+在设置为 `false` 时，浏览器通过 CORS 或 JSONP 执行资源检查。但是，ID服务始终会尝试先向CORS请求资源。 它在不支持CORS的旧版浏览器上还原为JSONP。 如果您需要强制浏览器仅使用 CORS，请在 `useCORSOnly:true` 函数调用中设置 `Visitor.getInstance`。
 
 >[!IMPORTANT]
 >
->如果您具有严格的安全要求，则 `Set useCORSOnly: true`。只有在您确信所有访客都使用支持 CORS 的浏览器时，才应启用此模式。不支持 CORS 的浏览器不会影响用户体验。但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
+>如果您具有严格的安全要求，则 `Set useCORSOnly: true`。只有在确信所有访客都使用支持CORS的浏览器时，才应启用此模式。 不支持CORS的浏览器不会影响用户体验。 但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
 
 **代码示例**
 
