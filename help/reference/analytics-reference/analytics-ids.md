@@ -5,9 +5,9 @@ seo-description: Experience Cloud Identity 服务取代了旧版 Analytics 访�
 seo-title: 设置 Analytics 和 Experience Cloud ID
 title: 设置 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 100%
 
