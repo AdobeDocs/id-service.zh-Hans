@@ -5,9 +5,9 @@ seo-description: 这些说明、工具和过程可帮助您确定 ID 服务是�
 seo-title: 测试和验证 Experience Cloud Identity 服务
 title: 测试和验证 Experience Cloud Identity 服务
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
