@@ -5,9 +5,9 @@ seo-description: 在一些实施过程中，访客 ID 是经由 JavaScript 传�
 seo-title: 结合了 JavaScript 技术的服务器端实施
 title: 结合了 JavaScript 技术的服务器端实施
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 100%
 
