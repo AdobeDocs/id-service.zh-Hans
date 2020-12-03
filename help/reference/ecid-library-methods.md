@@ -3,9 +3,9 @@ title: Safari ITP 中的 ECID 库方法
 seo-title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
