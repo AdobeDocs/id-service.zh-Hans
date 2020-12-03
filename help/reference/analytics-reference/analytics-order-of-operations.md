@@ -5,9 +5,9 @@ seo-description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式�
 seo-title: Analytics ID 操作顺序
 title: Analytics ID 操作顺序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 
