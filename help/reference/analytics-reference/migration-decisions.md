@@ -5,9 +5,9 @@ seo-description: 在部署 Experience Cloud Identity 服务之前，您应当了
 seo-title: Experience Cloud Identity 服务迁移决策点
 title: Experience Cloud Identity 服务迁移决策点
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 100%
 
