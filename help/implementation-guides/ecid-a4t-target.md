@@ -1,25 +1,28 @@
 ---
-description: 这些说明适用于具有 Target、Analytics 和 ID 服务混合服务器端和客户端实施的 A4T 客户。需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应参阅此信息。此 ID 服务的实例将使用缩略版 VisitorAPI.js 代码库，您可以从节点包管理器 (NPM) 中下载和安装。查看此部分内容可了解安装说明和其他配置要求。
-keywords: ID 服务
-seo-description: 这些说明适用于具有 Target、Analytics 和 ID 服务混合服务器端和客户端实施的 A4T 客户。需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应参阅此信息。此 ID 服务的实例将使用缩略版 VisitorAPI.js 代码库，您可以从节点包管理器 (NPM) 中下载和安装。查看此部分内容可了解安装说明和其他配置要求。
+description: 这些说明针对的是目标、分析和ID服务在服务器端和客户端实现混合的A4T客户。 需要在NodeJS或Rhino环境中运行ID服务的客户也应查看此信息。 此ID服务实例使用VisitorAPI.js代码库的缩短版本，您可以从节点包管理器(NPM)下载并安装该代码库。 请查看本节以了解安装说明和其他配置要求。
+keywords: ID Service
+seo-description: 这些说明针对的是目标、分析和ID服务在服务器端和客户端实现混合的A4T客户。 需要在NodeJS或Rhino环境中运行ID服务的客户也应查看此信息。 此ID服务实例使用VisitorAPI.js代码库的缩短版本，您可以从节点包管理器(NPM)下载并安装该代码库。 请查看本节以了解安装说明和其他配置要求。
 seo-title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 58%
 
 ---
 
 
 # 在 Target 的 A4T 和服务器端实施中使用 ID 服务 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-这些说明适用于具有 Target、Analytics 和 ID 服务混合服务器端和客户端实施的 A4T 客户。需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应参阅此信息。此 ID 服务的实例将使用缩略版 VisitorAPI.js 代码库，您可以从节点包管理器 (NPM) 中下载和安装。查看此部分内容可了解安装说明和其他配置要求。
+这些说明针对的是目标、分析和ID服务在服务器端和客户端实现混合的A4T客户。 需要在NodeJS或Rhino环境中运行ID服务的客户也应查看此信息。 此ID服务实例使用VisitorAPI.js代码库的缩短版本，您可以从节点包管理器(NPM)下载并安装该代码库。 请查看本节以了解安装说明和其他配置要求。
 
 ## 简介 {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-A4T（和其他客户）在需要执行以下操作时可以使用此版本的 ID 服务：
+A4T（和其他客户）在需要时可以使用此版本的ID服务：
 
-* 在自己服务器上渲染网页内容，然后将其传递到浏览器以进行最终显示。
+* 在其服务器上呈现网页内容，并将其传递到浏览器以进行最终显示。
 * 进行服务器端 [!DNL Target] 调用。
 * 对 [!DNL Analytics] 进行客户端（浏览器内）调用。
 * 同步单独的 [!DNL Target] 和 [!DNL Analytics] ID，以确定某个解决方案看到的访客是否就是其他解决方案看到的同一个人。
@@ -36,18 +39,18 @@ A4T（和其他客户）在需要执行以下操作时可以使用此版本的 I
 
 ## 步骤 1：请求页面 {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-服务器端活动开始于访客发起加载网页的 HTTP 请求之时。在此步骤期间，您的服务器会收到此请求并检查 [AMCV Cookie](../introduction/cookies.md)。AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
+服务器端活动从访客发出HTTP请求加载网页时开始。 在此步骤中，服务器接收此请求并检 [查AMCV cookie](../introduction/cookies.md)。 AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
 
 ## 步骤 2：生成 ID 服务负载 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-接下来，您需要向 ID 服务发起服务器端 *`payload request`*。负载请求：
+接下来，您需要向 ID 服务发起服务器端 *`payload request`*。有效负荷请求：
 
-* 将 AMCV Cookie 传递到 ID 服务。
-* 请求下述后续步骤中 Target 和 Analytics 所需的数据。
+* 将AMCV cookie传递到ID服务。
+* 在下面描述的后续步骤中请求目标和分析所需的数据。
 
 >[!NOTE]
 >
->此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一个调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
+>此方法会从 [!DNL Target] 中请求一个 mbox。If you need to request multiple mboxes in a single call, see [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 您的负载请求应当类似于以下代码示例。在此代码示例中，`visitor.setCustomerIDs` 函数是可选的。请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)以了解更多信息。
 
@@ -124,7 +127,7 @@ ID 服务在 JSON 对象中返回负载，它类似于如下示例。[!DNL Targe
 
 ## 步骤 4：获取 ID 服务的服务器状态 {#section-8ebfd177d42941c1893bfdde6e514280}
 
-服务器状态数据包含有关服务器上已完成工作的信息。客户端 ID 服务代码需要此信息。对于已通过 [!DNL Dynamic Tag Manager] (DTM) 实施 ID 服务的客户，可以配置 DTM 以通过该工具传递服务器状态数据。如果您是通过非标准流程设置的 ID 服务，则将需要使用您自己的代码返回服务器状态。客户端 ID 服务和 [!DNL Analytics] 代码会在页面加载时将状态数据传递到 Adobe。
+服务器状态数据包含有关在服务器上完成的工作的信息。 客户端ID服务代码需要此信息。 对于已通过 [!DNL Dynamic Tag Manager] (DTM) 实施 ID 服务的客户，可以配置 DTM 以通过该工具传递服务器状态数据。如果您是通过非标准流程设置的 ID 服务，则将需要使用您自己的代码返回服务器状态。客户端 ID 服务和 [!DNL Analytics] 代码会在页面加载时将状态数据传递到 Adobe。
 
 **通过 DTM 获取服务器状态**
 
@@ -153,7 +156,7 @@ Response.send("
 
 **DTM 设置**
 
-将它们作为名称-值对添加到 ID 服务实例的&#x200B;**[!UICONTROL 常规 &gt; 设置]部分中：**
+将它们作为名称-值对添加到 ID 服务实例的&#x200B;**[!UICONTROL 常规 > 设置]**&#x200B;部分中：
 
 * **[!UICONTROL 名称：]** serverState
 * **[!UICONTROL 值：]**%serverState%
@@ -162,11 +165,11 @@ Response.send("
    >
    >值名称必须与在页面代码中为 `serverState` 设置的变量名称匹配。
 
-您已配置的设置应类似于以下形式：
+您配置的设置应当如下：
 
 ![](assets/server_side_dtm.png)
 
-另请参阅[适用于 DTM 的 Experience Cloud Identity 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **在没有使用 DTM 的情况下获取服务器状态**
 
@@ -193,7 +196,7 @@ Response.send("
 
 在这个时候，Web 服务器将页面内容发送到访客的浏览器。从此刻起，浏览器（不是服务器）发起所有剩余的 ID 服务和 [!DNL Analytics] 调用。例如，在浏览器中：
 
-* ID 服务从服务器接收状态数据并将 SDID 传递到 AppMeasurement。
+* ID服务从服务器接收状态数据，并将SDID传递给AppMeasurement。
 * AppMeasurement 将页面点击的相关数据（包括 SDID）发送到 [!DNL Analytics]。
 * [!DNL Analytics] 和 [!DNL Target] 会比较此访客的 SDID。如果 SDID 相同，则 [!DNL Target] 和 [!DNL Analytics] 将服务器端调用和客户端调用拼结在一起。此时，这两种解决方案会将此访客识别为同一个人。
 
