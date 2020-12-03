@@ -5,9 +5,9 @@ seo-description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie �
 seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ ID 服务在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.
 | AMCV (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 | AMCVS (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 
-*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅[secureCookie](https://docs.adobe.com/content/help/zh-hans/id-service/using/id-service-api/configurations/securecookie.html)主题。*
+*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅  [secureCookie](https://docs.adobe.com/content/help/zh-hans/id-service/using/id-service-api/configurations/securecookie.html) 主题。*
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
