@@ -1,12 +1,15 @@
 ---
 description: 允许您与 ID 服务进行交互的公共方法。
-keywords: ID 服务
+keywords: ID Service
 seo-description: 允许您与 ID 服务进行交互的公共方法。
 seo-title: 方法
 title: 方法
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript 库*&#x200B;最近发生了移动。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 上找到最新版本的 ECID JS 库。
+>*Experience Cloud ID Javascript 库*&#x200B;最近发生了移动。The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 相关文章：
 
