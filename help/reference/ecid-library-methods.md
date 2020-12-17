@@ -3,11 +3,11 @@ title: Safari ITP 中的 ECID 库方法
 seo-title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 seo-description: 适用于 Adobe ECID（ID 服务）库的文档。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->已进行更新，以反映2020年11月12日作为Big Sur OS版本的一部分发布的对ITP的最新更改。
+>我们进行了更新以反映 2020 年 11 月 12 日作为 Big Sur OS 版本的一部分发布的最新 ITP 更改。
 
 由于 Safari 通过 ITP 加强了跨域跟踪，因此 Adobe 必须在支持客户的库以及消费者隐私和选择方面继续使用相应的最佳实践。
 
-自2020年11月10日起，通过文档.cookie API设置的所有第一方永久Cookie（通常称为“客户端”Cookie），以及通过Safari和移动iOS浏览器中的第一方CNAME实施设置的Cookie的过期限制为七天。 如先前版本的ITP中所述，第三方cookie将继续被阻止。 有关 ITP 2.1 以及 Adobe 解决方案影响的更多详细信息，请阅读 [Safari ITP 2.1 对 Adobe Experience Cloud 和 Experience Platform 客户的影响](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自 2020 年 11 月 10 日起，通过文档 .cookie API 设置的所有第一方永久 Cookie（通常称为“客户端”Cookie），以及通过 Safari 和移动端 iOS 浏览器中的第一方 CNAME 实施设置的 Cookie 的有效期不超过 7 天。系统将继续阻止第三方 Cookie，这一点在早期版本的 ITP 中已有声明。有关 ITP 2.1 以及 Adobe 解决方案影响的更多详细信息，请阅读 [Safari ITP 2.1 对 Adobe Experience Cloud 和 Experience Platform 客户的影响](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
-## ITP相关更改、方法和配置
+## 与 ITP 相关的更改、方法和配置
 
 由于已为 Safari 中的跟踪创建其他方法，因此，它们将被作为参考内容添加为此页面。
 
@@ -32,15 +32,15 @@ ht-degree: 72%
 
 请参阅下文，了解与 ITP 和 ECID 库使用相关的事项。
 
-## ITP和Apple WebKit的当前ECID库行为
+## ITP 和 Apple WebKit 的当前 ECID 库行为
 
-ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提供准确访客跟踪信息的能力。因此，在Adobe的CNAME跟踪服务器中引入了一项更改，以将访客的Experience CloudID(ECID)存储在第一方cookie中。
+ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提供准确访客跟踪信息的能力。因此，Adobe 将会对其 CNAME 跟踪服务器进行更改，以便将访客的 Experience Cloud ID (ECID) 存储在第一方 Cookie 中。
 
 此更改仅对在第一方环境中使用 Analytics CNAME 的 ECID 客户有益。即使您是当前未使用 CNAME 的 Analytics 客户或者甚至不是 Analytics 客户，您仍可以查看 CNAME 记录。请联系客户关怀团队或您的客户代表，以开始注册 [CNAME](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-first-party.html) 的过程。
 
 升级到 ECID 库版本 4.3.0 及更高版本以利用此更改。
 
-以下概述了ECID库在ITP 2.1中的行为方式，以及Apple作为Big Sur发行版的一部分所做的最新更改
+以下内容概述了 ECID 库在 ITP 2.1 中的行为方式，以及 Apple 在 Big Sur 版本中所做的最新更改
 
 **设计**
 
@@ -48,15 +48,15 @@ ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提�
 
 >[!IMPORTANT]
 >
->作为Big Sur更新的一部分，通 `s_ecid` 过CNAME设置的Cookie也将持续7天。
+>作为 Big Sur 更新的一部分，通过 CNAME 设置的 `s_ecid` Cookie 也将维持 7 天的有效期。
 
 此新 `s_ecid` Cookie 采用与 AMCV Cookie 相同的选择退出状态。如果从 `s_ecid` Cookie 读取 ecid，则系统始终会立即调用 demdex 以检索该 ID 的最新选择退出状态并将其存储在 AMCV Cookie 中。
 
 此外，如果您的消费者已通过此[方法](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/opt-out.html)选择退出 Analytics 跟踪，则此 `s_ecid` Cookie 将被删除。
 
-The tracking server name should be supplied to the VisitorJS library when initializing the library using `trackingServer` or `trackingServerSecure`. This should match the `trackingServer` config in the Analytics configs.
+使用 `trackingServer` 或 `trackingServerSecure` 初始化库时，应将跟踪服务器名称提供给 VisitorJS 库。此操作应该与 Analytics 配置中的 `trackingServer` 配置匹配。
 
-If you choose not to take advantage of this method, add the following config to your ECID library implementation: `discardtrackingServerECID`. 当此配置设置为true时，访客库不读取由第一方跟踪服务器设置的MID。
+如果您选择不使用此方法，请将以下配置添加到您的 ECID 库实施中：`discardtrackingServerECID`。当此配置设置为 true 时，访客库不会读取第一方跟踪服务器设置的 MID。
 
 ![](assets/itp-proposal-v1.png)
 
