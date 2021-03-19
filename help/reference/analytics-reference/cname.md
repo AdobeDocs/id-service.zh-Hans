@@ -1,14 +1,14 @@
 ---
-description: 'null'
-keywords: order of operations;ID Service
-seo-description: 'null'
+description: 如果您有一个主要的登录网站，可以在客户访问其他域之前识别客户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器（如 Safari）中启用跨域跟踪。
+keywords: 操作顺序;ID 服务
+seo-description: 如果您有一个主要的登录网站，可以在客户访问其他域之前识别客户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器（如 Safari）中启用跨域跟踪。
 seo-title: 数据收集 CNAME 和跨域跟踪
 title: 数据收集 CNAME 和跨域跟踪
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
+source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
