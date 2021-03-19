@@ -1,14 +1,14 @@
 ---
 description: 在部署 Experience Cloud Identity 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 在部署 Experience Cloud Identity 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
 seo-title: Experience Cloud Identity 服务迁移决策点
 title: Experience Cloud Identity 服务迁移决策点
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>多个域 </p> </td> 
-   <td colname="col2"> <p>如果您跨多个域跟踪访客，并且还有一个主要的登录网站，在客户访问其他域之前可以在该网站中识别客户，则应该继续使用数据收集 CNAME。请参阅<a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">数据收集 CNAME 和跨域跟踪</a>，以了解详细说明。 </p> <p>请注意，您需要指定两个额外的跟踪服务器参数，即 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，以便通过 ID 服务配置 CNAME。 </p> </td> 
+   <td colname="col2"> <p>如果您跨多个域跟踪访客，并且还有一个主要的登录网站，在客户访问其他域之前可以在该网站中识别客户，则应该继续使用数据收集 CNAME。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>请注意，您需要指定两个额外的跟踪服务器参数，即 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，以便通过 ID 服务配置 CNAME。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>单个域 </p> </td> 
