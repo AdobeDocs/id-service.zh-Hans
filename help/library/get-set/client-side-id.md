@@ -1,28 +1,28 @@
 ---
-description: 调用此ID服务函数以确定ID服务是否生成了客户端Experience Cloud访客ID(MID)。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
-keywords: ID Service
-seo-description: 调用此ID服务函数以确定ID服务是否生成了客户端Experience Cloud访客ID(MID)。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+description: 调用此 ID 服务函数以确定此 ID 服务是否生成了客户端 Experience Cloud 访客 ID (MID)。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+keywords: ID 服务
+seo-description: 调用此 ID 服务函数以确定此 ID 服务是否生成了客户端 Experience Cloud 访客 ID (MID)。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 52%
+exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '148'
+ht-degree: 100%
 
 ---
 
-
 # isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
 
-调用此ID服务函数以确定ID服务是否生成了客户端Experience Cloud访客ID(MID)。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+调用此 ID 服务函数以确定此 ID 服务是否生成了客户端 Experience Cloud 访客 ID (MID)。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 
 **语法**
 
 `var *`variableName`* = visitor.isClientSideMarketingCloudVisitorID()`
 
-下表列表并描述了此函数返回的响应。
+下表列出并描述了此函数返回的响应。
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 
@@ -46,4 +46,3 @@ ht-degree: 52%
   </tr> 
  </tbody> 
 </table>
-
