@@ -1,18 +1,18 @@
 ---
 description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
-keywords: playstation;ID Service
+keywords: PlayStation;ID 服务
 seo-description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
 seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '994'
+exl-id: 727c6381-56b9-44b8-8e59-355d072769be
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
-
 
 # Cookie 和 Experience Cloud Identity 服务{#cookies-and-the-experience-cloud-id-service}
 
