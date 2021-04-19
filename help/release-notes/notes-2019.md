@@ -1,18 +1,18 @@
 ---
 description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 seo-title: 2019 版发行说明
 title: 2019 版发行说明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
-source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
-workflow-type: tm+mt
-source-wordcount: '422'
+exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud 发行说明 - 2019 版{#release-notes}
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 版本 4.4.1
 
-在 ECID Launch 扩展中，为“媒体分析”添加了预先准备的选择加入批准复选框.
+在 ECID Launch 扩展中，为媒体分析添加了预先准备的选择加入批准复选框。
 
 **修复**
 
@@ -57,9 +57,9 @@ ht-degree: 100%
 
 **修复**
 
-* IAB + OptIn 无法获得重新访问客户的 MID.
+* IAB + OptIn 无法获得重新访问客户的 MID。
 * 修复了 DTM 中选择加入 doesOptInApply 配置的错误。
-* ECID 选择退出会禁用 ID 同步.
+* ECID 选择退出会禁用 ID 同步。
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
