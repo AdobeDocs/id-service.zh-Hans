@@ -1,14 +1,14 @@
 ---
 title: 识别独特访客
 description: 适用于 Adobe ECID（ID 服务）的文档
-translation-type: tm+mt
-source-git-commit: 8ad5ae179540596913fccc59070aecc57b09f586
-workflow-type: tm+mt
+exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '234'
 ht-degree: 100%
 
 ---
-
 
 # 识别独特访客
 
