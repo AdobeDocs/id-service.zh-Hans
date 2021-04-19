@@ -1,18 +1,18 @@
 ---
 description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 seo-title: appendVisitorIDsTo（跨域跟踪）
 title: appendVisitorIDsTo（跨域跟踪）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '446'
+exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
-
 
 # appendVisitorIDsTo（跨域跟踪）{#appendvisitoridsto-cross-domain-tracking}
 
@@ -83,4 +83,3 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
   </tr> 
  </tbody> 
 </table>
-
