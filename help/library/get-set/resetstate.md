@@ -1,18 +1,18 @@
 ---
 description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 66%
+exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '400'
+ht-degree: 100%
 
 ---
-
 
 # resetState{#resetstate}
 
@@ -22,8 +22,8 @@ ht-degree: 66%
 
 作为使用 ID 服务的 A4T 客户，当您需要执行以下操作时，您可能要使用 `visitor.resetState()` 函数：
 
-* 通过重定向将补充数据ID(SDID)或任何其他ID从一个页面或屏幕传递到另一个页面或屏幕。 通常，如果没有此函数，ID服务将无法传递此ID。
-* 使用只通过Ajax调用更新页面或应用程序的特定部分的代码，您希望跟踪这些操作。 例如，假设您有一个页面，在该页面上单击对象只加载或更改特殊部分。 在这种情况下，除非重新加载页面，否则ID服务无法请求其他ID。 但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
+* 通过重定向将 Supplemental Data ID (SDID) 或任何其他 ID 从一个页面/屏幕传递到另一个页面/屏幕。通常，若不使用此函数，ID 服务便不会传递该 ID。
+* 使用仅通过 Ajax 调用更新页面或应用程序的特定部分的代码，并且您想跟踪这些操作。例如，假设您有一个页面，当您在其中单击某个对象时，系统仅会加载或更改特殊部分。在这种情况下，除非重新加载该页面，否则 ID 服务无法请求不同的 ID。但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
 
 请参阅下面的代码示例。
 
@@ -33,7 +33,7 @@ ht-degree: 66%
 
 ## 代码示例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的ID服务实现会影响您使用此函数的方式。 有关示例，请参阅下表。
+您的 ID 服务实施会影响您使用此函数的方式。请参阅下表了解相关示例。
 
 **服务器端实施**
 
@@ -41,7 +41,7 @@ ht-degree: 66%
 
 **非标准实施**（包含 ID）
 
-如果您已通过[非标准实施](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)设置 ID 服务，则您需要配置一个变量对象，以包含您要通过 `visitor.resetState()` () 传递的 SDID（或其他 ID）。如下所示，这将包含您的[组织 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您要传递的 ID。您的代码可能与以下示例类似。
+如果您已通过[非标准实施](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)设置 ID 服务，则需要配置一个变量对象，以包含您要通过 `visitor.resetState()` 传递的 SDID（或其他 ID）。如下所示，这将包含您的[组织 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您要传递的 ID。您的代码可能与以下示例类似。
 
 ```js
 //Instantiate server state variable 
@@ -66,7 +66,7 @@ visitor.resetState(serverState);
 
 **非标准实施**（不传递 ID）
 
-在这种情况下，`visitor.resetState()` 可用于生成新的 ID。当用户导航到新屏幕而不刷新页面并且您需要新ID时，这在单页应用程序中非常有用。
+在这种情况下，`visitor.resetState()` 可用于生成新的 ID。在以下情况下，这可能会很有用：用户在单页应用程序中转到一个新屏幕而不刷新页面，并且您需要一个新 ID。
 
 ```js
  
@@ -90,6 +90,6 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
 
-**动态标签管理器 (DTM)**
+**动态标记管理器 (DTM)**
 
-当前，`visitor.resetState()` () 没有 DTM 配置路径。
+当前，`visitor.resetState()` 没有 DTM 配置路径。
