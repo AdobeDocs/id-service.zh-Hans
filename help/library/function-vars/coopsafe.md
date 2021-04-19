@@ -1,18 +1,18 @@
 ---
 description: 这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '604'
+exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
-
 
 # isCoopSafe{#iscoopsafe}
 
