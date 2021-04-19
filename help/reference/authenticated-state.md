@@ -1,18 +1,18 @@
 ---
 description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
 seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '659'
+exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # 客户 ID 和身份验证状态 {#customer-ids-and-authentication-states}
 
