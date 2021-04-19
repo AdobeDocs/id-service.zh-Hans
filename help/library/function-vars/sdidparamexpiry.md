@@ -1,24 +1,24 @@
 ---
-description: 通过此配置，当使用appendSupplementalDataIDTo帮助函数将该ID从一页传递到另一页时，可覆盖默认的补充数据ID(SDID)过期间隔。 默认情况下，接收页面上的ID服务代码有30秒钟从引用页面发送的URL获取SDID。 如果接收页上的ID服务代码在30秒内无法检索SDID，则它会请求新的SDID。 此功能主要针对需要将SDID从一个页面传递到另一个页面并希望控制此超时时间间隔的A4T客户。
-keywords: ID Service
-seo-description: 通过此配置，当使用appendSupplementalDataIDTo帮助函数将该ID从一页传递到另一页时，可覆盖默认的补充数据ID(SDID)过期间隔。 默认情况下，接收页面上的ID服务代码有30秒钟从引用页面发送的URL获取SDID。 如果接收页上的ID服务代码在30秒内无法检索SDID，则它会请求新的SDID。 此功能主要针对需要将SDID从一个页面传递到另一个页面并希望控制此超时时间间隔的A4T客户。
+description: 通过此配置，您可以在使用 appendSupplementalDataIDTo 帮助程序函数将 Supplemental Data ID (SDID) 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
+keywords: ID 服务
+seo-description: 通过此配置，您可以在使用 appendSupplementalDataIDTo 帮助程序函数将 Supplemental Data ID (SDID) 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
 uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 7%
+exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '357'
+ht-degree: 100%
 
 ---
 
-
 # sdidParamExpiry{#sdidparamexpiry}
 
-通过此配置，当使用appendSupplementalDataIDTo帮助函数将该ID从一页传递到另一页时，可覆盖默认的补充数据ID(SDID)过期间隔。 默认情况下，接收页面上的ID服务代码有30秒钟从引用页面发送的URL获取SDID。 如果接收页上的ID服务代码在30秒内无法检索SDID，则它会请求新的SDID。 此功能主要针对需要将SDID从一个页面传递到另一个页面并希望控制此超时时间间隔的A4T客户。
+通过此配置，您可以在使用 appendSupplementalDataIDTo 帮助程序函数将 Supplemental Data ID (SDID) 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
 
-**覆盖SDID超时**
+**覆盖 SDID 超时**
 
 如果您需要更改默认的 SDID 超时，请使用以下语法将 `sdidParamExpiry` 添加到 `Visitor.getInstance` 函数：
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 **代码示例**
 
-配置后，您的ID服务代码可能与此示例类似。 此示例将SDID超时设置为15秒。 此配置与appendSupplementalDataIDTo [帮助程序方](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) 法配合使用。
+若已配置，您的 ID 服务代码可能类似于此示例。此示例将 SDID 超时设为 15 秒。此配置使用 [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) 帮助程序方法。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -39,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
-
