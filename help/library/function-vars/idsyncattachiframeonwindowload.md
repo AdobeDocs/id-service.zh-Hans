@@ -1,18 +1,18 @@
 ---
 description: 可控制 Experience Cloud Identity 服务如何加载 ID 同步 iFrame 的可选布尔标记。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 可控制 Experience Cloud Identity 服务如何加载 ID 同步 iFrame 的可选布尔标记。
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 79%
+exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '95'
+ht-degree: 100%
 
 ---
-
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 
 **语法：**` `idSyncAttachIframeOnWindowLoad= true|false``（默认值为 `false`。）
 
-当 `idSyncAttachIframeOnWindowLoad: true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID服务以尽可能快的速度加载ID同步iFrame，而不是在加载窗口时加载。
+当 `idSyncAttachIframeOnWindowLoad: true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务会尽快加载 ID 同步 iFrame，而不是在窗口加载时才加载。
 
 **代码示例**
 
@@ -37,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    idSyncAttachIframeOnWindowLoad: true 
 });
 ```
-
