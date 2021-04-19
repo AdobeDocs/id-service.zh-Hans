@@ -1,18 +1,18 @@
 ---
 description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式识别访客。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 部署访客 ID 服务后，可以在 Analytic 以 5 种方式识别访客。
 seo-title: Analytics ID 操作顺序
 title: Analytics ID 操作顺序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '329'
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # Analytics ID 操作顺序{#order-of-operations-for-analytics-ids}
 
@@ -56,4 +56,3 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
