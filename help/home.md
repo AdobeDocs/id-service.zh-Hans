@@ -1,18 +1,18 @@
 ---
 description: 'Experience Cloud Identity 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。 '
-keywords: ID Service
+keywords: ID 服务
 seo-description: Adobe Experience Cloud Identity 服务（ID 服务）提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 seo-title: Experience Cloud Identity 服务
 title: Experience Cloud Identity 服务
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '303'
+exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Cloud Identity 服务 {#experience-cloud-id-service}
 
@@ -52,4 +52,3 @@ Adobe Experience Cloud Identity 服务（ID 服务）提供了一个通用的永
   </tr> 
  </tbody> 
 </table>
-
