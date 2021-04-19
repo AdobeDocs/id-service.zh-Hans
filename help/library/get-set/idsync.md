@@ -1,18 +1,18 @@
 ---
 description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
-keywords: ID Service
+keywords: ID 服务
 seo-description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 seo-title: 通过 URL 或数据源进行 ID 同步
 title: 通过 URL 或数据源进行 ID 同步
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '273'
+exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
-
 
 # 通过 URL 或数据源进行 ID 同步{#id-synchronization-by-url-or-data-source}
 
