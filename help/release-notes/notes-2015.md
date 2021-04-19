@@ -1,18 +1,18 @@
 ---
 description: 2015 版发行说明和更新。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 2015 版发行说明和更新。
 seo-title: 2015 版发行说明
 title: 2015 版发行说明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 65%
+exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
-
 
 # 2015 版发行说明 {#release-notes}
 
@@ -26,21 +26,21 @@ ht-degree: 65%
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
-2015年9月
+2015 年 9 月
 
-* 修复了Safari浏览器中的一个错误，该错误导致当用户阻止第三方Cookie时同步服务无法正常工作。 (AAM-20764)
-* 现在，调用 ID 服务的过程涉及 `d_visid_ver=` 参数中的版本 ID。返回的ID可帮助内部团队解决疑难解答和支持问题。 (AAM-20824)
+* 修复了 Safari 浏览器中的一个错误，当用户阻止使用第三方 Cookie 后，该错误会导致同步服务无法正常运行。(AAM-20764)
+* 现在，调用 ID 服务的过程涉及 `d_visid_ver=` 参数中的版本 ID。返回的 ID 可帮助内部团队排除故障和解决支持问题。(AAM-20824)
 
 ## 版本 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
-2015年8月
+2015 年 8 月
 
-* 修复了一个错误，可防止ID服务在没有要同步或触发的数据时请求iframe。 (AAM-20164)
-* 修复了ID服务无法正确设置多部分顶级域cookie的错误。 例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
+* 修复了一个错误，该错误会导致 ID 服务在没有可同步或可激发的数据时无法请求 iframe。(AAM-20164)
+* 修复了一个错误，该错误会导致 ID 服务无法正确设置多部分顶级域名 Cookie。例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
 
-   这只影响到满足以下所 *有条件* 的少数客户：
+   这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
 
-   * 使用ID服务。
+   * 正在使用 ID 服务。
    * 启用了[宽限期&#x200B;](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
 
    * 拥有使用多部分顶级域名的页面。
@@ -74,9 +74,9 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 ## 版本 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
-2015年2月
+2015 年 2 月
 
-修复了对AAM Blob和位置提示请求的超时处理。 现在，在超时时，系统会将当前页面的这些字段正确留空并进行所有回调。 超时被视为错误条件，因此将在下一页重试。 （AN-94473、AN-94474）
+修复了对请求“AAM Blob”和“位置提示”时出现的超时的处理方式。现在，当出现超时时，系统会在当前页面上正确地将这些字段留空，并进行所有回调。超时被视为错误条件，因此它会在下一页上重试。（AN-94473、AN-94474）
 
 ## 版本 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
