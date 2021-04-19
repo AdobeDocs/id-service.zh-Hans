@@ -4,14 +4,14 @@ seo-description: 用于管理选择加入服务的示例用例和解决方案。
 seo-title: 选择加入用例
 title: 选择加入用例
 uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
-translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
-workflow-type: tm+mt
+exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
-
 
 # 选择加入用例 {#opt-in-use-cases}
 
@@ -19,9 +19,9 @@ ht-degree: 16%
 
 ## 提示和故障诊断 {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* 访客JS初始化是同步的，在页面加载期间执行。 如果您与CMP或具有高延迟的权限持久性进行接口，则最好使用“选择加入设置”中所述 [的异步功能](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)。
-* 选择加入是按域实现。 它将不处理跨域实现。
-* 要禁用特定库的第三方调用，您需要在每个库中单独配置该首选项。
+* 访客 JS 初始化是同步的，在页面加载期间执行。如果您与 CMP 或具有高延迟的许可持久性连接，使用[选择加入设置](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)中所述的异步函数会更好。
+* 选择加入是一项因域而异的实施。它不会处理跨域实施。
+* 若要针对特定库禁用第三方调用，您需要在每个库中分别配置该偏好设置。
 
 ## 选择加入方案 {#section-1178053c065c430bba26f82ef383a71c}
 
@@ -37,25 +37,24 @@ ht-degree: 16%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>分析可以在事先同意状态下进行收集，但只有在收到同意后才能加载所有其他库 </p> </td> 
-   <td colname="col2"> <p>使用选择加入功能，使Analytics类别处于预先同意状态 </p> </td> 
-   <td colname="col3"> <p>Analytics在预先同意的集合中使用Analytics标识符而非ECID。 ECID获得批准后，将使用新标识符，访客将收到可用于激活和集成的ECID。 </p> <p>预期在同意前／同意后状态访客碎片。 </p> </td> 
+   <td colname="col1"> <p>在同意前 Analytics 可以进行收集，但只有在征得同意后才能加载所有其他库 </p> </td> 
+   <td colname="col2"> <p>使用选择加入在同意前启用 Analytics 类别 </p> </td> 
+   <td colname="col3"> <p>Analytics 在同意前收集中使用 Analytics 标识符（而非 ECID）。ECID 获批后，系统将使用新标识符，并且访客将接收可用于激活和集成的 ECID。 </p> <p>访客应按同意前/同意后分段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>第一方测量在预先同意状态下可以收集。 在收到同意之前，禁止所有其他类型的数据使用。 </p> </td> 
-   <td colname="col2"> <p>使用选择加入功能，使Analytics + ECID库处于预先同意状态。 </p> <p>将“disablethirdpartycookies”配置添加到ECID库以阻止处于预先同意状态的第三方cookie + ID同步 </p> </td> 
-   <td colname="col3"> <p>AdobeDemdex调用将触发ECID检索，但不存在Demdex cookie、其他第三方cookie或ID同步。 </p> <p>在Analytics的同意前／同意后状态中保持一致的访客。 在预先同意状态下进行收集将与事后同意数据收集相关联。 </p> </td> 
+   <td colname="col1"> <p>在同意前，第一方度量可以进行收集。在征得同意之前，禁止所有其他类型的数据使用。 </p> </td> 
+   <td colname="col2"> <p>使用选择加入在同意前启用 Analytics + ECID 库。 </p> <p>将“disablethirdpartycookies”配置添加到 ECID 库以阻止在同意前发生第三方 Cookie + ID 同步 </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex 调用会触发 ECID 检索，但不存在任何 Demdex Cookie、其他第三方 Cookie 或 ID 同步。 </p> <p>对于 Analytics，确保访客在同意前/同意后保持一致。同意前收集将与同意后数据收集相关联。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>在预先同意状态下，第一方衡量和定位是可以接受的。 在收到同意之前，禁止所有其他类型的数据使用。 </p> </td> 
-   <td colname="col2"> <p>使用选择加入功能，使Analytics + ECID +目标库处于预先同意状态。 </p> <p>将 <span class="codeph">isablethirdpartycookies</span> 配置添加到 ECID 库以阻止在同意前发生第三方 Cookie + ID 同步在“同意后”状态中删除标志。 </p> </td> 
-   <td colname="col3"> <p>AdobeDemdex调用将触发ECID检索，但不存在Demdex cookie、其他第三方cookie或ID同步。 </p> <p>在第一方解决方案的同意前／同意后状态中保持一致的访客。 在预先同意状态下进行收集将与事后同意数据收集相关联。 </p> </td> 
+   <td colname="col1"> <p>在同意前，可以进行第一方度量和定位。在征得同意之前，禁止所有其他类型的数据使用。 </p> </td> 
+   <td colname="col2"> <p>使用选择加入在同意前启用 Analytics + ECID + Target 库。 </p> <p>将 <span class="codeph">isablethirdpartycookies</span> 配置添加到 ECID 库以阻止在同意前发生第三方 Cookie + ID 同步在同意后移除标志。 </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex 调用会触发 ECID 检索，但不存在任何 Demdex Cookie、其他第三方 Cookie 或 ID 同步。 </p> <p>对于第三方解决方案，确保访客在同意前/同意后保持一致。同意前收集将与同意后数据收集相关联。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>不允许在预先同意状态中设置Cookie </p> </td> 
-   <td colname="col2"> <p>使用选择加入功能阻止所有库在收到同意之前加载 </p> </td> 
-   <td colname="col3"> <p>实施符合预期，所有库（包括ECID）在同意后状态将以正确的顺序加载。 </p> <p>从未同意跟踪的客户的数据丢失。 </p> </td> 
+   <td colname="col1"> <p>在同意前不得设置任何 Cookie </p> </td> 
+   <td colname="col2"> <p>使用选择加入阻止加载所有库，直到征得同意后才解除阻止 </p> </td> 
+   <td colname="col3"> <p>实施按预期进行，所有库（包括 ECID）都将在同意后按照正确的序列加载。 </p> <p>从不同意被跟踪的客户会遇到数据丢失情况。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
