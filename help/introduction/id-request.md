@@ -1,18 +1,18 @@
 ---
 description: ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
-keywords: ID Service
+keywords: ID 服务
 seo-description: ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 seo-title: Experience Cloud Identity 服务如何请求和设置 ID
 title: Experience Cloud Identity 服务如何请求和设置 ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '804'
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity 服务如何请求和设置 ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -64,4 +64,3 @@ ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中�
 在此示例中，我们的访客离开食品公司网站并导航到体育公司所拥有的足球网站。当访客来到足球网站时，ID 检查和请求过程与前面示例中所述的过程相同。但是，由于体育公司具有其自己的组织 ID，因此 ID 服务会返回不同的 MID。新 MID 在由体育公司控制的域中是唯一的，它允许该公司在不同的 [!DNL Experience Cloud] 解决方案中跟踪和共享访客数据。此访客的 Demdex ID 保持不变，因为它包含在第三方 Cookie 中，在其他域中仍然有效。
 
 ![](assets/req_resp.png)
-
