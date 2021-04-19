@@ -5,14 +5,14 @@ seo-description: 在部署 Experience Cloud Identity 服务之前，您应当了
 seo-title: Experience Cloud Identity 服务迁移决策点
 title: Experience Cloud Identity 服务迁移决策点
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity 服务迁移决策点
 
@@ -66,7 +66,7 @@ ht-degree: 100%
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">确保您的新跟踪服务器<a href="https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">要迁移到 <span class="keyword">Experience Cloud</span> ID 服务，请提前几个月从 CNAME 移至 RDC 跟踪服务器。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>请不要</i>使用 <span class="codeph">*.2o7.net</span> 跟踪服务器。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">请联系<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">客户关怀</a>，以设置访客迁移。这有助于确保访客计数的一致性。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">请联系<a href="https://helpx.adobe.com/cn/marketing-cloud/contact-support.html" format="https" scope="external">客户关怀</a>，以设置访客迁移。这有助于确保访客计数的一致性。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -125,4 +125,3 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
