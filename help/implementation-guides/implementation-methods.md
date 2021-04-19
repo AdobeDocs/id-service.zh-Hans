@@ -1,18 +1,18 @@
 ---
 description: Experience Cloud Identity Service 的标准实施方法与非标准实施方法。
-keywords: ID Service
+keywords: ID 服务
 seo-description: Experience Cloud Identity Service 的标准实施方法与非标准实施方法。
 seo-title: 实施方法
 title: 实施方法
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
-source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
-workflow-type: tm+mt
-source-wordcount: '149'
+exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '151'
 ht-degree: 100%
 
 ---
-
 
 # 实施方法
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 标准实施 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe 强烈建议使 [[!DNL Experience Platform Launch] 来实施 ID 服务。](https://docs.adobe.com/content/help/zh-Hans/launch/using/implement/solutions/idservice-save.html)此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
+Adobe 强烈建议使用 [[!DNL Experience Platform Launch] 来实施 ID 服务。](https://docs.adobe.com/content/help/zh-Hans/launch/using/implement/solutions/idservice-save.html)此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
 
 ## 非标准实施 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
