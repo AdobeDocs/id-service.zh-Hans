@@ -1,18 +1,18 @@
 ---
 description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
 seo-title: 测试和验证 Experience Cloud Identity 服务
 title: 测试和验证 Experience Cloud Identity 服务
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '721'
+exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '723'
 ht-degree: 100%
 
 ---
-
 
 # 测试和验证 Experience Cloud Identity 服务{#test-and-verify-the-experience-cloud-id-service}
 
