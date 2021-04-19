@@ -4,20 +4,20 @@ seo-description: 选择加入 API 库和配置设置参考。
 seo-title: 选择加入参考
 title: 选择加入参考
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
-
 
 # 选择加入参考{#opt-in-reference}
 
 选择加入 API 库和配置设置参考。
 
-同意设置作为类别提供给参与功能：
+同意设置会作为类别提供给选择加入函数：
 
 ```
 adobe.OptInCategories = { 
@@ -28,7 +28,7 @@ adobe.OptInCategories = {
 }
 ```
 
-## 参与配置参数 {#section-d66018342baf401389f248bb381becbf}
+## 选择加入配置参数 {#section-d66018342baf401389f248bb381becbf}
 
 本节讨论如何使用 API 来配置选择加入。大部分配置和实施都可以使用 Experience Platform Launch 扩展来完成。
 
@@ -36,7 +36,7 @@ adobe.OptInCategories = {
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**：
 
-如果为false，则表示访客无需选择加入。 导致Experience Cloud创建Cookie，而不管类别选择加入或退出。 此配置全面启用或禁用“选择加入”。
+如果为 false，则指示访客不需要选择加入。无论是否选择加入类别，Experience Cloud 中的结果都会创建 Cookie。此配置会整体启用或禁用选择加入。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -50,21 +50,21 @@ adobe.OptInCategories = {
 
 启用选择加入功能以在第一方 Cookie 中存储权限（在当前客户的域中）
 
-(可选) **`optInCookiesDomain (string)`**
+（可选）**`optInCookiesDomain (string)`**
 
 用于选择加入 Cookie 的第一方域或子域（如果 `isOptInStorageEnabled` 为 true）
 
-(可选) **`optInStorageExpiry (integer)`**
+（可选）**`optInStorageExpiry (integer)`**
 
-改写默认13个月到期的秒数
+用于覆盖默认过期时间（13 个月）的秒数
 
-## 对同意参数的更改 {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Consent 参数的更改 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-访客在您的站点上体验的任何时间，都可能首次设置首选项，或者可能使用您的CMP更改其首选项。 访客JS初始化后，可使用以下函数更改访客的权限：
+在访问您网站期间的任意时刻，访客可以首次设置偏好设置，也可以使用您的 CMP 更改其偏好设置。使用初始设置初始化访客 JS 后，可以使用以下函数更改访客的权限：
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-可批准或将访客选择加入到列表中所有类别的函数。有关shoudWaitForComplete参数的详细信息，请参 [阅选择加入工作流](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)。
+可批准或将访客选择加入到列表中所有类别的函数。有关 shouldWaitForComplete 参数的更多信息，请参阅[选择加入工作流程](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)。
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -108,7 +108,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-异步检索权限列表。 在权限授予／拒绝过程完成后，将使用权限列表调用回调。 若将 *设置为值* true`shouldAutoSubscribe`，则可为将来的任何选择加入更改注册回调。以下是 `adobe.OptIn` 的属性：
+以异步方式检索权限列表。权限批准/拒绝流程完成后，使用权限列表调用回调。若将 *设置为值* true`shouldAutoSubscribe`，则可为将来的任何选择加入更改注册回调。以下是 `adobe.OptIn` 的属性：
 
 **`permissions`**
 
@@ -116,28 +116,28 @@ adobe.OptInCategories = {
 
 **`status`**
 
-* 挂起
+* 待处理
 * 已更改
 * 完成
 
 **`doesOptInApply`**
 
-True 或 false，表示您在初始化时提供的配置
+True 或 False，表示您在初始化时提供的配置
 
 **`isPending`**
 
-True或False，取决于状态值。 对于尚未明确接受或拒绝权限的访客，此属性的加入报告为true
+True 或 False，具体视状态值而定。对于尚未明确接受或拒绝权限的访客，选择加入会为此属性返回 true
 
 **`isComplete`**
 
-根据状态值，为true或false。 当工作流式同意已开始但尚未完成时，选择加入可能会报告此属性为false。
+True 或 False，具体视状态值而定。当工作流程式同意已开始但未完成时，选择加入可能会为此属性返回 false。
 
 ## 选择加入对象的方法 {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
 **`categories`**：要批准的一个或多个类别。例如：`adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`**：（可选）布尔参数，默认为 false。如果传递 true，则在调用 `adobe.optIn.complete()` () 之前，选择加入将不会完成批准流程。此流程类似于工作流程。
+**`shouldWaitForComplete`**：（可选）布尔参数，默认为 false。如果传递 true，则在调用 `adobe.optIn.complete()` 之前，选择加入将不会完成批准流程。此流程类似于工作流程。
 
 ```
 <codeblock>
@@ -149,8 +149,8 @@ True或False，取决于状态值。 对于尚未明确接受或拒绝权限的�
 
 **`deny(categories, shouldWaitForComplete)`**
 
-* 通过1个或多个类别以检查是否获得批准。
-* 如果没有类别传入，则选中所有可用类别。
+* 传递 1 个或多个类别以检查它们是否获得批准。
+* 如果未传入任何类别，则会检查所有可用的类别。
 
 **`isApproved(categories)`**
 
@@ -162,7 +162,7 @@ True或False，取决于状态值。 对于尚未明确接受或拒绝权限的�
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-异步API以检索权限列表。 在权限授予／拒绝过程完成后，将使用权限列表调用回调。 **`shouldAutoSubscribe`:** 帮助程序实用程序将自动将此回调订阅到所有将来的事件。 这意味着每次在进行批准或拒绝触发时都会调用回调选择加入。 这样，您就始终可以进行更新，无需自己订阅事件。
+同步 API 以检索权限列表。权限批准/拒绝流程完成后，使用权限列表调用回调。**`shouldAutoSubscribe`:** 一个助手实用程序，将自动订阅所有未来事件的回调。这意味着，每当批准或拒绝触发选择加入时，系统都会调用回调。这样，您始终都能了解最新动态，而不用亲自订阅这些事件。
 
 **示例**
 
@@ -205,7 +205,7 @@ optIn.fetchPermissions(callback, true);
 
 拒绝所有现有类别。
 
-## 事件选择加入对象 {#section-06f25b33cab54bafb053183e937fb710}
+## 选择加入对象的事件 {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
