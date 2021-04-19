@@ -1,18 +1,18 @@
 ---
 description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
 seo-title: 内容安全策略和 Experience Cloud Identity 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '619'
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
-
 
 # 内容安全策略和 Experience Cloud Identity 服务{#content-security-policies-and-the-experience-cloud-id-service}
 
