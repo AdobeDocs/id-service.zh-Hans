@@ -1,18 +1,18 @@
 ---
 description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 seo-title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1572'
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -244,4 +244,3 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 * 请确保 Analytics ID (AID) 和 MID 都在图像请求中。
 * 当您符合[中止宽限期的条件](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1)时，请记住禁用宽限期。
-
