@@ -1,18 +1,18 @@
 ---
 description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '447'
+exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
-
 
 # getVisitorValues{#getvisitorvalues}
 
@@ -123,4 +123,3 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
  </tbody> 
 </table>
-
