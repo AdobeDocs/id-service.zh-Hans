@@ -1,18 +1,18 @@
 ---
 description: 概述 Experience Cloud Identity 服务如何处理旧版 Analytics ID。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 概述 Experience Cloud Identity 服务如何处理旧版 Analytics ID。
 seo-title: Analytics 和 Experience Cloud ID 请求
 title: Analytics 和 Experience Cloud ID 请求
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '467'
+exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '469'
 ht-degree: 100%
 
 ---
-
 
 # Analytics 和 Experience Cloud ID 请求{#analytics-and-experience-cloud-id-requests}
 
