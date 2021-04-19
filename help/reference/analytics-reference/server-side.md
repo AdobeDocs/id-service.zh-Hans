@@ -1,18 +1,18 @@
 ---
 description: 在一些实施过程中，访客 ID 是经由 JavaScript 传送至服务器，这样一来服务器就可以发送其他的 Analytics 事件（例如购买事件）。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 在一些实施过程中，访客 ID 是经由 JavaScript 传送至服务器，这样一来服务器就可以发送其他的 Analytics 事件（例如购买事件）。
 seo-title: 结合了 JavaScript 技术的服务器端实施
 title: 结合了 JavaScript 技术的服务器端实施
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '211'
+exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
-
 
 # 结合了 JavaScript 技术的服务器端实施 {#server-side-implementation-mixed-with-javascript}
 
