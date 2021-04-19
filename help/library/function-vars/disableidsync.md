@@ -1,18 +1,18 @@
 ---
 description: 可禁用 ID 同步的可选布尔标记。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 可禁用 ID 同步的可选布尔标记。
 seo-title: disableIdSyncs
 title: disableIdSyncs
 uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '44'
+exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '46'
 ht-degree: 100%
 
 ---
-
 
 # disableIdSyncs{#disableidsyncs}
 
@@ -39,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableIdSyncs: true 
 });
 ```
-
