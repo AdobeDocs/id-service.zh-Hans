@@ -1,14 +1,14 @@
 ---
 title: 在用户同意的基础上使用选择加入控制 Experience Cloud 活动
 description: Adobe 选择加入对象是 Adobe Experience Platform Identity Service 的扩展，旨在帮助您在最终用户同意的基础上，控制 Experience Cloud 解决方案是否可以在网页上创建 Cookie 或启动信标以及哪些 Experience Cloud 解决方案可以执行此类操作。
-translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
-
 
 # 在用户同意的基础上控制 Experience Cloud 活动
 
