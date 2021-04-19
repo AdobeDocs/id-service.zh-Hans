@@ -1,18 +1,18 @@
 ---
 description: 查看此部分内容，确保使用 Experience Cloud Identity 服务所需的正确解决方案、服务和代码版本。
-keywords: ID Service
+keywords: ID 服务
 seo-description: 查看此部分内容，确保使用 Experience Cloud Identity 服务所需的正确解决方案、服务和代码版本。
 seo-title: Experience Cloud Identity 服务的要求
 title: Experience Cloud Identity 服务的要求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '781'
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity 服务的要求{#requirements-for-the-experience-cloud-id-service}
 
