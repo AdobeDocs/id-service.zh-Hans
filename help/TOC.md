@@ -5,9 +5,9 @@ user-guide-title: Experience Cloud Identity Service 帮助
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
 ht-degree: 100%
 
