@@ -6,11 +6,10 @@ seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ ID 服务依赖 AMCV、AMCVS 和 Demdex Cookie 来正常运行。这些 Cookie �
 * 保留此唯一 ID，以便 ID 服务可以收集数据并与其他 Experience Cloud 解决方案共享数据。
 * 跨域跟踪用户。但是，这要求您拥有其他域并在这些域上部署 ID 服务代码。
 
-### ID 服务 Cookie 不能执行的操作
+### ID服务Cookie无法执行的操作
 
 * 存储、传输或执行计算机病毒。
 * 访问或存储个人身份信息 (PII)，如您的电子邮件地址。
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCV Cookie 包含 Experience Cloud 访客 ID 或 MID。MID 存储在一个键值对中，它遵循以下语法：`mid|<Experience Cloud ID>`。
+AMCV Cookie 包含 Experience Cloud 访客 ID 或 MID。MID 存储在一个键值对中，它遵循以下语法：`MCMID|<Experience Cloud ID>`。
 
 一个具有完整形式的键值对应该类似于下面的样子：
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 此永久性标识符支持跨解决方案共享数据。
