@@ -4,10 +4,9 @@ seo-description: Experience Cloud Identity 服务（以前称为访客 ID 服务
 seo-title: Experience Cloud ID 服务概述
 title: Experience Cloud ID 服务概述
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -37,7 +36,7 @@ ht-degree: 100%
 
 * 创建可用于关联配置文件和身份的公共键或 ID。
 * 跨多种解决方案唯一标识设备。
-* 在客户的域中设置第一方 Cookie 以确保在同一域上跟踪。请参阅有关 [Cookie 和 Experience Cloud Identity 服务](https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html)的文档以了解更多信息。
+* 在客户的域中设置第一方 Cookie 以确保在同一域上跟踪。请参阅有关 [Cookie 和 Experience Cloud Identity 服务](./cookies.md)的文档以了解更多信息。
 * 接收来自 Experience Cloud 客户和合作伙伴的别名和 ID 映射。
 * 管理 Experience Cloud 内部的 ID 同步。
 * 支持与广告技术生态系统中的不同第三方进行 ID 同步。
