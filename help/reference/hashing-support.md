@@ -5,11 +5,10 @@ seo-description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法�
 seo-title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +69,7 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 
-Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。有关 Launch 的更多信息，请参阅 [Launch 产品文档](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.html)。
+Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。有关Platform launch的更多信息，请参阅[Launch产品文档](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans)。
 
 要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://docs.adobe.com/help/zh-Hans/launch/using/reference/manage-resources/rules.html)并查看下面的屏幕截图：
 
