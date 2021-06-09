@@ -6,9 +6,9 @@ seo-title: Cookie 和 Experience Cloud Identity 服务
 title: Cookie 和 Experience Cloud Identity 服务
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '987'
 ht-degree: 99%
 
 ---
@@ -27,7 +27,7 @@ ID 服务依赖 AMCV、AMCVS 和 Demdex Cookie 来正常运行。这些 Cookie �
 * 保留此唯一 ID，以便 ID 服务可以收集数据并与其他 Experience Cloud 解决方案共享数据。
 * 跨域跟踪用户。但是，这要求您拥有其他域并在这些域上部署 ID 服务代码。
 
-### ID服务Cookie无法执行的操作
+### ID 服务 Cookie 无法执行的操作
 
 * 存储、传输或执行计算机病毒。
 * 访问或存储个人身份信息 (PII)，如您的电子邮件地址。
@@ -116,7 +116,7 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。这意味着它在用�
  </tbody> 
 </table>
 
-有关相关信息，请参阅[了解 Demdex 域调用](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html)。
+有关相关信息，请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)。
 
 ## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -134,7 +134,7 @@ ID 服务在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.
 | AMCV (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 | AMCVS (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 
-*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅  [secureCookie](https://docs.adobe.com/content/help/zh-hans/id-service/using/id-service-api/configurations/securecookie.html) 主题。*
+*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅  [secureCookie](../library/function-vars/securecookie.md) 主题。*
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
