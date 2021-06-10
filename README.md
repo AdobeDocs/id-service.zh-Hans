@@ -1,8 +1,7 @@
 ---
-source-git-commit: 315d157c7eb5d7532056502d9a9b856dedf212c9
-workflow-type: ht
-translation-type: ht
-source-wordcount: '438'
+source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
+workflow-type: tm+mt
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
@@ -38,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 员工做出的主要更改
 
-如果您是产品团队中负责提供 [!UICONTROL Adobe Experience Cloud] 解决方案的技术作家、项目经理或开发人员，并且您的工作是撰写或创作技术文章，则应使用位于 `https://git.corp.adobe.com/AdobeDocs` 的私有存储库。请参阅[内部协作指南](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
+如果您是产品团队中负责提供 [!UICONTROL Adobe Experience Cloud] 解决方案的技术作家、项目经理或开发人员，并且您的工作是撰写或创作技术文章，则应使用位于 `https://git.corp.adobe.com/AdobeDocs` 的私有存储库。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
