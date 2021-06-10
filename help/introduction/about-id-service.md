@@ -1,15 +1,11 @@
 ---
 description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
 keywords: ID 服务
-seo-description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
-seo-title: 关于 ID 服务
 title: 概述
-uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '356'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
