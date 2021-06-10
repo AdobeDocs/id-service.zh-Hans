@@ -1,15 +1,11 @@
 ---
 description: 可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 keywords: ID 服务
-seo-description: 可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
-seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '340'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
