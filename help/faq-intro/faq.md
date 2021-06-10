@@ -3,9 +3,9 @@ description: 与使用 ID 服务相关的特性、功能和问题的常见问题
 keywords: ID 服务
 title: ID 服务常见问题解答
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 请将 VisitorAPI.js 库放置在页面顶部代码的 `<head>` 部分中。这有助于确保 ID 调用在页面主体开始加载之前发出，并最大限度地增加 ID 成功返回的可能性。
 
-ID 服务调用是异步调用，是对 [demdex.net 域](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html)进行的唯一调用。ID 服务调用不会阻止在页面上加载其他元素。
+ID 服务调用是异步调用，是对 [demdex.net 域](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)进行的唯一调用。ID 服务调用不会阻止在页面上加载其他元素。
 
 对于 [!DNL Target] 客户，将 ID 服务代码放置在页面的 `<body>` 中，可能会增加它阻止 [!DNL Target] 调用的可能性。如果必须将 ID 服务代码放置在页面主体中，则应将其放置在 `<body>` 开始标记的后面。
 
