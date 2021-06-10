@@ -3,10 +3,10 @@ description: 通过此实施，客户可在无法接受或使用我们的 JavaSc
 keywords: ID 服务
 title: 与 Experience Cloud Identity 服务的直接集成
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
+在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
 
 ID 服务支持 HTTP 和 HTTPS 调用。使用 HTTPS 可从安全页面传递数据。
 
@@ -57,7 +57,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您收到的响应�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的旧版域。请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
+   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的旧版域。请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。您收到的响应�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服务是一个地理上广泛分布的负载均衡系统。ID 可标识处理调用的数据中心所在的区域。请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服务是一个地理上广泛分布的负载均衡系统。ID 可标识处理调用的数据中心所在的区域。请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
