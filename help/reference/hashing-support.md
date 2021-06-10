@@ -1,13 +1,11 @@
 ---
 description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。
 keywords: ID 服务
-seo-description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。
-seo-title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '608'
 ht-degree: 98%
 
 ---
