@@ -3,10 +3,10 @@ description: 这些说明适用于那些想要使用 Experience Cloud Identity �
 keywords: ID 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。有关更多信息，请参阅[服务器端转发文档](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。有关更多信息，请参阅[服务器端转发文档](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 迁移到服务器端转发需要进行规划和协调。此过程涉及对您的网站代码进行外部更改以及 Adobe 配置您的帐户时必须执行的内部步骤。事实上，其中的许多迁移步骤需要并行执行并一起发布。您的实施路径应遵循以下事件顺序：
 
@@ -140,7 +140,7 @@ Analytics 使用跟踪服务器进行数据收集。
 
 >[!IMPORTANT]
 >
->此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+>此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ***（可选，但是推荐）*&#x200B;创建自定义 prop **
 
@@ -182,7 +182,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 当您的数据获取流程可以使用 `post_visid_high` 和 `post_visid_low` 列之后，就可以中止宽限期。
 
-另请参阅[点击流数据列引用](https://docs.adobe.com/content/help/zh-Hans/analytics/export/analytics-data-feed/data-feed-overview.html)。
+另请参阅[点击流数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html)。
 
 ## 步骤 9：测试和验证 {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -190,7 +190,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 >[!TIP]
 >
->您可以使用 [Adobe 调试器](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/validate/debugger.html)或 [Charles HTTP 代理](https://www.charlesproxy.com/)检查这些特定于解决方案的 ID。当然，您也可以随意使用最适合您的任何工具或调试器。
+>您可以使用 [Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)或 [Charles HTTP 代理](https://www.charlesproxy.com/)检查这些特定于解决方案的 ID。当然，您也可以随意使用最适合您的任何工具或调试器。
 
 **所有解决方案**
 
@@ -214,7 +214,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 **Audience Manager**
 
-要测试服务器端转发，请参阅[如何验证服务器端转发实施](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)。
+要测试服务器端转发，请参阅[如何验证服务器端转发实施](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)。
 
 **Target**
 
