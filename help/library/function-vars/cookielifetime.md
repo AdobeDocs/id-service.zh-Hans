@@ -1,15 +1,11 @@
 ---
 description: 您可以使用此变量替代 AMCV Cookie 的默认生存时间间隔。
 keywords: ID 服务
-seo-description: 您可以使用此变量替代 AMCV Cookie 的默认生存时间间隔。
-seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd945db3-429a-4625-ac3f-69ac259377a3
 exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '64'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '50'
 ht-degree: 100%
 
 ---
