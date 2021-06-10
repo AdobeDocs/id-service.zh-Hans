@@ -1,12 +1,10 @@
 ---
 description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
-seo-description: Experience Cloud Identity 服务（以前称为访客 ID 服务或 Marketing Cloud ID 服务）允许将常用识别框架用于 Experience Cloud 服务，如客户属性和受众。
-seo-title: Experience Cloud ID 服务概述
 title: Experience Cloud ID 服务概述
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
