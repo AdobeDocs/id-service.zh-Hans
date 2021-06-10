@@ -1,15 +1,11 @@
 ---
 description: 指定目标发布模板是否应当使用 Akamai 进行 HTTPS 连接。
 keywords: ID 服务
-seo-description: 指定目标发布模板是否应当使用 Akamai 进行 HTTPS 连接。
-seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
-uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
 exl-id: 74c24eb5-bf3d-4e6b-ac7d-1a37d940d77f
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '52'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '39'
 ht-degree: 100%
 
 ---
