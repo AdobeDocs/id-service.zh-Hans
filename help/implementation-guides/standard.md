@@ -3,10 +3,10 @@ description: 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 
 keywords: ID 服务
 title: 使用 Dynamic Tag Management 实施
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 100%
+source-wordcount: '1999'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## Dynamic Tag Management 和 ID 服务 {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
-通过 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hans/dtm/using/dtm-home.translate.html)，您可以配置、部署和管理 ID 服务实例及相关的 [!DNL Experience Cloud] 解决方案集成。DTM 可与 ID 服务和其他 Experience Cloud 解决方案深度集成，从而帮助简化实施过程。只需添加和配置 Experience Cloud ID 工具并指定以下信息即可：
+通过 [Dynamic Tag Management](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html)，您可以配置、部署和管理 ID 服务实例及相关的 [!DNL Experience Cloud] 解决方案集成。DTM 可与 ID 服务和其他 Experience Cloud 解决方案深度集成，从而帮助简化实施过程。只需添加和配置 Experience Cloud ID 工具并指定以下信息即可：
 
 * Experience Cloud 组织 ID（如果链接到 Experience Cloud，则会自动填充该 ID）
 * Analytics 跟踪服务器（安全和非安全）
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 **DTM 快速入门**
 
-DTM 是一款操作简单，但功能强大的工具。如果您尚未使用此工具，我们强烈建议您开始使用。请参阅 [DTM 文档](https://docs.adobe.com/content/help/zh-Hans/dtm/using/c-overview.html)，以开始使用此服务。有关如何使用 DTM 设置 ID 服务的说明，请参阅以下部分的信息和过程。
+DTM 是一款操作简单，但功能强大的工具。如果您尚未使用此工具，我们强烈建议您开始使用。请参阅 [DTM 文档](https://experienceleague.adobe.com/docs/dtm/using/c-overview.html)，以开始使用此服务。有关如何使用 DTM 设置 ID 服务的说明，请参阅以下部分的信息和过程。
 
 ## 部署准则 {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
@@ -48,8 +48,8 @@ mcvid-dtm-deployment.xml
 
 在开始之前，请确保已为您的组织和解决方案配置了 [!DNL Experience Cloud]，并且您熟悉 [!DNL Dyanamic Tag Management]。以下文档可以帮助您快速入门：
 
-* [为核心服务启用解决方案](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/about-core-services/core-services.html)：实施 Experience Cloud 并成为管理员。此过程可使您的核心服务（例如，客户属性和 Experience Cloud 受众）解决方案符合现代化要求。
-* [动态标签管理使用入门](https://docs.adobe.com/content/help/zh-Hans/dtm/using/getting-started/get-started.html)
+* [为核心服务启用解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)：实施 Experience Cloud 并成为管理员。此过程可使您的核心服务（例如，客户属性和 Experience Cloud 受众）解决方案符合现代化要求。
+* [动态标签管理使用入门](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html)
 
 **ID 服务代码放置和加载顺序**
 
@@ -62,11 +62,11 @@ ID 服务是通过从 [!DNL Adobe] 数据收集服务器请求和接收唯一 ID
 
 **验证地区数据收集**
 
-要进行[区域数据收集](https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/rdc/regional-data-collection.html) (RDC)，客户必须提供 CNAME 或使用 `*.sc.omtrdc`。请从您的 [!DNL Adobe] 顾问处获取具体的 RDC 设置。
+要进行[区域数据收集](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html) (RDC)，客户必须提供 CNAME 或使用 `*.sc.omtrdc`。请从您的 [!DNL Adobe] 顾问处获取具体的 RDC 设置。
 
 **配置 Analytics 报表包**
 
-新 [!DNL Analytics] 客户应该[创建报表包](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)，以便进行数据收集。
+新 [!DNL Analytics] 客户应该[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)，以便进行数据收集。
 
 ## 使用 DTM 实施 Experience Cloud Identity 服务{#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
@@ -74,9 +74,9 @@ ID 服务是通过从 [!DNL Adobe] 数据收集服务器请求和接收唯一 ID
 
 **先决条件**
 
-* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)。
+* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)。
 
-* 在 DTM 中创建 Web 资产。请参阅 DTM [创建 Web 资产](https://docs.adobe.com/content/help/zh-Hans/dtm/using/admin/web-property.html)文档。
+* 在 DTM 中创建 Web 资产。请参阅 DTM [创建 Web 资产](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)文档。
 
 <!--
 mcvid-dtm-implement.xml
@@ -90,7 +90,7 @@ mcvid-dtm-implement.xml
 
    >[!NOTE]
    >
-   >此操作将使用您的组织 ID 来填充 **[!UICONTROL Experience Cloud 组织 ID]** 框。如果您的 DTM 帐户尚未与 [!DNL Experience Cloud] 关联，则需要提供此 ID。要关联您的帐户，请参阅[在 Experience Cloud 中关联帐户](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html)。请参阅[要求](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)以了解关于如何查找组织 ID 的信息。
+   >此操作将使用您的组织 ID 来填充 **[!UICONTROL Experience Cloud 组织 ID]** 框。如果您的 DTM 帐户尚未与 [!DNL Experience Cloud] 关联，则需要提供此 ID。要关联您的帐户，请参阅[在 Experience Cloud 中关联帐户](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)。请参阅[要求](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)以了解关于如何查找组织 ID 的信息。
 
 1. 在&#x200B;**[!UICONTROL 跟踪服务器]**&#x200B;框中键入您的跟踪服务器的名称。如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
 1. 单击&#x200B;**[!UICONTROL 创建工具]**&#x200B;和&#x200B;**[!UICONTROL 保存更改]**。
@@ -113,7 +113,7 @@ mcvid-dtm-settings.xml
 
 ## 组织 ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
-这是配置的 [!DNL Experience Cloud] 公司需要并与之关联的 ID。组织是一个实体，它允许管理员配置用户和群组，并控制 [!DNL Experience Cloud] 中的单点登录访问。组织 ID 是由 24 个字符组成的字母数字字符串，其后跟（且必须包括）@AdobeOrg。[!DNL Experience Cloud] 管理员可在 [Experience Cloud > 工具](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html)中找到此 ID。
+这是配置的 [!DNL Experience Cloud] 公司需要并与之关联的 ID。组织是一个实体，它允许管理员配置用户和群组，并控制 [!DNL Experience Cloud] 中的单点登录访问。组织 ID 是由 24 个字符组成的字母数字字符串，其后跟（且必须包括）@AdobeOrg。[!DNL Experience Cloud] 管理员可在 [Experience Cloud > 工具](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)中找到此 ID。
 
 ![](assets/orgID.png)
 
@@ -139,7 +139,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServer` 变量设置的 URL。
 
-请参阅 [trackingServer](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **安全跟踪服务器**
 
@@ -147,7 +147,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServerSecure` 变量设置的 URL。
 
-请参阅 [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **Experience Cloud 服务器**
 
@@ -179,7 +179,7 @@ mcvid-dtm-settings.xml
 
 **集成代码**
 
-集成代码是由客户提供的唯一 ID。集成代码应包含您用于在 [!DNL Audience Manager] 中[创建数据源](hhttps://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
+集成代码是由客户提供的唯一 ID。集成代码应包含您用于在 [!DNL Audience Manager] 中[创建数据源](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
 
 **值**
 
@@ -209,13 +209,13 @@ mcvid-test-verify.xml
 
 **工具**
 
-[Adobe 调试器](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/validate/debugger.html)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。当然，您也可以随意使用最适合您的任何工具或调试器。
+[Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。当然，您也可以随意使用最适合您的任何工具或调试器。
 
 ## 使用 Adobe 调试器进行测试 {#section-861365abc24b498e925b3837ea81d469}
 
 当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
-要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
+要通过 [!DNL Adobe] [调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
 
 1. 清除您的浏览器 Cookie 或打开匿名浏览会话。
 1. 加载包含 ID 服务代码的测试页面。
@@ -267,7 +267,7 @@ mid=20265673158980419722735089753036633573
 
 ### Charles 中成功的 ID 服务响应
 
-当来自[数据收集服务器](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的响应返回 MID 时，您的帐户已正确配置。MID 作为使用以下语法的键值对返回：`d_mid: visitor Experience Cloud ID`。在“[!UICONTROL 响应]”选项卡中查找 MID，如下所示。
+当来自[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的响应返回 MID 时，您的帐户已正确配置。MID 作为使用以下语法的键值对返回：`d_mid: visitor Experience Cloud ID`。在“[!UICONTROL 响应]”选项卡中查找 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
@@ -277,9 +277,9 @@ mid=20265673158980419722735089753036633573
 
 ![](assets/charles_response_unsuccessful.png)
 
-有关错误代码的更多信息，请参阅 [DCS 错误代码、消息和示例](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)。
+有关错误代码的更多信息，请参阅 [DCS 错误代码、消息和示例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)。
 
 >[!MORELIKETHIS]
 >
->* [Web 属性](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
+>* [Web 属性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
