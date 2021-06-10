@@ -1,15 +1,11 @@
 ---
 description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 keywords: ID 服务
-seo-description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
-seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
-uuid: 93e16220-b5b3-4d81-9189-30031bc15129
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '125'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '117'
 ht-degree: 100%
 
 ---
