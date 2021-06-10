@@ -1,14 +1,10 @@
 ---
 description: 将选择加入服务作为 Experience Cloud 解决方案（在选择加入中称为类别）使用单个引用点实施，以确定是否在访客的设备上创建 Cookie。
-seo-description: 将选择加入服务作为 Experience Cloud 解决方案（在选择加入中称为类别）使用单个引用点实施，以确定是否在访客的设备上创建 Cookie。
-seo-title: 设置选择加入服务
 title: 设置选择加入服务
-uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '941'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '908'
 ht-degree: 100%
 
 ---
@@ -45,7 +41,7 @@ ht-degree: 100%
 
 1. 贵公司的隐私权要求将特定于您以何种方式选择符合 GDPR 规定。知道您的公司隐私团队可以在同意前使用哪些库。
 
-如果使用 [Adobe Launch](https://docs.adobelaunch.com/)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
+如果使用 [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
