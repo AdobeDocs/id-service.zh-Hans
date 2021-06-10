@@ -2,10 +2,10 @@
 description: 将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB 透明度和同意框架 (TCF) 的 Audience Manager 插件连接起来。
 title: 在 IAB 框架中使用选择加入服务
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 98%
 
 ---
 
@@ -55,5 +55,5 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 * [IAB 透明度和同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - 介绍了 IAB 标准的详细信息
 * [Adobe 选择加入](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - 介绍了选择加入的详细信息，它是平台解决方案中用于同意管理的所需组件
-* [Audience Manager](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) 中的 IAB 透明度和同意框架 (TCF) 支持
+* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) 中的 IAB 透明度和同意框架 (TCF) 支持
 * [您的隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse) - 用户可以使用的另一个隐私选项是，可以使用其他全局选择退出工具选择退出所有数据收集。全局选择退出的优先权高于选择加入和 IAB TCF 验证
