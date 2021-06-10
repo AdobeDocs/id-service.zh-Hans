@@ -3,10 +3,10 @@ description: 这些说明、工具和过程可帮助您确定 ID 服务是否正
 keywords: ID 服务
 title: 测试和验证 Experience Cloud Identity 服务
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 
 **工具**
 
-[Adobe 调试器](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/validate/debugger.html)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。当然，您也可以随意使用最适合您的任何工具或调试器。
+[Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。当然，您也可以随意使用最适合您的任何工具或调试器。
 
 ## 使用 Adobe 调试器进行测试 {#section-861365abc24b498e925b3837ea81d469}
 
 当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
-要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
+要通过 [!DNL Adobe] [调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
 
 1. 清除您的浏览器 Cookie 或打开匿名浏览会话。
 1. 加载包含 ID 服务代码的测试页面。
@@ -84,7 +84,7 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中成功的 ID 服务响应**
 
-当来自[数据收集服务器](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的响应返回 MID 时，您的帐户已正确配置。MID 作为使用以下语法的键值对返回：`d_mid: *`访客 Experience Cloud ID`*`。在“[!UICONTROL 响应]”选项卡中查找 MID，如下所示。
+当来自[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的响应返回 MID 时，您的帐户已正确配置。MID 作为使用以下语法的键值对返回：`d_mid: *`访客 Experience Cloud ID`*`。在“[!UICONTROL 响应]”选项卡中查找 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ mid=20265673158980419722735089753036633573
 
 ![](assets/charles_response_unsuccessful.png)
 
-有关错误代码的更多信息，请参阅 [DCS 错误代码、消息和示例](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)。
+有关错误代码的更多信息，请参阅 [DCS 错误代码、消息和示例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)。
