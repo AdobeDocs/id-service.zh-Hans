@@ -3,10 +3,10 @@ description: Experience Cloud Identity 服务取代了旧版 Analytics 访客 ID
 keywords: ID 服务
 title: 设置 Analytics 和 Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 100%
+source-wordcount: '917'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Experience Cloud Identity 服务取代了旧版 Analytics 访客 ID 方法。
 
 但是，某些浏览器（如 Apple Safari）不接受第三方 Cookie。第三方 Cookie 是指在浏览器中从当前网站之外的其他域设置的 Cookie。此外，如果访客之前未访问过第三方域，Safari 还会阻止第三方域上的 Cookie。例如，如果您在 `mysite.com` 上，您的数据收集服务器为 `mysite.omtrdc.net`，那么从 `mysite.omtrdc.net` 的 HTTP 标头中返回的 Cookie 可能会遭到浏览器的拒绝。
 
-要避免此问题，许多客户为其数据收集服务器实施了 CNAME 记录。这会成为[第一方 Cookie 实施](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-first-party.html)策略的有效部分。如果 CNAME 记录被配置为将客户域上的主机名映射至数据收集服务器（例如，将 `metrics.mysite.com` 映射至 `mysite.omtrdc.net`），则可以存储 [!DNL Experience Cloud] ID Cookie，因为数据收集域现在与网站的域相匹配。这增加了对 ID 服务 Cookie 进行存储的可能性。但是，这确实会带来一些额外的开销，因为您需要配置 CNAME 记录并维护数据收集服务器的 SSL 证书。
+要避免此问题，许多客户为其数据收集服务器实施了 CNAME 记录。这会成为[第一方 Cookie 实施](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hans)策略的有效部分。如果 CNAME 记录被配置为将客户域上的主机名映射至数据收集服务器（例如，将 `metrics.mysite.com` 映射至 `mysite.omtrdc.net`），则可以存储 [!DNL Experience Cloud] ID Cookie，因为数据收集域现在与网站的域相匹配。这增加了对 ID 服务 Cookie 进行存储的可能性。但是，这确实会带来一些额外的开销，因为您需要配置 CNAME 记录并维护数据收集服务器的 SSL 证书。
 
 **JavaScript**
 
@@ -59,12 +59,12 @@ JavaScript 可以读写在第一方域（当前网站的域）中设置的 Cooki
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>已设置 s.visitorID </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hans" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud ID 服务</span>之前，访客已拥有 s_vi Cookie，或者您已配置<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">宽限期</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -74,12 +74,12 @@ JavaScript 可以读写在第一方域（当前网站的域）中设置的 Cooki
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 或更高版本上的回退 Cookie，或者 AppMeasurement for JavaScript）</a> </p> </td> 
    <td colname="col3"> <p>浏览器不接受第三方 Cookie，并且将 Analytics 跟踪服务器设置为第三方跟踪服务器。 </p> <p> <p>注意：<span class="codeph">fid</span> 是旧版标识符，如果您已经在网站上实施了 ID 服务，则不会使用 fid。在这种情况下，不再需要 <span class="codeph">fid</span>，因为第一方 <a href="../../introduction/cookies.md" format="dita" scope="local">AMCV Cookie</a> 使其过时。之所以保留下来，是为了支持旧版代码，同时也出于一些历史原因。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 地址、用户代理、网关 IP 地址</a> </p> </td> 
    <td colname="col3"> <p>访客的浏览器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
