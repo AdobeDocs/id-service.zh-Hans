@@ -3,9 +3,9 @@ description: 通过这些配置，在 iFrame 中和父页面上实施的 ID 服�
 keywords: ID 服务
 title: whitelistParentDomain 和 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->在 iFrame 中使用[视频心率](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/media-overview.html)为视频提供服务时，您可能还希望实施这些配置。视频心率需要 ID 服务 ID (MID) 才能正常工作。
+>在 iFrame 中使用[视频心率](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)为视频提供服务时，您可能还希望实施这些配置。视频心率需要 ID 服务 ID (MID) 才能正常工作。
 
 **用例 1：浏览器阻止第三方 Cookie，并且在 iFrame 和父页面上实施 ID 服务**
 
