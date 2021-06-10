@@ -1,15 +1,11 @@
 ---
 description: 如果有多个 JavaScript 文件要将数据发送至同一报表包，或者您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
 keywords: ID 服务
-seo-description: 如果有多个 JavaScript 文件要将数据发送至同一报表包，或者您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
-seo-title: ID 服务宽限期
 title: ID 服务宽限期
-uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
