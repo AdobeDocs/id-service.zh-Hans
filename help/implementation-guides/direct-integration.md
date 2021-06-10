@@ -1,15 +1,11 @@
 ---
 description: 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
 keywords: ID 服务
-seo-description: 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
-seo-title: 与 Experience Cloud Identity 服务的直接集成
 title: 与 Experience Cloud Identity 服务的直接集成
-uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '714'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '662'
 ht-degree: 100%
 
 ---
