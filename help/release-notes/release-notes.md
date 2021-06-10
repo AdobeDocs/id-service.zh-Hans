@@ -3,9 +3,9 @@ description: 关于 Experience Cloud Identity 服务的功能发布、更新或�
 keywords: ID 服务
 title: 2020 版发行说明
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---
@@ -24,4 +24,4 @@ ht-degree: 100%
 * 从版本 4.5 开始，ECID 将拒绝任何发送到 `setCustomerIDs` 方法中的空 ID。
 * 修复了将选择加入配置为 `doesOptInApply=false` 和 `isIabContext=true` 后出现的问题。
 
-请参阅 [Experience Cloud 发行说明](https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html)，了解所有产品的月度发行说明。
+请参阅 [Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)，了解所有产品的月度发行说明。
