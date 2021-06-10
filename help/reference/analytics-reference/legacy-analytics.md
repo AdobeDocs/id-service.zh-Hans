@@ -1,15 +1,11 @@
 ---
 description: 概述 Experience Cloud Identity 服务如何处理旧版 Analytics ID。
 keywords: ID 服务
-seo-description: 概述 Experience Cloud Identity 服务如何处理旧版 Analytics ID。
-seo-title: Analytics 和 Experience Cloud ID 请求
 title: Analytics 和 Experience Cloud ID 请求
-uuid: 28beed16-7ef9-4824-8e82-853930756eca
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '469'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -51,7 +47,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。有关更多信息，请参阅 [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-analytics.html)。
+>对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。有关更多信息，请参阅 [Analytics Cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html)。
 
 ## 浏览器中已设置 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
