@@ -1,15 +1,11 @@
 ---
 description: getInstance 会返回指定 Experience Cloud 组织 ID 的访客 ID 对象。这是初始化通过 s.visitor 提供给 AppMeasurement 的访客 ID 对象所必需的。
 keywords: ID 服务
-seo-description: getInstance 会返回指定 Experience Cloud 组织 ID 的访客 ID 对象。这是初始化通过 s.visitor 提供给 AppMeasurement 的访客 ID 对象所必需的。
-seo-title: getInstance
 title: getInstance
-uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '256'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
