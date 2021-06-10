@@ -1,15 +1,11 @@
 ---
 description: 通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
 keywords: ID 服务
-seo-description: 通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
-seo-title: audienceManagerServer 和 audienceManagerServerSecure
 title: audienceManagerServer 和 audienceManagerServerSecure
-uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '245'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '220'
 ht-degree: 100%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 100%
 **语法：**
 
 * ` audienceManagerServer: " *`your subdomain name`*.demdex.net"`
-* ` audienceManagerServerSecure: " *`your subdomain name`*.demdex.net"`
+* ` audienceManagerServerSecure: " *`您的子域名`*.demdex.net"`
 
 **用途**
 
