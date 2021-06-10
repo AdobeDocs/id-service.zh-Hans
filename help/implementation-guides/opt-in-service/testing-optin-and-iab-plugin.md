@@ -1,14 +1,10 @@
 ---
 description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
-seo-description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
-seo-title: 验证选择加入服务
 title: 验证选择加入服务
-uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '471'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
