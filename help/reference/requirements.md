@@ -3,10 +3,10 @@ description: 查看此部分内容，确保使用 Experience Cloud Identity 服�
 keywords: ID 服务
 title: Experience Cloud Identity 服务的要求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
      <li id="li_1F16C6D412944197BEA56BC24730782C"> 将这些 DTM 嵌入代码中的任意代码放置在标记和/或页面代码的其他位置。 </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> 使用异步方法、调用/回调方法或包装器附加、添加或加载 DTM 代码。 </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">在同一页面上包含嵌入代码的多个实例。 </li> 
-    </ul> <p>另请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/dtm/using/client-side/deployment.html" format="https" scope="external">嵌入代码和托管选项</a>。 </p> </td> 
+    </ul> <p>另请参阅<a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html" format="https" scope="external">嵌入代码和托管选项</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非标准实施 </a> </p> </td> 
@@ -64,7 +64,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已启用</b> </p> </td> 
-   <td colname="col2"> <p>如果贵公司已启用 <span class="keyword">Experience Cloud</span>，但您没有组织 ID，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">组织 ID</a>（向下滚动到“查找您的组织 ID”<i></i>部分。 </p> </td> 
+   <td colname="col2"> <p>如果贵公司已启用 <span class="keyword">Experience Cloud</span>，但您没有组织 ID，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">组织 ID</a>（向下滚动到“查找您的组织 ID”<i></i>部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不确定</b> </p> </td> 
@@ -72,14 +72,14 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未启用</b> </p> </td> 
-   <td colname="col2"> <p> 如果您的公司未启用 Experience Cloud，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/core-services/interface/about-core-services/core-services.html" format="https" scope="external">核心服务 - 启用您的解决方案</a>以开始启用。 </p> </td> 
+   <td colname="col2"> <p> 如果您的公司未启用 Experience Cloud，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html" format="https" scope="external">核心服务 - 启用您的解决方案</a>以开始启用。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Analytics 要求：区域数据收集 (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-所有跟踪服务器都已转换为 RDC，因此无需更改 Analytics 跟踪服务器。[更多信息...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+所有跟踪服务器都已转换为 RDC，因此无需更改 Analytics 跟踪服务器。[更多信息...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## 代码库和版本要求 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -107,7 +107,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html" format="https" scope="external">AppMeasurement for JavaScript</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html" format="https" scope="external">AppMeasurement for JavaScript</a>。 </p> </td> 
    <td colname="col4"> <p>1.6.4 或更高版本 </p> </td> 
   </tr> 
   <tr> 
@@ -115,21 +115,21 @@ ht-degree: 100%
    <td colname="col4"> <p>H.27 </p> <p> <p>注意：<span class="keyword">随着 ID 服务版本 1.6.0 的发布，Analytics</span> s_code 版本 H.27 不再受到支持。请将您的代码升级到最新版本的 AppMeasurement。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>视频心率 </p> <p>请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/media-overview.html" format="https" scope="external">适用于 JavaScript 的视频心率 2.x</a>。 </p> </td> 
+   <td colname="col3"> <p>视频心率 </p> <p>请参阅<a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html" format="https" scope="external">适用于 JavaScript 的视频心率 2.x</a>。 </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">数据集成库</a> (DIL)。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">数据集成库</a> (DIL)。 </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox 代码</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox 代码</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 实施</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 实施</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -148,9 +148,9 @@ ID 服务至少需要使用下列 SDK 版本。
 
 必须为 ID 服务启用您的 SDK 代码。请通过您的 [Adobe Mobile Services](https://mobilemarketing.adobe.com/) 帐户为每个应用程序启用并下载最新的 SDK 代码。另请参阅：
 
-* [配置 SDK 访客 ID 服务选项](https://docs.adobe.com/content/help/zh-Hans/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [配置 SDK 访客 ID 服务选项](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [iOS SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
