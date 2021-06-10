@@ -1,15 +1,11 @@
 ---
 description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
 keywords: ID 服务
-seo-description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
-seo-title: 测试和验证 Experience Cloud Identity 服务
 title: 测试和验证 Experience Cloud Identity 服务
-uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '723'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -36,7 +32,7 @@ ht-degree: 100%
 
 当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
-要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
+要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
 
 1. 清除您的浏览器 Cookie 或打开匿名浏览会话。
 1. 加载包含 ID 服务代码的测试页面。
