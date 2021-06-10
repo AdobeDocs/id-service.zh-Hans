@@ -3,9 +3,9 @@ description: 与将 Analytics 和 Experience Cloud Identity 服务结合使用�
 keywords: Experience Cloud Identity 服务
 title: Analytics 和 Identity 服务常见问题解答
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 如果您有一个主要的登录网站，可以在客户访问其他域之前识别客户，那么 CNAME 就可以在不接受第三方 Cookie 的浏览器（如 Safari）中启用跨域跟踪。
 
-在接受第三方 Cookie 的浏览器中，在检索访客 ID 的请求期间，会在 [demdex.net 域](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html)中设置 Cookie。该 Cookie 允许 Identity 服务在使用同一组织 ID 配置的所有域上返回相同的 Experience Cloud 访客 ID。在拒绝第三方 Cookie 的浏览器中，会为每个域分配一个新的 Experience Cloud 访客 ID。
+在接受第三方 Cookie 的浏览器中，在检索访客 ID 的请求期间，会在 [demdex.net 域](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)中设置 Cookie。该 Cookie 允许 Identity 服务在使用同一组织 ID 配置的所有域上返回相同的 Experience Cloud 访客 ID。在拒绝第三方 Cookie 的浏览器中，会为每个域分配一个新的 Experience Cloud 访客 ID。
 
 即使配置了 CNAME，如果未先访问主要的登录网站，则在不接受第三方 Cookie 的浏览器中，访客在主网站和辅助网站上的标识将有所不同。
 
