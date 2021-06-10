@@ -3,9 +3,9 @@ description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该
 keywords: ID 服务
 title: 内容安全策略和 Experience Cloud Identity 服务
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 100%
 
 ---
@@ -58,7 +58,7 @@ CSP 得到了广泛使用和认可。本文档并非旨在详细介绍 CSP（有
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>如果您使用 Adobe Launch 来部署标记，则还必须将 <code>https://assets.adobedtm.com</code> 添加到域列表。</li></ul></p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>及 ID 同步。另请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> </tr> 
+   <li>如果您使用 Adobe Launch 来部署标记，则还必须将 <code>https://assets.adobedtm.com</code> 添加到域列表。</li></ul></p> <p><span class="codeph">demdex.net</span> 域调用可用于生成 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud Identity 服务</a>及 ID 同步。另请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans" format="https" scope="external">了解 Demdex 域调用</a>。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map 插件</b> </p> </td> 
  <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 月之前已经安装 Activity Map，您的浏览器仍会看到对 *.omniture.com 的初始请求，但会被重定向到 *.adobe.com。 </p></td> 
