@@ -1,15 +1,11 @@
 ---
 description: 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 keywords: ID 服务
-seo-description: 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
-seo-title: 2016 版发行说明
 title: 2016 版发行说明
-uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1164'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1150'
 ht-degree: 100%
 
 ---
