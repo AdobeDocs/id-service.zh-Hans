@@ -1,15 +1,11 @@
 ---
 description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
 keywords: ID 服务
-seo-description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
-seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
-uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '412'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
