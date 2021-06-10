@@ -3,10 +3,10 @@ description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID�
 keywords: ID 服务
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 **语法：**` var *`变量名称`* = visitor.getLocationHint()`
 
-有关区域 ID 和相应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)。
+有关区域 ID 和相应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)。
 
 **代码示例**
 
