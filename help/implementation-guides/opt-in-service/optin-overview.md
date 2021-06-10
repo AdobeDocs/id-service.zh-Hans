@@ -1,14 +1,10 @@
 ---
 description: 选择加入服务允许您为访客设置协议，以确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
-seo-description: 选择加入服务允许您为访客设置协议，以确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
-seo-title: 选择加入服务
 title: 选择加入服务
-uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '534'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '507'
 ht-degree: 100%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
-通过将 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 与[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)结合使用，可轻松实施和配置选择加入服务。您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
+通过将 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans) 与[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)结合使用，可轻松实施和配置选择加入服务。您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
 
 请参阅[设置选择加入服务](../../implementation-guides/opt-in-service/getting-started.md)以开始操作。
 
