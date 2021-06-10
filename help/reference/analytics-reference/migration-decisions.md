@@ -1,15 +1,11 @@
 ---
 description: 在部署 Experience Cloud Identity 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
 keywords: ID 服务
-seo-description: 在部署 Experience Cloud Identity 服务之前，您应当了解此服务对多个域上的访客跟踪有何影响，以及在您通过不同方法或 JavaScript 文件收集数据时可能会出现哪些问题。
-seo-title: Experience Cloud Identity 服务迁移决策点
 title: Experience Cloud Identity 服务迁移决策点
-uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '679'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
