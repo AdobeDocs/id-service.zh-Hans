@@ -3,9 +3,9 @@ description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该
 keywords: ID 服务
 title: 对 setCustomerIDs 的 SHA256 哈希处理支持
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 98%
 
 ---
@@ -34,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID、身份验证状态以及哈希类型 (SHA-256) 与每位访客关联。如果您不提供任何哈希类型，则将被视为不进行哈希处理。
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/customer-attributes/attributes.html)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
 
 客户 ID、身份验证状态以及哈希类型&#x200B;*不会*&#x200B;存储在 Cookie 中以供稍后使用，而是应存储在实例变量中，以便使用 [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) 进行检索，如下所示：
 
