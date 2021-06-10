@@ -1,15 +1,11 @@
 ---
 description: 通过将这些属性传递至 Visitor.getInstance 静态方法来配置 ID 服务。
 keywords: 组织 ID;ID 服务
-seo-description: 通过将这些属性传递至 Visitor.getInstance 静态方法来配置 ID 服务。
-seo-title: 配置
 title: 配置
-uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '100'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '86'
 ht-degree: 100%
 
 ---
@@ -36,7 +32,7 @@ ht-degree: 100%
 + [isCoopSafe](coopsafe.md)
 + [loadTimeout](loadtimeout.md)
 + [overwriteCrossDomainMCIDAndAID](overwrite-visitor-id.md)
-+ [resetBeforeVersion ](resetbeforeversion.md)
++ [resetBeforeVersion](resetbeforeversion.md)
 + [sdidParamExpiry](sdidparamexpiry.md)
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
