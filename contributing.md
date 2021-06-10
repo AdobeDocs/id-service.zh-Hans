@@ -1,6 +1,8 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # 参与
@@ -15,7 +17,7 @@ translation-type: ht
 
 ## 参与者指南文档
 
-请参阅[参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+请参阅[投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 ## 有疑问吗？
 
@@ -27,7 +29,8 @@ translation-type: ht
 
 ## 代码审阅
 
-应以拉取请求的形式提交所有提交，并需要由项目提交者进行审阅。有关发送拉取请求的更多信息，请阅读 [GitHub 的拉取请求文档](https://help.github.com/articles/about-pull-requests/)。
+应以拉取请求的形式提交所有提交，并需要由项目提交者进行审阅。有关发送拉取请求的更多信息，请阅读 [GitHub 的拉取请求文档](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/about-pull-requests)。
+
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
