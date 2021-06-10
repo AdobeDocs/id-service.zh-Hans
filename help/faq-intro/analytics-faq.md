@@ -1,15 +1,11 @@
 ---
 description: 与将 Analytics 和 Experience Cloud Identity 服务结合使用相关的特性、功能和问题的常见问题解答。
 keywords: Experience Cloud Identity 服务
-seo-description: 与将 Analytics 和 Identity 服务结合使用相关的特性、功能和问题的常见问题解答。
-seo-title: Analytics 和 Identity 服务常见问题解答
 title: Analytics 和 Identity 服务常见问题解答
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '972'
 ht-degree: 100%
 
 ---
@@ -54,7 +50,7 @@ ht-degree: 100%
 
 **什么是宽限期？如何配置宽限期？**
 
-请参阅 [Identity 服务宽限期](../reference/analytics-reference/grace-period.md)并联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
+请参阅 [Identity 服务宽限期](../reference/analytics-reference/grace-period.md)并联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
 
 **为何需要迁移到实时数据收集 (RDC) 才能使用 Identity 服务？**
 
@@ -93,5 +89,5 @@ RDC 可提升全局性能，如果要确保您的实施已准备好接受即将�
 
 >[!MORELIKETHIS]
 >
->* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
+>* [客户关怀](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
