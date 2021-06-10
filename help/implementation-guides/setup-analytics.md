@@ -1,15 +1,11 @@
 ---
 description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
-seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
-seo-title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
-uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1089'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1031'
 ht-degree: 100%
 
 ---
