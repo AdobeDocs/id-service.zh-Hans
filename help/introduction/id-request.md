@@ -1,14 +1,11 @@
 ---
 description: ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
 keywords: ID 服务
-seo-description: ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中的 ID 分配情况：单独的网站上、不同的网站之间，以及由 Experience Cloud 不同客户使用其各自组织 ID 管理的网站。
-seo-title: Experience Cloud Identity 服务如何请求和设置 ID
 title: Experience Cloud Identity 服务如何请求和设置 ID
-uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '762'
 ht-degree: 94%
 
 ---
