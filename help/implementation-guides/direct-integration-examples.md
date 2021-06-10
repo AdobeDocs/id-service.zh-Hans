@@ -1,15 +1,11 @@
 ---
 description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。此 MID 是您的网站访客的唯一永久性 ID。
 keywords: ID 服务
-seo-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。此 MID 是您的网站访客的唯一永久性 ID。
-seo-title: 直接集成用例
 title: 直接集成用例
-uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '475'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '443'
 ht-degree: 100%
 
 ---
@@ -22,6 +18,7 @@ ht-degree: 100%
 >
 >* 在深入研究用例之前，请查看并了解[代码语法和变量](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
 >* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
+
 >
 
 
