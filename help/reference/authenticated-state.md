@@ -3,10 +3,10 @@ description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的
 keywords: ID 服务
 title: 客户 ID 和身份验证状态
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 96%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 ## 身份验证状态 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/customer-attributes/attributes.html)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
 
 >[!IMPORTANT]
 >
->客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/about-core-services/core-services.html)，以了解相关示例。
+>客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)，以了解相关示例。
 
 从 Experience Cloud Identity 服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。使用表中列出的状态值来设置身份验证状态。将作为整数返回身份验证状态。
 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。请参阅以下代码库：
 
-* [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/overview.html)
-* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/overview.html)
+* [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+* [iOS SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
