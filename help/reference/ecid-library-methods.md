@@ -2,10 +2,10 @@
 title: Safari ITP 中的 ECID 库方法
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提供准确访客跟踪信息的能力。因此，Adobe 将会对其 CNAME 跟踪服务器进行更改，以便将访客的 Experience Cloud ID (ECID) 存储在第一方 Cookie 中。
 
-此更改仅对在第一方环境中使用 Analytics CNAME 的 ECID 客户有益。即使您是当前未使用 CNAME 的 Analytics 客户或者甚至不是 Analytics 客户，您仍可以查看 CNAME 记录。请联系客户关怀团队或您的客户代表，以开始注册 [CNAME](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-first-party.html) 的过程。
+此更改仅对在第一方环境中使用 Analytics CNAME 的 ECID 客户有益。即使您是当前未使用 CNAME 的 Analytics 客户或者甚至不是 Analytics 客户，您仍可以查看 CNAME 记录。请联系客户关怀团队或您的客户代表，以开始注册 [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hans) 的过程。
 
 升级到 ECID 库版本 4.3.0 及更高版本以利用此更改。
 
@@ -49,7 +49,7 @@ ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提�
 
 此新 `s_ecid` Cookie 采用与 AMCV Cookie 相同的选择退出状态。如果从 `s_ecid` Cookie 读取 ecid，则系统始终会立即调用 demdex 以检索该 ID 的最新选择退出状态并将其存储在 AMCV Cookie 中。
 
-此外，如果您的消费者已通过此[方法](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/opt-out.html)选择退出 Analytics 跟踪，则此 `s_ecid` Cookie 将被删除。
+此外，如果您的消费者已通过此[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html)选择退出 Analytics 跟踪，则此 `s_ecid` Cookie 将被删除。
 
 使用 `trackingServer` 或 `trackingServerSecure` 初始化库时，应将跟踪服务器名称提供给 VisitorJS 库。此操作应该与 Analytics 配置中的 `trackingServer` 配置匹配。
 
