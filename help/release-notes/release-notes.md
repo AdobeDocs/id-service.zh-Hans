@@ -1,14 +1,11 @@
 ---
 description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 keywords: ID 服务
-seo-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
-seo-title: 2020 版发行说明
 title: 2020 版发行说明
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '147'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '134'
 ht-degree: 100%
 
 ---
