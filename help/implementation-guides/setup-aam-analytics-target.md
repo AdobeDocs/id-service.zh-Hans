@@ -1,15 +1,11 @@
 ---
 description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
-seo-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
-seo-title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
-uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1574'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1508'
 ht-degree: 100%
 
 ---
@@ -144,7 +140,7 @@ Analytics 使用跟踪服务器进行数据收集。
 
 >[!IMPORTANT]
 >
->此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+>此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ***（可选，但是推荐）*&#x200B;创建自定义 prop **
 
