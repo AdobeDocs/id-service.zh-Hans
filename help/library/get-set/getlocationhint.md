@@ -1,15 +1,11 @@
 ---
 description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
 keywords: ID 服务
-seo-description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
-seo-title: getLocationHint
 title: getLocationHint
-uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '232'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '187'
 ht-degree: 100%
 
 ---
