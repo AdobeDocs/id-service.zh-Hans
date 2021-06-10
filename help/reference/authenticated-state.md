@@ -1,15 +1,11 @@
 ---
 description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
 keywords: ID 服务
-seo-description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID 和身份验证状态与每位访客关联。
-seo-title: 客户 ID 和身份验证状态
 title: 客户 ID 和身份验证状态
-uuid: 643df363-224a-463e-a332-be59926b47e7
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '661'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -68,7 +64,7 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
    <td colname="col2"> <p>此状态可用于以下场景： </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">阅读电子邮件（这项操作可能意味着读者是预期的收件人，但电子邮件也可能已被转发）。 </li> 
@@ -76,11 +72,11 @@ ht-degree: 100%
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
    <td colname="col2"> <p>用户目前通过了您网站或应用程序上活动会话的身份验证。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
    <td colname="col2"> <p>用户已完成身份验证，但已主动注销。用户打算从已完成身份验证状态断开连接。用户不希望再被视为已进行身份验证。 </p> </td> 
   </tr> 
  </tbody> 
