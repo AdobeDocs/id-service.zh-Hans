@@ -1,14 +1,10 @@
 ---
 description: 将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB 透明度和同意框架 (TCF) 的 Audience Manager 插件连接起来。
-seo-description: 将他们的同意管理平台 (CMP) 与适用于 IAB 透明度和同意框架 (TCF) 的 Audience Manager 插件连接起来。
-seo-title: 在 IAB 框架中使用选择加入服务
 title: 在 IAB 框架中使用选择加入服务
-uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '493'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
