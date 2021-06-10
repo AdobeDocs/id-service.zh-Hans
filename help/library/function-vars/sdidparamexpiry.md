@@ -1,15 +1,11 @@
 ---
 description: 通过此配置，您可以在使用 appendSupplementalDataIDTo 帮助程序函数将 Supplemental Data ID (SDID) 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
 keywords: ID 服务
-seo-description: 通过此配置，您可以在使用 appendSupplementalDataIDTo 帮助程序函数将 Supplemental Data ID (SDID) 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
-seo-title: sdidParamExpiry
 title: sdidParamExpiry
-uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
