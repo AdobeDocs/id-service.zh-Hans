@@ -1,15 +1,11 @@
 ---
 description: 可阻止 Experience Cloud Identity 服务返回第三方 demdex.net Cookie 的可选布尔标记。
 keywords: ID 服务
-seo-description: 可阻止 Experience Cloud Identity 服务返回第三方 demdex.net Cookie 的可选布尔标记。
-seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
-uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '157'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '139'
 ht-degree: 100%
 
 ---
