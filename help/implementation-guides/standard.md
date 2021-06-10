@@ -1,15 +1,11 @@
 ---
 description: 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 Experience Cloud Identity 服务，并将其与您的其他 Experience Cloud 解决方案相集成。
 keywords: ID 服务
-seo-description: 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 Experience Cloud Identity 服务，并将其与您的其他 Experience Cloud 解决方案相集成。
-seo-title: 使用 Dynamic Tag Management 实施
 title: 使用 Dynamic Tag Management 实施
-uuid: c4f752c4-392e-4909-b178-911706857064
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '2058'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '2033'
 ht-degree: 100%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->目前，[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是首选和推荐的实施工具，因为它有助于简化复杂的标签管理任务，并会自动执行超出 DTM 功能的代码放置。请参阅[使用 Launch 实施](../implementation-guides/ecid-implement-with-launch.md)。
+>目前，[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans) 是首选和推荐的实施工具，因为它有助于简化复杂的标签管理任务，并会自动执行超出 DTM 功能的代码放置。请参阅[使用 Launch 实施](../implementation-guides/ecid-implement-with-launch.md)。
 
 ## Dynamic Tag Management 和 ID 服务 {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
@@ -78,7 +74,7 @@ ID 服务是通过从 [!DNL Adobe] 数据收集服务器请求和接收唯一 ID
 
 **先决条件**
 
-* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/about-core-services/core-services.html)。
+* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)。
 
 * 在 DTM 中创建 Web 资产。请参阅 DTM [创建 Web 资产](https://docs.adobe.com/content/help/zh-Hans/dtm/using/admin/web-property.html)文档。
 
@@ -143,7 +139,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServer` 变量设置的 URL。
 
-请参阅 [trackingServer](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **安全跟踪服务器**
 
@@ -151,7 +147,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServerSecure` 变量设置的 URL。
 
-请参阅 [trackingServer](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **Experience Cloud 服务器**
 
@@ -219,7 +215,7 @@ mcvid-test-verify.xml
 
 当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
-要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
+要通过 [!DNL Adobe] [调试器](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
 
 1. 清除您的浏览器 Cookie 或打开匿名浏览会话。
 1. 加载包含 ID 服务代码的测试页面。
@@ -285,5 +281,5 @@ mid=20265673158980419722735089753036633573
 
 >[!MORELIKETHIS]
 >
->* [Web 属性](https://docs.adobe.com/content/help/zh-Hans/dtm/using/admin/web-property.html)
+>* [Web 属性](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
 
