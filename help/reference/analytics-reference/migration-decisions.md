@@ -3,10 +3,10 @@ description: 在部署 Experience Cloud Identity 服务之前，您应当了解�
 keywords: ID 服务
 title: Experience Cloud Identity 服务迁移决策点
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '636'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
    <td colname="col1"> <p>单个域 </p> </td> 
    <td colname="col2"> <p>使用单个域意味着，如果您不再希望管理数据收集 CNAME，则可以从其中迁移出来。但是，如果您的 CNAME 正在工作，则无需进行更改。 </p> <p>如果您确实要删除 CNAME： </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">确保您的新跟踪服务器<a href="https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC</a>。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">确保您的新跟踪服务器<a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">要迁移到 <span class="keyword">Experience Cloud</span> ID 服务，请提前几个月从 CNAME 移至 RDC 跟踪服务器。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>请不要</i>使用 <span class="codeph">*.2o7.net</span> 跟踪服务器。 </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">请联系<a href="https://helpx.adobe.com/cn/marketing-cloud/contact-support.html" format="https" scope="external">客户关怀</a>，以设置访客迁移。这有助于确保访客计数的一致性。 </li> 
