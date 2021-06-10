@@ -3,9 +3,9 @@ description: 通过这些配置，可将 Experience Cloud Identity 服务调用�
 keywords: ID 服务
 title: audienceManagerServer 和 audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '218'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 **用途**
 
-通常情况下，[!DNL Experience Cloud] ID 服务会调用 `dpm.demdex.net` 中的 [!DNL Adobe]。有时，您可能不希望调用此目标，因为它看起来太宽泛或者太像“第三方”目标。要让 ID 服务调用看起来更像第一方调用，请使用这些配置将您的 [!DNL Audience Manager] 子域名添加到 `demdex.net`，如下所示。有关 `dpm.demdex.net` 调用的更多信息，请参阅[了解 Demdex 域调用](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/reference/demdex-calls.html)。
+通常情况下，[!DNL Experience Cloud] ID 服务会调用 `dpm.demdex.net` 中的 [!DNL Adobe]。有时，您可能不希望调用此目标，因为它看起来太宽泛或者太像“第三方”目标。要让 ID 服务调用看起来更像第一方调用，请使用这些配置将您的 [!DNL Audience Manager] 子域名添加到 `demdex.net`，如下所示。有关 `dpm.demdex.net` 调用的更多信息，请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)。
 
 **要求**
 
