@@ -1,15 +1,11 @@
 ---
 description: 允许您以编程方式使用 Experience Cloud Identity 服务的属性、方法和配置。
 keywords: ID 服务
-seo-description: 允许您以编程方式使用 Experience Cloud Identity 服务的属性、方法和配置。
-seo-title: ID 服务 API
 title: ID 服务 API
-uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '91'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '73'
 ht-degree: 100%
 
 ---
