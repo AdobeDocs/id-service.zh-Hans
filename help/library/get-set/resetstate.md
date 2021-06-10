@@ -1,15 +1,11 @@
 ---
 description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
 keywords: ID 服务
-seo-description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
-seo-title: resetState
 title: resetState
-uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '400'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
