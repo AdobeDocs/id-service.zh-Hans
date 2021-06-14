@@ -3,7 +3,7 @@ description: 如果您有一个主要的登录网站，可以在客户访问其�
 keywords: 操作顺序;ID 服务
 title: CNAME 实施概述
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
 ht-degree: 100%
 
