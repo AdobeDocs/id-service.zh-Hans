@@ -3,7 +3,7 @@ description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的�
 title: Experience Cloud ID 服务概述
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
 ht-degree: 100%
 
