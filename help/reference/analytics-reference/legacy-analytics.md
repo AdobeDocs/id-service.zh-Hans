@@ -4,7 +4,7 @@ keywords: ID 服务
 title: Analytics 和 Experience Cloud ID 请求
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。有关更多信息，请参阅 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)。
+>对于通过 s_fid Cookie 标识的用户而言，其旧版 FID 值将不会被迁移至 AMCV Cookie 中。这些使用 s_fid Cookie 的用户将像不具备 s_vi Cookie 一样进行迁移（请参阅上文），并将以网站新访客的身份出现。有关更多信息，请参阅 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hans)。
 
 ## 浏览器中已设置 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
