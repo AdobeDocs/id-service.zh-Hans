@@ -3,9 +3,9 @@ description: 使用 Adobe Experience Platform Launch 简化为选择加入启用
 title: 使用 Launch 配置选择加入
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 **配置 Experience Cloud ID 扩展**
 
-如果尚未安装Experience CloudID扩展，请打开您的资产，然后单击&#x200B;*Extensions* > *Catalog*，将鼠标悬停在Experience CloudID扩展上，然后单击&#x200B;*Install*。
+如果尚未安装 Experience Cloud ID 扩展，请打开您的属性，然后单击&#x200B;*“扩展”*>*“目录”*，将光标悬停在 Experience Cloud ID 扩展上，然后单击&#x200B;*“安装”*。
 
 要配置该扩展，请打开&#x200B;*扩展*&#x200B;选项卡，将鼠标悬停在该扩展上，然后单击&#x200B;*配置*。
 
