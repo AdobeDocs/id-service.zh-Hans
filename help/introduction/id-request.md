@@ -4,9 +4,9 @@ keywords: ID 服务
 title: Experience Cloud Identity 服务如何请求和设置 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中�
 在此示例中，新访客来到由食品公司管理的比萨网站。食品公司在比萨网站上实施了 ID 服务代码。加载比萨网站时，ID 服务代码会检查比萨网站域中的 AMCV Cookie。
 
 * 如果设置了 AMCV Cookie，则网站访客将具有 Experience Cloud ID。在这种情况下，Cookie 会跟踪访客并与其他 Experience Cloud 解决方案共享数据。
-* 如果未设置AMCV Cookie，则ID服务代码将在`dpm.demdex.net/id`中调用区域[数据收集服务器](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)(DCS)（另请参阅[了解Demdex域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)）。 此调用包括食品公司的组织 ID。组织 ID 是在 ID 服务代码的 `Visitor.getInstance` 函数中设置的。
+* 如果未设置 AMCV Cookie，ID 服务代码将调用 `dpm.demdex.net/id` 位置的区域[数据收集服务器](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hans) (DCS)（另请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)）。此调用包括食品公司的组织 ID。组织 ID 是在 ID 服务代码的 `Visitor.getInstance` 函数中设置的。
 
 ![](assets/request1.png)
 
