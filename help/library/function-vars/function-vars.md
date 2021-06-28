@@ -4,7 +4,7 @@ keywords: 组织 ID;ID 服务
 title: 配置
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
