@@ -4,9 +4,9 @@ keywords: ID 服务
 title: 客户 ID 和身份验证状态
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)，以了解相关示例。
+>客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)，以了解相关示例。
 
 从 Experience Cloud Identity 服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。使用表中列出的状态值来设置身份验证状态。将作为整数返回身份验证状态。
 
@@ -64,7 +64,7 @@ ht-degree: 96%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>此状态可用于以下场景： </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">阅读电子邮件（这项操作可能意味着读者是预期的收件人，但电子邮件也可能已被转发）。 </li> 
@@ -72,11 +72,11 @@ ht-degree: 96%
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p>用户目前通过了您网站或应用程序上活动会话的身份验证。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
    <td colname="col2"> <p>用户已完成身份验证，但已主动注销。用户打算从已完成身份验证状态断开连接。用户不希望再被视为已进行身份验证。 </p> </td> 
   </tr> 
  </tbody> 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。请参阅以下代码库：
 
-* [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hans)
+* [iOS SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
