@@ -4,7 +4,7 @@ keywords: ID 服务
 title: Experience Cloud Identity 服务中的 COPPA 支持
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
 ht-degree: 100%
 
