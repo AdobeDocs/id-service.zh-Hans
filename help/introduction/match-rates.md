@@ -4,9 +4,9 @@ keywords: ID 服务
 title: 了解 ID 同步和匹配率
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ ID 同步过程是在 Destination Publishing iFrame 中触发 URL 的过程。�
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-另请参阅[用于入站数据传输的 ID 同步](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en)。
+另请参阅[用于入站数据传输的 ID 同步](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=zh-Hans)。
 
 **步骤 4：存储 ID**
 
-同步的 ID 将存储在[边缘和核心数据服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en)上。
+同步的 ID 将存储在[边缘和核心数据服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=zh-Hans)上。
 
 ## 同步服务管理 ID 同步 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -69,9 +69,9 @@ ID 同步过程是在 Destination Publishing iFrame 中触发 URL 的过程。�
 
 ## 与 Adobe Advertising Cloud 同步 ID {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud]（之前称为 [!DNL Adobe Media Optimizer]）对于基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Advertising Cloud] 是一个受信任的域，因此 ID 同步会从父页面中进行，而不是在 [!UICONTROL Destination Publishing iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Advertising Cloud]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Advertising Cloud]。将数据发送至 [!DNL Advertising Cloud] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en)。
+[!DNL Adobe Advertising Cloud]（之前称为 [!DNL Adobe Media Optimizer]）对于基于 iFrame 的 ID 同步过程是一个例外。由于 [!DNL Advertising Cloud] 是一个受信任的域，因此 ID 同步会从父页面中进行，而不是在 [!UICONTROL Destination Publishing iFrame] 中进行。在同步过程中，ID 服务会调用 [!DNL Advertising Cloud]（这是 `cm.eversttech.net` 在被 Adobe 收购之前所使用的旧版域名）中的 [!DNL Advertising Cloud]。将数据发送至 [!DNL Advertising Cloud] 有助于提高匹配率，对于使用版本 2.0（或更高版本）的 ID 服务客户而言，此数据发送过程是自动进行的。另请参阅 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=zh-Hans)。
 
 >[!MORELIKETHIS]
 >
->* [了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
+>* [了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)
 
