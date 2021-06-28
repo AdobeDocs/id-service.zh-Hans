@@ -4,9 +4,9 @@ keywords: ID 服务
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 要使用 `isCoopSafe`，您必须满足以下条件：
 
 * 使用 ID 服务代码版本 2.4 或更高版本。
-* 参与 [Experience Cloud 设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 参与 [Experience Cloud 设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hans)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
 * 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。不存在启用这些标记的自助途径。
 
@@ -138,5 +138,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=zh-Hans)
 
