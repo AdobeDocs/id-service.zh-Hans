@@ -3,7 +3,7 @@ description: 选择加入服务允许您为访客设置协议，以确定在用�
 title: 选择加入服务
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '507'
 ht-degree: 100%
 
