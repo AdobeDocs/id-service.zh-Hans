@@ -4,7 +4,7 @@ keywords: ID 服务
 title: whitelistParentDomain 和 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->在 iFrame 中使用[视频心率](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)为视频提供服务时，您可能还希望实施这些配置。视频心率需要 ID 服务 ID (MID) 才能正常工作。
+>在 iFrame 中使用[视频心率](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)为视频提供服务时，您可能还希望实施这些配置。视频心率需要 ID 服务 ID (MID) 才能正常工作。
 
 **用例 1：浏览器阻止第三方 Cookie，并且在 iFrame 和父页面上实施 ID 服务**
 
@@ -178,7 +178,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>用例 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
