@@ -3,7 +3,7 @@ description: 将选择加入服务作为 Experience Cloud 解决方案（在选�
 title: 设置选择加入服务
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
 ht-degree: 100%
 
