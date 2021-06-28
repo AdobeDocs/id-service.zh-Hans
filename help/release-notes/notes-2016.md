@@ -4,9 +4,9 @@ keywords: ID 服务
 title: 2016 版发行说明
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
 
-[Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)中也记录了这些更改。
+[Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)中也记录了这些更改。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -80,7 +80,7 @@ ht-degree: 99%
 
 **已知问题**
 
-在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。请参阅 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html)。
+在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。请参阅 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=zh-Hans)。
 
 ## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
