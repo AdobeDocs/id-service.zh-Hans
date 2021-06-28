@@ -4,7 +4,7 @@ keywords: ID 服务
 title: audienceManagerServer 和 audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 **语法：**
 
 * ` audienceManagerServer: " *`your subdomain name`*.demdex.net"`
-* ` audienceManagerServerSecure: " *`您的子域名`*.demdex.net"`
+* ` audienceManagerServerSecure: " *`your subdomain name`*.demdex.net"`
 
 **用途**
 
