@@ -3,7 +3,7 @@ description: Adobe Experience Platform Launch 是用于设置、部署 Experienc
 title: 使用 Launch 实施
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
