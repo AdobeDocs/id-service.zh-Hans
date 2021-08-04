@@ -3,18 +3,18 @@ description: 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 
 keywords: ID 服务
 title: 使用 Dynamic Tag Management 实施
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1999'
-ht-degree: 100%
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
+workflow-type: tm+mt
+source-wordcount: '2008'
+ht-degree: 99%
 
 ---
 
-# 使用 Dynamic Tag Management 实施{#implementation-with-dynamic-tag-management}
+# 使用 Dynamic Tag Management 实施 {#implementation-with-dynamic-tag-management}
 
 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 Experience Cloud Identity 服务，并将其与您的其他 Experience Cloud 解决方案相集成。
 
-## 使用 Dynamic Tag Management 实施{#topic-6f4ed5d96977406ca991e50f3fbd5b01}
+## 使用 Dynamic Tag Management 实施 {#topic-6f4ed5d96977406ca991e50f3fbd5b01}
 
 旧版实施使用 Dynamic Tag Management (DTM) 来设置和部署 Experience Cloud Identity 服务，并将其与您的其他 Experience Cloud 解决方案相集成。
 
@@ -68,13 +68,13 @@ ID 服务是通过从 [!DNL Adobe] 数据收集服务器请求和接收唯一 ID
 
 新 [!DNL Analytics] 客户应该[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=zh-Hans)，以便进行数据收集。
 
-## 使用 DTM 实施 Experience Cloud Identity 服务{#task-a659cf19dea84ad48edabe0b72ef9f5c}
+## 使用 DTM 实施 Experience Cloud Identity 服务 {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
 遵循以下步骤使用 Dynamic Tag Management (DTM) 实施 ID 服务。
 
 **先决条件**
 
-* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)。
+* 启用您的 [!DNL Experience Cloud] 解决方案，并确认您拥有管理员权限。请参阅[为核心服务启用解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)。
 
 * 在 DTM 中创建 Web 资产。请参阅 DTM [创建 Web 资产](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hans)文档。
 
@@ -97,7 +97,7 @@ mcvid-dtm-implement.xml
 
    保存后，ID 服务将被设置为 DTM 中的一个工具。但是，它此时还未准备就绪，无法使用。您的 DTM 工具还必须完成 DTM 发布/批准过程，并且您可能还需要配置其他参数。有关可添加到 DTM 的其他参数的信息，请参阅[适用于 DTM 的 Experience Cloud Identity 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
-## 适用于 DTM 的 Experience Cloud Identity 服务设置{#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
+## 适用于 DTM 的 Experience Cloud Identity 服务设置 {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
 介绍“[!UICONTROL 组织 ID]”、“[!UICONTROL 一般设置]”和“[!UICONTROL 客户设置]”字段及其在 [!DNL Experience Cloud] ID 服务中的使用方式。
 
@@ -105,13 +105,13 @@ mcvid-dtm-implement.xml
 mcvid-dtm-settings.xml
 -->
 
-## 如何查找这些设置？{#section-c5b2d1c928944ae2b8565c1b182fe575}
+## 如何查找这些设置？ {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
 在 Dynamic Tag Management (DTM) 中作为工具添加 ID 服务并进行保存后，即可使用这些设置。您也可以通过单击 DTM Web 资产中“[!UICONTROL 已安装的工具]”部分的齿轮图标来访问这些设置。
 
 ![](assets/installedTools.png)
 
-## 组织 ID {#section-949b5a0d8af940558b04ff675cf53f77}
+## Organization ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
 这是配置的 [!DNL Experience Cloud] 公司需要并与之关联的 ID。组织是一个实体，它允许管理员配置用户和群组，并控制 [!DNL Experience Cloud] 中的单点登录访问。组织 ID 是由 24 个字符组成的字母数字字符串，其后跟（且必须包括）@AdobeOrg。[!DNL Experience Cloud] 管理员可在 [Experience Cloud > 工具](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)中找到此 ID。
 
@@ -139,7 +139,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServer` 变量设置的 URL。
 
-请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hans) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hans) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **安全跟踪服务器**
 
@@ -147,7 +147,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道自己的跟踪服务器 URL，请查看 `s_code.js` 或 `AppMeasurement.js` 文件。您将需要由 `s.trackingServerSecure` 变量设置的 URL。
 
-请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hans) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
+请参阅 [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) 以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **Experience Cloud 服务器**
 
@@ -179,7 +179,7 @@ mcvid-dtm-settings.xml
 
 **集成代码**
 
-集成代码是由客户提供的唯一 ID。集成代码应包含您用于在 [!DNL Audience Manager] 中[创建数据源](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
+集成代码是由客户提供的唯一 ID。集成代码应包含您用于在 [!DNL Audience Manager] 中[创建数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
 
 **值**
 
@@ -189,7 +189,7 @@ mcvid-dtm-settings.xml
 
 根据访客的身份验证状态（例如，已登录、已注销）定义或识别访客的选项。请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)。
 
-## 测试和验证 Experience Cloud Identity 服务{#concept-644fdbef433b46ba9c0634ac95eaa680}
+## 测试和验证 Experience Cloud Identity 服务 {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于不同的 ID 服务和 [!DNL Experience Cloud] 解决方案组合。
 
@@ -215,7 +215,7 @@ mcvid-test-verify.xml
 
 当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
-要通过 [!DNL Adobe] [调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hans)验证 ID 服务的状态，请执行以下操作：
+要通过 [!DNL Adobe] [调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)验证 ID 服务的状态，请执行以下操作：
 
 1. 清除您的浏览器 Cookie 或打开匿名浏览会话。
 1. 加载包含 ID 服务代码的测试页面。
@@ -281,5 +281,5 @@ mid=20265673158980419722735089753036633573
 
 >[!MORELIKETHIS]
 >
->* [Web 属性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hans)
+>* [Web 属性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
