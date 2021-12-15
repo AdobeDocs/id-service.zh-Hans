@@ -5,9 +5,9 @@ solution: Experience Cloud
 title: 实施指南
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '190'
+source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
+workflow-type: tm+mt
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Experience Cloud Identity 服务的标准实施和非标准实施的说明和代
 
 * [实施方法](implementation-methods.md)
 * [使用 Experience Platform Launch 实施](ecid-implement-with-launch.md)
-* [使用 Dynamic Tag Management 实施](standard.md)
 * [实施适用于 Analytics 的 Experience Cloud Identity 服务](setup-analytics.md)
 * [实施适用于 Target 的 Experience Cloud Identity 服务](setup-target.md)
 * [实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务](setup-aam-analytics.md)

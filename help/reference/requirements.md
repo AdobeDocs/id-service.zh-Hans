@@ -3,10 +3,10 @@ description: 查看此部分内容，确保使用 Experience Cloud Identity 服�
 keywords: ID 服务
 title: Experience Cloud Identity 服务的要求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -18,33 +18,13 @@ ht-degree: 100%
 
 成功的、受支持的实施符合（或超出）代码要求，并遵循 [!DNL Adobe] 帮助中显示的说明。不受支持的实施将产生意外结果，并妨碍客户关怀团队和我们的工程团队协助您排查或解决您遇到的 ID 服务问题。
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 实施类型 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> 标准实施</a> </p> </td> 
-   <td colname="col2"> <p>对于通过动态标签管理 (DTM) 进行的标准实施，您必须： </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> 将嵌入页眉代码放入页面的 <span class="codeph">&lt;head&gt;</span> 部分中。 </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">将嵌入页脚代码放在结束 <span class="codeph">&lt;/body&gt;</span> 标记之前。 </li> 
-    </ul> <p>在以下情况下，不支持标准实施： </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> 将这些 DTM 嵌入代码中的任意代码放置在标记和/或页面代码的其他位置。 </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> 使用异步方法、调用/回调方法或包装器附加、添加或加载 DTM 代码。 </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">在同一页面上包含嵌入代码的多个实例。 </li> 
-    </ul> <p>另请参阅<a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=zh-Hans" format="https" scope="external">嵌入代码和托管选项</a>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非标准实施 </a> </p> </td> 
-   <td colname="col2"> <p>对于非标准实施或手动实施，您必须按照本指南中所述的步骤设置 ID 服务。与上述 DTM 实施准则一样，若代码放置和加载不当，则将生成不受支持的实施。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### 标准实施
+
+请参阅 [Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans) ，以用于标准实施。
+
+### 非标准实施
+
+对于非标准实施或手动实施，您必须按照本指南中所述的步骤设置 ID 服务。与上述 DTM 实施准则一样，若代码放置和加载不当，则将生成不受支持的实施。
 
 ## Experience Cloud 要求：组织 ID {#section-a02f537129a64ffbb690d5738d360c26}
 

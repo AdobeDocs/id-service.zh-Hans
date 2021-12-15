@@ -5,11 +5,10 @@ user-guide-title: Experience Cloud Identity Service 帮助
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -26,8 +25,7 @@ ht-degree: 100%
 + 实施 {#implementation}
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
-   + [使用 Experience Platform Launch 实施](implementation-guides/ecid-implement-with-launch.md)
-   + [使用 DTM 实施](implementation-guides/standard.md)
+   + [使用Experience Platform标记实施](implementation-guides/ecid-implement-with-launch.md)
    + [适用于 Analytics 的实施](implementation-guides/setup-analytics.md)
    + [适用于 Target 的实施](implementation-guides/setup-target.md)
    + [适用于 Analytics 和 Audience Manager 的实施](implementation-guides/setup-aam-analytics.md)
@@ -48,7 +46,7 @@ ht-degree: 100%
       + [在 IAB 框架中使用选择加入服务](implementation-guides/opt-in-service/iab.md)
 + ID 服务 API {#id-service-api}
    + [ID 服务 API 概述](library/library.md)
-   + 配置 {#configurations}
+   + 配置{#configurations}
       + [配置概述](library/function-vars/function-vars.md)
       + [audienceManagerServer 和 audienceManagerServerSecure](library/function-vars/subdomain-config.md)
       + [cookieDomain](library/function-vars/cookiedomain.md)
@@ -62,7 +60,7 @@ ht-degree: 100%
       + [isCoopSafe](library/function-vars/coopsafe.md)
       + [loadTimeout](library/function-vars/loadtimeout.md)
       + [overwriteCrossDomainMCIDAndAID](library/function-vars/overwrite-visitor-id.md)
-      + [resetBeforeVersion ](library/function-vars/resetbeforeversion.md)
+      + [resetBeforeVersion](library/function-vars/resetbeforeversion.md)
       + [sdidParamExpiry](library/function-vars/sdidparamexpiry.md)
       + [Secure 和 SameSite 配置](library/function-vars/secure-samesite-config.md)
       + [secureCookie](library/function-vars/securecookie.md)

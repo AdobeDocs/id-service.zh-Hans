@@ -3,9 +3,9 @@ description: 这些说明适用于采用 Target、Analytics 和 ID 服务的混�
 keywords: ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '829'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '820'
 ht-degree: 100%
 
 ---
@@ -164,8 +164,6 @@ Response.send("
 您配置的设置应该如下所示：
 
 ![](assets/server_side_dtm.png)
-
-另请参阅[适用于 DTM 的 Experience Cloud Identity 服务设置](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **在没有使用 DTM 的情况下获取服务器状态**
 
