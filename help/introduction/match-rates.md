@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 了解 ID 同步和匹配率
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 了解 ID 同步和匹配率{#understanding-id-synchronization-and-match-rates}
 
-关于 Experience Cloud Identity 服务（包括 Adobe Media Optimizer 和 ID 服务）中 ID 同步流程和匹配率的概述。
+关于 Experience Cloud Identity 服务（包括 Adobe Media Optimizer 和 ID 服务）中 ID 同步过程和匹配率的概述。
 
 ## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -26,7 +26,7 @@ ID 同步会将由 ID 服务分配的 ID 匹配到由我们的客户分配给其
 
 正确的实施有助于确保高匹配率，因为正确的实施可使 ID 服务能够设置正常运行所需的 Cookie，并与启用的数据合作伙伴同步 ID。但是，很多因素（例如 Internet 连接速度慢、从移动设备或无线网络收集数据）都可能会影响 ID 服务收集、同步和匹配 ID 的有效性。这些客户端变量超出了 ID 服务或 [!DNL Adobe] 的控制。
 
-## 已描述的 ID 同步过程 {#section-a541a85cbbc74f5682824b1a2ee2a657}
+## ID 同步过程描述 {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
 ID 服务可实时同步 ID。此过程在浏览器中进行，而不是通过服务器到服务器数据传输进行。下表介绍了 ID 同步过程中的各个步骤。
 
