@@ -1,19 +1,19 @@
 ---
 cloud: platform-cloud
 audience: end-user
-user-guide-title: Experience Cloud Identity Service 帮助
+user-guide-title: Experience Cloud Identity 服务帮助
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Experience Cloud Identity Service 帮助 {#using}
+# Experience Cloud Identity 服务帮助 {#using}
 
 + [ID 服务帮助](home.md)
 + 概述 {#intro}
@@ -25,12 +25,12 @@ ht-degree: 98%
 + 实施 {#implementation}
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
-   + [使用Experience Platform标记实施](implementation-guides/ecid-implement-with-launch.md)
-   + [适用于 Analytics 的实施](implementation-guides/setup-analytics.md)
-   + [适用于 Target 的实施](implementation-guides/setup-target.md)
-   + [适用于 Analytics 和 Audience Manager 的实施](implementation-guides/setup-aam-analytics.md)
-   + [适用于 Analytics、Audience Manager 和 Target 的实施](implementation-guides/setup-aam-analytics-target.md)
-   + [在 Target 的 A4T 和服务器端实施中使用 ID 服务](implementation-guides/ecid-a4t-target.md)
+   + [用 Experience Platform 标记进行实施](implementation-guides/ecid-implement-with-launch.md)
+   + [为 Analytics 实施](implementation-guides/setup-analytics.md)
+   + [为 Target 实施](implementation-guides/setup-target.md)
+   + [为 Analytics 和 Audience Manager 实施](implementation-guides/setup-aam-analytics.md)
+   + [为 Analytics、Audience Manager 和 Target 实施](implementation-guides/setup-aam-analytics-target.md)
+   + [将 ID 服务用于 A4T 以及 Target 的某个服务器端实施](implementation-guides/ecid-a4t-target.md)
    + [直接与 ID 服务集成](implementation-guides/direct-integration.md)
    + [直接集成用例](implementation-guides/direct-integration-examples.md)
    + [测试和验证 ID 服务](implementation-guides/test-verify.md)
@@ -40,13 +40,13 @@ ht-degree: 98%
       + [验证选择加入服务](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [使用 Experience Platform Launch 配置选择加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 配置选择加入](implementation-guides/opt-in-service/optin-dtm.md)
-      + [在用户同意的基础上控制 Experience Cloud 活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [经用户同意控制 Experience Cloud 活动](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [选择加入用例](implementation-guides/opt-in-service/use-cases.md)
       + [选择加入参考](implementation-guides/opt-in-service/api.md)
       + [在 IAB 框架中使用选择加入服务](implementation-guides/opt-in-service/iab.md)
 + ID 服务 API {#id-service-api}
    + [ID 服务 API 概述](library/library.md)
-   + 配置{#configurations}
+   + 配置 {#configurations}
       + [配置概述](library/function-vars/function-vars.md)
       + [audienceManagerServer 和 audienceManagerServerSecure](library/function-vars/subdomain-config.md)
       + [cookieDomain](library/function-vars/cookiedomain.md)
@@ -82,15 +82,15 @@ ht-degree: 98%
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + 参考 {#reference}
-   + [引用概述](reference/reference.md)
-   + Analytics 参考资料 {#analytics-reference}
-      + [Analytics 引用概述](reference/analytics-reference/analytics-reference.md)
+   + [参考概述](reference/reference.md)
+   + Analytics 参考 {#analytics-reference}
+      + [Analytics 参考概述](reference/analytics-reference/analytics-reference.md)
       + [CNAME 实施概述](reference/analytics-reference/cname.md)
       + [设置 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID 操作顺序](reference/analytics-reference/analytics-order-of-operations.md)
       + [ID 服务迁移决策点](reference/analytics-reference/migration-decisions.md)
       + [ID 服务迁移方案](reference/analytics-reference/migration-scenarios.md)
-      + [Analytics 和标识请求](reference/analytics-reference/legacy-analytics.md)
+      + [Analytics 和 Identity 请求](reference/analytics-reference/legacy-analytics.md)
       + [结合了 JavaScript 技术的服务器端实施](reference/analytics-reference/server-side.md)
       + [ID 服务宽限期](reference/analytics-reference/grace-period.md)
    + [Google Chrome SameSite 标签更改](reference/chrome-samesite-labelling.md)
@@ -104,7 +104,7 @@ ht-degree: 98%
    + [ID 服务的要求](reference/requirements.md)
    + [视频心率和 ID 服务](reference/heartbeat.md)
    + [Data Workbench 和 ID 服务](reference/dwb.md)
-   + [对 setCustomerIDs 的 SHA256 哈希处理支持](reference/hashing-support.md)
+   + [支持用 SHA256 哈希处理 setCustomerIDs](reference/hashing-support.md)
 + 常见问题解答 {#faqs}
    + [常见问题解答概述](faq-intro/faq-intro.md)
    + [ID 服务常见问题解答](faq-intro/faq.md)
