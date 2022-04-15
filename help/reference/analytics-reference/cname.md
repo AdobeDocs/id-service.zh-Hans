@@ -4,9 +4,9 @@ keywords: 操作顺序;ID 服务
 title: CNAME 实施概述
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
 source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -16,4 +16,4 @@ ht-degree: 0%
 
 虽然 CNAME 实施未提供 Cookie 生命周期方面的好处，但可能会带来其他一些好处。这些好处包括广告拦截器和不太常见的浏览器，可防止数据被发送到它们归类为跟踪器的域。在这些情况下，使用 CNAME 可以在对使用这些工具的用户进行数据收集时防止中断。
 
-此外，CNAME实施允许您 [选择自定义RDC类型](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hans) 可控制最初将用户点击路由到的位置。 大多数客户不使用自定义 RDC 类型。
+此外，利用 CNAME 实施，您可以[选择自定义 RDC 类型](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hans)来控制最初路由用户点击的位置。大多数客户不使用自定义 RDC 类型。
