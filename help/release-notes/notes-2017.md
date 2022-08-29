@@ -3,10 +3,10 @@ description: 关于 2017 版 Experience Cloud Identity 服务的功能发布、�
 keywords: ID 服务
 title: 2017 版发行说明
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '744'
-ht-degree: 100%
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,28 +52,28 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 现在，当事件调用响应中的区域 ID 发生更改时，ID 服务会重新触发 ID 同步。
 * 新增了[内容安全策略和 Experience Cloud Identity 服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)文档，该文档说明了如何将 ID 服务使用的 Adobe 域调用添加到白名单中。
 
-## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+<!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-2017 年 8 月
+August, 2017
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 功能 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
+   <th colname="col1" class="entry"> Feature </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。请参阅 <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local">isCoopSafe</a>。 </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**修订的文档**
+**Revised Documentation**
 
-更新并修改了[常见问题解答](/help/faq-intro/faq-intro.md)，以包含针对不同 [!DNL Experience Cloud] 解决方案的单独常见问题解答。
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. -->
 
 ## 版本 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
