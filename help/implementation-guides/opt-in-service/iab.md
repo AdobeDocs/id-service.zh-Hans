@@ -1,11 +1,11 @@
 ---
-description: 将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB 透明度和同意框架 (TCF) 的 Audience Manager 插件连接起来。
+description: 将他们的同意管理平台(CMP)与选择加入的适用于IAB透明度和同意框架(TCF)的Audience Manager插件连接起来。
 title: 在 IAB 框架中使用选择加入服务
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 要将选择加入与 IAB TCF 相集成，您需要完成以下操作：
 
-1. 实施支持 IAB 并[注册为 IAB 供应商](https://vendorlist.consensu.org/vendorlist.json)的 CMP，或开发一个实施 IAB TCF 规范的内部 CMP，并在 IAB TCF 注册为 CMP。
+1. 实施支持IAB并注册为IAB供应商的CMP，或开发一个实施IAB TCF规范的内部CMP，并在IAB TCF注册为CMP。
 1. 在加载 Adobe JS 之前定义/加载 `__tcfapi`
 
 有关更多详细信息，请阅读[互动广告局文档](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md)。

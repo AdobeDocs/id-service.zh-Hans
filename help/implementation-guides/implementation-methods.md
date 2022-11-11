@@ -3,8 +3,8 @@ description: Experience Cloud Identity Service 的标准实施方法与非标准
 keywords: ID 服务
 title: 实施方法
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 标准实施 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe 强烈建议使用 [[!DNL Experience Platform Launch] 来实施 ID 服务。](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=zh-Hans)此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
+Adobe 强烈建议使用 [[!DNL Experience Platform tags] 来实施 ID 服务。](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)此方法可确保与其他 [!DNL Experience Cloud] 解决方案集成、简化实施工作流程，并自动确保代码放置和顺序准确无误。
 
 ## 非标准实施 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 

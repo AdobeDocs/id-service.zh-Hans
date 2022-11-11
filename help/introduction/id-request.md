@@ -3,9 +3,9 @@ description: ID 请求和响应过程概述。下面的示例涵盖了各种网�
 keywords: ID 服务
 title: Experience Cloud Identity 服务如何请求和设置 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ ID 请求和响应过程概述。下面的示例涵盖了各种网站类型中�
 >[!NOTE]
 >
 >如果您不熟悉 Experience Cloud Identity 服务如何创建访客 ID，请花些时间查阅 [Experience Cloud](../introduction/cookies.md)。
-
-**提示：**&#x200B;另请观看我们发布的 [ID 服务跨域跟踪视频](https://helpx.adobe.com/cn/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
 ## 请求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 

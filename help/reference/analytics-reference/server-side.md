@@ -3,8 +3,8 @@ description: 在一些实施过程中，访客 ID 是经由 JavaScript 传送至
 keywords: ID 服务
 title: 结合了 JavaScript 技术的服务器端实施
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ID 服务 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 在 `<marketingCloudVisitorID>` 元素中包括 Experience Cloud 访客 ID。
 
-请参阅[支持的 XML 标记](https://www.adobe.io)。
+请参阅[支持的 XML 标记](https://developer.adobe.com/)。
 
 ## Java AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
