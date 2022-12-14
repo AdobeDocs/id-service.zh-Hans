@@ -1,18 +1,28 @@
 ---
-description: 'Experience Cloud Identity Service 提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。 '
-keywords: ID 服务
+description: Experience Cloud标识服务为Experience Cloud应用程序和服务启用了通用标识框架。 它的工作方式是向网站访客分配一个称为Experience CloudID(ECID)的唯一永久ID。
+keywords: ID服务；身份服务；Experience Cloud标识服务
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 48%
 
 ---
 
 # Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
 
-Adobe Experience Cloud Identity Service（ID 服务）提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它可以取代各种服务（如 Analytics、Audience Manager、Target）以及其他 Experience Cloud 解决方案或功能的 ID 生成代码。
+Experience Cloud标识服务为Experience Cloud应用程序和服务启用了通用标识框架。 它的工作方式是向网站访客分配一个称为Experience CloudID(ECID)的唯一永久ID。
+
+## 了解身份的主要实体
+
+要更好地了解Adobe如何帮助唯一识别访客并解析身份信息，请执行以下划分：
+
+* **Experience Cloud标识服务**:Experience Cloud标识服务 **负责设置Experience CloudID(ECID)**. 有关更多信息，请阅读 [Experience Cloud标识服务概述](./introduction/overview.md).
+* **Experience CloudID(ECID)**:ECID是跨Adobe Experience Platform和Adobe Experience Cloud应用程序用来识别人员和设备的共享身份命名空间。 有关ECID的更多信息，请阅读 [ECID概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html).
+* **Experience Platform标识服务**:Experience Platform身份服务通过跨设备和系统桥接身份，为您全面了解客户及其行为。 有关更多信息，请阅读 [Experience Platform标识服务概述](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html).
+
+<!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -36,7 +46,7 @@ Adobe Experience Cloud Identity Service（ID 服务）提供了一个通用的�
    <td colname="col2"> <p> <b>发行说明</b> </p> <p><b>版本 4.4</b> 2019 年 7 月 17 日发行版包括对 <a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 哈希算法</a>的支持，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。</p><p><b>版本 4.0</b> 2019 年 2 月 12 日发行版包括<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">选择加入服务</a>，用于确定当用户访问网站时您是否可以在其设备或浏览器上放置 Cookie。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">有关早期版本的信息，请参阅<a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans" format="html" scope="external">之前的发行说明</a>。 </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">有关早期版本的信息，请参阅<a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external">之前的发行说明</a>。 </li> 
      </ul> </p> <p> <b>Experience Cloud 资源</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/cn/privacy.html" format="http" scope="external"> Adobe 隐私权中心</a> </li> 
