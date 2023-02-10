@@ -4,8 +4,8 @@ keywords: ID 服务
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
-workflow-type: tm+mt
-source-wordcount: '348'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## 示例输出 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-如下所示，在对接收页面的调用中，URL 重定向包含访客的 SDID、您的组织 ID 以及 UNIX 时间戳。
+如下所示，在调用接收页面中，URL 重定向包含访客的 SDID、您的组织 ID 以及 UNIX 时间戳。
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
