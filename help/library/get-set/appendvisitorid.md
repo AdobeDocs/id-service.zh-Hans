@@ -3,7 +3,7 @@ description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可�
 keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
+source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->为了提取通过appendVisitorsIDsTo在URL中传递的值，请 [ovewriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) 变量必须设置为true。
+>为了提取通过appendVisitorsIDsTo在URL中传递的值，请 [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 变量必须设置为true。
 
 下面的示例可帮助您开始使用 ` Visitor.appendVisitorIDsTo( *`url`*)`。正确实施后，您的 JavaScript 代码可能与以下示例类似。
 
