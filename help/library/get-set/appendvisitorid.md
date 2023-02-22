@@ -4,9 +4,9 @@ keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->为了提取通过appendVisitorsIDsTo在URL中传递的值，请 [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 变量必须设置为true。
+>为了选取通过 appendVisitorsIDsTo 传入 URL 的值，必须将 [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 变量设置为 true。
 
 下面的示例可帮助您开始使用 ` Visitor.appendVisitorIDsTo( *`url`*)`。正确实施后，您的 JavaScript 代码可能与以下示例类似。
 
