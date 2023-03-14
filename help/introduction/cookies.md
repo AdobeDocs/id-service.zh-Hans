@@ -3,10 +3,10 @@ description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 D
 keywords: PlayStation;ID 服务
 title: Cookie 和 Experience Cloud Identity 服务
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。这意味着它在用�
 
 ![](assets/AMCVS-cookie.png)
 
-## Demdex Cookie{#section-7ff7d96d6e4141b08a84a75a63d7814c}
+## Demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
 下表列出并定义了 Demdex Cookie 的一些重要属性。
 
@@ -113,7 +113,9 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。这意味着它在用�
  </tbody> 
 </table>
 
-有关相关信息，请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)。
+欲了解有关Demdex披露的信息，请访问 [Audience Manager装置存储空间公开](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+有关相关信息，请阅读以下文档： [了解Demdex域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans).
 
 ## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
