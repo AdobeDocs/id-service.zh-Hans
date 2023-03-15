@@ -4,9 +4,9 @@ keywords: PlayStation;ID 服务
 title: Cookie 和 Experience Cloud Identity 服务
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,9 +113,9 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。这意味着它在用�
  </tbody> 
 </table>
 
-欲了解有关Demdex披露的信息，请访问 [Audience Manager装置存储空间公开](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+有关 Demdex 的披露信息，请访问 [Audience Manager 设备存储披露](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json)。
 
-有关相关信息，请阅读以下文档： [了解Demdex域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans).
+有关相关信息，请阅读关于[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)的文档。
 
 ## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -133,7 +133,7 @@ ID 服务在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.
 | AMCV (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 | AMCVS (Javascript) | 否 | 可配置 | 未设置（默认为“Lax”） |
 
-*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅  [secureCookie](../library/function-vars/securecookie.md) 主题。*
+*注意：有关使用安全属性配置 AMCV 和 AMCVS Cookie 的信息，请参阅 [secureCookie](../library/function-vars/securecookie.md) 主题。*
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
