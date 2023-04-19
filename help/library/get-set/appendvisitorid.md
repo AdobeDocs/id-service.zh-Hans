@@ -3,10 +3,10 @@ description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可�
 keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
-workflow-type: ht
-source-wordcount: '378'
-ht-degree: 100%
+source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 96%
 
 ---
 
@@ -19,8 +19,10 @@ ht-degree: 100%
 <ul class="simplelist"> 
  <li> <a href="../../library/get-set/appendvisitorid.md#section-7251d88befd440b4b79520e33c5aa44a" format="dita" scope="local"> 在浏览器阻止第三方 Cookie 时跨域跟踪访客 </a> </li> 
  <li> <a href="../../library/get-set/appendvisitorid.md#section-62d55f7f986542b0b9238e483d50d7b0" format="dita" scope="local"> 附加访客 ID 代码示例 </a> </li> 
- <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> 动态标签管理 (DTM) 和 SDK 支持 </a> </li> 
+ </a> </li> 
 </ul>
+
+<!-- <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> Dynamic Tag Management (DTM) and SDK Support -->
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
@@ -39,11 +41,35 @@ ht-degree: 100%
 
 ## 附加访客 ID 代码示例 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
->[!IMPORTANT]
->
->为了选取通过 appendVisitorsIDsTo 传入 URL 的值，必须将 [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 变量设置为 true。
+以下示例代码可帮助您开始使用 `appendVisitorIDsTo` 函数：
 
-下面的示例可帮助您开始使用 ` Visitor.appendVisitorIDsTo( *`url`*)`。正确实施后，您的 JavaScript 代码可能与以下示例类似。
+```js
+var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
+var visitor = Visitor.getInstance("9E1005A551ED61CA0A490D45@AdobeOrg", {
+  trackingServer: "sstats.adobe.com",
+  trackingServerSecure: "sstats.adobe.com",
+  marketingCloudServer: "sstats.adobe.com",
+  marketingCloudServerSecure: "sstats.adobe.com"
+});
+adbeDomains.forEach(function(domain) {
+  var domainRegex = RegExp(domain);
+  if (!domainRegex.test(location.hostname)) {
+    hrefSelector = '[href*="' + domain + '"]';
+    document.querySelectorAll(hrefSelector).forEach(function(href) {
+      href.addEventListener('mousedown', function(event) {
+        var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(event.currentTarget.href)
+        event.currentTarget.href = destinationURLWithVisitorIDs.replace(/MCAID%3D.*%7CMCORGID/, 'MCAID%3D%7CMCORGID');
+      });
+    });
+  }
+});
+```
+
+<!-- >[!IMPORTANT]
+>
+>In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
+
+The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. When implemented properly, your JavaScript code could look similar to the following example.
 
 ```js
 //Code on Domain A 
@@ -57,7 +83,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
-```
+``` -->
 
 <!-- ## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
