@@ -2,8 +2,8 @@
 description: 将他们的同意管理平台 (CMP) 与选择加入的适用于 IAB 透明度和同意框架 (TCF) 的 Audience Manager 插件连接起来。
 title: 在 IAB 框架中使用选择加入服务
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager 需要获取&#x200B;*目的 1、和目的 10 的同意，以及供应商同意*&#x200B;才能部署 Cookie 并启动 ID 同步或使之生效。可在[此处](https://docs.adobe.com/help/zh-Hans/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)阅读 Audience Manager 文档中有关选择加入的 IAB TCF 插件的更多信息。
+>Audience Manager 需要获取&#x200B;*目的 1、和目的 10 的同意，以及供应商同意*&#x200B;才能部署 Cookie 并启动 ID 同步或使之生效。可在[此处](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)阅读 Audience Manager 文档中有关选择加入的 IAB TCF 插件的更多信息。
 
 有关如何验证选择加入的 IAB TCF 插件的更多信息，请在[此处](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)查看验证指南中的用例 4。
 

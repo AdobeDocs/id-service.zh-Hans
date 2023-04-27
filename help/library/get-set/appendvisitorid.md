@@ -3,10 +3,10 @@ description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可�
 keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 96%
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,11 @@ ht-degree: 96%
 
 ## 附加访客 ID 代码示例 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-以下示例代码可帮助您开始使用 `appendVisitorIDsTo` 函数：
+下面的示例代码可帮助您开始使用 `appendVisitorIDsTo` 功能：
+
+>[!TIP]
+>
+>此代码可放置在作为Adobe Analytics扩展一部分的自定义代码编辑器中，或放置在 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

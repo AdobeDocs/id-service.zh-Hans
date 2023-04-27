@@ -1,16 +1,16 @@
 ---
 description: Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。
 keywords: ID 服务
-title: 对 setCustomerIDs 的 SHA256 哈希处理支持
+title: 支持用 SHA256 哈希处理 setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '602'
 ht-degree: 100%
 
 ---
 
-# 对 `setCustomerIDs` 的 SHA256 哈希处理支持 {#hashing-support}
+# 对 `setCustomerIDs` 的 SHA256 哈希处理支持  {#hashing-support}
 
 Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。有两种方法可以对 setCustomerIDs 实施哈希处理支持，具体如以下部分所述：
 
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 
-Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans)。
+Experience Platform Launch 是 Adobe 推出的新一代标签管理功能。有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
 
-要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://docs.adobe.com/help/zh-Hans/launch/using/reference/manage-resources/rules.html)并查看下面的屏幕截图：
+要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)并查看下面的屏幕截图：
 
 ![](/help/reference/assets/hashing-support.png)
 

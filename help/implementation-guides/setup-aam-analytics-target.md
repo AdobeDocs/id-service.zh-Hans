@@ -3,14 +3,14 @@ description: 这些说明适用于那些想要使用 Experience Cloud Identity �
 keywords: ID 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1498'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '1499'
+ht-degree: 99%
 
 ---
 
-# 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hans)。有关更多信息，请参阅[服务器端转发文档](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hans)。有关更多信息，请参阅[服务器端转发文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 迁移到服务器端转发需要进行规划和协调。此过程涉及对您的网站代码进行外部更改以及 Adobe 配置您的帐户时必须执行的内部步骤。事实上，其中的许多迁移步骤需要并行执行并一起发布。您的实施路径应遵循以下事件顺序：
 

@@ -3,14 +3,14 @@ description: 关于 Experience Cloud Identity 服务的功能发布、更新或�
 keywords: ID 服务
 title: 2019 版发行说明
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# Experience Cloud 发行说明 - 2019 版{#release-notes}
+# Experience Cloud发行说明 — 2019版 {#release-notes}
 
 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
 
@@ -57,9 +57,9 @@ ht-degree: 100%
 * 修复了 DTM 中选择加入 doesOptInApply 配置的错误。
 * ECID 选择退出会禁用 ID 同步。
 
-## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
+## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。借助 [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hans)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+**选择加入服务**。选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。借助 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 

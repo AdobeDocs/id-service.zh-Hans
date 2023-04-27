@@ -3,10 +3,10 @@ description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的
 keywords: ID 服务
 title: 客户 ID 和身份验证状态
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 98%
 
 ---
 
@@ -217,4 +217,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。更多信息，请参阅[配置合并规则代码](https://docs.adobe.com/help/zh-Hans/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)文档中的[!UICONTROL 访客 ID 服务]部分。
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。更多信息，请参阅[配置合并规则代码](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code)文档中的[!UICONTROL 访客 ID 服务]部分。
