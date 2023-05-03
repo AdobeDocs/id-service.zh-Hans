@@ -1,18 +1,18 @@
 ---
-description: 查看此部分内容，确保使用 Experience Cloud Identity 服务所需的正确解决方案、服务和代码版本。
+description: 查看此部分内容，确保使用 Experience Cloud 身份服务所需的正确解决方案、服务和代码版本。
 keywords: ID 服务
-title: Experience Cloud Identity 服务的要求
+title: Experience Cloud 身份服务的要求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity 服务的要求 {#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud 身份服务的要求 {#requirements-for-the-experience-cloud-id-service}
 
-查看此部分内容，确保使用 Experience Cloud Identity 服务所需的正确解决方案、服务和代码版本。
+查看此部分内容，确保使用 Experience Cloud 身份服务所需的正确解决方案、服务和代码版本。
 
 ## 要求确保实施成功和支持 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
