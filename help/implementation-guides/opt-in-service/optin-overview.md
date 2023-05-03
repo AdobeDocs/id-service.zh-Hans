@@ -3,21 +3,21 @@ description: 选择加入服务允许您为访客设置协议，以确定在用�
 title: 选择加入服务
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 选择加入服务{#opt-in-service}
 
-选择加入服务允许您为访客设置协议，以确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
+通过选择加入服务，可为访客设置协议以确定在用户访问网站时您能否在用户的设备或浏览器上设置 Cookie。
 
 选择加入服务是 Experience Cloud ID (ECID) 的一项扩展，旨在让您控制 Experience Cloud 解决方案是否可以在用户同意前为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。您还可以通过选择加入服务设置协议以与大型设计中同意管理平台 (CMP) 和现有系统集成。
 
 使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
-通过使用 [Adobe Experience Platform中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans) 和 [选择加入扩展](../../implementation-guides/opt-in-service/launch.md). 您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
+使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)结合[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)，轻松地实施和配置选择加入服务。您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
 
 请参阅[设置选择加入服务](../../implementation-guides/opt-in-service/getting-started.md)以开始操作。
 
@@ -29,7 +29,7 @@ ht-degree: 96%
 >
 >本文档的内容不是法律建议，也不会代替法律建议。请咨询您公司的法律部门，以获取关于同意的建议以及设置选择加入实施时的做法。
 
-## Experience Cloud 解决方案间的选择加入 {#section-053e6224505542cf961896f0ca869e52}
+## 在 Experience Cloud 解决方案间选择加入 {#section-053e6224505542cf961896f0ca869e52}
 
 选择加入服务是一个根据您自己的需要创建同意选择加入工作流程的工具，允许您设计工作流程以在用户或同意控制方同意之前和之后做出相应的反应（触发标签）。
 
