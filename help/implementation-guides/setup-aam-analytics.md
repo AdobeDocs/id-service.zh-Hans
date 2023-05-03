@@ -1,18 +1,18 @@
 ---
-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于那些想要使用 Experience Cloud 身份服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
-title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务
+title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于那些想要使用 Experience Cloud 身份服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hans)。有关更多信息，请参阅[服务器端转发文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
+除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。有关更多信息，请参阅[服务器端转发文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 迁移到服务器端转发需要进行规划和协调。此过程涉及对您的网站代码进行外部更改以及 Adobe 配置您的帐户时必须执行的内部步骤。事实上，其中的许多迁移步骤需要并行执行并一起发布。您的实施路径应遵循以下事件顺序：
 
@@ -43,7 +43,7 @@ ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请�
 
 1. 解压缩代码文件，并打开 `VisitorAPI.js` 文件。
 
-## 步骤 3：将 Visitor.getInstance 函数添加到 ID 服务代码中 {#section-9e30838b4d0741658a7a492153c49f27}
+## 步骤 3：将 Visitor.getInstance 函数添加到 ID 服务代码 {#section-9e30838b4d0741658a7a492153c49f27}
 
 >[!IMPORTANT]
 >
@@ -151,7 +151,7 @@ Analytics 使用跟踪服务器进行数据收集。
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## 步骤 7：将访客 API 代码添加到页面中 {#section-c2bd096a3e484872a72967b6468d3673}
+## 步骤 7：将访客 API 代码添加到页面 {#section-c2bd096a3e484872a72967b6468d3673}
 
 将 ` [!UICONTROL VisitorAPI.js]` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
 
@@ -174,7 +174,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 在实施可捕获 MID 而不是读取 s_vi Cookie 后，就可以中止宽限期。
 
-另请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
+另请参阅 [Cookie 和 Experience Cloud 身份服务](../introduction/cookies.md)。
 
 **点击流数据集成**
 
@@ -194,7 +194,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 * 在托管页面的域中检查 [AMCV Cookie](../introduction/cookies.md)。
 * 使用 [Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hans)在 Analytics 图像请求中检查 MID 值。
-* 另请参阅[测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)。
+* 另请参阅[测试和验证 Experience Cloud 身份服务](../implementation-guides/test-verify.md)。
 
 要验证服务器端转发，请参阅[如何验证服务器端转发实施](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=zh-Hans)。
 
