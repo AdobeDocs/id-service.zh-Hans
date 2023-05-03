@@ -1,31 +1,32 @@
 ---
-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
+description: 关于 Experience Cloud 身份服务的功能发布、更新或更改。
 keywords: ID 服务
-title: 2021版发行说明
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+title: 2021 版发行说明
+exl-id: f0bbb100-49a9-4bba-8cee-5f40bec87984
+source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
-# Experience CloudIdentity Service发行说明 — 2021版
+# Experience Cloud 身份服务发行说明 - 2021
 
-关于 Experience Cloud Identity 服务的功能发布、更新或更改。
+关于 Experience Cloud 身份服务的功能发布、更新或更改。
 
-## 访客5.3.0
+## Visitor 5.3.0
 
-访客5.3.0版本中包含以下更新：
+Visitor 5.3.0 版本中包含以下更新：
 
-* 更新了生成本地ECID的算法。
-* 最新选择加入功能 `Secure` 和 `SameSite` 隐私Cookie的标记。
-* 修复了在子iFrame中加载页面时Firefox浏览器问题的修补程序。
+* 更新了算法以生成本地 ECID。
+* 最新的选择加入中具有隐私 Cookie 的 `Secure` 和 `SameSite` 标志。
+* 为 Firefox 浏览器在子 iFrame 中加载页面发生的问题提供了修补程序。
 
-## 访客5.2.0
+## Visitor 5.2.0
 
-访客5.2.0版本中包含以下更新：
+Visitor 5.2.0 版本中包含以下更新：
 
-* 此版本引入了事件 `onRecieveEcid`，在从Identity服务接收ECID时调用。 例如：
+* 此版本引入 `onRecieveEcid` 事件，当从身份服务收到 ECID 时调用该事件。例如：
 
 ```js
 visitorInstance.onRecieveEcid(callback(ecid){
