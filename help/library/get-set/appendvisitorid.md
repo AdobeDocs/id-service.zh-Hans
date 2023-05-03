@@ -4,9 +4,9 @@ keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud Identity 服务](../../introduction/cookies.md)）。第一方 Cookie 包含 MID，它是该访客的唯一 ID。第三方 Cookie 包含 ID 服务用于生成 MID 的其他 ID。如果浏览器阻止此第三方 Cookie，则 ID 服务无法执行以下操作：
+当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud 身份服务](../../introduction/cookies.md)）。第一方 Cookie 包含 MID，它是该访客的唯一 ID。第三方 Cookie 包含 ID 服务用于生成 MID 的其他 ID。如果浏览器阻止此第三方 Cookie，则 ID 服务无法执行以下操作：
 
 * 当网站访客导航到其他域时，重新生成该网站访客的唯一 ID。
 * 跨组织拥有的不同域跟踪访客。
@@ -45,7 +45,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->此代码可放置在作为Adobe Analytics扩展一部分的自定义代码编辑器中，或放置在 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans).
+>可将此代码放入作为 Adobe Analytics 扩展一部分的自定义代码编辑器或放在 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 的顶部。
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
