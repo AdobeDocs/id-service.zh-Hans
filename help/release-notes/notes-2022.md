@@ -1,28 +1,29 @@
 ---
-description: 关于 Experience Cloud Identity 服务的功能发布、更新或更改。
+description: 关于 Experience Cloud 身份服务的功能发布、更新或更改。
 keywords: ID 服务
-title: 2022版发行说明
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+title: 2022 版发行说明
+exl-id: 1550f43f-81be-447e-904c-b408785965fe
+source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# Experience CloudIdentity Service发行说明 — 2022版
+# Experience Cloud 身份服务发行说明 - 2022
 
-关于 Experience Cloud Identity 服务的功能发布、更新或更改。
+关于 Experience Cloud 身份服务的功能发布、更新或更改。
 
-## 访客5.5.0
+## Visitor 5.5.0
 
-访客5.5.0版本中包含以下更新：
+Visitor 5.5.0 版本中包含以下更新：
 
-* 修补程序修复以获取 `sameSite` 和 `secure` 隐私Cookie的属性。
-* 修补程序修复，以在加载与父域具有相同域的iFrame时获取ECID。
+* 提供修补程序以获取隐私 Cookie 的 `sameSite` 和 `secure` 属性。
+* 提供修补程序以在加载其域与父域相同的 iFrame 时获取 ECID。
 
-## 访客5.4.0
+## Visitor 5.4.0
 
-访客5.4.0版本中包含以下更新：
+Visitor 5.4.0 版本中包含以下更新：
 
-* 支持配置 `s_ecid` cookie使用 `cookieLifetime` 配置。
-* 修复了在子iFrame中加载页面时Firefox浏览器问题的修补程序。
+* 支持使用 `cookieLifetime` 配置配置 `s_ecid` Cookie 的存留期。
+* 为 Firefox 浏览器在子 iFrame 中加载页面发生的问题提供了修补程序。
