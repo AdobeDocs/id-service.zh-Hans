@@ -3,15 +3,15 @@ description: 将选择加入服务作为 Experience Cloud 解决方案（在选�
 title: 设置选择加入服务
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 设置选择加入服务{#setting-up-opt-in-service}
 
-将选择加入服务作为 Experience Cloud 解决方案（在选择加入中称为类别）使用单个引用点实施，以确定是否在访客的设备上创建 Cookie。
+作为 Experience Cloud 解决方案使用的单个引用点（在选择加入中称为类别）实施选择加入服务以确定是否要在访客的设备上创建 Cookie。
 
 选择加入服务是一个与 Experience Cloud ID (ECID) 捆绑在一起的 JavaScript 库，并且在全局 `adobe` 对象的访客 JS 中作为 `adobe.optIn` 对象存在。您可以通过已安装的选择加入服务，指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客逐个授予权限。借助选择加入服务同意管理功能，您可以根据特定的隐私要求使用各种配置来进行实施。
 
@@ -41,7 +41,7 @@ ht-degree: 98%
 
 1. 贵公司的隐私权要求将特定于您以何种方式选择符合 GDPR 规定。知道您的公司隐私团队可以在同意前使用哪些库。
 
-如果使用 [Adobe Experience Platform中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，利用 [选择加入扩展](../../implementation-guides/opt-in-service/launch.md) 来配置选择加入服务。
+如果使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
