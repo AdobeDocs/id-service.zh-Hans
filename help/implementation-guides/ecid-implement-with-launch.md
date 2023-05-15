@@ -1,8 +1,10 @@
 ---
 description: Adobe Experience Platform Launch 是用于设置、部署 Experience Cloud 身份服务，并将其与其他 Experience Cloud 解决方案集成的主要工具。
 title: 使用 Launch 实施
+feature-set: Experience Cloud Services
+feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
