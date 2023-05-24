@@ -4,7 +4,7 @@ keywords: ID 服务
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
  <li> <a href="../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5" format="dita" scope="local"> 定义的响应参数 </a> </li> 
 </ul>
 
-## 语法{#section-5aebe3907b2b46e997f45a1d1ed35c09}
+## 语法 {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
 此函数使用以下语法（斜体表示变量的占位符）：` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 

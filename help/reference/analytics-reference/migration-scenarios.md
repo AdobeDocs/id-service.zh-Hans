@@ -4,13 +4,13 @@ keywords: ID 服务
 title: Experience Cloud Identity 服务迁移方案
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity 服务迁移方案{#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identity 服务迁移方案 {#experience-cloud-id-service-migration-scenarios}
 
 包含服务器示例配置和必需的迁移步骤。
 

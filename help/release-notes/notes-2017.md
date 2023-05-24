@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 2017 版发行说明
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 100%
 

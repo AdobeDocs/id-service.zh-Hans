@@ -4,7 +4,7 @@ keywords: Experience Cloud Identity 服务
 title: Analytics 和 Identity 服务常见问题解答
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 RDC 可提升全局性能，如果要确保您的实施已准备好接受即将推出的利用 Adobe 全球 Edge 备注网络的功能，则需要使用 RDC。请参阅 [Analytics 要求：区域数据收集 (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)
 
-## 报表 {#section-123cd55a32e54a45a23beb140becfa8f}
+## 报告 {#section-123cd55a32e54a45a23beb140becfa8f}
 
 **在将 Analytics 和 Identity 服务结合使用时，导致出现差异的原因可能有哪些？**
 

@@ -4,13 +4,13 @@ keywords: ID 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# 实施适用于 Analytics 的 Experience Cloud Identity 服务{#implement-the-experience-cloud-id-service-for-analytics}
+# 实施适用于 Analytics 的 Experience Cloud Identity 服务 {#implement-the-experience-cloud-id-service-for-analytics}
 
 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 1. 解压缩代码文件，并打开 `VisitorAPI.js` 文件。
 
-## 步骤 2. 将 Visitor.getInstance 函数添加到 ID 服务代码中 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步骤2.将Visitor.getInstance函数添加到ID服务代码中 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -147,7 +147,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## 步骤 6：将访客 API 代码添加到页面中 {#section-d46d6aa324c842f2931d901e38d6db1d}
+## 步骤 6：将访客 API 代码添加到页面 {#section-d46d6aa324c842f2931d901e38d6db1d}
 
 将 `VisitorAPI.js` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
 

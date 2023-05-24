@@ -1,6 +1,6 @@
 ---
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 ## 有疑问吗？
 
-首先，提交问题。该项目的现有提交者致力于围绕项目方向达成共识，并在问题线程中发布解决方案（如果适用）。
+首先，提交问题。该项目的现有提交者致力于围绕项目方向达成共识，并在问题讨论线索中发布解决方案（如果适用）。
 
 ## 参与者许可协议
 
-所有参与到该项目的第三方稿件都必须附有签署的参与者许可协议。这将允许 Adobe 重新分配您在项目中的稿件。[签署我们的 CLA](http://opensource.adobe.com/cla.html)。您只需提交一次 Adobe CLA 即可，因此如果您之前已提交了一次，那么无需重新提交！
+所有对本项目的第三方贡献都必须附有签署的参与者许可协议。这将允许 Adobe 重新分配您在项目中的稿件。[签署我们的 CLA](http://opensource.adobe.com/cla.html)。您只需提交一次 Adobe CLA 即可，因此如果您之前已提交了一次，那么无需重新提交！
 
 ## 代码审阅
 
@@ -43,4 +43,4 @@ submitting a pull request!
 
 ## 安全问题
 
-不应在此问题跟踪器上报告安全问题。而是[应该将安全问题提交给我们的安全专家](https://helpx.adobe.com/cn/security/alertus.html)
+不应在此问题跟踪器上报告安全问题，而是[应该将安全问题提交给我们的安全专家。](https://helpx.adobe.com/cn/security/alertus.html)

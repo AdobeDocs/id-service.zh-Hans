@@ -3,8 +3,8 @@ title: 识别独特访客
 description: 适用于 Adobe ECID（ID 服务）的文档
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ ht-degree: 100%
 |  5  |  [HTTP 移动订阅者标头](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)  |  2  |  设备被识别为移动设备。  |
 |  6  |  [IP 地址、用户代理、网关 IP 地址](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hans) |  1  | 访客的浏览器不接受 Cookie。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 有关如何报告独特访客的信息，请参阅 [Analytics 中的独特访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hans)。

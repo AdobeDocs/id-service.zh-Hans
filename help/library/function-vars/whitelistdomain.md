@@ -4,7 +4,7 @@ keywords: ID 服务
 title: whitelistParentDomain 和 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> 支持的访客 API 方法 </a> </li> 
 </ul>
 
-## 语法{#section-f645198bbaba4fba8961acb6e88d1470}
+## 语法 {#section-f645198bbaba4fba8961acb6e88d1470}
 
 使用此代码时，需要两个配置元素。
 

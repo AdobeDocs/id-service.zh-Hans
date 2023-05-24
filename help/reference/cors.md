@@ -4,13 +4,13 @@ keywords: ID 服务
 title: Experience Cloud Identity 服务中的 CORS 支持
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
 
-# Experience Cloud Identity 服务中的 CORS 支持{#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud Identity 服务中的 CORS 支持 {#cors-support-in-the-experience-cloud-id-service}
 
 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud Identity 服务支持可启用这些客户端跨域资源请求的 CORS 标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 

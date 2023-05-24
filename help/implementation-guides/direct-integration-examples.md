@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 直接集成用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
@@ -19,7 +19,6 @@ ht-degree: 100%
 >* 在深入研究用例之前，请查看并了解[代码语法和变量](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
 >* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
 >
-
 
 
 ## 用例 1：我拥有 Experience Cloud ID (MID)，但是想要传递我的访客 ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}

@@ -4,7 +4,7 @@ keywords: ID 服务
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## 什么是容器？我何时会使用它？{#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## 什么是容器？我何时会使用它？ {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **容器**
 

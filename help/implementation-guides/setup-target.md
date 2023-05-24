@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 实施适用于 Target 的 Experience Cloud Identity 服务
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 [!UICONTROL ID 服务] 要求具备 `VisitorAPI.js` 代码库。请联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)，以获取此代码。
 
-## 步骤 2：将 Visitor.getInstance 函数添加到 ID 服务代码中 {#section-287ef2958e9f43858fe9d630ae519e22}
+## 步骤 2：将 Visitor.getInstance 函数添加到 ID 服务代码 {#section-287ef2958e9f43858fe9d630ae519e22}
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
 
@@ -59,7 +59,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 >
 >*请不要*&#x200B;更改组织 ID 中字符的大小写。这个 ID 是区分大小写的，因此必须严格按照所提供的形式使用。
 
-## 步骤 4：将访客 API 代码添加到页面中 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## 步骤 4：将访客 API 代码添加到页面 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
 先将 `VisitorAPI.js` 文件部署到网站上的 `<head>` 标签中，然后再引用 `mbox.js` 文件。[!DNL Experience Cloud] ID 服务必须在生成首个 [!DNL Target] 网络调用之前执行。在测试和验证后将此代码移入生产环境中。
 

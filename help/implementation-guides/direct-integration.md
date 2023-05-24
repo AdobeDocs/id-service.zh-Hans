@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 与 Experience Cloud Identity 服务的直接集成
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。具体包括游戏机、智能电视或其他联网设备。有关语法、代码示例和定义，请参阅此部分。
 
-## 语法{#section-a4754afec5ad40b6be00d6f1011d68bb}
+## 语法 {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
 无法使用 VisitorAPI.js 或 SDK 代码库的设备可以直接调用 ID 服务所使用的数据收集服务器 (DCS)。为此，您需要调用 `dpm.demdex.net`，并将请求设置为如下所示的格式。*斜体*&#x200B;表示变量占位符。
 

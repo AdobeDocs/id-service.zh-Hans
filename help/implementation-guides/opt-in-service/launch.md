@@ -3,7 +3,7 @@ description: 使用 Adobe Experience Platform Launch 简化为选择加入启用
 title: 使用 Launch 配置选择加入
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 

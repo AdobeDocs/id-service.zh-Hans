@@ -3,13 +3,13 @@ title: Google Chrome SameSite 标签更改
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 100%
 
 ---
 
-# Google Chrome SameSite 标签更改{#google-chrome-samesite-labelling-changes}
+# Google Chrome SameSite 标签更改 {#google-chrome-samesite-labelling-changes}
 
 SameSite 属性可告知浏览器何时以及如何在第一方和第三方环境中触发 Cookie。SameSite 属性可具有以下三个值之一：`strict`、`lax` 或 `none`。自 2017 年 11 月以来，Chrome、Firefox、Edge、Safari 和 Opera 均已支持 `strict` 和 `lax`；2018 年，又引入了 `none`。然而，某些旧版浏览器并不支持这种设置。
 

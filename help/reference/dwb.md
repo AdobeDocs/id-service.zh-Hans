@@ -4,13 +4,13 @@ keywords: ID 服务
 title: Data Workbench 和 Experience Cloud Identity 服务
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 100%
 
 ---
 
-# Data Workbench 和 Experience Cloud Identity 服务{#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench 和 Experience Cloud Identity 服务 {#data-workbench-and-the-experience-cloud-id-service}
 
 请按照以下说明将 Experience Cloud ID 字段集成到 Data Workbench 中。通过此流程，您可以在数据馈送中使用永久性 Experience Cloud ID，该 ID 支持与 Adobe Experience Cloud 中的其他产品形成更强大的集成，并增强访客跟踪。
 

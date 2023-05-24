@@ -3,7 +3,7 @@ description: 使用 Dynamic Tag Management (DTM) 启用选择加入服务。
 title: 使用 DTM 配置选择加入
 exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 100%
 

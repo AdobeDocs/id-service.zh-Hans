@@ -4,7 +4,7 @@ keywords: ID 服务
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 请参阅下面的代码示例。
 
-## 语法{#section-9e63503e178f4be28ac850abf44d6d91}
+## 语法 {#section-9e63503e178f4be28ac850abf44d6d91}
 
 **语法：**` visitor.resetState( *`状态`*);`
 
