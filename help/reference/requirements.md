@@ -4,9 +4,9 @@ keywords: ID 服务
 title: Experience Cloud 身份服务的要求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '653'
+ht-degree: 100%
 
 ---
 
