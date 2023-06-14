@@ -3,9 +3,9 @@ title: Google Chrome SameSite 标签更改
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ SameSite 属性可告知浏览器何时以及如何在第一方和第三方环�
 | ------ | ------------ |
 | `strict` | 仅当引用页面和登陆页面都与 Cookie 处于相同的域时，才发送具有此设置的 Cookie。 |
 | `lax` | 仅当浏览器的 URL 中显示的域与 Cookie 的域匹配时，才发送具有此设置的 Cookie。这是 Chrome 中新增的 Cookie 默认设置。 |
-| `none` | 具有此设置的Cookie可用于外部或第三方访问，例如“跨站点”。 在进行此项更改之前，`none` 是 Cookie 的默认 SameSite 设置，因此使用该设置可以让 Cookie 的行为最接近其传统的工作方式。但是，Google 现在要求任何具有此设置的 Cookie 都应指定安全标志，这意味着此类 Cookie 将只能通过 HTTPS 创建和发送请求。Google 将会拒绝所有没有安全标志的跨站点 Cookie。 |
+| `none` | 具有此设置的 Cookie 可用于外部或第三方访问，如“跨站点”访问。在进行此项更改之前，`none` 是 Cookie 的默认 SameSite 设置，因此使用该设置可以让 Cookie 的行为最接近其传统的工作方式。但是，Google 现在要求任何具有此设置的 Cookie 都应指定安全标志，这意味着此类 Cookie 将只能通过 HTTPS 创建和发送请求。Google 将会拒绝所有没有安全标志的跨站点 Cookie。 |
 
 ## Adobe Experience Cloud 客户须知
 
@@ -51,7 +51,7 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 
 **目标合作伙伴和市场合作伙伴可能会导致匹配 Cookie 的数量有所减少（仅限 Audience Manager）**
 
-虽然Adobe可以控制其Cookie的更新，但Adobe无法强制合作伙伴进行必要的更改。 对于使用未执行这些更新的目标合作伙伴或市场合作伙伴的 Audience Manager 客户而言，匹配的 Cookie 数量可能会有所减少。
+尽管 Adobe 可以控制其 Cookie 的更新，但是 Adobe 不能强制要求合作伙伴执行必要的更改。对于使用未执行这些更新的目标合作伙伴或市场合作伙伴的 Audience Manager 客户而言，匹配的 Cookie 数量可能会有所减少。
 
 **Analytics 的第三方友好 Cookie（仅限 Analytics `s_vi` Cookie）**
 
