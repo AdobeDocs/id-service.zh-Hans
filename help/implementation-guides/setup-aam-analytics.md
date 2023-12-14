@@ -1,25 +1,24 @@
 ---
-description: 这些说明适用于那些想要使用 Experience Cloud 身份服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于那些想要使用Experience CloudIdentity服务而不使用Data Collection标记的Analytics和Audience Manager客户。 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 91%
 
 ---
 
 # 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-这些说明适用于那些想要使用 Experience Cloud 身份服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于那些想要使用Experience CloudIdentity服务而不使用的Analytics和Audience Manager客户 [数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
 >* 请在开始之前[阅读相关要求](../reference/requirements.md)。
 >* 此过程需要使用 AppMeasurement。使用 s_code 的客户无法完成此过程。
 >* 请在生产环境中实施此代码之前，首先在开发环境中对它进行配置和测试。
-
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请�
 >
 >* 早期版本的 ID 服务 API 将此函数放置在不同的位置，并且需要使用不同的语法。如果您是从[版本 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) 之前的版本迁移，请注意此处介绍的函数新位置和语法。
 >* ALL CAPS 中的代码是实际值的占位符。请将此文本替换为您的组织 ID、跟踪服务器 URL 或其他命名值。
-
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
 
