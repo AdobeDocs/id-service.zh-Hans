@@ -1,24 +1,23 @@
 ---
-description: 这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于那些想要使用Experience CloudIdentity服务而不使用Data Collection标记的Analytics客户。 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 99%
+source-wordcount: '1007'
+ht-degree: 88%
 
 ---
 
 # 实施适用于 Analytics 的 Experience Cloud Identity 服务 {#implement-the-experience-cloud-id-service-for-analytics}
 
-这些说明适用于那些想要使用 Experience Cloud Identity 服务而不使用 Dynamic Tag Management (DTM) 的 Analytics 客户。但是，我们强烈建议您使用 DTM 来实施 ID 服务。DTM 可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于那些想要使用Experience CloudIdentity服务而不使用的Analytics客户 [数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
 >* 请在开始之前[阅读相关要求](../reference/requirements.md)。
 >* 请在生产环境中实施此代码之前，首先在开发环境中对它进行配置和测试。
-
 
 请按照以下步骤为 Adobe Analytics 实施 ID 服务：
 
@@ -42,13 +41,12 @@ ht-degree: 99%
 
 1. 解压缩代码文件，并打开 `VisitorAPI.js` 文件。
 
-## 步骤2.将Visitor.getInstance函数添加到ID服务代码中 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步骤 2. 将Visitor.getInstance函数添加到ID服务代码中 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
 >* 早期版本的 ID 服务 API 将此函数放置在不同的位置，并且需要使用不同的语法。如果您是从[版本 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) 之前的版本迁移，请注意此处介绍的函数新位置和语法。
 >* ALL CAPS 中的代码是实际值的占位符。请将此文本替换为您的组织 ID、跟踪服务器 URL 或其他命名值。
-
 
 **第 1 部分：复制下面的 Visitor.getInstance 函数**
 
@@ -127,10 +125,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 >* [!DNL Experience Cloud] 服务器 URL = 跟踪服务器 URL
 >* [!DNL Experience Cloud] 服务器安全 URL = 跟踪服务器安全 URL
 
-
 如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
 
-## 步骤 5：更新您的 AppMeasurement.js 或 s_code.js 文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## 步骤5：更新您的AppMeasurement.js或s_code.js文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 将这个函数添加到您的 `AppMeasurement.js` 或 `s_code.js` 文件：
 
