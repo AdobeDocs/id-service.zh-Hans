@@ -1,18 +1,18 @@
 ---
-description: 这些说明适用于那些想要使用Experience CloudIdentity服务而不使用Data Collection标记的Analytics和Audience Manager客户。 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于要使用 Experience Cloud 身份服务但不使用数据收集标记的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-这些说明适用于那些想要使用Experience CloudIdentity服务而不使用的Analytics和Audience Manager客户 [数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于要使用 Experience Cloud 身份服务但不使用[数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)的 Analytics 和 Audience Manager 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
