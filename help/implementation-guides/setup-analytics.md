@@ -1,18 +1,18 @@
 ---
-description: 这些说明适用于那些想要使用Experience CloudIdentity服务而不使用Data Collection标记的Analytics客户。 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于要使用 Experience Cloud 身份服务但不使用数据收集标记的 Analytics 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
 title: 实施适用于 Analytics 的 Experience Cloud Identity 服务
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 实施适用于 Analytics 的 Experience Cloud Identity 服务 {#implement-the-experience-cloud-id-service-for-analytics}
 
-这些说明适用于那些想要使用Experience CloudIdentity服务而不使用的Analytics客户 [数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于要使用 Experience Cloud 身份服务但不使用[数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)的 Analytics 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ ht-degree: 88%
 请按照以下步骤为 Adobe Analytics 实施 ID 服务：
 
 1. [下载 ID 服务代码](../implementation-guides/setup-analytics.md#section-ead9403a6b7e45b887f9ac959ef89f7f)
-1. [将 Visitor.getInstance 函数添加到 ID 服务代码中](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
+1. [将 Visitor.getInstance 函数添加到 ID 服务代码](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
 1. [将您的 Experience Cloud 组织 ID 添加到 Visitor.getInstance](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
 1. [将您的跟踪服务器添加到 Visitor.getInstance](../implementation-guides/setup-analytics.md#section-70ec9ebff47940d8ab520be5ec4728c5)
 1. [更新您的 AppMeasurement.js 或 s_code.js 文件](../implementation-guides/setup-analytics.md#section-b53113aea1bd4de896e0e4e9a7edee19)
@@ -32,7 +32,7 @@ ht-degree: 88%
 
 ## 步骤 1：下载 ID 服务代码 {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-[!UICONTROL ID 服务] 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
+[!UICONTROL ID 服务]需要 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 代码管理器]**。
 1. 在[!UICONTROL 代码管理器]中，单击 **[!UICONTROL JavaScript（新版）]**&#x200B;或 **[!UICONTROL JavaScript（旧版）]**。
@@ -41,7 +41,7 @@ ht-degree: 88%
 
 1. 解压缩代码文件，并打开 `VisitorAPI.js` 文件。
 
-## 步骤 2. 将Visitor.getInstance函数添加到ID服务代码中 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步骤 2. 将 Visitor.getInstance 函数添加到 ID 服务代码 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -127,7 +127,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 如果您不确定如何找到跟踪服务器，请参阅[常见问题解答](../faq-intro/faq.md)以及[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html#)。
 
-## 步骤5：更新您的AppMeasurement.js或s_code.js文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## 步骤 5：更新您的 AppMeasurement.js 或 s_code.js 文件 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 将这个函数添加到您的 `AppMeasurement.js` 或 `s_code.js` 文件：
 
@@ -177,7 +177,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 请参阅[点击流数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=zh-Hans)。
 
-**点击流数据获取**
+**点击流数据摄取**
 
 ## 步骤 8：测试和部署 ID 服务代码 {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
