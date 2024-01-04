@@ -1,18 +1,18 @@
 ---
-description: 这些说明适用于那些想要使用Experience Cloud身份服务而不使用Data Collection标记的Analytics、Audience Manager和Target客户。 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于要使用 Experience Cloud 身份服务但不使用数据收集标记的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
 title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份服务
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1450'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份服务 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-这些说明适用于那些想要使用Experience Cloud标识服务而不使用的Analytics、Audience Manager和Target客户 [数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). 但是，我们强烈建议您使用标记来实施ID服务。 标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于要使用 Experience Cloud 身份服务但不使用[数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ ht-degree: 92%
 
 ## 步骤 2：下载 ID 服务代码 {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
 
-ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
+ID 服务需要 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 管理员 > 代码管理器]**。
 1. 在“代码管理器”中，单击 **[!UICONTROL JavaScript（新版）]**&#x200B;或 **[!UICONTROL JavaScript（旧版）]**。此下载文件对代码库进行了压缩。
