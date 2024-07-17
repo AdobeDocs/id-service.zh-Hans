@@ -5,7 +5,7 @@ title: 客户 ID 和身份验证状态
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,6 @@ ht-degree: 100%
 >* 仅将未编码的值应用于您的 ID。
 >* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。必须为每个页面或应用程序上下文设置这些值。
 >* 您不应在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID 库支持对用户标识符进行哈希处理。请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
-
 
 ```js
 // Single ID with a single authentication state 

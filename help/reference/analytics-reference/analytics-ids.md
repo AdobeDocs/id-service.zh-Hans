@@ -5,8 +5,8 @@ title: 设置 Analytics 和 Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ Experience Cloud Identity 服务取代了旧版 Analytics 访客 ID 方法。
 
 加载 AppMeasurement 时，将从 ID 服务请求 Experience Cloud ID 和 Analytics ID 值，并在每次服务器调用中将这两个值发送到数据收集。由于 ID 服务可确定访客 ID 并轻松将该 ID 传递给 AppMeasurement，因此必须先在每个页面上包含并实施 ID 服务，然后再实施 AppMeasurement JavaScript 文件。
 
-## 对 Analytics ID 进程所做的更改 {#section-79bb86ae63f546419bb1a7ef5e710462}
+## 对Analytics ID流程所做的更改 {#section-79bb86ae63f546419bb1a7ef5e710462}
 
 迁移到 [!DNL Experience Cloud] ID 服务后，主要的变化是：ID Cookie 会使用 JavaScript 进行设置，而不是在由数据收集 Web 服务器返回的 HTTP 标头中进行设置。为了解此更改，以下各部分将介绍如何使用这两种方法设置 Cookie。
 
@@ -38,13 +38,13 @@ JavaScript 可以读写在第一方域（当前网站的域）中设置的 Cooki
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
-## 自定义 Analytics ID {#section-b6a7bd19e9ff432390010062450808f6}
+## 自定义Analytics ID {#section-b6a7bd19e9ff432390010062450808f6}
 
 使用 `s.visitorID` 设置客户 ID 是在 Analytics 中标识用户的一种方法。但是，如果在集成中使用 ID 服务导出或导入 Analytics 数据，则当访客使用 `s.visitorID`。
 
 这包括但不限于，共享的受众、Analytics for Target (A4T) 和客户属性。对于这些集成，不支持设置自定义 Analytics ID。
 
-## Analytics 访客 ID 订购 {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
+## Analytics访客ID顺序 {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
 
 部署访客 ID 服务后，可采用五种方式在 Analytics 中标识访客（这五种方式按优先顺序列在下表中）：
 
@@ -90,4 +90,3 @@ JavaScript 可以读写在第一方域（当前网站的域）中设置的 Cooki
 >[!MORELIKETHIS]
 >
 >* [Analytics ID 操作顺序](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
-

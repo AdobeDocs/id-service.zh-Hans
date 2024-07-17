@@ -5,8 +5,8 @@ title: 2017 版发行说明
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '714'
+ht-degree: 99%
 
 ---
 
@@ -175,7 +175,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID 服务 API 属性，<span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> ID服务API属性，<span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>此属性可设置由 <span class="keyword">Audience Manager</span> 用来进行 ID 同步的容器 ID。请参阅 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
   </tr> 
   <tr> 

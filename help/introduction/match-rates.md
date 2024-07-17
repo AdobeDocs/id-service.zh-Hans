@@ -5,7 +5,7 @@ title: 了解 ID 同步和匹配率
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '756'
 ht-degree: 100%
 
 ---
@@ -74,4 +74,3 @@ ID 同步过程是在 Destination Publishing iFrame 中触发 URL 的过程。�
 >[!MORELIKETHIS]
 >
 >* [了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)
-

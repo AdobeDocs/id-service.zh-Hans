@@ -5,7 +5,7 @@ title: 2015 版发行说明
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
 * 修复了一个错误，该错误会导致 ID 服务在没有可同步或可激发的数据时无法请求 iframe。(AAM-20164)
 * 修复了一个错误，该错误会导致 ID 服务无法正确设置多部分顶级域名 Cookie。例如，如果您拥有类似于 `my_company.co.uk` 的域名，那么在某些情况下，ID 服务将只在 `co.uk` 中设置 Cookie。(AN-104683)
 
-   这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
+  这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
 
    * 正在使用 ID 服务。
    * 启用了[宽限期&#x200B;](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。

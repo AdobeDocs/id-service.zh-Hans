@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 实施适用于 Target 的 Experience Cloud Identity 服务
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 

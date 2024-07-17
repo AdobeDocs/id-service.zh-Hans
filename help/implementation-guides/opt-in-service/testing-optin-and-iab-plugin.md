@@ -4,8 +4,8 @@ title: 验证选择加入服务
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 94%
+source-wordcount: '441'
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
 
-## 用例 1：启用选择加入 {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## 用例1：启用选择加入 {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -43,13 +43,13 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 >
 >您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。此端点不会导致创建任何第三方 Cookie，且不会从页面中收集任何信息。
 
-您应该不会看到Adobe标记创建的任何Cookie： (AMCV_{{YOUR_ORG_ID}}， mbox， demdex， s_cc， s_sq， everest_g_v2， everest_session_v2)
+您应该不会看到Adobe标签创建的任何Cookie：(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
 在 Chrome 中，转到&#x200B;*应用程序*&#x200B;标签页，展开在&#x200B;*存储*&#x200B;下的 *Cookie*&#x200B;部分，然后选择您网站的域名：
 
 ![](assets/use_case_1_2.png)
 
-## 用例 2：启用选择加入和存储 {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 用例2：启用选择加入和存储 {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 用例 2 的唯一区别在于，您将看到&#x200B;*一个新 Cookie*（其中包含您的访客提供的选择加入权限）：**adobeujs-optin**
 
-## 用例 3：启用选择加入和预批准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## 用例3：启用选择加入和预批准Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_3_2.png)
 
-## 用例 4：启用选择加入和 IAB {#section-64331998954d4892960dcecd744a6d88}
+## 用例4：启用选择加入和IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 

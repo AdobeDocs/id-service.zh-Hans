@@ -5,8 +5,8 @@ title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 有关更多信息，请参阅以下用例和定义。
 
-## 用例 1：请求默认数据集 {#section-36a31683558742a5915db3a391e09f7b}
+## 用例1：请求默认数据集 {#section-36a31683558742a5915db3a391e09f7b}
 
 此代码会返回标准数据集。您的请求和响应可能类似于以下示例。
 
@@ -59,7 +59,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 }
 ```
 
-## 用例 2：请求自定义数据集 {#section-467b2f4e513344c89b7332b05f6f59f3}
+## 用例2：请求自定义数据集 {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 此代码使用可选数组通过 `visitor.FIELDS` 枚举来返回一组特定的 ID。在这种情况下，我们只需要访客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的请求和响应可能类似于以下示例。
 

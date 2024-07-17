@@ -5,7 +5,7 @@ title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
@@ -157,9 +157,9 @@ Response.send("
 * **[!UICONTROL 名称：]** serverState
 * **[!UICONTROL 值：]**%serverState%
 
-   >[!IMPORTANT]
-   >
-   >值名称必须与在页面代码中为 `serverState` 设置的变量名称匹配。
+  >[!IMPORTANT]
+  >
+  >值名称必须与在页面代码中为 `serverState` 设置的变量名称匹配。
 
 您配置的设置应该如下所示：
 
@@ -197,4 +197,3 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [来自节点包管理器的服务器端 ID 服务包](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

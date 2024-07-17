@@ -4,7 +4,7 @@ keywords: ID 服务
 title: 实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份服务
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 ## 步骤 2：下载 ID 服务代码 {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
 
-ID 服务 要求具备 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
+ID 服务需要 `VisitorAPI.js` 代码库。要下载此代码库，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 代码管理器]**。
 

@@ -2,10 +2,10 @@
 description: 关于 Experience Cloud 身份服务的功能发布、更新或更改。
 keywords: ID 服务
 title: 2022 版发行说明
-exl-id: 1550f43f-81be-447e-904c-b408785965fe
-source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+exl-id: 2e2de89e-75b3-484d-ae4f-99054ef9956f
+source-git-commit: 790542037f3240cf4eb8635549e240b224070f85
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '116'
 ht-degree: 100%
 
 ---

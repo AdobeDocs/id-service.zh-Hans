@@ -5,8 +5,8 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## 事件调用 POST 参数 {#section-fcd441933506493faefaa6b51f194a17}
+## 事件调用POST参数 {#section-fcd441933506493faefaa6b51f194a17}
 
 根据您设置的标记（`true` 或 `false`），ID 服务会将 `isCoopSafe` 转换为以下 POST 参数，并在事件调用中将它们发送至 [!DNL Adobe]：
 
@@ -109,7 +109,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
  </tbody> 
 </table>
 
-## 实例化后 API {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post实例化API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 这些 API 允许您覆盖 `isCoopSafe` 状态。这些 API 是必需的，因为它们允许您在网站或页面不刷新的单页应用程序中更改访客的实例化后/登录后状态。例如，如果用户在您的网站或应用程序中进行身份验证，并且稍后接受允许设备协作使用其数据的使用条款策略，则您需要调用这些 API。
 
@@ -139,4 +139,3 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 >[!MORELIKETHIS]
 >
 >* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=zh-Hans)
-

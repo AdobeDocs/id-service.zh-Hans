@@ -5,7 +5,7 @@ title: Experience Cloud Identity 服务中的 COPPA 支持
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
@@ -46,4 +46,3 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 >
 >* [Adobe 隐私权中心](http://www.adobe.com/cn/privacy.html)
 >* [什么是 COPPA？](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
-

@@ -5,8 +5,8 @@ title: 直接集成用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 91%
 
 ---
 
@@ -20,8 +20,7 @@ ht-degree: 100%
 >* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud Identity 服务](../introduction/cookies.md)。
 >
 
-
-## 用例 1：我拥有 Experience Cloud ID (MID)，但是想要传递我的访客 ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
+## 用例1：我拥有Experience CloudID (MID)，但是想要传递我的访客ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -63,7 +62,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 用例 2：我没有 MID，需要生成一个 MID {#section-8e81291f8b684de8b88fae4002ae0029}
+## 用例2：我没有MID，需要生成一个MID {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 

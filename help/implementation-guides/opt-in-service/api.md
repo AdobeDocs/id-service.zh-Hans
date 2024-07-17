@@ -4,8 +4,8 @@ title: 选择加入参考
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '888'
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ adobe.OptInCategories = {
 
 用于覆盖默认过期时间（13 个月）的秒数
 
-## Consent 参数的更改 {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Consent参数的更改 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 在访问您网站期间的任意时刻，访客可以首次设置偏好设置，也可以使用您的 CMP 更改其偏好设置。使用初始设置初始化访客 JS 后，可以使用以下函数更改访客的权限：
 
@@ -74,7 +74,7 @@ adobe.OptInCategories = {
 
 如果您请求允许网站创建 Cookie，以便访客完全同意或拒绝授予网站创建 Cookie 的权限，则请根据访客的回答，对应使用 `approveAll()` 或 `denyAll()`。
 
-## 选择加入工作流程参数 {#section-2c5adfa5459c4e72b96d2693123a53c2}
+## 选择加入工作流参数 {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
 选择加入支持可以通过多个请求周期收集权限的工作流程，例如一次提供一个首选项。如果使用以下函数并将 *设置为* true`shouldWaitForComplete`，您的解决方案便能够收集一个解决方案或总类别子集的同意情况，然后收集下一个解决方案或类别子集的同意情况。从第一次调用开始，`adobe.optIn.status` 属性将处于 pending 状态，直到在工作流程结束时调用 `adobe.optIn.complete()` 为止。调用后，状态将设置为 *Complete*。
 

@@ -5,8 +5,8 @@ title: Experience Cloud Identity 服务中的 CORS 支持
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 99%
+source-wordcount: '609'
+ht-degree: 96%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。Experience Cloud Identity 服务支持可启用这些客户端跨域资源请求的 CORS 标准。ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
 
-## 同域策略和 ID 服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## 同域策略和ID服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 同域策略是由 Web 浏览器强制实施的安全控制或限制。在此级别强制实施这些策略后，Web 浏览器本身会确定是允许还是阻止从一个页面向另一个页面发出的资源请求。为确定某个请求是否为同域请求，该浏览器会比较：
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 如果两个页面都具有这些特征，浏览器会允许请求成功；否则会阻止资源请求。
 
-## CORS 会根据同域策略解决问题 {#section-76c87ec3295d447bab220c84f138c235}
+## CORS会根据同域策略解决问题 {#section-76c87ec3295d447bab220c84f138c235}
 
 CORS 提供一种安全高效的方法来跨不同域请求资源。CORS 规范包含一组 HTTP 标头，供浏览器用于发送、接收和评估资源请求。评估资源请求称为 *`preflight check`*。此检查可让浏览器和服务器确定允许或阻止哪些请求。预检对请求资源的应用程序、API 或脚本是透明的。在资源请求流程中很重要的两个标头包括：
 
@@ -61,7 +61,7 @@ CORS 提供一种安全高效的方法来跨不同域请求资源。CORS 规范�
 
 另请参阅 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
-## 使用 CORS 的其他好处 {#section-6f44f30694c44f95bf9854b8a2af8449}
+## 使用CORS的其他好处 {#section-6f44f30694c44f95bf9854b8a2af8449}
 
 下表介绍了 CORS 为使用 ID 服务的客户带来的一些优势。
 

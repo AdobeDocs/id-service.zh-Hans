@@ -5,8 +5,8 @@ title: 对 setCustomerIDs 支持 SHA256 哈希
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ts=1563299964843
 
 | 参数 | 描述 |
 |------------|----------|
-| `d_cid_ic` | 将集成代码、唯一用户 ID (DPUUID) 和经过身份验证的状态 ID 传递到 ID 服务。使用不可打印的控制字符 %01</code> 将集成代码与 DPUUID 分隔开：<br>示例：d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>身份验证状态</b> <br>这是 d_cid_ic 参数中的一个可选 ID。此 ID 以整数形式表示，用于根据用户的身份验证状态来标识用户，如下所示：<br> <ul><li>0（未知或从未验证）</li><li>1（当前已经针对此实例/页面/应用程序上下文进行了身份验证）</li><li>2（已注销）</li></ul> <br>示例：<br> <ul><li>未知：...d_cid=123%01456%01<b>0</b></li><li>已通过身份验证：...d_cid=123%01456%01<b>1</b></li><li>已注销：...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | 将集成代码、唯一用户 ID (DPUUID) 和经过身份验证的状态 ID 传递到 ID 服务。使用非打印控制字符<code>将集成代码与DPUUID分隔开%01</code>： <br>示例：<code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>身份验证状态</b> <br>这是 d_cid_ic 参数中的一个可选 ID。此 ID 以整数形式表示，用于根据用户的身份验证状态来标识用户，如下所示：<br> <ul><li>0（未知或从未验证）</li><li>1（当前已经针对此实例/页面/应用程序上下文进行了身份验证）</li><li>2（已注销）</li></ul> <br>示例：<br> <ul><li>未知：...d_cid=123%01456%01<b>0</b></li><li>已通过身份验证：...d_cid=123%01456%01<b>1</b></li><li>已注销：...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 

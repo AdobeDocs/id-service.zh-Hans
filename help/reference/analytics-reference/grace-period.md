@@ -5,8 +5,8 @@ title: ID 服务宽限期
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 96%
 
 ---
 
@@ -30,6 +30,6 @@ ht-degree: 100%
 
 如果有多个 JavaScript 文件要将数据发送至&#x200B;*同一报表包*，或者您目前在自己的网站上使用 Flash 视频测量等其他技术，那么我们建议配置一个宽限期。
 
-## 我该如何启用宽限期？ {#section-512d5cd8570e483cbdd8b04457a16ced}
+## 如何启用宽限期？ {#section-512d5cd8570e483cbdd8b04457a16ced}
 
 联系[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。

@@ -5,8 +5,8 @@ title: Experience Cloud Identity 服务迁移决策点
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>多个域 </p> </td> 
-   <td colname="col2"> <p>如果您跨多个域跟踪访客，并且还有一个主要的登录网站，在客户访问其他域之前可以在该网站中识别客户，则应该继续使用数据收集 CNAME。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>请注意，您需要指定两个额外的跟踪服务器参数，即 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，以便通过 ID 服务配置 CNAME。 </p> </td> 
+   <td colname="col2"> <p>如果您跨多个域跟踪访客，并且还有一个主要的登录网站，在客户访问其他域之前可以在该网站中识别客户，则您应该继续使用数据收集CNAME。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>请注意，您需要指定两个额外的跟踪服务器参数，即 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，以便通过 ID 服务配置 CNAME。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>单个域 </p> </td> 

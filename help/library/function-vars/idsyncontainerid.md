@@ -5,8 +5,8 @@ title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 100%
+source-wordcount: '320'
+ht-degree: 94%
 
 ---
 
@@ -79,7 +79,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
  </tbody> 
 </table>
 
-## 使用 DIL 和 VisitorAPI.js 时设置容器 ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## 使用DIL和VisitorAPI.js时设置容器ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 如果您在同一页面上部署了 [!UICONTROL DIL ]*和* VisitorAPI.js，则：
 

@@ -5,7 +5,7 @@ exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 用于管理选择加入服务的示例用例和解决方案。
 
-## 提示和故障诊断 {#section-5c566366410f4a8f89eca0d3f556d99f}
+## 提示和疑难解答 {#section-5c566366410f4a8f89eca0d3f556d99f}
 
 * 访客 JS 初始化是同步的，在页面加载期间执行。如果您与 CMP 或具有高延迟的许可持久性连接，使用[选择加入设置](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)中所述的异步函数会更好。
 * 选择加入是一项因域而异的实施。它不会处理跨域实施。

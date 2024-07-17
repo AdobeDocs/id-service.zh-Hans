@@ -5,8 +5,8 @@ title: ID 服务常见问题解答
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 99%
 
 ---
 
@@ -87,4 +87,3 @@ ID 服务调用是异步调用，是对 [demdex.net 域](https://experienceleagu
 >[!MORELIKETHIS]
 >
 >* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
-

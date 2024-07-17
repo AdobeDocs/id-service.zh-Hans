@@ -21,4 +21,4 @@ Adobe Analytics 独有的 ID 服务特征或功能。
 + [Analytics 和 Experience Cloud ID 请求](legacy-analytics.md)
 + [结合了 JavaScript 技术的服务器端实施](server-side.md)
 + [ID 服务宽限期](grace-period.md)
-   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+  <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
