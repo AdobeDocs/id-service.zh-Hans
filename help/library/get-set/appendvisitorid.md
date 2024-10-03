@@ -3,14 +3,18 @@ description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可�
 keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 88%
 
 ---
 
 # appendVisitorIDsTo（跨域跟踪）{#appendvisitoridsto-cross-domain-tracking}
+
+>[!TIP]
+>
+>如果ECID最初被拒绝（或以前被拒绝），则跨域跟踪将无法按预期工作。 它不会检查通过URL传递的或以前存在于Cookie中的现有ID，考虑这些ID是同意设置为“NO”时的ID
 
 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 
