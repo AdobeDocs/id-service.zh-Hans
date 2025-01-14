@@ -1,8 +1,8 @@
 ---
 audience: end-user
-user-guide-title: Experience Cloud 身份服务帮助
-breadcrumb-title: 身份服务指南
-user-guide-description: Adobe Experience Cloud 身份服务提供一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
+user-guide-title: Experience Cloud 身份标识服务帮助
+breadcrumb-title: 身份标识服务指南
+user-guide-description: Adobe Experience Cloud 身份标识服务提供一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中身份标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
 workflow-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 100%
 ---
 
 
-# Experience Cloud 身份服务帮助 {#using}
+# Experience Cloud 身份标识服务帮助 {#using}
 
-+ [身份服务帮助](home.md)
++ [身份标识服务帮助](home.md)
 + 概述 {#intro}
    + [概述](introduction/overview.md)
    + [关于 ID 服务](introduction/about-id-service.md)
@@ -88,7 +88,7 @@ ht-degree: 100%
       + [Analytics ID 操作顺序](reference/analytics-reference/analytics-order-of-operations.md)
       + [ID 服务迁移决策点](reference/analytics-reference/migration-decisions.md)
       + [ID 服务迁移方案](reference/analytics-reference/migration-scenarios.md)
-      + [Analytics 和 身份请求](reference/analytics-reference/legacy-analytics.md)
+      + [Analytics 和 身份标识请求](reference/analytics-reference/legacy-analytics.md)
       + [结合了 JavaScript 技术的服务器端实施](reference/analytics-reference/server-side.md)
       + [ID 服务宽限期](reference/analytics-reference/grace-period.md)
    + [Google Chrome SameSite 标签更改](reference/chrome-samesite-labelling.md)
