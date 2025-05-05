@@ -49,7 +49,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->可将此代码放入作为 Adobe Analytics 扩展一部分的自定义代码编辑器或放在 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 的顶部。
+>可将此代码放入作为 Adobe Analytics 扩展一部分的自定义代码编辑器或放在 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 的顶部。
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

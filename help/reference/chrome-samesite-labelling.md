@@ -119,4 +119,4 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 
 > Adobe第三方Cookie在服务器端设置。
 
-有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)。
+有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=zh-Hans)。

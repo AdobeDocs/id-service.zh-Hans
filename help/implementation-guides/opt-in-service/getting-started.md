@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 贵公司的隐私权要求将特定于您以何种方式选择符合 GDPR 规定。知道您的公司隐私团队可以在同意前使用哪些库。
 
-如果使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
+如果使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 

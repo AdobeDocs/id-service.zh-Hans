@@ -31,13 +31,13 @@ Adobe [!UICONTROL 选择加入]对象是 Adobe [!UICONTROL Experience Platform I
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-如果您未使用 Experience Platform 标记，则可以在全局访客对象的初始化中设置[!UICONTROL 选择加入]配置，如该[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lank=zh-Hans)中所述。
+如果您未使用 Experience Platform 标记，则可以在全局访客对象的初始化中设置[!UICONTROL 选择加入]配置，如该[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=zh-Hans&lank=zh-Hans)中所述。
 
 ## 在页面上实施[!UICONTROL 选择加入]
 
 所有这些设置和后端操作都只是准备工作，目的是为网站访客提供一个可以展示同意选项的界面。您可以自行构建此 UI，也可以与 CMP（同意管理平台）合作来创建此 UI。
 
-在设置 UI 以使用[!UICONTROL 选择加入]来收集同意时，应该将其配置为调用一些 API，这些 API 会挂接到[!UICONTROL 选择加入]，并通知它针对部分或所有 Adobe Experience Cloud 解决方案给出同意选项。有关这些 API 的详细信息，请参阅[选择加入参考文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lank=zh-Hans)。周围的文档页面上还提供了有关选择加入的其他信息。
+在设置 UI 以使用[!UICONTROL 选择加入]来收集同意时，应该将其配置为调用一些 API，这些 API 会挂接到[!UICONTROL 选择加入]，并通知它针对部分或所有 Adobe Experience Cloud 解决方案给出同意选项。有关这些 API 的详细信息，请参阅[选择加入参考文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=zh-Hans&lank=zh-Hans)。周围的文档页面上还提供了有关选择加入的其他信息。
 
 ## [!UICONTROL 选择加入]演示
 

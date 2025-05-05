@@ -34,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID、身份验证状态以及哈希类型 (SHA-256) 与每位访客关联。如果您不提供任何哈希类型，则将被视为不进行哈希处理。
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或定位跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
 
 客户 ID、身份验证状态以及哈希类型&#x200B;*不会*&#x200B;存储在 Cookie 中以供稍后使用，而是应存储在实例变量中，以便使用 [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) 进行检索，如下所示：
 
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 
-Experience Platform Launch 是 Adobe 推出的新一代标记管理功能。有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
+Experience Platform Launch 是 Adobe 推出的新一代标记管理功能。有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
 
-要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)并查看下面的屏幕截图：
+要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)并查看下面的屏幕截图：
 
 ![](/help/reference/assets/hashing-support.png)
 

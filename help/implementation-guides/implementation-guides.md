@@ -22,7 +22,7 @@ Experience Cloud 身份服务的标准实施和非标准实施的说明和代码
 
 ## 标准实施
 
-标准实施使用 [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
+标准实施使用 [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
 
 ## 实施资源
 
