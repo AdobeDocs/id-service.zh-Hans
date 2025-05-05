@@ -29,7 +29,7 @@ Adobe [!UICONTROL 选择加入]对象是 Adobe [!UICONTROL Experience Platform I
 
 使用 Adobe Experience Platform 标记（以前称作 Launch）配置[!UICONTROL 选择加入]最为轻松。请观看以下简短视频，了解具体配置方法。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40337/?quality=12&captions=chi_hans)
 
 如果您未使用 Experience Platform 标记，则可以在全局访客对象的初始化中设置[!UICONTROL 选择加入]配置，如该[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=zh-Hans&lank=zh-Hans)中所述。
 
@@ -43,7 +43,7 @@ Adobe [!UICONTROL 选择加入]对象是 Adobe [!UICONTROL Experience Platform I
 
 请在以下视频中，观看[!UICONTROL 选择加入]在页面上运作的快速演示，以及它对 Experience Cloud 解决方案是否可以设置 Cookie、启动信标等将会产生何种影响。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40342/?quality=12&captions=chi_hans)
 
 **注意：**&#x200B;请务必注意，在撰写本文时，尚未将[!UICONTROL 选择加入]内置到所有 Experience Cloud 应用程序的库中。当前支持[!UICONTROL 选择加入]的库包括：
 
