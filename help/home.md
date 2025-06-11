@@ -3,10 +3,10 @@ description: Experience Cloud Identity Service 允许将通用识别框架用于
 keywords: ID Service; Identity Service; Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 100%
 
 Experience Cloud Identity Service 允许将通用识别框架用于 Experience Cloud 应用程序和服务。它的工作方式是，为网站访客分配一个称为 Experience Cloud ID (ECID) 的唯一的永久 ID。
 
-## 了解身份的主要实体
+## 了解身份标识的主要实体
 
-要更好地了解 Adobe 如何帮助唯一地识别访客并解析身份信息，请阅读以下细目：
+要更好地了解Adobe如何帮助唯一地识别访客并解析身份信息，请阅读以下细目：
 
 * **Experience Cloud Identity Service**：Experience Cloud Identity Service **负责设置 Experience Cloud ID (ECID)**。有关详细信息，请参阅 [Experience Cloud Identity Service 概述](./introduction/overview.md)。
-* **Experience Cloud ID (ECID)**：ECID 是一个跨 Adobe Experience Platform 和 Adobe Experience Cloud 应用程序使用的共享身份命名空间，用于识别人员和设备。有关 ECID 的更多信息，请阅读 [ECID 概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hans)。
+* **Experience Cloud ID (ECID)**：ECID 是一个跨 Adobe Experience Platform 和 Adobe Experience Cloud 应用程序使用的共享身份标识命名空间，用于识别人员和设备。有关 ECID 的更多信息，请阅读 [ECID 概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
 * **Experience Platform Identity Service**：Experience Platform Identity Service 通过跨设备和系统桥接身份，为您提供有关客户及其行为的全面视图。有关详细信息，请参阅 [Experience Platform Identity Service 概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。
 
 <!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
