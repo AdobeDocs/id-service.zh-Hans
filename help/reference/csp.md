@@ -1,24 +1,24 @@
 ---
-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
+description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。列入允许列表如果您使用ID服务并具有严格的CSP（使用接受来自受信任域的资源），请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
 keywords: ID 服务
 title: 内容安全策略和 Experience Cloud 身份标识服务
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
+source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 79%
+ht-degree: 62%
 
 ---
 
 # 内容安全策略和 Experience Cloud 身份标识服务 {#content-security-policies-and-the-experience-cloud-id-service}
 
-内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。如果您使用 ID 服务并具有严格的 CSP（使用白名单接受来自受信任域的资源），请查看此部分内容。您需要将此处列出的 Adobe 域添加到您的 CSP 白名单中。
+内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。列入允许列表如果您使用ID服务并具有严格的CSP（使用接受来自受信任域的资源），请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
 
 ## CSP审查 {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上接受或加载的资源类型。应用 CSP 可帮助阻止以下情况：
 
-* 当源未知或未包含在白名单中时，阻止加载 JavaScript 文件。
+* 当源未知或未包含在JavaScript中时，阻止加载列入允许列表文件。
 * 跨站点脚本 (XXS) 攻击。
 * 数据注入攻击。
 * 网站篡改攻击。
@@ -26,7 +26,7 @@ CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上�
 
 CSP 得到了广泛使用和认可。本文档并非旨在详细介绍 CSP（有关更多信息，请访问下面提供的相关信息链接）。让您了解在使用严格 CSP 策略时应该将哪些 Adobe 域名添加到 CSP 白名单中才是本文档的重点。添加这些域后，访问您网站的访客浏览器便可以对您使用的 Experience Cloud 资源进行重要调用。
 
-## 要添加到白名单的Experience Cloud域 {#section-30693e9a96834edfbf04de9e698cf2aa}
+## 用于Experience Cloud的列入允许列表域 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 对于您使用的每个 Experience Cloud 解决方案或服务，将这些域名或 URL 添加到您的 CSP 白名单中。
 
@@ -87,12 +87,12 @@ CSP 得到了广泛使用和认可。本文档并非旨在详细介绍 CSP（有
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>如果限制查询字符串参数，请将以下参数列入白名单：</p>
+    <p>如果限制查询字符串参数，则允许列表以下参数：</p>
     <ul>
      <li><code>s_kwcid</code> （使用<code>!</code>）</li>
      <li><code>ef_id</code> （使用<code>:</code>）</li>
     </ul>
-    <p>如果阻止URL中的<code>!</code>字符，则也将其列入白名单。</p>
+    <p>如果阻止URL中的<code>!</code>字符，则也要列入允许列表该字符。</p>
     <p>Advertising Analytics仅使用<code>s_kwcid</code>，但Advertising Search、Social和Commerce以及Advertising DSP也使用<code>ef_id</code>。</p>
    </td>
   </tr>
