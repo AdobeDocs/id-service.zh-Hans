@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Experience Cloud 身份标识服务帮助
 breadcrumb-title: 身份标识服务指南
-user-guide-description: Adobe Experience Cloud 身份标识服务提供一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中身份标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
+user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 100%
       + [resetState](library/get-set/resetstate.md)
 + 参考 {#reference}
    + [参考概述](reference/reference.md)
-   + Analytics 参考 {#analytics-reference}
+   + Analytics 参考资料 {#analytics-reference}
       + [Analytics 参考概述](reference/analytics-reference/analytics-reference.md)
       + [CNAME 实施概述](reference/analytics-reference/cname.md)
       + [设置 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
@@ -108,7 +108,7 @@ ht-degree: 100%
    + [ID 服务常见问题解答](faq-intro/faq.md)
    + [Analytics 和 ID 服务常见问题解答](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解决方案的常见问题解答](faq-intro/other-faq.md)
-+ ID 服务的发行说明 {#release-notes}
++ ID服务的发行说明 {#release-notes}
    + [2022 版发行说明](release-notes/notes-2022.md)
    + [2021 版发行说明](release-notes/notes-2021.md)
    + [2020 版发行说明](release-notes/notes-2020.md)
