@@ -4,9 +4,9 @@ user-guide-title: Experience Cloud 身份标识服务帮助
 breadcrumb-title: 身份标识服务指南
 user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '407'
 ht-degree: 98%
 
 ---
@@ -118,3 +118,4 @@ ht-degree: 98%
    + [2016 版发行说明](release-notes/notes-2016.md)
    + [2015 版发行说明](release-notes/notes-2015.md)
 + [Analytics 测试，不会在目录中显示](analytics-test-file-hidetoc.md)
++ [隐藏测试文件](hidden-file.md)
