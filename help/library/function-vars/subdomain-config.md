@@ -1,9 +1,9 @@
 ---
-description: 通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
+description: 通过这些配置，可将 Experience Cloud 身份标识服务调用所使用的默认域名更改为您自己的子域名。
 keywords: ID 服务
 title: audienceManagerServer 和 audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 100%
@@ -12,12 +12,12 @@ ht-degree: 100%
 
 # audienceManagerServer 和 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-通过这些配置，可将 Experience Cloud Identity 服务调用所使用的默认域名更改为您自己的子域名。
+通过这些配置，可将 Experience Cloud 身份标识服务调用所使用的默认域名更改为您自己的子域名。
 
 **语法：**
 
-* ` audienceManagerServer: " *`your subdomain name`*.demdex.net"`
-* ` audienceManagerServerSecure: " *`your subdomain name`*.demdex.net"`
+* `audienceManagerServer: " *`your subdomain name`*.demdex.net"`
+* `audienceManagerServerSecure: " *`your subdomain name`*.demdex.net"`
 
 **用途**
 

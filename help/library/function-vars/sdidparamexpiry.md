@@ -3,7 +3,7 @@ description: 通过此配置，您可以在使用 appendSupplementalDataIDTo 帮
 keywords: ID 服务
 title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 如果您需要更改默认的 SDID 超时，请使用以下语法将 `sdidParamExpiry` 添加到 `Visitor.getInstance` 函数：
 
-**语法：**` sdidParamExpiry: *` 时间（以秒为单位）`*`
+**语法：**`sdidParamExpiry: *` 时间（以秒为单位）`*`
 
 **代码示例**
 

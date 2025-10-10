@@ -1,20 +1,20 @@
 ---
-description: 设置超时间隔（以毫秒为单位）。用于告知其他解决方案（例如 Analytics、Audience Manager、Target 等）要等待多长时间才能收到 ID 服务的响应。
+description: 设置超时间隔（以毫秒为单位）。用于告知其他解决方案(例如Analytics、Audience Manager、Target等)需要等待ID服务响应多长时间。
 keywords: ID 服务
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-设置超时间隔（以毫秒为单位）。用于告知其他解决方案（例如 Analytics、Audience Manager、Target 等）要等待多长时间才能收到 ID 服务的响应。
+设置超时间隔（以毫秒为单位）。用于告知其他解决方案(例如Analytics、Audience Manager、Target等)需要等待ID服务响应多长时间。
 
-**语法：**` loadTimeout: *` 时间间隔（以毫秒为单位）`*`
+**语法：**`loadTimeout: *` 时间间隔（以毫秒为单位）`*`
 
 默认值为 30,000 毫秒（30 秒）。我们强烈建议您&#x200B;*不要*&#x200B;更改默认值。
 

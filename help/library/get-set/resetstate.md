@@ -3,7 +3,7 @@ description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页�
 keywords: ID 服务
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 99%
@@ -23,9 +23,9 @@ ht-degree: 99%
 
 请参阅下面的代码示例。
 
-## 语法 {#section-9e63503e178f4be28ac850abf44d6d91}
+## 句法 {#section-9e63503e178f4be28ac850abf44d6d91}
 
-**语法：**` visitor.resetState( *`状态`*);`
+**语法：**`visitor.resetState( *`状态`*);`
 
 ## 代码示例 {#section-d75b211bb4ea473887eb284de2ad838b}
 

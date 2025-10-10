@@ -2,7 +2,7 @@
 title: Google Chrome SameSite 标签更改
 description: 适用于 Adobe ECID（ID 服务）库的文档。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
@@ -35,7 +35,7 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 
 **确保第三方端点使用 HTTPS**
 
-客户应确认其 JavaScript 配置正在使用 HTTPS 来调用 Adobe 服务。Target、Audience Manager 和 Experience Cloud Identity 服务 (ECID) 正在将第三方 HTTP 调用重定向到各自的 HTTPS 端点，该项操作可能会增加延迟。这意味着您无需更改配置。由于特定于 Analytics 的重定向可能会导致数据丢失，因此 Analytics 客户应更新其实施，以便能够专门使用 HTTPS。
+客户应确认其 JavaScript 配置正在使用 HTTPS 来调用 Adobe 服务。Target、Audience Manager 和 Experience Cloud 身份标识服务 (ECID) 正在将第三方 HTTP 调用重定向到各自的 HTTPS 端点，该项操作可能会增加延迟。这意味着您无需更改配置。由于特定于 Analytics 的重定向可能会导致数据丢失，因此 Analytics 客户应更新其实施，以便能够专门使用 HTTPS。
 
 **正确标记的 Cookies 应按照预期收集数据**
 
@@ -117,6 +117,8 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | 客户端第一方 | 无增值 *Chrome 默认设置为 `lax` | 可对外部页面进行配置 |
 
-> Adobe第三方Cookie在服务器端设置。
+>
+>
+>Adobe第三方Cookie在服务器端设置。
 
-有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=zh-Hans)。
+有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)。

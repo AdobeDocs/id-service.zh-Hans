@@ -3,7 +3,7 @@ description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SD
 keywords: ID 服务
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 语法和代码示例 {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**语法：**` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**语法：**`appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **代码示例**
 
@@ -54,7 +54,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 如果您需要更改默认的 SDID 超时，请使用以下语法将 `sdidParamExpiry` 添加到 `Visitor.getInstance` 函数：
 
-**语法：**` sdidParamExpiry: *` 时间（以秒为单位）`*`
+**语法：**`sdidParamExpiry: *` 时间（以秒为单位）`*`
 
 **代码示例**
 

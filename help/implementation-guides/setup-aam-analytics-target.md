@@ -1,18 +1,18 @@
 ---
-description: 这些说明适用于要使用 Experience Cloud 身份服务但不使用数据收集标记的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+description: 这些说明适用于要使用 Experience Cloud 身份标识服务但不使用数据收集标记的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 keywords: ID 服务
-title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份服务
+title: 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份标识服务
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
 ---
 
-# 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份服务 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# 实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份标识服务 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-这些说明适用于要使用 Experience Cloud 身份服务但不使用[数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
+这些说明适用于要使用 Experience Cloud 身份标识服务但不使用[数据收集标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)的 Analytics、Audience Manager 和 Target 客户。但是，我们强烈建议您使用标记实施 ID 服务。标记可简化实施工作流程，并自动确保代码放置和排序正确无误。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 步骤 1：规划服务器端转发 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hans)。有关更多信息，请参阅[服务器端转发文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=zh-Hans)。
+除了这里介绍的步骤以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客户还应迁移到服务器端转发。服务器端转发允许您删除 DIL（Audience Manager 的数据收集代码）并将其替换为[受众管理模块](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。有关更多信息，请参阅[服务器端转发文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 迁移到服务器端转发需要进行规划和协调。此过程涉及对您的网站代码进行外部更改以及 Adobe 配置您的帐户时必须执行的内部步骤。事实上，其中的许多迁移步骤需要并行执行并一起发布。您的实施路径应遵循以下事件顺序：
 
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步骤 7：将访客 API 代码添加到页面 {#section-c2bd096a3e484872a72967b6468d3673}
 
-将 ` [!UICONTROL VisitorAPI.js]` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
+将 `[!UICONTROL VisitorAPI.js]` 文件放置在每个页面的 `<head>` 标记之内。在将 `VisitorAPI.js` 文件放入页面之后，您可以：
 
 * 将它放在 `<head>` 部分的开头处，使其显示在其他解决方案标记之前。
 * 它必须在 AppMeasurement 以及其他 [!DNL Experience Cloud] 解决方案的代码之前执行。
@@ -172,7 +172,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 在实施可捕获 MID 而不是读取 s_vi Cookie 后，就可以中止宽限期。
 
-另请参阅 [Cookie 和 Experience Cloud 身份服务](../introduction/cookies.md)。
+另请参阅 [Cookie 和 Experience Cloud 身份标识服务](../introduction/cookies.md)。
 
 **点击流数据集成**
 
@@ -197,7 +197,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 * [托管页面的域中的 AMCV Cookie](../introduction/cookies.md)。
 * 使用 [!DNL Adobe] 调试器或首选调试工具检查 [!DNL Experience Cloud] ID (MID)。
 
-有关帮助您确定 ID 服务是否正常运行的其他检查，请参阅[测试和验证 Experience Cloud 身份服务](../implementation-guides/test-verify.md)。
+有关帮助您确定 ID 服务是否正常运行的其他检查，请参阅[测试和验证 Experience Cloud 身份标识服务](../implementation-guides/test-verify.md)。
 
 **Analytics**
 

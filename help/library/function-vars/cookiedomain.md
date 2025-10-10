@@ -3,7 +3,7 @@ description: 对于 URL 最后两个部分中任一部分多于 2 个字符的�
 keywords: ID 服务
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 对于 URL 最后两个部分中任一部分多于 2 个字符的多部分顶级域，此变量是必需的。
 
-**语法：**` cookieDomain: " *`URL`*"`（不需要 `www` 前缀。）
+**语法：**`cookieDomain: "*`URL`*"`（不需要 `www` 前缀。）
 
 **用例**
 

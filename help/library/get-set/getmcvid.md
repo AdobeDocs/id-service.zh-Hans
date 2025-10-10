@@ -3,7 +3,7 @@ description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 keywords: ID 服务
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 
-**语法：**` var *`变量名称`* = visitor.getMarketingCloudVisitorID()`
+**语法：**`var *`变量名称`* = visitor.getMarketingCloudVisitorID()`
 
 通常，此方法与需要读取访客 ID 的自定义解决方案一起使用。标准实施不使用该函数。`getMarketingCloudVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
 

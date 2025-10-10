@@ -1,9 +1,9 @@
 ---
-description: 可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
+description: 可返回 Experience Cloud 身份标识服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
 keywords: ID 服务
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 # getLocationHint{#getlocationhint}
 
-可返回 Experience Cloud Identity 服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
+可返回 Experience Cloud 身份标识服务的区域 ID。区域 ID（或位置提示）是用于标识特定 ID 服务数据中心的地理位置的数字标识符。要对 Audience Manager 进行服务器端 API 调用，您需要具有区域 ID。
 
-**语法：**` var *`变量名称`* = visitor.getLocationHint()`
+**语法：**`var *`变量名称`* = visitor.getLocationHint()`
 
 有关区域 ID 和相应位置的列表，请参阅 [DCS 区域 ID、位置和主机名](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans)。
 
