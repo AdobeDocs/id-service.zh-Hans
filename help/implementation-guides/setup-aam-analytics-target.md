@@ -140,7 +140,7 @@ Analytics 使用跟踪服务器进行数据收集。
 >
 >此时，您应当删除 [!DNL Audience Manager] DIL 代码，并将其替换为受众管理模块。有关说明，请参阅[实施服务器端转发](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans)。
 
-***（可选，但是推荐）*&#x200B;创建自定义 prop **
+***（可选，但是推荐）*&#x200B;创建自定义 prop &#x200B;**
 
 在 `AppMeasurement.js` 中设置自定义 prop 来测量范围。将此自定义 prop 添加到 `doPlugins` 文件的 `AppMeasurement.js` 函数中：
 
