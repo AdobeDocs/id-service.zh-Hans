@@ -1,20 +1,20 @@
 ---
-description: 关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
+description: 关于 2016 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 keywords: ID 服务
 title: 2016 版发行说明
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
 
 # 2016 版发行说明 {#release-notes}
 
-关于 2016 版 Experience Cloud Identity 服务的功能发布、更新或更改。
+关于 2016 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 
 [Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)中也记录了这些更改。
 
@@ -24,8 +24,8 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->* 版本 1.10 需要 [!UICONTROL AppMeasurement] 1.8.0。
->* 使用 Experience Cloud Identity 服务库 2.0.0 及更高版本时，Adobe Media Optimizer 会默认开始进行 ID 同步。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
+>* 版本 1.10 需要使用 [!UICONTROL AppMeasurement] 1.8.0。
+>* 使用 Experience Cloud 身份标识服务库 2.0.0 及更高版本时，Adobe Media Optimizer 会默认开始进行 ID 同步。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
 
 **修复和改进功能**
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 
 **新文档和修订的文档**
 
-修订的文档：[Experience Cloud Identity 服务的要求](../reference/requirements.md)
+修订的文档：[Experience Cloud 身份标识服务的要求](../reference/requirements.md)
 
 **已知问题**
 
@@ -101,9 +101,9 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>跨源资源共享 (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS 允许浏览器从当前域以外的域请求资源。Experience Cloud Identity 服务支持可启用客户端跨域资源请求的 CORS 标准。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
+   <td colname="col2"> <p>CORS 允许浏览器从当前域以外的域请求资源。Experience Cloud 身份标识服务支持可启用客户端跨域资源请求的 CORS 标准。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud Identity 服务中的 CORS 支持</a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud 身份标识服务中的 CORS 支持</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,13 +123,12 @@ ht-degree: 100%
 
 **新建**
 
-* [实施适用于 Analytics 的 Experience Cloud Identity 服务](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服务](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份标识服务](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **已修订**
 
-* [Experience Cloud Identity 服务的要求](../reference/requirements.md)
-* [测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)
+* [Experience Cloud 身份标识服务的要求](../reference/requirements.md)
+* [测试和验证 Experience Cloud 身份标识服务](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -165,8 +164,8 @@ ht-degree: 100%
 **文档更新**
 
 * [Android 和 iOS 的 SDK 要求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench 和 Experience Cloud Identity 服务](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [测试和验证 Experience Cloud Identity 服务](../implementation-guides/test-verify.md)
+* [Data Workbench 和 Experience Cloud 身份标识服务](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [测试和验证 Experience Cloud 身份标识服务](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +173,7 @@ ht-degree: 100%
 
 **文档更新**
 
-[实施适用于 Target 的 Experience Cloud Identity 服务](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[实施适用于 Target 的 Experience Cloud 身份标识服务](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -198,12 +197,6 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
-**文档更新**
-
-* [实施适用于 Analytics 的 Experience Cloud Identity 服务](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：新增了描述如何使用 [!DNL Analytics] 设置 ID 服务的操作步骤。
-
-* [Experienc Cloud Identity 服务迁移决策点](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：为清晰起见，修订了相应文本。使用单个域意味着，如果您不再希望管理数据收集 CNAME，则可以从其中迁移出来。但是，如果您的 CNAME 正在工作，则无需进行更改。
 
 ## 版本 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

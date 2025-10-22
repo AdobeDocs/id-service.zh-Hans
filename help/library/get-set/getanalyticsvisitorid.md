@@ -1,18 +1,18 @@
 ---
-description: 可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
+description: 可返回在实施 Experience Cloud 身份标识服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 keywords: ID 服务
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 99%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-可返回在实施 Experience Cloud Identity 服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
+可返回在实施 Experience Cloud 身份标识服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。如果从未为访客分配 Analytics ID，则返回空符串。
 
 **语法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -47,7 +47,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **用例 2**
 
-当您的组织在完全实施 ID 服务之前使用[宽限期](../../reference/analytics-reference/grace-period.md)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
+当您的组织在完全实施 ID 服务之前使用[宽限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
 
 >[!MORELIKETHIS]
 >

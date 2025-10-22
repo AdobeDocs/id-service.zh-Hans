@@ -4,9 +4,9 @@ user-guide-title: Experience Cloud 身份标识服务帮助
 breadcrumb-title: 身份标识服务指南
 user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '360'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 98%
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
    + [用 Experience Platform 标记进行实施](implementation-guides/ecid-implement-with-launch.md)
-   + [为 Analytics 实施](implementation-guides/setup-analytics.md)
+   + [适用于 Analytics 的实施](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview)
    + [为 Target 实施](implementation-guides/setup-target.md)
    + [为 Analytics 和 Audience Manager 实施](implementation-guides/setup-aam-analytics.md)
    + [为 Analytics、Audience Manager 和 Target 实施](implementation-guides/setup-aam-analytics-target.md)
@@ -81,16 +81,6 @@ ht-degree: 98%
       + [resetState](library/get-set/resetstate.md)
 + 参考 {#reference}
    + [参考概述](reference/reference.md)
-   + Analytics 参考资料 {#analytics-reference}
-      + [Analytics 参考概述](reference/analytics-reference/analytics-reference.md)
-      + [CNAME 实施概述](reference/analytics-reference/cname.md)
-      + [设置 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
-      + [Analytics ID 操作顺序](reference/analytics-reference/analytics-order-of-operations.md)
-      + [ID 服务迁移决策点](reference/analytics-reference/migration-decisions.md)
-      + [ID 服务迁移方案](reference/analytics-reference/migration-scenarios.md)
-      + [Analytics 和 身份标识请求](reference/analytics-reference/legacy-analytics.md)
-      + [结合了 JavaScript 技术的服务器端实施](reference/analytics-reference/server-side.md)
-      + [ID 服务宽限期](reference/analytics-reference/grace-period.md)
    + [Google Chrome SameSite 标签更改](reference/chrome-samesite-labelling.md)
    + [内容安全策略和 ID 服务](reference/csp.md)
    + [ID 服务中的 COPPA 支持](reference/coppa.md)
@@ -106,7 +96,6 @@ ht-degree: 98%
 + 常见问题解答 {#faqs}
    + [常见问题解答概述](faq-intro/faq-intro.md)
    + [ID 服务常见问题解答](faq-intro/faq.md)
-   + [Analytics 和 ID 服务常见问题解答](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解决方案的常见问题解答](faq-intro/other-faq.md)
 + ID服务的发行说明 {#release-notes}
    + [2022 版发行说明](release-notes/notes-2022.md)

@@ -3,10 +3,10 @@ description: 2015 版发行说明和更新。
 keywords: ID 服务
 title: 2015 版发行说明
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 2015 年 11 月
 
-儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。请参阅 [Experience Cloud Identity 服务中的 COPPA 支持](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。适用于版本 1.5.3 或更高版本。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。关注 COPPA 的客户可以在其 [!DNL Experience Cloud] ID 服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置 Cookie。请参阅 [Experience Cloud 身份标识服务中的 COPPA 支持](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。适用于版本 1.5.3 或更高版本。
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -37,14 +37,13 @@ ht-degree: 100%
   这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
 
    * 正在使用 ID 服务。
-   * 启用了[宽限期&#x200B;](../reference/analytics-reference/grace-period.md)*或者*&#x200B;正在使用第一方 Cookie 且用户阻止使用第三方 Cookie。
-
+   * 已启用[宽限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且用户阻止第三方Cookie。
    * 拥有使用多部分顶级域名的页面。
 
 此版本中的文档修订包括：
 
 * [API 方法和代码库](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：重新组织了内容和文本。在大部分情况下，每个方法都具有它自己的页面。
-* [Experience Cloud Identity 服务的要求](../reference/requirements.md)：修订了内容，重新组织了文本。
+* [Experience Cloud 身份标识服务的要求](../reference/requirements.md)：修订了内容，重新组织了文本。
 
 ## 版本 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
@@ -65,8 +64,6 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
     "idSyncContainerID":80 
 });
 ```
-
-请参阅 [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)。
 
 ## 版本 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
