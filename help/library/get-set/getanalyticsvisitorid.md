@@ -47,7 +47,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **用例 2**
 
-当您的组织在完全实施 ID 服务之前使用[宽限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
+当您的组织在完全实施 ID 服务之前使用[宽限期](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/migration)，您将在查询字符串中看到 `aid` 参数。如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
 
 >[!MORELIKETHIS]
 >

@@ -37,7 +37,7 @@ ht-degree: 96%
   这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
 
    * 正在使用 ID 服务。
-   * 已启用[宽限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且用户阻止第三方Cookie。
+   * 已启用[宽限期](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且用户阻止第三方Cookie。
    * 拥有使用多部分顶级域名的页面。
 
 此版本中的文档修订包括：
