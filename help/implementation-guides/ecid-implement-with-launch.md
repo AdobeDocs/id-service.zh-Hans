@@ -17,7 +17,7 @@ Adobe Experience Platform 中的标记是用于设置、部署 Experience Cloud 
 
 ## 关于 Experience Platform 标记 {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)是内置在 Adobe Experience Cloud 中的新一代 Adobe 标记管理功能。Platform 标记使客户端能够：
+[Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)是内置在 Adobe Experience Cloud 中的新一代 Adobe 标记管理功能。Platform 标记使客户端能够：
 
 * 使用称为&#x200B;_扩展_&#x200B;的集成部署客户端 Web 产品。
 * 始终捕获、定义和管理数据以及在其他供应商和 Adobe 提供的营销和广告产品之间共享数据。

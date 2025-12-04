@@ -216,5 +216,5 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。有关详细信息，请参阅[!UICONTROL Visitor ID Service]配置合并规则代码[文档中的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code)部分。
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。有关详细信息，请参阅[!UICONTROL Visitor ID Service]配置合并规则代码[文档中的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=zh-Hans#configure-merge-rule-code)部分。
 
