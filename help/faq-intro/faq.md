@@ -3,10 +3,10 @@ description: 与使用 ID 服务相关的特性、功能和问题的常见问题
 keywords: ID 服务
 title: ID 服务常见问题解答
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 **为什么 ID 服务不发出调用以检索 Experience Cloud ID？**
 
-这可能很难诊断。一种做法是您可以检查网站上的内容安全策略标头。如果您具备严格的安全策略，这些设置可能会阻止 ID 服务发出的第三方调用。请参阅[内容安全策略和 Experience Cloud Identity 服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+这可能很难诊断。一种做法是您可以检查网站上的内容安全策略标头。如果您具备严格的安全策略，这些设置可能会阻止 ID 服务发出的第三方调用。请参阅[内容安全策略和 Experience Cloud 身份标识服务](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
 **VisitorAPI.js 文件存储**
 
@@ -66,13 +66,13 @@ ID 服务调用是异步调用，是对 [demdex.net 域](https://experienceleagu
 
 通常，使用 CORS 的资源请求要优于使用 JSONP 的资源请求。使用 JSONP 时，某些浏览器会排列请求并取消其相对于页面上的其他同步调用和异步调用的优先级。CORS 有助于确保在浏览器调用堆栈中以更高的优先级来处理这些请求。
 
-请参阅 [Experience Cloud Identity 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+请参阅 [Experience Cloud 身份标识服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服务是否支持 CORS？**
 
-能。请参阅 [Experience Cloud Identity 服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+能。请参阅 [Experience Cloud 身份标识服务中的 CORS 支持](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **什么是 CORS？**
 
@@ -80,10 +80,11 @@ ID 服务调用是异步调用，是对 [demdex.net 域](https://experienceleagu
 
 **如果我的安全要求很严格，以至于我从未想要使用 JSONP，该怎么办？**
 
-如果您的安全要求很严格，请将 ID 服务 API 配置设置为 `useCORSOnly: true`。只有当您确信您的网站访客使用支持 CORS 的浏览器时，才应该启用此模式。
+如果您的安全要求很严格，请将 ID 服务 API 配置设置为 `useCORSOnly: true`。只有当您确信您的网站访客使用支持CORS的浏览器时，才应该启用此模式。
 
 请参阅 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORELIKETHIS]
 >
 >* [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)
+

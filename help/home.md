@@ -1,26 +1,26 @@
 ---
-description: Experience Cloud Identity Service 允许将通用识别框架用于 Experience Cloud 应用程序和服务。它的工作方式是，为网站访客分配一个称为 Experience Cloud ID (ECID) 的唯一的永久 ID。
-keywords: ID Service; Identity Service; Experience Cloud Identity Service
-title: Experience Cloud Identity Service
+description: Experience Cloud 身份标识服务允许将通用识别框架用于 Experience Cloud 应用程序和服务。它的工作方式是，为网站访客分配一个称为 Experience Cloud ID (ECID) 的唯一的永久 ID。
+keywords: ID 服务; 身份标识服务; Experience Cloud 身份标识服务
+title: Experience Cloud 身份标识服务
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 95%
 
 ---
 
-# Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
+# Adobe Experience Cloud 身份标识服务 {#experience-cloud-id-service}
 
-Experience Cloud Identity Service 允许将通用识别框架用于 Experience Cloud 应用程序和服务。它的工作方式是，为网站访客分配一个称为 Experience Cloud ID (ECID) 的唯一的永久 ID。
+Experience Cloud 身份标识服务允许将通用识别框架用于 Experience Cloud 应用程序和服务。它的工作方式是，为网站访客分配一个称为 Experience Cloud ID (ECID) 的唯一的永久 ID。
 
 ## 了解身份标识的主要实体
 
 要更好地了解Adobe如何帮助唯一地识别访客并解析身份信息，请阅读以下细目：
 
-* **Experience Cloud Identity Service**：Experience Cloud Identity Service **负责设置 Experience Cloud ID (ECID)**。有关详细信息，请参阅 [Experience Cloud Identity Service 概述](./introduction/overview.md)。
-* **Experience Cloud ID (ECID)**：ECID 是一个跨 Adobe Experience Platform 和 Adobe Experience Cloud 应用程序使用的共享身份标识命名空间，用于识别人员和设备。有关 ECID 的更多信息，请阅读 [ECID 概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hans)。
-* **Experience Platform Identity Service**：Experience Platform Identity Service 通过跨设备和系统桥接身份，为您提供有关客户及其行为的全面视图。有关详细信息，请参阅 [Experience Platform Identity Service 概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。
+* **Experience Cloud 身份标识服务**：Experience Cloud 身份标识服务&#x200B;**负责设置 Experience Cloud ID (ECID)**。有关详细信息，请参阅 [Experience Cloud 身份标识服务概述](./introduction/overview.md)。
+* **Experience Cloud ID (ECID)**：ECID 是一个跨 Adobe Experience Platform 和 Adobe Experience Cloud 应用程序使用的共享身份标识命名空间，用于识别人员和设备。有关 ECID 的更多信息，请阅读 [ECID 概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+* **Experience Platform 身份标识服务**：Experience Platform 身份标识服务通过跨设备和系统桥接身份，为您提供有关客户及其行为的全面视图。有关详细信息，请参阅 [Experience Platform 身份标识服务概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。
 
 <!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
 
@@ -30,9 +30,9 @@ Experience Cloud Identity Service 允许将通用识别框架用于 Experience C
    <td colname="col1"> <p> <b>入门指南</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> 概述 </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity Service 的要求 </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud 身份标识服务的要求 </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans" format="html" scope="external">用 Platform 标记进行标准实施</a> </li> 
-     </ul> </p> <p><b>Experience Cloud ID Javascript 库</b> </p> <p>用于 Experience Cloud Identity Service 的 JavaScript 位于：<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>新增项目或特色项目</b> </p> <p> 
+     </ul> </p> <p><b>Experience Cloud ID Javascript 库</b> </p> <p>用于 Experience Cloud 身份标识服务的 JavaScript 位于：<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>新增项目或特色项目</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> 选择加入服务</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
@@ -57,3 +57,4 @@ Experience Cloud Identity Service 允许将通用识别框架用于 Experience C
   </tr> 
  </tbody> 
 </table>
+

@@ -3,9 +3,9 @@ description: getInstance 会返回指定 Experience Cloud 组织 ID 的访客 ID
 keywords: ID 服务
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -57,3 +57,4 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 [!DNL Experience Cloud] ID 服务 API 维护一个实例列表，其中包含为每个 [!DNL Adobe Experience Cloud] 组织 ID 创建的所有实例。如果使用 ID 服务 API 的应用程序没有传递对实例的引用，它可以通过调用 `getInstance` 来查找该实例，而不是创建一个新实例。此外，该函数还可以为同一网页或应用程序中不同组织的多个实例提供支持。
 
 这对于不具备清晰的 `init` 阶段、但是需要在多个位置调用 ID 服务 API 的应用程序而言，非常有用。您可以在所有这些位置中调用 `getInstance`，第一次执行调用时，将创建实例。后续调用将返回现有实例。
+

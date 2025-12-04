@@ -1,9 +1,9 @@
 ---
-description: 关于 2017 版 Experience Cloud Identity Service 的功能发布、更新或更改。
+description: 关于 2017 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 keywords: ID 服务
 title: 2017 版发行说明
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 99%
@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # 2017 版发行说明 {#release-notes}
 
-关于 2017 版 Experience Cloud Identity Service 的功能发布、更新或更改。
+关于 2017 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 
 [Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)中也记录了这些更改。
 
@@ -50,7 +50,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 修复了一个与 Chrome 相关的错误，在该浏览器中单击“返回”按钮时，该错误会导致 ID 服务出错。
 * 现在，当事件调用响应中的区域 ID 发生更改时，ID 服务会重新触发 ID 同步。
-* 新增了[内容安全策略和 Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) 文档，该文档说明了如何将 ID 服务使用的 Adobe 域调用添加到白名单中。
+* 新增了[内容安全策略和 Experience Cloud 身份标识服务](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) 文档，该文档说明了如何将 ID 服务使用的 Adobe 域调用添加到白名单中。
 
 <!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -210,3 +210,4 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 ## 早期年份 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 ID 服务的早期发行说明。
+

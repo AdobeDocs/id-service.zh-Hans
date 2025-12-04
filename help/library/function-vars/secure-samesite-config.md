@@ -3,10 +3,10 @@ description: ECID 内可用于在 Google AMP 页面上支持 AMCV Cookie 的配�
 keywords: ID 服务
 title: Secure 和 SameSite 配置
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,3 +37,4 @@ var visitor = Visitor.getInstance("IMSORG_ID", {
 
 });
 ```
+

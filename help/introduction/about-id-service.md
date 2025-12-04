@@ -1,9 +1,9 @@
 ---
-description: Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
+description: Experience Cloud 身份标识服务在 Adobe Experience Cloud 中的角色。
 keywords: ID 服务
 title: 概述
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 96%
@@ -12,15 +12,15 @@ ht-degree: 96%
 
 # 关于 ID 服务{#aboutidservice}
 
-Experience Cloud Identity 服务在 Adobe Experience Cloud 中的角色。
+Experience Cloud 身份标识服务在 Adobe Experience Cloud 中的角色。
 
 <!--
 mcvid-functionality.xml
 -->
 
-## Experience Cloud Identity 服务：核心服务的基本元素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
+## Experience Cloud 身份标识服务：核心服务的基本元素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Experience Cloud Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案、客户属性和受众。它的工作方式是为网站访客分配一个唯一的永久ID。 当您的组织实施 ID 服务时，此 ID 允许您在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+Experience Cloud 身份标识服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案、客户属性和受众。它的工作方式是为网站访客分配一个唯一的永久ID。 当您的组织实施 ID 服务时，此 ID 允许您在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
 ![](assets/ecid-new.png)
 
@@ -32,9 +32,10 @@ Experience Cloud Identity 服务允许将通用识别框架用于 Experience Clo
 
 总之，ID 服务会：
 
-* 创建可用于关联配置文件和身份的公共键或 ID。
+* 创建可用于关联轮廓和身份标识的公共键或 ID。
 * 跨多种解决方案唯一标识设备。
 * 在客户的域中设置第一方 Cookie 以确保在同一域上跟踪。请参阅 [Experience Cloud](../introduction/cookies.md)。
 * 接收来自 [!DNL Experience Cloud] 客户和合作伙伴的别名和 ID 映射。
 * 管理 [!DNL Experience Cloud] 内的 ID 同步。
 * 支持与广告技术生态系统中的不同第三方进行 ID 同步。
+

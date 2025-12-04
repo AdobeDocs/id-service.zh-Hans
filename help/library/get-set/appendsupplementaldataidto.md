@@ -3,10 +3,10 @@ description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SD
 keywords: ID 服务
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -74,3 +74,4 @@ var theCurrentSDID = visitor._supplementalDataIDCurrent ? visitor._supplementalD
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID)); 
 ```
+

@@ -1,18 +1,18 @@
 ---
-description: 查看此部分内容，确保使用 Experience Cloud 身份服务所需的正确解决方案、服务和代码版本。
+description: 查看此部分内容，确保使用 Experience Cloud 身份标识服务所需的正确解决方案、服务和代码版本。
 keywords: ID 服务
-title: Experience Cloud 身份服务的要求
+title: Experience Cloud 身份标识服务的要求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud 身份服务的要求 {#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud 身份标识服务的要求 {#requirements-for-the-experience-cloud-id-service}
 
-查看此部分内容，确保使用 Experience Cloud 身份服务所需的正确解决方案、服务和代码版本。
+查看此部分内容，确保使用 Experience Cloud 身份标识服务所需的正确解决方案、服务和代码版本。
 
 ## 要求确保实施成功和支持 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -48,7 +48,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不确定</b> </p> </td> 
-   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 状态，请咨询您的 Adobe 帐户管理人员，确认公司成员是否可以使用 Adobe ID 登录 <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a>。如果可以，则表明您已启用 Experience Cloud，并且管理员能够查看您的组织 ID。要找到组织 ID，请参阅 <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=zh-Hans" format="https" scope="external">Experience Cloud 管理</a>中的“管理页面”部分。 </p> </td> 
+   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 状态，请咨询您的 Adobe 帐户管理人员，确认公司成员是否可以使用 Adobe ID 登录 <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a>。如果可以，则表明您已启用 Experience Cloud，并且管理员能够查看您的组织 ID。要找到组织 ID，请参阅 <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=en" format="https" scope="external">Experience Cloud 管理</a>中的“管理页面”部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未启用</b> </p> </td> 
@@ -105,11 +105,11 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=zh-Hans" format="https" scope="external">mbox 代码</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=en" format="https" scope="external">mbox 代码</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans" format="https" scope="external">at.js 实施</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=en" format="https" scope="external">at.js 实施</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -135,3 +135,4 @@ ID 服务至少需要使用下列 SDK 版本。
 >[!MORELIKETHIS]
 >
 >* [代码库](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
+

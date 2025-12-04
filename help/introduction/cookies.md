@@ -1,16 +1,16 @@
 ---
 description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
 keywords: PlayStation;ID 服务
-title: Cookie 和 Experience Cloud Identity 服务
+title: Cookie 和 Experience Cloud 身份标识服务
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Cookie 和 Experience Cloud Identity 服务{#cookies-and-the-experience-cloud-id-service}
+# Cookie 和 Experience Cloud 身份标识服务{#cookies-and-the-experience-cloud-id-service}
 
 ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
 
@@ -137,4 +137,5 @@ ID 服务在页面加载时开始创建 MID。在此过程中，由 `visitorAPI.
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
-请参阅 [Experience Cloud Identity 服务如何请求和设置 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+请参阅 [Experience Cloud 身份标识服务如何请求和设置 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+

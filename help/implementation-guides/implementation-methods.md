@@ -1,9 +1,9 @@
 ---
-description: Experience Cloud Identity Service 的标准实施方法与非标准实施方法。
+description: Experience Cloud 身份标识服务的标准实施方法与非标准实施方法。
 keywords: ID 服务
 title: 实施方法
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -25,3 +25,4 @@ Adobe 强烈建议使用 [[!DNL Experience Platform tags] 来实施 ID 服务。
 ## 非标准实施 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 本指南中的过程和代码示例可帮助您以手动或非标准方式来设置 [!DNL Experience Cloud] ID 服务。请注意，这些实施通常在技术层面上具有挑战性和复杂性。它们可能需要占用您公司稀缺的工程师资源，或耗用合同规定的支持时间来与 Adobe 顾问沟通。
+

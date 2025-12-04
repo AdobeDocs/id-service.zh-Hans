@@ -2,10 +2,10 @@
 description: 将选择加入服务作为 Experience Cloud 解决方案（在选择加入中称为类别）使用单个引用点实施，以确定是否在访客的设备上创建 Cookie。
 title: 设置选择加入服务
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 贵公司的隐私权要求将特定于您以何种方式选择符合 GDPR 规定。知道您的公司隐私团队可以在同意前使用哪些库。
 
-如果使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
+如果使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，请利用[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)配置选择加入服务。
 
 ## 选择加入类别 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -108,7 +108,7 @@ adobe.optIn.complete();
 
 ## 检查访客的选择加入权限 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-当访客对其权限进行更改时，您需要洞悉由此产生的权限，以便将您的同意存储与选择加入服务中所做的更改同步。例如，使用[权限函数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)检查访客的偏好设置，例如：
+当访客对其权限进行更改时，您需要洞察由此产生的权限，以便将您的同意存储与选择加入服务中所做的更改同步。例如，使用[权限函数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)检查访客的偏好设置，例如：
 
 **fetchPermissions 示例**
 
@@ -142,3 +142,4 @@ optIn.fetchPermissions(callback, true);
 
 * 无论您的同意持久性解决方案是 CMP 还是访客浏览器上的 Cookie，如果允许及时检索访客首选项，则可以在访客初始化期间将这些首选项提供给选择加入服务。
 * 但是，如果检索是一个非常漫长的过程，或者最好作为异步流程进行，您可以在成功加载设置后，使用服务的 `approve()` 函数来提供这些设置。
+

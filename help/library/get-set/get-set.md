@@ -3,10 +3,10 @@ description: 允许您与 ID 服务进行交互的公共方法。
 keywords: ID 服务
 title: 方法
 exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,3 +33,4 @@ ht-degree: 100%
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
+

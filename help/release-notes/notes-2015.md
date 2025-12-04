@@ -3,7 +3,7 @@ description: 2015 版发行说明和更新。
 keywords: ID 服务
 title: 2015 版发行说明
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 96%
@@ -37,7 +37,7 @@ ht-degree: 96%
   这只会影响满足以下&#x200B;*所有*&#x200B;条件的几个客户端：
 
    * 正在使用 ID 服务。
-   * 已启用[宽限期](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且用户阻止第三方Cookie。
+   * 已启用[宽限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且用户阻止第三方Cookie。
    * 拥有使用多部分顶级域名的页面。
 
 此版本中的文档修订包括：
@@ -76,3 +76,4 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 2015 年 1 月
 
 重新执行了 `<head>/<body>` 标签查找，以获取 JSONP 请求 `<script>` 标签容器，并且创建了 `<script>` 标签，以考虑根据区分大小写的各种可能设置，而形成的不同 DOM 实施（HTML 与 XHTML）。(AN-9355)
+

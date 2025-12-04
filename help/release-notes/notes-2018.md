@@ -1,18 +1,18 @@
 ---
-description: 关于 2018 版 Experience Cloud Identity 服务的功能发布、更新或更改。
+description: 关于 2018 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 keywords: ID 服务
 title: 2018 版发行说明
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # 2018 版发行说明 {#release-notes}
 
-关于 2018 版 Experience Cloud Identity 服务的功能发布、更新或更改。
+关于 2018 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
 
 ## 版本 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>独特访客计数不切实际地增加 </p> </td> 
-   <td colname="col2"> <p>在 Experience Cloud Identity 服务 3.1.0 中，我们发现了一个问题，即，在实施此版本后，独特访客计数会不切实际地增加。只有在使用最新版 ECID (v3.1.0) 并且用户在 Safari 浏览器的隐私设置中选择了“仅允许当前网站”选项时，系统才会呈现此行为。版本 3.1.2 修复了此问题。 </p> </td> 
+   <td colname="col2"> <p>在 Experience Cloud 身份标识服务 3.1.0 中，我们发现了一个问题，即，在实施此版本后，独特访客计数会不切实际地增加。只有在使用最新版 ECID (v3.1.0) 并且用户在 Safari 浏览器的隐私设置中选择了“仅允许当前网站”选项时，系统才会呈现此行为。版本 3.1.2 修复了此问题。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +89,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>在不正确的域中设置 Cookie </p> </td> 
-   <td colname="col2"> <p>我们修复了以下错误：临时访客 Cookie 会在“默认”Cookie 域中设置 Cookie，而不是在配置文件 (initConfig) 所提供的域中设置 Cookie。 </p> </td> 
+   <td colname="col2"> <p>我们修复了以下错误：临时访客Cookie在“默认” Cookie域中设置Cookie，而不是在配置(initConfig)中提供的域中设置。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,3 +122,4 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
+

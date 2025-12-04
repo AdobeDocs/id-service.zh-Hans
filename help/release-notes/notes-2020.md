@@ -1,9 +1,9 @@
 ---
-description: 关于 Experience Cloud 身份服务的功能发布、更新或更改。
+description: 关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
 keywords: ID 服务
 title: 2020 版发行说明
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 99%
@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # Experience Cloud 发行说明 - 2020 {#release-notes}
 
-关于 Experience Cloud 身份服务的功能发布、更新或更改。
+关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
 
 ## 版本 5.1.1
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 ## 版本 4.6
 
-* 默认情况下将 `loadSSL` 标记设为开启。所有对 身份服务的调用都将默认开启 `https`。如果客户希望在 http 上从其 `non-ssl` 页面调用 身份服务，则客户可以将其设置为 false。
+* 默认情况下将 `loadSSL` 标记设为开启。所有对身份标识服务的调用都将默认开启 `https`。如果客户希望在 http 上从其 `non-ssl` 页面调用身份标识服务，则客户可以将其设置为 false。
 * 更新了用于检测 `Internet-Explorer (IE)` 版本的功能，以修复由 `ESLint` 报告的问题。修复了为 ECID 指定选择加入 `pre-approval` 且稍后进行更新时，`Internet-Explorer (IE) 11` 上出现的性能问题。
 
 ## 版本 4.5
@@ -46,3 +46,4 @@ ht-degree: 99%
 * 修复了将选择加入配置为 `doesOptInApply=false` 和 `isIabContext=true` 后出现的问题。
 
 请参阅 [Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)，了解所有产品的月度发行说明。
+

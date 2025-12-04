@@ -3,7 +3,7 @@ description: 一个可选的布尔标记，用于向 AMCV Cookie 添加“安全
 keywords: ID 服务
 title: secureCookie
 exl-id: ba281b1c-1112-4ed6-b4fd-b8f87cabc575
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 100%
@@ -31,3 +31,4 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE",{
         secureCookie: true 
  });
 ```
+

@@ -1,9 +1,9 @@
 ---
-description: 调用这些 ID 服务函数，可确定 Experience Cloud Identity 服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+description: 调用这些 ID 服务函数，可确定 Experience Cloud 身份标识服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 keywords: ID 服务
 title: callTimeOut 方法
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 96%
@@ -12,7 +12,7 @@ ht-degree: 96%
 
 # callTimeOut 方法{#calltimeout-methods}
 
-调用这些 ID 服务函数，可确定 Experience Cloud Identity 服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+调用这些 ID 服务函数，可确定 Experience Cloud 身份标识服务、Analytics 或 Audience Manager ID 请求的超时状态。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 
 ## 超时函数 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -25,7 +25,7 @@ ht-degree: 96%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity 服务 </p> </td> 
+   <td colname="col1"> <p>Experience Cloud 身份标识服务 </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
@@ -63,3 +63,4 @@ ht-degree: 96%
   </tr> 
  </tbody> 
 </table>
+

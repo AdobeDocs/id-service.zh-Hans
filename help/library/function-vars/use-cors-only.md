@@ -1,18 +1,18 @@
 ---
-description: 可控制浏览器如何从 Experience Cloud Identity 服务请求资源的可选布尔标记。
+description: 可控制浏览器如何从 Experience Cloud 身份标识服务请求资源的可选布尔标记。
 keywords: ID 服务
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # useCORSOnly{#usecorsonly}
 
-可控制浏览器如何从 Experience Cloud Identity 服务请求资源的可选布尔标记。
+可控制浏览器如何从 Experience Cloud 身份标识服务请求资源的可选布尔标记。
 
 **语法：**`useCORSOnly: true|false`（默认值为 `false`。）
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->如果您具有严格的安全要求，则 `Set useCORSOnly: true`。只有当您确信您的所有访客都使用支持 CORS 的浏览器时，才应该启用此模式。不支持 CORS 的浏览器不会影响用户体验。但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
+>如果您具有严格的安全要求，则 `Set useCORSOnly: true`。只有当您确信您的所有访客都使用支持CORS的浏览器时，才应该启用此模式。 不支持 CORS 的浏览器不会影响用户体验。但是，不支持 CORS 的浏览器无法从 [!DNL Adobe Experience Cloud] 请求资源或与之交换数据。
 
 **代码示例**
 
@@ -39,3 +39,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    useCORSOnly: true 
 });
 ```
+

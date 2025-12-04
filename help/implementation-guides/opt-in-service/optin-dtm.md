@@ -2,10 +2,10 @@
 description: 使用 Dynamic Tag Management (DTM) 启用选择加入服务。
 title: 使用 DTM 配置选择加入
 exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,3 +22,4 @@ ht-degree: 100%
 在“常规 DTM”页面中输入[配置字段](/help/implementation-guides/opt-in-service/api.md)。
 
 ![](assets/DTM-example.png)
+

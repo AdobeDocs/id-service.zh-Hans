@@ -5,10 +5,10 @@ solution: Experience Cloud
 title: 实施指南
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Experience Cloud 身份标识服务的标准实施和非标准实施的说明和
 
 ## 标准实施
 
-标准实施使用 [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
+标准实施使用 [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
 
 ## 实施资源
 
@@ -36,3 +36,4 @@ Experience Cloud 身份标识服务的标准实施和非标准实施的说明和
 * [直接集成用例](direct-integration-examples.md)
 * [测试和验证 Experience Cloud 身份标识服务](test-verify.md)
 * [选择加入服务概述](opt-in-service/optin-overview.md)
+

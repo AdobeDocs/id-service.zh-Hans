@@ -3,7 +3,7 @@ description: 可禁用 ID 同步的可选布尔标记。
 keywords: ID 服务
 title: disableIdSyncs
 exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 100%
@@ -35,3 +35,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableIdSyncs: true 
 });
 ```
+

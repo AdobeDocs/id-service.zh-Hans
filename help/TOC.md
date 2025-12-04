@@ -4,7 +4,7 @@ user-guide-title: Experience Cloud 身份标识服务帮助
 breadcrumb-title: 身份标识服务指南
 user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 98%
@@ -25,7 +25,7 @@ ht-degree: 98%
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
    + [用 Experience Platform 标记进行实施](implementation-guides/ecid-implement-with-launch.md)
-   + [适用于 Analytics 的实施](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/overview)
+   + [适用于 Analytics 的实施](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [为 Target 实施](implementation-guides/setup-target.md)
    + [为 Analytics 和 Audience Manager 实施](implementation-guides/setup-aam-analytics.md)
    + [为 Analytics、Audience Manager 和 Target 实施](implementation-guides/setup-aam-analytics-target.md)

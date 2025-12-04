@@ -2,7 +2,7 @@
 description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
 title: 验证选择加入服务
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 91%
@@ -113,3 +113,4 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 * 用途 1、2 或 5 未获得批准。
 * Audience Manager 供应商 ID 未获得批准。
+
