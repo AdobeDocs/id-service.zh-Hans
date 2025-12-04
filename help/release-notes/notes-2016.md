@@ -53,7 +53,7 @@ ht-degree: 0%
 
 **新文档和修订的文档**
 
-**新文档：**[从 AMCV Cookie 获取区域 ID 和用户 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新文档：**&#x200B;[从 AMCV Cookie 获取区域 ID 和用户 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 

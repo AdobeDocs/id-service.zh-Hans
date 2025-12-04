@@ -52,7 +52,7 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
-   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>请注意示例调用是如何包含以下内容的： </p> 
+   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>请注意示例调用是如何包含以下内容的： </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID 与您的唯一访客 ID 连接在一起：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,7 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
-   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>请注意示例调用是如何包含您的组织 ID 的：<span class="codeph">d_orgid=5555</span>。该调用将返回此访客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>请注意示例调用是如何包含您的组织 ID 的：<span class="codeph">d_orgid=5555</span>。该调用将返回此访客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

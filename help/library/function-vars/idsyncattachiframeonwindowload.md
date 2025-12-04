@@ -14,7 +14,7 @@ ht-degree: 0%
 
 可控制 Experience Cloud 身份标识服务如何加载 ID 同步 iFrame 的可选布尔标记。
 
-**语法：**` `idSyncAttachIframeOnWindowLoad= true|false``（默认值为 `false`。）
+**语法：**` `idSyncAttachIframeOnWindowLoad= true|false&grave;&grave;（默认值为 `false`。）
 
 当 `idSyncAttachIframeOnWindowLoad: true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务会尽快加载 ID 同步 iFrame，而不是在窗口加载时才加载。
 
