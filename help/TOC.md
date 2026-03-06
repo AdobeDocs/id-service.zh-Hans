@@ -106,5 +106,5 @@ ht-degree: 96%
    + [2017 版发行说明](release-notes/notes-2017.md)
    + [2016 版发行说明](release-notes/notes-2016.md)
    + [2015 版发行说明](release-notes/notes-2015.md)
-+ 在目录{hide-from-toc}[中隐藏了](analytics-test-file-hidetoc.md)Analytics测试
-+ {hide-from-toc}[隐藏的测试文件](hidden-file.md)
++ [在目录hide-from-toc中隐藏了Analytics测试](analytics-test-file-hidetoc.md)
++ [hide-from-toc隐藏的测试文件](hidden-file.md)
