@@ -1,9 +1,8 @@
 ---
 title: 测试文件
 description: 这是一个隐藏的测试文件。 请忽略。
-hidefromtoc: true
 hide: true
-source-git-commit: 024a897ebbe8f134096f2ab7575d5627019c3fa7
+source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
 source-wordcount: '16'
 ht-degree: 37%
