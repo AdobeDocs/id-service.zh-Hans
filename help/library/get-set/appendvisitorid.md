@@ -1,12 +1,12 @@
 ---
-description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。 要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 keywords: ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 88%
+source-wordcount: '429'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 >
 >如果ECID最初被拒绝（或以前被拒绝），则跨域跟踪将无法按预期工作。 它不会检查通过URL传递的或以前存在于Cookie中的现有ID，考虑这些ID是同意设置为“NO”时的ID。
 
-通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。 要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
 
 目录：
 
@@ -30,15 +30,15 @@ ht-degree: 88%
 
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud 身份标识服务](../../introduction/cookies.md)）。第一方 Cookie 包含 MID，它是该访客的唯一 ID。第三方 Cookie 包含 ID 服务用于生成 MID 的其他 ID。如果浏览器阻止此第三方 Cookie，则 ID 服务无法执行以下操作：
+当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud 身份标识服务](../../introduction/cookies.md)）。 第一方 Cookie 包含 MID，它是该访客的唯一 ID。 第三方 Cookie 包含 ID 服务用于生成 MID 的其他 ID。 如果浏览器阻止此第三方 Cookie，则 ID 服务无法执行以下操作：
 
 * 当网站访客导航到其他域时，重新生成该网站访客的唯一 ID。
 * 跨组织拥有的不同域跟踪访客。
 
-要帮助解决此问题，请实施 `Visitor.appendVisitorIDsTo( *`url`*)`。通过此属性，即使网站访客的浏览器阻止第三方 Cookie，ID 服务也可跨多个域跟踪网站访客。其工作方式如下：
+要帮助解决此问题，请实施 `Visitor.appendVisitorIDsTo( *`url`*)`。 通过此属性，即使网站访客的浏览器阻止第三方 Cookie，ID 服务也可跨多个域跟踪网站访客。 其工作方式如下：
 
 * 当访客浏览您的其他域时，`Visitor.appendVisitorIDsTo( *`url`*)` 会将 MID 作为查询参数附加到从原始域到目标域的 URL 重定向中。
-* 目标域上的 ID 服务代码会从 URL 中提取 MID，而不是向 Adobe 发送请求以获取该访客的 ID。此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
+* 目标域上的 ID 服务代码会从 URL 中提取 MID，而不是向 Adobe 发送请求以获取该访客的 ID。 此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
 * 目标页面上的 ID 服务代码使用传入的 MID 跟踪访客。
 
 有关详细信息，请参阅代码示例。
@@ -73,7 +73,8 @@ adbeDomains.forEach(function(domain) {
 });
 ```
 
-<!-- >[!IMPORTANT]
+<!-- 
+>[!IMPORTANT]
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
@@ -91,9 +92,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
-``` -->
+``` 
+-->
 
-<!-- ## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+<!--
+## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -116,5 +119,6 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
     </ul> </td> 
   </tr> 
  </tbody> 
-</table> -->
+</table> 
+-->
 
