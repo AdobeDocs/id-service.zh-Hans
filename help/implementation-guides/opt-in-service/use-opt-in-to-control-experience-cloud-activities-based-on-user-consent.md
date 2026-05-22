@@ -42,13 +42,13 @@ Adobe [!UICONTROL Opt-in]对象是Adobe [!UICONTROL Experience Platform Identity
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-如果您未使用Experience Platform标记，则可以在全局访客对象的初始化中设置[!UICONTROL Opt-in]的配置，如[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lank=zh-Hans)中所示。
+如果您未使用Experience Platform标记，则可以在全局访客对象的初始化中设置[!UICONTROL Opt-in]的配置，如[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=zh-Hans&lank=zh-Hans)中所示。
 
 ## 在页面上实施[!UICONTROL Opt-In]
 
 所有这些设置和后端操作都只是准备工作，目的是为网站访客提供一个可以展示同意选项的界面。 您可以自行构建此 UI，也可以与 CMP（同意管理平台）合作来创建此 UI。
 
-在设置UI以使用[!UICONTROL Opt-in]来收集同意时，应该将其配置为调用将挂接到[!UICONTROL Opt-in]的API，并通知其同意部分或所有Adobe Experience Cloud解决方案。 有关这些 API 的详细信息，请参阅[选择加入参考文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lank=zh-Hans)。 周围的文档页面上还提供了有关选择加入的其他信息。
+在设置UI以使用[!UICONTROL Opt-in]来收集同意时，应该将其配置为调用将挂接到[!UICONTROL Opt-in]的API，并通知其同意部分或所有Adobe Experience Cloud解决方案。 有关这些 API 的详细信息，请参阅[选择加入参考文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=zh-Hans&lank=zh-Hans)。 周围的文档页面上还提供了有关选择加入的其他信息。
 
 ## [!UICONTROL Opt-In]演示
 
