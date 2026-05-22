@@ -1,18 +1,21 @@
 ---
-description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
+description: 借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。 当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。 要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
 keywords: ID 服务
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/oR2LCiVk5N-Xnt3wTOKMt7UYFXzwEGFwJpKoz-ikzh8
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 345
+ht-degree: 100%
 
 ---
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
+借助此帮助程序方法，您可以将 Supplemental Data ID (SDID) 作为查询字符串参数附加到重定向 URL。 当使用 A4T 以及您需要在不同的页面间保留 SDID 并将这些不同的访问拼合在一起时，此方法很有用。 要使用此函数，您必须在源和目标域中使用同一组织 ID 实施了 ID 服务。
 
 目录：
 
@@ -50,7 +53,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## 通过 sdidParamExpiry 更改 SDID 超时 {#section-99946715cefa4acc95200b093db5297e}
 
-通过 [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 配置，您可以在使用 `appendSupplementalDataIDTo` 帮助程序函数将 SDID 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
+通过 [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 配置，您可以在使用 `appendSupplementalDataIDTo` 帮助程序函数将 SDID 从一个页面传递到另一个页面时，覆盖此 ID 的默认过期时间间隔。 默认情况下，接收页面上的 ID 服务代码有 30 秒时间从引荐页面发送的 URL 获取 SDID。 如果接收页面上的 ID 服务代码无法在 30 秒之内检索 SDID，它会请求新的 SDID。 此功能主要适用于需要将 SDID 从一个页面传递到另一个页面并希望控制此超时间隔的 A4T 客户。
 
 如果您需要更改默认的 SDID 超时，请使用以下语法将 `sdidParamExpiry` 添加到 `Visitor.getInstance` 函数：
 
@@ -58,7 +61,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 **代码示例**
 
-若已配置，您的 ID 服务代码可能类似于此示例。此示例将 SDID 超时设为 15 秒。
+若已配置，您的 ID 服务代码可能类似于此示例。 此示例将 SDID 超时设为 15 秒。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

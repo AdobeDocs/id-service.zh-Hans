@@ -1,18 +1,22 @@
 ---
-description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
+description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
 keywords: ID 服务
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: 421
 ht-degree: 95%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
+这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
 
 目录：
 
@@ -36,7 +40,7 @@ ht-degree: 95%
 
 ## 用例1：请求默认数据集 {#section-36a31683558742a5915db3a391e09f7b}
 
-此代码会返回标准数据集。您的请求和响应可能类似于以下示例。
+此代码会返回标准数据集。 您的请求和响应可能类似于以下示例。
 
 ```js
 //Call the ID service 
@@ -61,7 +65,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## 用例2：请求自定义数据集 {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-此代码使用可选数组通过 `visitor.FIELDS` 枚举来返回一组特定的 ID。在这种情况下，我们只需要访客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的请求和响应可能类似于以下示例。
+此代码使用可选数组通过 `visitor.FIELDS` 枚举来返回一组特定的 ID。 在这种情况下，我们只需要访客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。 您的请求和响应可能类似于以下示例。
 
 ```js
 //Call the ID service 
@@ -83,7 +87,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 
 ## 定义的响应参数 {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-下表列出并定义了响应参数。这些参数也是 `visitor.FIELDS` 枚举中的所有值。请注意，如果某个特定变量没有值，则此方法将返回空字符串。
+下表列出并定义了响应参数。 这些参数也是 `visitor.FIELDS` 枚举中的所有值。 请注意，如果某个特定变量没有值，则此方法将返回空字符串。
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -99,7 +103,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>数据收集区域 ID。这是用于标识特定 ID 服务数据中心的地理位置的数字标识符。 </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
+   <td colname="col2"> <p>数据收集区域 ID。 这是用于标识特定 ID 服务数据中心的地理位置的数字标识符。 </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 

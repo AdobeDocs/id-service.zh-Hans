@@ -3,9 +3,12 @@ description: 此属性可设置要用于 ID 同步的数据源容器 ID。
 keywords: ID 服务
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: 320
 ht-degree: 91%
 
 ---
@@ -40,12 +43,12 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **容器**
 
-容器是由 [!DNL Audience Manager] 创建的对象。虽然它们无法从外部访问，但这些容器会列出满足以下条件的所有数据源：
+容器是由 [!DNL Audience Manager] 创建的对象。 虽然它们无法从外部访问，但这些容器会列出满足以下条件的所有数据源：
 
 * 可供您用于 ID 同步，但未使用。
 * 正用于 ID 同步。
 
-即使您不是 [!DNL Audience Manager] 客户，如果您正在与域中的不同页面上的不同数据源交换 ID，则您的帐户将拥有这些容器。这是因为 [!DNL Audience Manager] 提供了可启用 ID 同步的技术和后端功能。
+即使您不是 [!DNL Audience Manager] 客户，如果您正在与域中的不同页面上的不同数据源交换 ID，则您的帐户将拥有这些容器。 这是因为 [!DNL Audience Manager] 提供了可启用 ID 同步的技术和后端功能。
 
 **用例**
 
@@ -63,7 +66,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    <td colname="col1"> <p> <b>不需要</b> </p> </td> 
    <td colname="col2"> <p>在以下情况下，您不需要使用此配置： </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">您将 ID 服务与任何 <span class="keyword">Experience Cloud</span> 解决方案结合使用，且不执行与其他数据源的 ID 同步操作。在这种情况下，您的帐户有一个 ID 为 0 的默认容器，并且无需执行任何操作。 </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">您将 ID 服务与任何 <span class="keyword">Experience Cloud</span> 解决方案结合使用，且不执行与其他数据源的 ID 同步操作。 在这种情况下，您的帐户有一个 ID 为 0 的默认容器，并且无需执行任何操作。 </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">您的所有数据源都在一个容器中。 </li> 
      </ul> </p> </td> 
   </tr> 

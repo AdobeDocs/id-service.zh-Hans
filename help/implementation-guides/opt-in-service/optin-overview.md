@@ -2,9 +2,13 @@
 description: 选择加入服务允许您为访客设置协议，以确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
 title: 选择加入服务
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/7XqAQ83gu6qQQfIWNB7Ui6aqtU-IbOxSMrYbMerHBCo
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: 528
 ht-degree: 100%
 
 ---
@@ -13,21 +17,21 @@ ht-degree: 100%
 
 通过选择加入服务，可为访客设置协议以确定在用户访问网站时您能否在用户的设备或浏览器上设置 Cookie。
 
-选择加入服务是 Experience Cloud ID (ECID) 的一项扩展，旨在让您控制 Experience Cloud 解决方案是否可以在用户同意前为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。您还可以通过选择加入服务设置协议以与大型设计中同意管理平台 (CMP) 和现有系统集成。
+选择加入服务是 Experience Cloud ID (ECID) 的一项扩展，旨在让您控制 Experience Cloud 解决方案是否可以在用户同意前为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。 您还可以通过选择加入服务设置协议以与大型设计中同意管理平台 (CMP) 和现有系统集成。
 
-使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
+使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。 批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
-使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)结合[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)，轻松地实施和配置选择加入服务。您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
+使用 [Adobe Experience Platform 中的标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)结合[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)，轻松地实施和配置选择加入服务。 您还可以使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 来实施和配置选择加入服务。
 
 请参阅[设置选择加入服务](../../implementation-guides/opt-in-service/getting-started.md)以开始操作。
 
 >[!NOTE]
 >
->选择加入服务允许您设置系统以批准或拒绝仅下载 Adobe Cookie。它不支持收集用户同意首选项，也不是首选项存储库。
+>选择加入服务允许您设置系统以批准或拒绝仅下载 Adobe Cookie。 它不支持收集用户同意首选项，也不是首选项存储库。
 
 >[!IMPORTANT]
 >
->本文档的内容不是法律建议，也不会代替法律建议。请咨询您公司的法律部门，以获取关于同意的建议以及设置选择加入实施时的做法。
+>本文档的内容不是法律建议，也不会代替法律建议。 请咨询您公司的法律部门，以获取关于同意的建议以及设置选择加入实施时的做法。
 
 ## 在 Experience Cloud 解决方案间选择加入 {#section-053e6224505542cf961896f0ca869e52}
 
@@ -40,9 +44,9 @@ ht-degree: 100%
 * 为类别未明确征得用户同意或被用户拒绝的任何解决方案应用默认偏好设置。
 * 根据对用户同意设置的更改触发自定义响应，并允许您保留或更新用户的设置。
 
-使用选择加入服务，您可以将您的网站配置为在用户做出选择之前，加载一些预先同意的 Cookie。您可以将新客户的选择加入服务设置为允许在用户同意或做出选择后加载 Cookie。您还可以从现有的 Consent Management Platform 存储和检索选择加入同意，或直接在 Cookie 中存储选择加入权限。
+使用选择加入服务，您可以将您的网站配置为在用户做出选择之前，加载一些预先同意的 Cookie。 您可以将新客户的选择加入服务设置为允许在用户同意或做出选择后加载 Cookie。 您还可以从现有的 Consent Management Platform 存储和检索选择加入同意，或直接在 Cookie 中存储选择加入权限。
 
 ![](assets/Opt-in-approval.png)
 
-随后，Adobe 解决方案可以检查相应标签是否获得批准，订阅更改，然后检索所有选择加入客户。选择加入服务允许您直接通过解决方案 JavaScript 库或通过 ECID（如果已实施）获取权限。
+随后，Adobe 解决方案可以检查相应标签是否获得批准，订阅更改，然后检索所有选择加入客户。 选择加入服务允许您直接通过解决方案 JavaScript 库或通过 ECID（如果已实施）获取权限。
 

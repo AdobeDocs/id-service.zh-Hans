@@ -1,18 +1,22 @@
 ---
-description: 这些说明适用于采用 Target、Analytics 和 ID 服务的混合服务器和客户端实施的 A4T 客户。需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应该查看此信息。此 ID 服务实例使用缩减版 VisitorAPI.js 代码库，您可以从 Node Package Manager (NPM) 下载和安装该代码库。请查看此部分，了解安装说明和其他配置要求。
+description: 这些说明适用于采用 Target、Analytics 和 ID 服务的混合服务器和客户端实施的 A4T 客户。 需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应该查看此信息。 此 ID 服务实例使用缩减版 VisitorAPI.js 代码库，您可以从 Node Package Manager (NPM) 下载和安装该代码库。 请查看此部分，了解安装说明和其他配置要求。
 keywords: ID 服务
 title: 在 Target 的 A4T 和服务器端实施中使用 ID 服务
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/NQKu4J9BE0pnMswSHCtE7Hi8FJGDXmInvSEKTNuM80M
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: 846
 ht-degree: 98%
 
 ---
 
 # 在 Target 的 A4T 和服务器端实施中使用 ID 服务 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-这些说明适用于采用 Target、Analytics 和 ID 服务的混合服务器和客户端实施的 A4T 客户。需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应该查看此信息。此 ID 服务实例使用缩减版 VisitorAPI.js 代码库，您可以从 Node Package Manager (NPM) 下载和安装该代码库。请查看此部分，了解安装说明和其他配置要求。
+这些说明适用于采用 Target、Analytics 和 ID 服务的混合服务器和客户端实施的 A4T 客户。 需要在 NodeJS 或 Rhino 环境中运行 ID 服务的客户也应该查看此信息。 此 ID 服务实例使用缩减版 VisitorAPI.js 代码库，您可以从 Node Package Manager (NPM) 下载和安装该代码库。 请查看此部分，了解安装说明和其他配置要求。
 
 ## 简介 {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
@@ -35,20 +39,20 @@ A4T（和其他客户）可以在以下情况下使用此版本的 ID 服务：
 
 ## 步骤 1：请求页面 {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-当访客发出加载网页的 HTTP 请求时，服务器端活动即会开始。在此步骤中，您的服务器会接收此请求并检查 [AMCV Cookie](../introduction/cookies.md)。AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
+当访客发出加载网页的 HTTP 请求时，服务器端活动即会开始。 在此步骤中，您的服务器会接收此请求并检查 [AMCV Cookie](../introduction/cookies.md)。 AMCV Cookie 包含访客的 [!DNL Experience Cloud] ID (MID)。
 
 ## 步骤 2：生成 ID 服务负载 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-接下来，您需要向 ID 服务发起服务器端 *`payload request`*。载荷请求会：
+接下来，您需要向 ID 服务发起服务器端 *`payload request`*。 载荷请求会：
 
 * 将 AMCV Cookie 传递到 ID 服务。
 * 在如下所述的后续步骤中请求 Target 和 Analytics 所需的数据。
 
 >[!NOTE]
 >
->此方法会从 [!DNL Target] 中请求一个 mbox。如果您需要在一次调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
+>此方法会从 [!DNL Target] 中请求一个 mbox。 如果您需要在一次调用中请求多个 mbox，请参阅 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
 
-您的负载请求应当类似于以下代码示例。在此代码示例中，`visitor.setCustomerIDs` 函数是可选的。请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)以了解更多信息。
+您的负载请求应当类似于以下代码示例。 在此代码示例中，`visitor.setCustomerIDs` 函数是可选的。 请参阅[客户 ID 和身份验证状态](../reference/authenticated-state.md)以了解更多信息。
 
 ```js
 //Import the ID service server package 
@@ -78,7 +82,7 @@ var visitorPayload = visitor.generatePayload({
 });
 ```
 
-ID 服务在 JSON 对象中返回负载，它类似于如下示例。[!DNL Target] 需要使用该负载数据。
+ID 服务在 JSON 对象中返回负载，它类似于如下示例。 [!DNL Target] 需要使用该负载数据。
 
 ```js
 { 
@@ -101,7 +105,7 @@ ID 服务在 JSON 对象中返回负载，它类似于如下示例。[!DNL Targe
 
 ## 步骤 3：将负载添加到 Target 调用 {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
 
-在您的服务器收到来自 ID 服务的负载数据之后，您需要实例化其他代码，以将其与传递到 [!DNL Target] 中的数据合并。传递到 [!DNL Target] 的最终 JSON 对象应类似于以下形式：
+在您的服务器收到来自 ID 服务的负载数据之后，您需要实例化其他代码，以将其与传递到 [!DNL Target] 中的数据合并。 传递到 [!DNL Target] 的最终 JSON 对象应类似于以下形式：
 
 ```js
 { 
@@ -123,7 +127,7 @@ ID 服务在 JSON 对象中返回负载，它类似于如下示例。[!DNL Targe
 
 ## 步骤 4：获取 ID 服务的服务器状态 {#section-8ebfd177d42941c1893bfdde6e514280}
 
-服务器状态数据包含在服务器上完成的工作的相关信息。客户端 ID 服务代码需要此信息。对于已通过 [!DNL Dynamic Tag Manager] (DTM) 实施 ID 服务的客户，可以配置 DTM 以通过该工具传递服务器状态数据。如果您是通过非标准流程设置的 ID 服务，则将需要使用您自己的代码返回服务器状态。客户端 ID 服务和 [!DNL Analytics] 代码会在页面加载时将状态数据传递到 Adobe。
+服务器状态数据包含在服务器上完成的工作的相关信息。 客户端 ID 服务代码需要此信息。 对于已通过 [!DNL Dynamic Tag Manager] (DTM) 实施 ID 服务的客户，可以配置 DTM 以通过该工具传递服务器状态数据。 如果您是通过非标准流程设置的 ID 服务，则将需要使用您自己的代码返回服务器状态。 客户端 ID 服务和 [!DNL Analytics] 代码会在页面加载时将状态数据传递到 Adobe。
 
 **通过 DTM 获取服务器状态**
 
@@ -188,11 +192,11 @@ Response.send("
 
 ## 步骤 5：提供页面并返回 Experience Cloud 数据 {#section-4b5631a0d75a41febd6f43f8c214c263}
 
-在这个时候，Web 服务器将页面内容发送到访客的浏览器。从此刻起，浏览器（不是服务器）发起所有剩余的 ID 服务和 [!DNL Analytics] 调用。例如，在浏览器中：
+在这个时候，Web 服务器将页面内容发送到访客的浏览器。 从此刻起，浏览器（不是服务器）发起所有剩余的 ID 服务和 [!DNL Analytics] 调用。 例如，在浏览器中：
 
 * ID 服务会从服务器接收状态数据并将 SDID 传递到 AppMeasurement。
 * AppMeasurement 将页面点击的相关数据（包括 SDID）发送到 [!DNL Analytics]。
-* [!DNL Analytics] 和 [!DNL Target] 会比较此访客的 SDID。如果 SDID 相同，则 [!DNL Target] 和 [!DNL Analytics] 将服务器端调用和客户端调用拼结在一起。此时，这两种解决方案会将此访客识别为同一个人。
+* [!DNL Analytics] 和 [!DNL Target] 会比较此访客的 SDID。 如果 SDID 相同，则 [!DNL Target] 和 [!DNL Analytics] 将服务器端调用和客户端调用拼结在一起。 此时，这两种解决方案会将此访客识别为同一个人。
 
 >[!MORELIKETHIS]
 >

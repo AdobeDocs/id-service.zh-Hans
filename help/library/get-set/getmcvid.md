@@ -3,9 +3,13 @@ description: getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 keywords: ID 服务
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/Ltpdq4dlGbJ8h0vAZBD52Pq7gLaurxSDYqETkLqQfDw
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: 118
 ht-degree: 100%
 
 ---
@@ -16,7 +20,7 @@ getMarketingCloudVisitorID 可返回 Experience Cloud 访客 ID。
 
 **语法：**`var *`变量名称`* = visitor.getMarketingCloudVisitorID()`
 
-通常，此方法与需要读取访客 ID 的自定义解决方案一起使用。标准实施不使用该函数。`getMarketingCloudVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
+通常，此方法与需要读取访客 ID 的自定义解决方案一起使用。 标准实施不使用该函数。 `getMarketingCloudVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
 
 ```js
 //callback function 
@@ -30,5 +34,5 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingCloudID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客户，那么还可以检查您的 [!DNL Analytics] ID，并将其发送给您的函数。例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。在这种情况下，您应该收集并返回 [!DNL Experience Cloud] 和 [!DNL Analytics] 访客 ID。请参阅[获取 Analytics 访客 ID](../../library/get-set/getanalyticsvisitorid.md)。
+>如果您是 [!DNL Analytics] 客户，那么还可以检查您的 [!DNL Analytics] ID，并将其发送给您的函数。 例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。 在这种情况下，您应该收集并返回 [!DNL Experience Cloud] 和 [!DNL Analytics] 访客 ID。 请参阅[获取 Analytics 访客 ID](../../library/get-set/getanalyticsvisitorid.md)。
 

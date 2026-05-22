@@ -1,18 +1,21 @@
 ---
-description: 当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。此代码不允许您在您无法控制的域上覆盖 ID。
+description: 当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。 要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。 此代码不允许您在您无法控制的域上覆盖 ID。
 keywords: ID 服务
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: 401
 ht-degree: 100%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。此代码不允许您在您无法控制的域上覆盖 ID。
+当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。 要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。 此代码不允许您在您无法控制的域上覆盖 ID。
 
 **语法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false`（默认值为 `false`。）
 
@@ -32,7 +35,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **用例**
 
-为跟踪网站访客，ID 服务会将 [!DNL Experience Cloud] ID（或 MID）写入浏览器 Cookie。下表列出并描述了您可能需要在另一个域中覆盖由 ID 服务设置的现有 MID 的常见用例。
+为跟踪网站访客，ID 服务会将 [!DNL Experience Cloud] ID（或 MID）写入浏览器 Cookie。 下表列出并描述了您可能需要在另一个域中覆盖由 ID 服务设置的现有 MID 的常见用例。
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 
@@ -63,7 +66,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>识别从移动应用程序转到 Web 浏览器的访客</b> </p> </td> 
-   <td colname="col2"> <p>此用例略有不同。它涉及识别从移动应用程序切换到您网站的用户。在这种情况下，您的访客已经在移动应用程序本地设置了一个 MID，并在您网站上的 Cookie 中设置了一个不同的 MID。您可以设置 <span class="codeph">Visitor.overwriteCrossDomainMCIDAndAID: true</span>，以使用移动应用程序设置的 MID 覆盖浏览器 Cookie 中设置的 MID。 </p> </td> 
+   <td colname="col2"> <p>此用例略有不同。 它涉及识别从移动应用程序切换到您网站的用户。 在这种情况下，您的访客已经在移动应用程序本地设置了一个 MID，并在您网站上的 Cookie 中设置了一个不同的 MID。 您可以设置 <span class="codeph">Visitor.overwriteCrossDomainMCIDAndAID: true</span>，以使用移动应用程序设置的 MID 覆盖浏览器 Cookie 中设置的 MID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
