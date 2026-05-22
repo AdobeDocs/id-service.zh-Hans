@@ -1,31 +1,39 @@
 ---
-description: 请按照以下说明将 Experience Cloud ID 字段集成到 Data Workbench 中。通过此流程，您可以在数据馈送中使用永久性 Experience Cloud ID，该 ID 支持与 Adobe Experience Cloud 中的其他产品形成更强大的集成，并增强访客跟踪。
+description: 请按照以下说明将 Experience Cloud ID 字段集成到 Data Workbench 中。 通过此流程，您可以在数据馈送中使用永久性 Experience Cloud ID，该 ID 支持与 Adobe Experience Cloud 中的其他产品形成更强大的集成，并增强访客跟踪。
 keywords: ID 服务
 title: Data Workbench 和 Experience Cloud 身份标识服务
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/jx-5TA0i00QBj0E3hJ8KKUTM4U7Ca2hsA-CkAuMLpe4
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 216
+ht-degree: 100%
 
 ---
 
 # Data Workbench 和 Experience Cloud 身份标识服务 {#data-workbench-and-the-experience-cloud-id-service}
 
-请按照以下说明将 Experience Cloud ID 字段集成到 Data Workbench 中。通过此流程，您可以在数据馈送中使用永久性 Experience Cloud ID，该 ID 支持与 Adobe Experience Cloud 中的其他产品形成更强大的集成，并增强访客跟踪。
+请按照以下说明将 Experience Cloud ID 字段集成到 Data Workbench 中。 通过此流程，您可以在数据馈送中使用永久性 Experience Cloud ID，该 ID 支持与 Adobe Experience Cloud 中的其他产品形成更强大的集成，并增强访客跟踪。
 
 要更新 [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=zh-Hans) 以使用 ID 服务，请执行以下操作：
 
 1. 找到当前[解码器组](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=zh-Hans)配置文件。
 
-   通常情况下，[!DNL Decoder Group] 位于以下路径上的 [!UICONTROL Profile Manager] 中：`Dataset\Log Processing\Decoding Instructions.cfg`。1. 复制配置文件中的当前解码器格式。
+   通常情况下，[!DNL Decoder Group] 位于以下路径上的 [!UICONTROL Profile Manager] 中：`Dataset\Log Processing\Decoding Instructions.cfg`。 1. 复制配置文件中的当前解码器格式。
 1. 在原始位置下方粘贴解码器格式。
 1. 打开解码器格式，并在列表末尾添加这些新字段位置：
 
    * `x-mcvisid`
    * `x-tnt-action`
 
-   如果您还未准备好使用或定义它们，请将字段留空。**解码指令**
+   如果您还未准备好使用或定义它们，请将字段留空。  **解码指令**
 
 请参阅下面的完整解码器内容，包括上面所述的新字段。
 

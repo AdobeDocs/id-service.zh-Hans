@@ -1,18 +1,26 @@
 ---
-description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
+description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。 VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 keywords: ID 服务
 title: 通过 URL 或数据源进行 ID 同步
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/93OKTlZcEibGqbwDnXIH90KyRT2S6Q7P50HgRATEenI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: 248
 ht-degree: 96%
 
 ---
 
 # 通过 URL 或数据源进行 ID 同步{#id-synchronization-by-url-or-data-source}
 
-ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
+ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。 VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
 
 ## 语法、属性和宏 {#section-90ac61617482463aaf4c57009b830332}
 
@@ -63,7 +71,7 @@ ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFra
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 数值 </td> 
-   <td colname="col3"> <p> <i>（可选）</i>设置 Cookie 过期时间。必须为整数。默认值为 20160 分钟（14 天）。 </p> </td> 
+   <td colname="col3"> <p> <i>（可选）</i>设置 Cookie 过期时间。 必须为整数。 默认值为 20160 分钟（14 天）。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
@@ -77,13 +85,13 @@ ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFra
 
 这两个函数都接受以下宏：
 
-* `%TIMESTAMP%`：生成时间戳（以毫秒为单位）。用于缓存无效的情况。
+* `%TIMESTAMP%`：生成时间戳（以毫秒为单位）。 用于缓存无效的情况。
 * `%DID%`：为用户插入 Audience Manager ID。
 * `%HTTP_PROTO%`：设置通信协议（`http` 或 `https`）。
 
 ## 示例代码和输出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-如果运行成功，这两个函数都将返回 `Successfully queued`。如果失败，则将返回错误消息字符串。
+如果运行成功，这两个函数都将返回 `Successfully queued`。 如果失败，则将返回错误消息字符串。
 
 ### visitor.idSyncByURL
 

@@ -1,18 +1,28 @@
 ---
-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。此 MID 是您的网站访客的唯一永久性 ID。
+description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。 此 MID 是您的网站访客的唯一永久性 ID。
 keywords: ID 服务
 title: 直接集成用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 457
 ht-degree: 78%
 
 ---
 
 # 直接集成用例 {#direct-integration-use-cases}
 
-以下示例介绍了 2 个与直接集成和 Experience Cloud ID（ECID 或 MID）有关的常见用例。此 ID 是您的网站访客的唯一永久性 ID。
+以下示例介绍了 2 个与直接集成和 Experience Cloud ID（ECID 或 MID）有关的常见用例。 此 ID 是您的网站访客的唯一永久性 ID。
 
 >[!TIP]
 >
@@ -34,8 +44,8 @@ ht-degree: 78%
    <td colname="col1"> <p> <b>条件</b> </p> </td> 
    <td colname="col2"> <p>此用例假设您： </p> 
     <ul id="ul_F20231F83EE84889B78971A64E758757"> 
-     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">拥有网站访客的 MID。假设此 ID 为 1234。 </li> 
-     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">根据您自己的唯一 ID 了解此访客。假设此 ID 为 9876。 </li> 
+     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">拥有网站访客的 MID。 假设此 ID 为 1234。 </li> 
+     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">根据您自己的唯一 ID 了解此访客。 假设此 ID 为 9876。 </li> 
      <li id="li_D93CE7182EBE4927A5C7A0BF414C03BC">想将 MID (1234) 关联到您自己的唯一 ID (9876)。 </li> 
      <li id="li_4611146E56624C2AB647733487A3F046"> <i>（可选）</i>想要对此访客设置身份验证状态。 </li> 
     </ul> </td> 
@@ -45,10 +55,10 @@ ht-degree: 78%
    <td colname="col2"> <p>根据这些条件调用 ID 服务，其中包含： </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID (1234)。 </li> 
-     <li id="li_4869572B40E54C54B88A2474DAC475A8">您的数据提供程序 ID。这是分配给您公司的唯一 ID。假设此 ID 为 4444。 </li> 
+     <li id="li_4869572B40E54C54B88A2474DAC475A8">您的数据提供程序 ID。 这是分配给您公司的唯一 ID。 假设此 ID 为 4444。 </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">您为访客指定的 ID (9876)。 </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>（可选）</i>用以定义此访客的身份验证状态的状态 ID。 </li> 
-    </ul> <p>此外，如果您碰巧具有<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出的任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等），也可以传入这些参数。 </p> </td> 
+    </ul> <p>如果您碰巧在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出了任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等） 也可以传入这些参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
@@ -78,16 +88,16 @@ ht-degree: 78%
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">没有网站访客的 MID。 </li> 
      <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">需要向 ID 服务请求 MID。 </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">知道您的<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">组织 ID</a>。假设其 为 5555。 </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">知道您的<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">组织 ID</a>。 假设其 为 5555。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>操作</b> </p> </td> 
-   <td colname="col2"> <p>根据这些条件调用 ID 服务，其中包含您的组织 ID。 </p> <p>此外，如果您碰巧具有<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出的任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等），也可以传入这些参数。 </p> </td> 
+   <td colname="col2"> <p>根据这些条件调用 ID 服务，其中包含您的组织 ID。 </p> <p>如果您碰巧在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出了任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等） 也可以传入这些参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
-   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>请注意示例调用是如何包含您的组织 ID 的：<span class="codeph">d_orgid=5555</span>。该调用将返回此访客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>请注意示例调用是如何包含您的组织 ID 的：<span class="codeph">d_orgid=5555</span>。 该调用将返回此访客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

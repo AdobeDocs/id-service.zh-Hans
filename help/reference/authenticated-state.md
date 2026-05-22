@@ -3,9 +3,17 @@ description: 除了 Experience Cloud 访客 ID 之外，您还可以将其他的
 keywords: ID 服务
 title: 客户 ID 和身份验证状态
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: 642
 ht-degree: 97%
 
 ---
@@ -16,13 +24,13 @@ ht-degree: 97%
 
 ## 身份验证状态 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。这有助于您识别或锁定跨不同设备的单独用户。例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。 这有助于您识别或锁定跨不同设备的单独用户。 例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 [!DNL Experience Cloud]，并在不同的解决方案中访问此数据。
 
 >[!IMPORTANT]
 >
->客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。[!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。请参阅[核心服务 - 如何启用您的解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)，以了解相关示例。
+>客户属性和核心服务功能要求使用 `setCustomerIDs`（客户 ID 同步）。 同步客户 ID 是一种适用于 [!DNL Analytics] 的可选识别方法。 [!DNL Target] 需要使用 `Visitor.AuthState.AUTHENTICATED` 才能使客户属性正常工作。 请参阅[核心服务 - 如何启用您的解决方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)，以了解相关示例。
 
-从 Experience Cloud 身份标识服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。`AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。使用表中列出的状态值来设置身份验证状态。将作为整数返回身份验证状态。
+从 Experience Cloud 身份标识服务版本 1.5 开始，`setCustomerIDs` 包含可选的 `AuthState` 对象。 `AuthState` 可根据访客的身份验证状态（例如，已登录，已注销）来识别他们。 使用表中列出的状态值来设置身份验证状态。 将作为整数返回身份验证状态。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -45,7 +53,7 @@ ht-degree: 97%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">2</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 2 </span> </p> </td> 
    <td colname="col3"> <p>已注销。 </p> </td> 
   </tr> 
  </tbody> 
@@ -53,7 +61,7 @@ ht-degree: 97%
 
 ## 身份验证状态用例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-您可以根据用户对 Web 属性执行的操作以及他们是否进行了身份验证，来为用户分配身份验证状态。请查看下表中的一些示例：
+您可以根据用户对 Web 属性执行的操作以及他们是否进行了身份验证，来为用户分配身份验证状态。 请查看下表中的一些示例：
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -77,7 +85,7 @@ ht-degree: 97%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>用户已完成身份验证，但已主动注销。用户打算从已完成身份验证状态断开连接。用户不希望再被视为已进行身份验证。 </p> </td> 
+   <td colname="col2"> <p>用户已完成身份验证，但已主动注销。 用户打算从已完成身份验证状态断开连接。 用户不希望再被视为已进行身份验证。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -90,8 +98,8 @@ ht-degree: 97%
 >
 >* ID 区分大小写。
 >* 仅将未编码的值应用于您的 ID。
->* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。必须为每个页面或应用程序上下文设置这些值。
->* 您不应在客户 ID 中包含任何个人身份信息 (PII)。如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。ECID 库支持对用户标识符进行哈希处理。请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
+>* 客户 ID 和身份验证状态未存储在访客 ID Cookie 中。 必须为每个页面或应用程序上下文设置这些值。
+>* 您不应在客户 ID 中包含任何个人身份信息 (PII)。 如果您要使用 PII 来识别访客（例如电子邮件地址），我们建议您存储信息的哈希版本或加密版本。 ECID 库支持对用户标识符进行哈希处理。 请参阅[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。
 
 ```js
 // Single ID with a single authentication state 
@@ -142,7 +150,7 @@ visitor.setCustomerIDs({
 
 ## 返回客户 ID 和身份验证状态 {#section-71a610546188478fa9a3185a01d6e83b}
 
-使用 `getCustomerIDs` 可返回客户 ID 和相关的身份验证状态。此方法会作为整数返回访客的身份验证状态。
+使用 `getCustomerIDs` 可返回客户 ID 和相关的身份验证状态。 此方法会作为整数返回访客的身份验证状态。
 
 **语法**
 
@@ -209,12 +217,12 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK 支持 {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。请参阅以下代码库：
+[!DNL Experience Cloud] ID 服务支持在我们的 Android 和 iOS SDK 代码中使用客户 ID 和身份验证状态。 请参阅以下代码库：
 
 * [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hans)
-* [iOS SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)
+* [iOS SDK方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)
 
 ## 面向 Analytics 和 Audience Manager 客户的注意事项 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。有关详细信息，请参阅[!UICONTROL Visitor ID Service]配置合并规则代码[文档中的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=zh-Hans#configure-merge-rule-code)部分。
+如果您将声明的 ID 传递至 [!DNL Audience Manager]，则 `userid` 对象需要匹配与数据源关联的集成代码。 有关详细信息，请参阅[配置合并规则代码](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=zh-Hans#configure-merge-rule-code)文档中的[!UICONTROL Visitor ID Service]部分。
 

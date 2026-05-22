@@ -5,10 +5,24 @@ title: 2016 版发行说明
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 1131
+ht-degree: 97%
 
 ---
 
@@ -25,18 +39,18 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >* 版本 1.10 需要使用 [!UICONTROL AppMeasurement] 1.8.0。
->* 使用 Experience Cloud 身份标识服务库 2.0.0 及更高版本时，Adobe Media Optimizer 会默认开始进行 ID 同步。请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
+>* 使用 Experience Cloud 身份标识服务库 2.0.0 及更高版本时，Adobe Media Optimizer 会默认开始进行 ID 同步。 请参阅[了解 ID 同步和匹配率](/help/introduction/match-rates.md)
 
 **修复和改进功能**
 
 * 添加了有关如何在服务器端环境中实施 ID 服务的说明。
-* 添加了 `Visitor.overwriteCrossDomainMCIDAndAID` 布尔函数，此函数允许覆盖您所拥有的其他域中的 Experience Cloud ID 和 Analytics ID。请参阅[覆盖访客 ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
+* 添加了 `Visitor.overwriteCrossDomainMCIDAndAID` 布尔函数，此函数允许覆盖您所拥有的其他域中的 Experience Cloud ID 和 Analytics ID。 请参阅[覆盖访客 ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
 
-* 添加了 `TS = UTC` 时间戳作为 `visitor.appendVisitorIDsTo` 函数的属性。ID 服务使用时间戳来确定是否应基于 5 分钟的时间间隔使用重定向 URL 中的 ID。请参阅[附加访客 ID 函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
+* 添加了 `TS = UTC` 时间戳作为 `visitor.appendVisitorIDsTo` 函数的属性。 ID 服务使用时间戳来确定是否应基于 5 分钟的时间间隔使用重定向 URL 中的 ID。 请参阅[附加访客 ID 函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
-* 添加了返回区域 ID 的新函数 `Visitor.getLocationHint,`。请参阅[获取区域 ID（位置提示）](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
+* 添加了返回区域 ID 的新函数 `Visitor.getLocationHint,`。 请参阅[获取区域 ID（位置提示）](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
 
-* 添加了 `idSyncByURL` 和 `idSyncByDataSource`，这两个函数允许您在“目标发布 iFrame” 中手动实施 ID 同步。请参阅[通过 URL 或数据源进行 ID 同步](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)。
+* 添加了 `idSyncByURL` 和 `idSyncByDataSource`，这两个函数允许您在“目标发布 iFrame” 中手动实施 ID 同步。 请参阅[通过 URL 或数据源进行 ID 同步](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)。
 
 * 修复了当 `disableThirdPartyCalls:true` 时，阻止 AppMeasurement 跟踪调用的错误。
 * 修复了阻止 ID 服务跨不同域传递 Experience Cloud ID (MID) 的错误。
@@ -48,8 +62,8 @@ ht-degree: 0%
 **修复和改进功能**
 
 * 修复了将 Audience Manager 独特用户 ID (AAMUUID) 作为 Experience Cloud ID 传递到 ID 服务的错误。
-* 如果 AMCV Cookie 的生存时间 (TTL) 到期，那么在 Cookie 包含 Experience Cloud ID 的情况下，ID 服务仍会将该信息返回到服务器。完成此调用后，ID 服务会进行异步调用以更新 Cookie。这有助于提高性能，因为 ID 服务不必等待服务器响应。它可以使用现有 AMCV Cookie 值，然后请求更新。
-* ID 服务会直接在页面上自动将 Experience Cloud ID (MID) 与 Adobe Media Optimizer 和其他内部 Adobe 域同步。已为所有现有帐户和新帐户启用自动同步。这有助于提高 Media Optimizer 的匹配率。适用于 VisitorAPI.js 版本 1.8 或更高版本。另请参阅[了解 ID 同步和匹配率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
+* 如果 AMCV Cookie 的生存时间 (TTL) 到期，那么在 Cookie 包含 Experience Cloud ID 的情况下，ID 服务仍会将该信息返回到服务器。 完成此调用后，ID 服务会进行异步调用以更新 Cookie。 这有助于提高性能，因为 ID 服务不必等待服务器响应。 它可以使用现有 AMCV Cookie 值，然后请求更新。
+* ID 服务会直接在页面上自动将 Experience Cloud ID (MID) 与 Adobe Media Optimizer 和其他内部 Adobe 域同步。 已为所有现有帐户和新帐户启用自动同步。 这有助于提高 Media Optimizer 的匹配率。 适用于 VisitorAPI.js 版本 1.8 或更高版本。 另请参阅[了解 ID 同步和匹配率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **新文档和修订的文档**
 
@@ -61,7 +75,7 @@ ht-degree: 0%
 
 **修复和改进功能**
 
-添加了 `disableThirdPartyCalls` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。若 `disableThirdPartyCalls= true`，则 ID 服务将不会对其他域进行调用。默认情况下，`disableThirdPartyCalls= false`请参阅 [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b)。
+添加了 `disableThirdPartyCalls` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。 若 `disableThirdPartyCalls= true`，则 ID 服务将不会对其他域进行调用。 默认情况下，`disableThirdPartyCalls= false` 请参阅 [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b)。
 
 ## 版本 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
@@ -69,11 +83,11 @@ ht-degree: 0%
 
 **修复和改进功能**
 
-* 添加了 `idSyncAttachIframeOnWindowLoad` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。当 `idSyncAttachIframeOnWindowLoad= true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。默认情况下，ID 服务会尽快加载 iFrame。此标记&#x200B;*取代*&#x200B;了已弃用的 `idSyncAttachIframeASAP`。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
+* 添加了 `idSyncAttachIframeOnWindowLoad` 作为可选布尔标记，您可以在 `Visitor.getInstance` 函数中设置此标记。 当 `idSyncAttachIframeOnWindowLoad= true` 时，ID 服务在窗口加载上加载 ID 同步 iFrame。 默认情况下，ID 服务会尽快加载 iFrame。 此标记&#x200B;*取代*&#x200B;了已弃用的 `idSyncAttachIframeASAP`。 请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
 
-* 添加了支持跨域跟踪 [!DNL Experience Cloud] ID 以及本机应用程序和混合应用程序向 Web 转换的功能。请参阅[附加访客 ID 辅助函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
+* 添加了支持跨域跟踪 [!DNL Experience Cloud] ID 以及本机应用程序和混合应用程序向 Web 转换的功能。 请参阅[附加访客 ID 辅助函数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
-* 向 visitorAPI.js 代码中添加了一些函数，这些函数可确定 ID 服务是否已在客户端或服务器端生成访客的 [!DNL Experience Cloud] ID，或 ID 调用是否已超时。请参阅[超时跟踪函数](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23)和[跟踪客户端访客 ID 生成](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6)。
+* 向 visitorAPI.js 代码中添加了一些函数，这些函数可确定 ID 服务是否已在客户端或服务器端生成访客的 [!DNL Experience Cloud] ID，或 ID 调用是否已超时。 请参阅[超时跟踪函数](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23)和[跟踪客户端访客 ID 生成](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6)。
 
 **新文档和修订的文档**
 
@@ -81,7 +95,7 @@ ht-degree: 0%
 
 **已知问题**
 
-在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。请参阅 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=zh-Hans)。
+在同一页面上使用 [!DNL Audience Manager] DIL 代码和 visitorAPI.js 代码的客户应将 DIL 变量设置为 `secureDataCollection= false`。 请参阅 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=zh-Hans)。
 
 ## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -89,7 +103,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL Experience Cloud] ID 服务版本 1.6.0 *需要* AppMeasurement for JavaScript 版本 1.6.2。如果您升级到 ID 服务版本 1.6.0，请确保您使用了正确的 AppMeasurement 代码版本。
+>版本1.6.0的[!DNL Experience Cloud] ID服务&#x200B;*需要* AppMeasurement for JavaScript版本1.6.2。 如果您升级到ID服务版本1.6.0，请确保您使用的是正确的AppMeasurement代码版本。
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -101,7 +115,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>跨源资源共享 (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS 允许浏览器从当前域以外的域请求资源。Experience Cloud 身份标识服务支持可启用客户端跨域资源请求的 CORS 标准。ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
+   <td colname="col2"> <p>CORS 允许浏览器从当前域以外的域请求资源。 Experience Cloud 身份标识服务支持可启用客户端跨域资源请求的 CORS 标准。 ID 服务会在不支持 CORS 的浏览器上还原为 JSONP 请求。 </p> <p>请参阅： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud 身份标识服务中的 CORS 支持</a> </li> 
     </ul> </td> 
@@ -111,13 +125,13 @@ ht-degree: 0%
 
 **修复和改进功能**
 
-* 向 `d_fieldgroup` 的 ID 同步调用添加了 `dpm.demdex.net` 参数。此新参数用于进行内部故障诊断和调试。
+* 向 `d_fieldgroup` 的 ID 同步调用添加了 `dpm.demdex.net` 参数。 此新参数用于进行内部故障诊断和调试。
 
-* 向 ID 服务 iFrame 添加了标题属性。iFrame 标题有助于屏幕阅读器向与在线内容交互时需要帮助的用户提供页面信息。iFrame title 属性设置为 `Adobe ID Syncing iFrame`。
-* 添加了 `idSyncAttachIframeASAP: true` 作为可选标记，您可以在 `Visitor.getInstance` 函数中设置此标记。设置为 `true` 时，ID 服务会尽可能快地加载 ID 同步 iFrame。这旨在帮助提高 ID 同步匹配率。默认情况下，ID 服务会在加载窗口时加载 iFrame。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
+* 向 ID 服务 iFrame 添加了标题属性。 iFrame 标题有助于屏幕阅读器向与在线内容交互时需要帮助的用户提供页面信息。 iFrame title 属性设置为 `Adobe ID Syncing iFrame`。
+* 添加了 `idSyncAttachIframeASAP: true` 作为可选标记，您可以在 `Visitor.getInstance` 函数中设置此标记。 设置为 `true` 时，ID 服务会尽可能快地加载 ID 同步 iFrame。 这旨在帮助提高 ID 同步匹配率。 默认情况下，ID 服务会在加载窗口时加载 iFrame。 请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
 
 * 修复了一个回调函数导致 AppMeasurement 陷入无限循环的错误。
-* 已将 `loadTimeout` 的默认间隔值从 500 毫秒更改为 30,000 毫秒。请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
+* 已将 `loadTimeout` 的默认间隔值从 500 毫秒更改为 30,000 毫秒。 请参阅 [Visitor.getInstance 函数变量](../library/function-vars/function-vars.md)。
 
 **新文档和修订的文档**
 
@@ -144,11 +158,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>对 <span class="codeph">iframe.sandbox</span> 属性的更改 </p> </td> 
-   <td colname="col2"> <p>iFrame 现在已设置为 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>仅允许使用这 2 个令牌可帮助提高安全性，还可为 ID 服务提供 ID 同步所需的基本功能。 </p> <p>Internet Explorer 版本 9 或更早版本中不支持 sandbox 属性。有关详细信息，请参阅此 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文档</a>中的“属性”部分。 </p> </td> 
+   <td colname="col2"> <p>iFrame 现在已设置为 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>仅允许使用这 2 个令牌可帮助提高安全性，还可为 ID 服务提供 ID 同步所需的基本功能。 </p> <p>Internet Explorer 版本 9 或更早版本中不支持 sandbox 属性。 有关详细信息，请参阅此 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文档</a>中的“属性”部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID (MID) 编码 </p> </td> 
-   <td colname="col2"> <p>ID 服务会对从服务器返回的 MID 值进行编码，或者当 MID 值由 <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 函数设置时，也会进行编码。有关 MID 的更多信息，请参阅 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud ID</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服务会对从服务器返回的 MID 值进行编码，或者当 MID 值由 <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 函数设置时，也会进行编码。 有关 MID 的更多信息，请参阅 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud ID</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -193,7 +207,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> 更改 ID 同步时间间隔 </p> </td> 
-   <td colname="col2"> <p>现在，每当调用数据收集服务器时，<span class="keyword">Experience Cloud ID</span> 服务都会执行 ID 同步调用。以前，ID 服务只在首次调用中提出一次请求来获取 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>现在，每当调用数据收集服务器时，<span class="keyword">Experience Cloud ID</span> 服务都会执行 ID 同步调用。 以前，ID 服务只在首次调用中提出一次请求来获取 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -214,7 +228,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> 客户 ID 和身份验证状态 </a> </p> </td> 
-   <td colname="col2"> <p>修订了文本。客户 ID 必须仅作为未编码值传入。编码 ID 将创建双重编码的标识符。 </p> </td> 
+   <td colname="col2"> <p>修订了文本。 客户 ID 必须仅作为未编码值传入。 编码 ID 将创建双重编码的标识符。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

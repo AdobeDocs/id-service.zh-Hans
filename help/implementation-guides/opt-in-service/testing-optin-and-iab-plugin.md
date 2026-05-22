@@ -2,10 +2,21 @@
 description: 在网站上启用了选择加入后，在浏览器中使用开发人员工具按照验证方法测试该服务是否正常工作。
 title: 验证选择加入服务
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/hODkrRE20lKjVoLJ769h27EinOy58m8KbdOmThtpUgM
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 91%
+source-wordcount: 451
+ht-degree: 90%
 
 ---
 
@@ -25,7 +36,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 在加载该页面之前，清除您的缓存和 Cookie。
 
-在 Chrome 中，右键单击相应网页并选择“检查”。如上面的屏幕快照所示，选择&#x200B;*网络*&#x200B;标签页以查看从浏览器发起的请求。
+在 Chrome 中，右键单击相应网页并选择“检查”。 如上面的屏幕快照所示，选择&#x200B;*网络*&#x200B;标签页以查看从浏览器发起的请求。
 
 在上面的示例中，我们在该页面上安装了以下 Adobe JS 代码：ECID、AAM、Analytics 和 Target。
 
@@ -41,7 +52,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 >[!NOTE]
 >
->您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。此端点不会导致创建任何第三方 Cookie，且不会从页面中收集任何信息。
+>您可能会看到对 `http://dpm.demdex.net/optOutStatus` 的调用，这是一个“只读”端点，用于检索访客的选择退出状态。 此端点不会导致创建任何第三方 Cookie，且不会从页面中收集任何信息。
 
 您应该不会看到Adobe标记创建的任何Cookie： (`AMCV_{{YOUR_ORG_ID}}`、`mbox`、`demdex`、`s_cc`、`s_sq`、`everest_g_v2`、`everest_session_v2`)
 
@@ -91,7 +102,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **如何在页面上查看您当前的 IAB 同意：**
 
-打开开发者工具并选择 *Console* 标签页。粘贴以下代码段并按 Enter：
+打开开发者工具并选择 *Console* 标签页。 粘贴以下代码段并按 Enter：
 
 ```
 <codeblock>

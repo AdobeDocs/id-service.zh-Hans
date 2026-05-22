@@ -1,18 +1,29 @@
 ---
-description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
+description: 这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。 这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
 keywords: ID 服务
 title: 测试和验证 Experience Cloud 身份标识服务
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/LPXZ0ydoky48kzyRnMK0kHsfoQyK3mi5IeXM0vtQV0s
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 689
+ht-degree: 100%
 
 ---
 
 # 测试和验证 Experience Cloud 身份标识服务{#test-and-verify-the-experience-cloud-id-service}
 
-这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
+这些说明、工具和过程可帮助您确定 ID 服务是否正常运行。 这些测试通常适用于 ID 服务，也适用于 ID 服务与 Experience Cloud 解决方案的各种组合。
 
 ## 开始之前 {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
@@ -22,15 +33,15 @@ ht-degree: 0%
 
 在正常的浏览器会话中进行测试时，请在每次测试前清除浏览器缓存。
 
-或者，您也可以在匿名或私密浏览器会话中测试 ID 服务。在匿名会话中，您无需在每次测试前都清除浏览器 Cookie 或缓存。
+或者，您也可以在匿名或私密浏览器会话中测试 ID 服务。 在匿名会话中，您无需在每次测试前都清除浏览器 Cookie 或缓存。
 
 **工具**
 
-[Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hans)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。当然，您也可以随意使用最适合您的任何工具或调试器。
+[Adobe 调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hans)和 [Charles HTTP 代理](https://www.charlesproxy.com/)可帮助您确定 ID 服务是否已配置为可在 Analytics 中正常使用。 此部分中的信息基于 Adobe 调试器和 Charles 返回的结果。 当然，您也可以随意使用最适合您的任何工具或调试器。
 
 ## 使用 Adobe 调试器进行测试 {#section-861365abc24b498e925b3837ea81d469}
 
-当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。请参阅 [Cookie 和 Experience Cloud 身份标识服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
+当您在 [!DNL Adobe] 调试器响应中看到 [!DNL Experience Cloud ID] (MID) 时，即表明您的服务集成配置正确。 请参阅 [Cookie 和 Experience Cloud 身份标识服务](../introduction/cookies.md)，以了解有关 MID 的更多信息。
 
 要通过 [!DNL Adobe] [调试器](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hans)验证 ID 服务的状态，请执行以下操作：
 
@@ -41,7 +52,7 @@ ht-degree: 0%
 
 ## 了解 Adobe 调试器结果 {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-MID 存储在一个键值对中，它使用以下语法：`MID= *`Experience Cloud ID`*`。调试器将显示此信息，如下所示。
+MID 存储在一个键值对中，它使用以下语法：`MID= *`Experience Cloud ID`*`。 调试器将显示此信息，如下所示。
 
 **成功**
 
@@ -51,7 +62,7 @@ MID 存储在一个键值对中，它使用以下语法：`MID= *`Experience Clo
 mid=20265673158980419722735089753036633573
 ```
 
-如果您是 [!DNL Analytics] 客户，除 MID 以外，可能还会看到 [!DNL Analytics] ID (AID)。这种情况发生于：
+如果您是 [!DNL Analytics] 客户，除 MID 以外，可能还会看到 [!DNL Analytics] ID (AID)。 这种情况发生于：
 
 * 您的一些早期/长期网站访客。
 * 您已启用宽限期时。
@@ -78,19 +89,19 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中成功的 ID 服务请求**
 
-当 `Visitor.getInstance` 函数对 `dpm.demdex.net` 进行 JavaScript 调用时，您的 ID 服务代码工作正常。成功的请求包含您的[组织 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。组织 ID 可作为一个使用以下语法的键值对传递：`d_orgid= *`组织 ID`*`。在 [!UICONTROL Structure] 选项卡下方查找 `dpm.demdex.net` 和 JavaScript 调用。在 [!UICONTROL Request] 选项卡下方查找您的组织 ID。
+当 `Visitor.getInstance` 函数对 `dpm.demdex.net` 进行 JavaScript 调用时，您的 ID 服务代码工作正常。 成功的请求包含您的[组织 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。 组织 ID 可作为一个使用以下语法的键值对传递：`d_orgid= *`组织 ID`*`。 在 [!UICONTROL Structure] 选项卡下方查找 `dpm.demdex.net` 和 JavaScript 调用。 在 [!UICONTROL Request] 选项卡下方查找您的组织 ID。
 
 ![](assets/charles_request.png)
 
 **Charles 中成功的 ID 服务响应**
 
-当来自[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans) (DCS) 的响应返回 MID 时，您的帐户已正确配置。MID 作为使用以下语法的键值对返回：`d_mid: *`访客 Experience Cloud ID`*`。在 [!UICONTROL Response] 选项卡中查找 MID，如下所示。
+当来自[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans) (DCS) 的响应返回 MID 时，您的帐户已正确配置。 MID 作为使用以下语法的键值对返回：`d_mid: *`访客 Experience Cloud ID`*`。 在 [!UICONTROL Response] 选项卡中查找 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
 **Charles 中失败的 ID 服务响应**
 
-如果 DCS 响应中缺失 MID，则表示您的帐户未正确配置。失败的响应在 [!UICONTROL Response] 选项卡中返回一个错误代码和消息，如下所示。如果您在 DCS 响应中看到此错误消息，请联系客户关怀。
+如果 DCS 响应中缺失 MID，则表示您的帐户未正确配置。 失败的响应在 [!UICONTROL Response] 选项卡中返回一个错误代码和消息，如下所示。 如果您在 DCS 响应中看到此错误消息，请联系客户关怀。
 
 ![](assets/charles_response_unsuccessful.png)
 
