@@ -33,7 +33,7 @@ ht-degree: 100%
 
 要配置该扩展，请打开&#x200B;*扩展*&#x200B;选项卡，将鼠标悬停在该扩展上， 然后单击&#x200B;*配置*。
 
-有关其他参考信息，请阅读 [Adobe Experience Cloud 身份标识服务扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html)。
+有关其他参考信息，请阅读 [Adobe Experience Cloud 身份标识服务扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hans)。
 
 ![](assets/optin-launch.jpg)
 
