@@ -4,24 +4,19 @@ keywords: ID 服务
 title: 对 setCustomerIDs 支持 SHA256 哈希
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 TQID: https://experienceleague.adobe.com/-JBVon-Qf2jtfd5f4UdWcHVyO7c887p1w-k3GnntUCA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 97%
+source-wordcount: 574
+ht-degree: 92%
 
 ---
 
 # 对 `setCustomerIDs` 支持 SHA256 哈希 {#hashing-support}
 
-Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。 这是一种可选的 Javascript 方法，用于将经过哈希处理的标识符发送到 Experience Cloud。 在发送客户 ID 之前，您可以继续使用自己的哈希处理方法。
-有两种方法可以对 setCustomerIDs 实施哈希处理支持，具体如以下部分所述：
+Experience Cloud ID服务(ECID)支持SHA-256哈希算法，该算法允许您传入客户ID或电子邮件地址，并传出经过哈希处理的ID。这是一种可选的Javascript方法，用于将经过哈希处理的标识符发送到Experience Cloud。在发送客户ID之前，您可以继续使用自己的哈希处理方法。
+有两种方法可以对setCustomerIDs实施哈希处理支持，具体如以下部分所述：
 
 * [在 ECID 中使用 setCustomerIDs 方法](/help/reference/hashing-support.md#use-setcustomerids-method)
 * [在 Adobe Experience Platform Launch 中添加一项操作](/help/reference/hashing-support.md#add-action-launch)
@@ -43,7 +38,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 除了 Experience Cloud 访客 ID 之外，您还可以将其他的客户 ID、身份验证状态以及哈希类型 (SHA-256) 与每位访客关联。 如果您不提供任何哈希类型，则将被视为不进行哈希处理。
 
-`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。 这有助于您识别或锁定跨不同设备的单独用户。 例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
+`setCustomerIDs` 方法可以接受同一访客拥有多个客户 ID。 这有助于您识别或锁定跨不同设备的单独用户。 例如，您可以将这些 ID 作为[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)上传至 Experience Cloud，并在不同的解决方案中访问此数据。
 
 客户 ID、身份验证状态以及哈希类型&#x200B;*不会*&#x200B;存储在 Cookie 中以供稍后使用， 而是应存储在实例变量中，以便使用 [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) 进行检索，如下所示：
 
@@ -70,15 +65,15 @@ ts=1563299964843
 
 请参阅下表，了解有关 `d_cid_ic` 参数和身份验证状态的描述。
 
-| 参数 | 说明 |
+| 参数 | 描述 |
 |------------|----------|
 | `d_cid_ic` | 将集成代码、唯一用户 ID (DPUUID) 和经过身份验证的状态 ID 传递到 ID 服务。 使用非打印控制字符<code>将集成代码与DPUUID分隔开%01</code>： <br>示例：<code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>身份验证状态</b> <br>这是 d_cid_ic 参数中的一个可选 ID。 此 ID 以整数形式表示，用于根据用户的身份验证状态来标识用户，如下所示：<br> <ul><li>0（未知或从未验证）</li><li>1（当前已经针对此实例/页面/应用程序上下文进行了身份验证）</li><li>2（已注销）</li></ul> <br>示例：<br> <ul><li>未知：...d_cid=123%01456%01<b>0</b></li><li>已通过身份验证：...d_cid=123%01456%01<b>1</b></li><li>已注销：...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## 在 Adobe Experience Platform Launch 中添加一项操作 {#add-action-launch}
 
-Experience Platform Launch 是 Adobe 推出的新一代标记管理功能。 有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
+Experience Platform Launch 是 Adobe 推出的新一代标记管理功能。 有关 Platform Launch 的更多信息，请参阅 [Launch 产品文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
-要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)并查看下面的屏幕截图：
+要在 Launch 中添加一项操作，请参阅 Adobe Launch 中的[规则文档](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)并查看下面的屏幕截图：
 
 ![](/help/reference/assets/hashing-support.png)
 
