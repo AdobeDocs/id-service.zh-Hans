@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 使用 Experience Platform Launch 配置选择加入方案 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-通过 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，可以轻松配置和设置涉及 Adobe 解决方案的选择加入方案。 您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+通过 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，可以轻松配置和设置涉及 Adobe 解决方案的选择加入方案。 您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
 
 **配置 Experience Cloud ID 扩展**
 

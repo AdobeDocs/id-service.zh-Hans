@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Experience Cloud 身份标识服务帮助
 breadcrumb-title: 身份标识服务指南
-user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
+user-guide-description: Adobe Experience Cloud 身份标识服务提供了一个通用的永久性 ID，用于在 Experience Cloud 的所有解决方案中标识您的访客。 它有助于替换 Experience Cloud 解决方案和服务的旧版 ID 生成代码。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
    + [用 Experience Platform 标记进行实施](implementation-guides/ecid-implement-with-launch.md)
-   + [适用于 Analytics 的实施](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/overview){target=_blank}
+   + [适用于Analytics的实施](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/overview){target=_blank}
    + [为 Target 实施](implementation-guides/setup-target.md)
    + [为 Analytics 和 Audience Manager 实施](implementation-guides/setup-aam-analytics.md)
    + [为 Analytics、Audience Manager 和 Target 实施](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 96%
    + [2017 版发行说明](release-notes/notes-2017.md)
    + [2016 版发行说明](release-notes/notes-2016.md)
    + [2015 版发行说明](release-notes/notes-2015.md)
-+ [在目录hide-from-toc中隐藏了Analytics测试](analytics-test-file-hidetoc.md)
-+ [hide-from-toc隐藏的测试文件](hidden-file.md)
++ {hide-from-toc}[在目录中隐藏了Analytics测试](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[隐藏的测试文件](hidden-file.md)

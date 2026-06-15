@@ -16,8 +16,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 960
-ht-degree: 100%
+source-wordcount: 849
+ht-degree: 97%
 
 ---
 
@@ -71,8 +71,8 @@ adobe.OptInCategories = {
 };
 ```
 
-选择加入服务允许您根据网站上使用的每个 Adobe 解决方案来设置访客的权限首选项。 它包括一个用于按已批准的类别保存访客设置的库，并且支持顺序化的工作流程，其中批准流程每次只接收每个类别的“确认”或“拒绝”首选项。 您可以将解决方案/类别设置为作为整体或作为单个解决方案选择加入。
-所有 Adobe 解决方案客户端库都依赖于选择加入服务，除非该解决方案已被授予权限，否则不会生成 Cookie。 选择加入支持为当前访客提供和更新同意设置的各种方法。 本节提供了设置选择加入服务首选项的示例。 请参阅[选择加入 API 引用](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以获取函数和参数的完整列表。
+选择加入服务允许您根据网站上使用的每个Adobe解决方案来设置访客的权限首选项。它包括一个用于按已批准的类别保存访客设置的库，并且支持顺序化的工作流程，即批准流程每次只接收每个类别的“确认”或“拒绝”首选项。您可以将解决方案/类别设置为作为整体或作为单个解决方案选择加入。
+所有Adobe解决方案的客户端库都依赖于选择加入服务，除非该解决方案已被授予权限，否则不会生成Cookie。选择加入支持为当前访客提供和更新同意设置的各种方法。本节提供了设置选择加入服务首选项的示例。有关函数和参数的完整列表，请参阅[选择加入API引用](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)。
 
 选择加入服务配置在访客 JS `getInstance()` 函数中提供，该函数可实例化全局 `adobe` 对象。 下面列出了选择加入服务的访客 JS [配置设置](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)。
 

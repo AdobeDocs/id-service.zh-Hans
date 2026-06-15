@@ -15,8 +15,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +48,8 @@ ht-degree: 97%
 ## 版本 4.6
 
 * 默认情况下将 `loadSSL` 标记设为开启。 所有对身份标识服务的调用都将默认开启 `https`。  如果客户希望在 http 上从其 `non-ssl` 页面调用身份标识服务，则客户可以将其设置为 false。
-* 更新了用于检测 `Internet-Explorer (IE)` 版本的功能，以修复由 `ESLint` 报告的问题。
-修复了为 ECID 指定选择加入 `pre-approval` 且稍后进行更新时，`Internet-Explorer (IE) 11` 上出现的性能问题。
+* 更新了用于检测`Internet-Explorer (IE)`版本的函数，以修复`ESLint`报告的问题。
+修复了为ECID指定选择加入`pre-approval`且稍后更新时，`Internet-Explorer (IE) 11`上的性能问题。
 
 ## 版本 4.5
 
