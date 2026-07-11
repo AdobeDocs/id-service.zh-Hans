@@ -1,6 +1,6 @@
 ---
-description: 关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
-keywords: ID 服务
+description: 关于访客ID服务的功能发布、更新或更改。
+keywords: 访客 ID 服务
 title: 2019 版发行说明
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 TQID: https://experienceleague.adobe.com/KnO04dnP6z7gKrr8vkFiiToDSBfClpiOJkGq8949ahA
@@ -13,31 +13,31 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 100%
+source-wordcount: 426
+ht-degree: 67%
 
 ---
 
-# Experience Cloud 发行说明 - 2019 {#release-notes}
+# 2019 版发行说明 {#release-notes}
 
-关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
+关于访客ID服务的功能发布、更新或更改。
 
 ## 版本 4.4.1
 
-在 ECID Launch 扩展中，为媒体分析添加了预先准备的选择加入批准复选框。
+在[!UICONTROL Experience Cloud ID Service]标记扩展中为Media Analytics添加了预先准备的选择加入批准复选框。
 
 **修复**
 
-* 解析 ECID Launch 扩展 preOptInApprovals 输入字符串时出现问题。
+* 解析[!UICONTROL Experience Cloud ID Service]标记扩展preOptInApprovals输入字符串时出现问题。
 * 使用 trackingServer 时性能下降。
 
 ## 版本 4.4 {#version-4point4}
 
 **新功能**
 
-[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。 Experience Cloud ID 服务 (ECID) 支持 SHA-256 哈希算法，该算法允许您传入客户 ID 或电子邮件地址，并传出经过哈希处理的 ID。
+[对 setCustomerIDs 的 SHA256 哈希处理支持](/help/reference/hashing-support.md)。 访客ID服务(ECID)支持SHA-256哈希算法，该算法允许您传入客户ID或电子邮件地址，并传出经过哈希处理的ID。
 
 **修复、增强功能和改进功能**
 
@@ -64,12 +64,12 @@ ht-degree: 100%
 **修复**
 
 * IAB + OptIn 无法获得重新访问客户的 MID。
-* 修复了 DTM 中选择加入 doesOptInApply 配置的错误。
+* 修复了选择加入doesOptInApply配置的错误。
 * ECID 选择退出会禁用 ID 同步。
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**选择加入服务**。 选择加入是 Experience Cloud ID (ECID) 的一项扩展，它允许您控制 Experience Cloud 库是否可以为访客在网页上创建 Cookie，如果是，具体是哪些解决方案。 借助 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，您可以让 Analytics、Target、Audience Manager 以及其他或所有精选 Experience Cloud 解决方案能够选择加入您的同意管理系统，从而简化 Experience Cloud 解决方案收集访客是否同意选择加入的过程。
+**选择加入服务**。 选择加入是ECID的一项扩展，它允许您控制CX Enterprise库是否可以为访客在网页上创建Cookie，如果是，具体是哪些解决方案。 使用[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)，您可以让Analytics、Target、Audience Manager以及其他或所有精选CX企业解决方案能够选择加入您的同意管理系统，从而简化CX企业解决方案收集访客是否同意选择加入的过程。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 

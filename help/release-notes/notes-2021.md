@@ -1,6 +1,6 @@
 ---
-description: 关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
-keywords: ID 服务
+description: 关于访客ID服务的功能发布、更新或更改。
+keywords: 访客 ID 服务
 title: 2021 版发行说明
 exl-id: 56bffb6f-a4fc-40df-8bb2-17e43772fe60
 TQID: https://experienceleague.adobe.com/AB8VuYn9X41P9REJ8C215GzBRtH66lb35i-q1PNbZfU
@@ -13,16 +13,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 110
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
-# Experience Cloud 身份标识服务发行说明 - 2021
+# Adobe访客ID服务发行说明 — 2021
 
-关于 Experience Cloud 身份标识服务的功能发布、更新或更改。
+关于访客ID服务的功能发布、更新或更改。
 
 ## Visitor 5.3.0
 
@@ -36,7 +36,7 @@ Visitor 5.3.0 版本中包含以下更新：
 
 Visitor 5.2.0 版本中包含以下更新：
 
-* 此版本引入 `onReceiveEcid` 事件，当从身份标识服务收到 ECID 时调用该事件。 例如：
+* 此版本引入了一个事件`onReceiveEcid`，当从访客ID服务收到ECID时，将调用该事件。 例如：
 
 ```js
 visitorInstance.onReceiveEcid(callback(ecid){

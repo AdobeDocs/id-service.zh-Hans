@@ -1,6 +1,6 @@
 ---
-description: 当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。 要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。 此代码不允许您在您无法控制的域上覆盖 ID。
-keywords: ID 服务
+description: 当访客从一个域导航到另一个域时，此属性会覆盖访客的ECID和Analytics ID。 要覆盖ID，您必须在每个域中拥有并已实施访客ID服务。 此代码不允许您在您无法控制的域上覆盖 ID。
+keywords: 访客 ID 服务
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-当访客从一个域转到另一个域时，此属性会覆盖该访客的 Experience Cloud 和 Analytics ID。 要覆盖 ID，您必须拥有 ID 服务并在每个域上实施了该服务。 此代码不允许您在您无法控制的域上覆盖 ID。
+当访客从一个域导航到另一个域时，此属性会覆盖访客的ECID和Analytics ID。 要覆盖ID，您必须在每个域中拥有并已实施访客ID服务。 此代码不允许您在您无法控制的域上覆盖 ID。
 
 **语法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false`（默认值为 `false`。）
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 您的 JavaScript 代码可能类似于以下示例。
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +40,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **用例**
 
-为跟踪网站访客，ID 服务会将 [!DNL Experience Cloud] ID（或 MID）写入浏览器 Cookie。 下表列出并描述了您可能需要在另一个域中覆盖由 ID 服务设置的现有 MID 的常见用例。
+为了跟踪网站访客，访客ID服务会将ECID（或MID）写入浏览器Cookie。 下表列出并描述了您可能需要在另一个域中覆盖访客ID服务设置的现有MID的常见用例。
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 

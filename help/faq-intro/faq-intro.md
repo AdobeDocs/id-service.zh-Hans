@@ -1,6 +1,6 @@
 ---
-description: 与 Experience Cloud 身份标识服务本身，以及关于 ID 服务和其他 Experience Cloud 解决方案组合部分相关的常见问题解答。
-keywords: ID 服务
+description: 与访客ID服务本身相关的常见问题解答，以及有关访客ID服务和其他CX Enterprise解决方案组合的部分。
+keywords: 访客 ID 服务
 title: 常见问题解答
 feature-set: Experience Cloud Services
 feature: TK421
@@ -13,17 +13,17 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 59
-ht-degree: 100%
+source-wordcount: 61
+ht-degree: 8%
 
 ---
 
 # 常见问题解答 {#faqs}
 
-关于 Experience Cloud 身份标识服务本身以及关于 ID 服务与其他 Experience Cloud 解决方案的组合的常见问题解答。
+与访客ID服务本身相关的常见问题解答，以及有关访客ID服务和其他CX Enterprise解决方案组合的部分。
 
-* [ID 服务常见问题解答](faq.md)
-* [其他 Experience Cloud 解决方案的常见问题解答](other-faq.md)
+* [访客ID服务常见问题解答](faq.md)
+* [其他CX企业解决方案的常见问题解答](other-faq.md)
 

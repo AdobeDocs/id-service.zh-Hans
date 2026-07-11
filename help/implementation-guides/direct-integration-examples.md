@@ -1,6 +1,6 @@
 ---
-description: 以下示例介绍了 2 个与直接集成和 Experience Cloud ID (MID) 有关的常见用例。 此 MID 是您的网站访客的唯一永久性 ID。
-keywords: ID 服务
+description: 以下示例介绍了2个与直接集成和ECID相关的常见用例。 此 MID 是您的网站访客的唯一永久性 ID。
+keywords: 访客 ID 服务
 title: 直接集成用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
@@ -13,24 +13,24 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 457
-ht-degree: 78%
+source-wordcount: 456
+ht-degree: 50%
 
 ---
 
 # 直接集成用例 {#direct-integration-use-cases}
 
-以下示例介绍了 2 个与直接集成和 Experience Cloud ID（ECID 或 MID）有关的常见用例。 此 ID 是您的网站访客的唯一永久性 ID。
+以下示例介绍了2个与直接集成和ECID（也称为MID）相关的常见用例。 此 ID 是您的网站访客的唯一永久性 ID。
 
 >[!TIP]
 >
 >* 在深入研究用例之前，请查看并了解[代码语法和变量](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
->* 有关 MID 的更多信息，请参阅 [Cookie 和 Experience Cloud 身份标识服务](../introduction/cookies.md)。
+>* 有关MID的详细信息，请参阅[Cookie和访客ID服务](../introduction/cookies.md)。
 >
 
-## 用例1：我拥有Experience Cloud ID (MID)，但是想要传递我的访客ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
+## 用例1：我拥有ECID，但是想要传递我的访客ID，并设置身份验证状态 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -52,7 +52,7 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>操作</b> </p> </td> 
-   <td colname="col2"> <p>根据这些条件调用 ID 服务，其中包含： </p> 
+   <td colname="col2"> <p>根据这些条件调用访客ID服务，其中包含： </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID (1234)。 </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">您的数据提供程序 ID。 这是分配给您公司的唯一 ID。 假设此 ID 为 4444。 </li> 
@@ -62,7 +62,7 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
-   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>请注意示例调用是如何包含以下内容的： </p> 
+   <td colname="col2"> <p>按如下所示设置您对访客ID服务的调用格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>请注意示例调用是如何包含以下内容的： </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID 与您的唯一访客 ID 连接在一起：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,17 +87,17 @@ ht-degree: 78%
    <td colname="col2"> <p>此用例假设您： </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">没有网站访客的 MID。 </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">需要向 ID 服务请求 MID。 </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">知道您的<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">组织 ID</a>。 假设其 为 5555。 </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">需要向访客ID服务请求MID。 </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">知道您的<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local"> IMS组织ID</a>。 假设其 为 5555。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>操作</b> </p> </td> 
-   <td colname="col2"> <p>根据这些条件调用 ID 服务，其中包含您的组织 ID。 </p> <p>如果您碰巧在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出了任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等） 也可以传入这些参数。 </p> </td> 
+   <td colname="col2"> <p>根据这些条件调用访客ID服务，其中包含您的IMS组织ID。 </p> <p>如果您碰巧在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接集成指南</a>中列出了任何其他参数（例如，<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等） 也可以传入这些参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解决方案和代码示例</b> </p> </td> 
-   <td colname="col2"> <p>按如下所示设置您调用的 ID 服务的格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>请注意示例调用是如何包含您的组织 ID 的：<span class="codeph">d_orgid=5555</span>。 该调用将返回此访客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>按如下所示设置您对访客ID服务的调用格式： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>请注意示例调用是如何包含您的IMS组织ID的：<span class="codeph">d_orgid=5555</span>。 该调用将返回此访客的ECID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,6 +1,6 @@
 ---
-description: Experience Cloud 身份标识服务的标准实施和非标准实施的说明和代码示例。
-keywords: ID 服务
+description: 访客ID服务的标准实施和非标准实施的说明和代码示例。
+keywords: 访客 ID 服务
 solution: Experience Cloud
 title: 实施指南
 uuid: null
@@ -17,35 +17,35 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 181
-ht-degree: 100%
+source-wordcount: 170
+ht-degree: 16%
 
 ---
 
 # 实施指南
 
-Experience Cloud 身份标识服务的标准实施和非标准实施的说明和代码示例。
+访客ID服务的标准实施和非标准实施的说明和代码示例。
 
 >[!IMPORTANT]
 >
->在开始使用这些程序之前，请务必先阅读并了解 [ID 服务要求](../reference/requirements.md)。
+>在开始使用这些程序之前，请务必阅读并了解[访客ID服务要求](../reference/requirements.md)。
 
 ## 标准实施
 
-标准实施使用 [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans) 来帮助您开始使用 ID 服务，并将其与其他 Experience Cloud 解决方案相集成。 我们强烈建议您在实施 ID 服务时使用 Experience Platform Launch。
+标准实施使用[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)来帮助您开始使用访客ID服务，并将其与其他CX Enterprise解决方案相集成。 我们强烈建议您在实施访客ID服务时使用标记。
 
 ## 实施资源
 
 * [实施方法](implementation-methods.md)
-* [使用 Experience Platform Launch 实施](ecid-implement-with-launch.md)
-* [实施适用于 Target 的 Experience Cloud 身份标识服务](setup-target.md)
-* [实施适用于 Analytics 和 Audience Manager 的 Experience Cloud 身份标识服务](setup-aam-analytics.md)
-* [实施适用于 Analytics、Audience Manager 和 Target 的 Experience Cloud 身份标识服务](setup-aam-analytics-target.md)
-* [在 Target 的 A4T 和服务器端实施中使用 Experience Cloud 身份标识服务](ecid-a4t-target.md)
-* [与 Experience Cloud 身份标识服务的直接集成](direct-integration.md)
+* [使用标记实施](ecid-implement-with-launch.md)
+* [实施适用于Target的访客ID服务](setup-target.md)
+* [实施适用于Analytics和Audience Manager的访客ID服务](setup-aam-analytics.md)
+* [实施适用于Analytics、Audience Manager和Target的访客ID服务](setup-aam-analytics-target.md)
+* [在Target的A4T和服务器端实施中使用访客ID服务](ecid-a4t-target.md)
+* [与访客ID服务的直接集成](direct-integration.md)
 * [直接集成用例](direct-integration-examples.md)
-* [测试和验证 Experience Cloud 身份标识服务](test-verify.md)
+* [测试和验证访客ID服务](test-verify.md)
 * [选择加入服务概述](opt-in-service/optin-overview.md)
 

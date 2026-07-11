@@ -1,18 +1,18 @@
 ---
-description: 这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。
-keywords: ID 服务
+description: 这是一个可选的布尔型配置，用于确定访客ID服务是否会将数据发送到Adobe设备协作。
+keywords: 访客 ID 服务
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 98%
+source-wordcount: '618'
+ht-degree: 68%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-这是一个可选的布尔型配置，用于确定 ID 服务是否会将数据发送到 Adobe Experience Cloud 设备协作。
+这是一个可选的布尔型配置，用于确定访客ID服务是否会将数据发送到Adobe设备协作。
 
 目录：
 
@@ -28,10 +28,10 @@ ht-degree: 98%
 
 要使用 `isCoopSafe`，您必须满足以下条件：
 
-* 使用 ID 服务代码版本 2.4 或更高版本。
-* 参与 [Experience Cloud 设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hans)。 潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 使用访客ID服务代码版本2.4或更高版本。
+* 参与[Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hans)。 潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
-* 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。 不存在启用这些标记的自助途径。
+* 与您的Adobe顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。 不存在启用这些标记的自助途径。
 
 ## 用例 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ ht-degree: 98%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已通过身份验证的访客</b> </p> </td> 
-   <td colname="col2"> <p>将 <span class="codeph">isCoopSafe</span> 添加到您的 ID 服务代码，以控制设备协作如何使用经过身份验证的访客（已接受或未接受使用条款协议）的数据来构建设备图。 </p> </td> 
+   <td colname="col2"> <p>将<span class="codeph"> isCoopSafe </span>添加到您的访客ID服务代码，以控制设备协作如何使用经过身份验证的访客（已接受或未接受使用条款协议）的数据来构建设备图。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方网站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>将 <span class="codeph">isCoopSafe</span> 添加到您的 ID 服务代码以供在第三方网站上使用，在这些网站中： </p> <p> 
+   <td colname="col2"> <p>将<span class="codeph"> isCoopSafe </span>添加到您的访客ID服务代码以供在第三方网站上使用，在这些网站中： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">无法确保已通过身份验证的访客是否接受了使用条款协议。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制设备协作如何使用该数据来构建设备图。 </li> 
@@ -72,10 +72,10 @@ ht-degree: 98%
 
 **代码示例**
 
-在 ID 服务代码实例化时进行此设置：
+在访客ID服务代码实例化时进行此设置：
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## 事件调用POST {#section-fcd441933506493faefaa6b51f194a17}
 
-根据您设置的标记（`true` 或 `false`），ID 服务会将 `isCoopSafe` 转换为以下 POST 参数，并在事件调用中将它们发送至 [!DNL Adobe]：
+根据您设置的标记（`true`或`false`），访客ID服务会将`isCoopSafe`转换为以下POST参数，并在事件调用中将它们发送到Adobe：
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-这两个 POST 参数告知 [!DNL Experience Cloud] 设备协作是否可以在设备图中包含用户数据。 下表定义了 `isCoopSafe` 布尔标记与在事件调用中传入的 POST 参数之间的关系。 如果您没有使用 `isCoopSafe`，则无法在事件调用中传递这两个参数。
+POST参数告知Adobe设备协作是否可以在设备图中包含用户数据。 下表定义了 `isCoopSafe` 布尔标记与在事件调用中传入的 POST 参数之间的关系。 如果您没有使用 `isCoopSafe`，则无法在事件调用中传递这两个参数。
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 

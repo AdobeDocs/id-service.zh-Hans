@@ -1,6 +1,6 @@
 ---
 title: Safari ITP 中的 ECID 库方法
-description: 适用于 Adobe ECID（ID 服务）库的文档。
+description: Adobe ECID（访客ID服务）库的文档。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
 product_v2:
@@ -13,10 +13,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 833
-ht-degree: 93%
+source-wordcount: 830
+ht-degree: 75%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 由于 Safari 通过 ITP 加强了跨域跟踪，因此 Adobe 必须在支持客户的库以及消费者隐私和选择方面继续使用相应的最佳实践。
 
-自2020年11月10日起，在Safari和移动iOS浏览器中，通过document.cookie API（通常称为“客户端” Cookie）设置的所有第一方永久性Cookie以及通过第一方CNAME实施设置的Cookie的过期时间限制为7天。 系统将继续阻止第三方 Cookie，这一点在早期版本的 ITP 中已有声明。 有关 ITP 2.1 以及 Adobe 解决方案影响的更多详细信息，请阅读 [Safari ITP 2.1 对 Adobe Experience Cloud 和 Experience Platform 客户的影响](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自2020年11月10日起，在Safari和移动iOS浏览器中，通过document.cookie API（通常称为“客户端” Cookie）设置的所有第一方永久性Cookie以及通过第一方CNAME实施设置的Cookie的过期时间限制为7天。 系统将继续阻止第三方 Cookie，这一点在早期版本的 ITP 中已有声明。 有关ITP 2.1以及Adobe解决方案影响的更多详细信息，请阅读[Safari ITP 2.1对Adobe Experience Platform客户的影响](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
 ## 与 ITP 相关的更改、方法和配置
 
@@ -42,7 +42,7 @@ ht-degree: 93%
 
 ## ITP 和 Apple WebKit 的当前 ECID 库行为
 
-ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提供准确访客跟踪信息的能力。 因此，Adobe 将会对其 CNAME 跟踪服务器进行更改，以便将访客的 Experience Cloud ID (ECID) 存储在第一方 Cookie 中。
+ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提供准确访客跟踪信息的能力。 因此，Adobe将会对其CNAME跟踪服务器进行更改，以便将访客的ECID存储在第一方Cookie中。
 
 此更改仅对在第一方环境中使用 Analytics CNAME 的 ECID 客户有益。 即使您是当前未使用 CNAME 的 Analytics 客户或者甚至不是 Analytics 客户，您仍可以查看 CNAME 记录。 请联系客户关怀团队或您的客户代表，以开始注册 [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hans) 的过程。
 
@@ -70,7 +70,7 @@ ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提�
 
 ## 使用 appendVisitorIDsTo 方法进行跨域跟踪（在您自己公司的多个域中）
 
-通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 ECID。 要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。 该函数可在 VisitorAPI.js 1.7.0 或更高版本中使用（但不可在 1.10.0 版本中使用）。
+通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 ECID。 要使用此函数，您必须已实施访客ID服务并且拥有源域和目标域。 在`VisitorAPI.js`版本1.7.0或更高版本中可用（但不在版本1.10.0中可用）。
 
 **设计**
 
@@ -78,14 +78,14 @@ ITP 2.1 会减弱写入客户端 Cookie 的能力，进而会削弱向客户提�
 
   使用此 URL 可以从原始域重定向到目标域。
 
-* 目标域上的 ID 服务代码会从 URL 中提取 ECID，而不是向 Adobe 发送请求以获取该访客的 ID。
+* 目标域上的访客ID服务代码会从URL中提取ECID，而不是向Adobe发送请求以获取该访客的ID。
 
   此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
 
-* 目标页面上的 ID 服务代码使用传入的 ECID 跟踪访客。
+* 目标页面上的访客ID服务代码使用传入的ECID跟踪访客。
 
   >[!NOTE]
-  >如果目标页面已经具有来自先前访问的 ECID，则此配置 overwriteCrossDomainMCIDAndAID 将控制是否覆盖现有 Cookie。 有关此配置的详细信息，请参阅 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
+  >如果目标页面已经具有来自先前访问的ECID，则此配置overwriteCrossDomainMCIDAndAID将控制是否覆盖现有Cookie。 有关此配置的详细信息，请参阅 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
   >
   >有关此方法的更多详细信息，请参阅 [appendVisitorIDsTo（跨域跟踪）](/help/library/get-set/appendvisitorid.md)参考页。
 

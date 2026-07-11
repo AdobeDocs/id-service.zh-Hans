@@ -1,6 +1,6 @@
 ---
-description: 可返回在实施 Experience Cloud 身份标识服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。 如果从未为访客分配 Analytics ID，则返回空符串。
-keywords: ID 服务
+description: 可返回在实施访客ID服务之前存储在s_vi Cookie中的旧版Analytics ID（如果存在）。 如果从未为访客分配 Analytics ID，则返回空符串。
+keywords: 访客 ID 服务
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 TQID: https://experienceleague.adobe.com/xJRR3qXoJpCnyFqKuEZqvEs0MpPCCA0brWOT6WbngX4
@@ -14,27 +14,27 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 306
-ht-degree: 97%
+source-wordcount: 313
+ht-degree: 46%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-可返回在实施 Experience Cloud 身份标识服务之前存储在 s_vi Cookie 中的旧版 Analytics ID（如果存在）。 如果从未为访客分配 Analytics ID，则返回空符串。
+可返回在实施访客ID服务之前存储在s_vi Cookie中的旧版Analytics ID（如果存在）。 如果从未为访客分配 Analytics ID，则返回空符串。
 
 **语法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-通常，此函数与需要读取访客 ID 的自定义解决方案一起使用。 标准实施不使用该函数。 `getAnalyticsVisitorID` 还可以与回调函数结合使用，以读取 [!DNL Analytics] ID，并将它们添加到您的系统或应用程序中。
+通常，此函数与需要读取访客 ID 的自定义解决方案一起使用。 标准实施不使用该函数。 `getAnalyticsVisitorID`还可以与回调函数结合使用，以读取Analytics ID，并将它们添加到您的系统或应用程序中。
 
 **示例代码**
 
 ```js
 //callback function 
 var useAnalyticsVisitorID = function(id){ 
-     //whatever your function does with the Experience Cloud ID 
+     //whatever your function does with the ECID 
 }; 
  
 //get Analytics ID and pass it to the function 
@@ -43,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客户，那么还可以检查您的 [!DNL Analytics] ID，并将其发送给您的函数。 例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。 在这种情况下，您应该收集并返回 [!DNL Experience Cloud] 和 [!DNL Analytics] 访客 ID。 请参阅 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
+>如果您是Analytics客户，那么还可以检查您的Analytics ID，并将其发送给您的函数。 例如，当您将隐藏表单元素中的访客 ID 传递至使用数据插入 API 的服务器端应用程序时，会用到这两个标识符。 在这种情况下，您应该收集并返回ECID和Analytics访客ID。 请参阅 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
 
 **“aid”参数是一个旧版值**
 
@@ -53,12 +53,12 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 对于下面的情况，您会在查询字符串中看到 `aid` 参数：
 
-* [!DNL Experience Cloud] ID 服务已正确部署。
-* 访问站点的用户在其 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hans#section-5d50a078de444d12b7d927d68ff3b679) 中存储了预先存在的 [!DNL Analytics] ID。
+* 访客ID服务已正确部署。
+* 访问网站的用户在其[s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hans#section-5d50a078de444d12b7d927d68ff3b679)中存储了预先存在的Analytics ID。
 
 **用例 2**
 
-当您的组织在完全实施 ID 服务之前使用[宽限期](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/migration)，您将在查询字符串中看到 `aid` 参数。 如果访问您网站的是新用户，而且您没有使用宽限期，则访客将会获取 `mid` ([!DNL Experience Cloud] ID) 参数。
+当您的组织在完全实施访客ID服务之前使用[宽限期](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/migration)，您将在查询字符串中看到`aid`参数。 如果访问您网站的是新用户，而且您没有使用宽限期，则访客将获得`mid` (ECID)参数。
 
 >[!MORELIKETHIS]
 >

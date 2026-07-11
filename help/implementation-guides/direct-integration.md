@@ -1,7 +1,7 @@
 ---
-description: 通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。 具体包括游戏机、智能电视或其他联网设备。 有关语法、代码示例和定义，请参阅此部分。
-keywords: ID 服务
-title: 与 Experience Cloud 身份标识服务的直接集成
+description: 通过此实施，客户可在无法接受或使用我们的JavaScript或SDK代码的设备上使用访客ID服务。 具体包括游戏机、智能电视或其他联网设备。 有关语法、代码示例和定义，请参阅此部分。
+keywords: 访客 ID 服务
+title: 与Adobe访客ID服务的直接集成
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 TQID: https://experienceleague.adobe.com/f5Tp-XaNY-KIpHXExT4hFwNt7FQqh6y4iaaWmIHEhAI
 product_v2:
@@ -15,26 +15,26 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 688
-ht-degree: 98%
+source-wordcount: 690
+ht-degree: 70%
 
 ---
 
-# 与 Experience Cloud 身份标识服务的直接集成 {#direct-integration-with-the-experience-cloud-id-service}
+# 与Adobe访客ID服务的直接集成 {#direct-integration-with-the-experience-cloud-id-service}
 
-通过此实施，客户可在无法接受或使用我们的 JavaScript 或 SDK 代码的设备上使用 ID 服务。 具体包括游戏机、智能电视或其他联网设备。 有关语法、代码示例和定义，请参阅此部分。
+通过此实施，客户可在无法接受或使用我们的JavaScript或SDK代码的设备上使用访客ID服务。 具体包括游戏机、智能电视或其他联网设备。 有关语法、代码示例和定义，请参阅此部分。
 
 ## 句法 {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
-无法使用 VisitorAPI.js 或 SDK 代码库的设备可以直接调用 ID 服务所使用的数据收集服务器 (DCS)。 为此，您需要调用 `dpm.demdex.net`，并将请求设置为如下所示的格式。 *斜体*&#x200B;表示变量占位符。
+无法使用`VisitorAPI.js`或SDK代码库的设备可以直接调用访客ID服务使用的数据收集服务器(DCS)。 为此，您需要调用 `dpm.demdex.net`，并将请求设置为如下所示的格式。 *斜体*&#x200B;表示变量占位符。
 
 ![](assets/directSyntax.png)
 
-在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。 您可以将许多 `d_` 参数传递到 ID 服务，但请重点关注上述代码中显示的键值对。 有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=zh-Hans)。
+在此语法示例中，`d_` 前缀用于将调用中的键值对标识为系统级别的变量。 您可以将许多`d_`参数传递到访客ID服务，但请重点关注上述代码中显示的键值对。 有关其他变量的更多信息，请参阅 [DCS API 调用支持的属性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=zh-Hans)。
 
-ID 服务支持 HTTP 和 HTTPS 调用。 使用 HTTPS 可从安全页面传递数据。
+访客ID服务支持HTTP和HTTPS调用。 使用 HTTPS 可从安全页面传递数据。
 
 ## 示例请求 {#section-26302b8851704888b6f8e6b2071bcdb0}
 
@@ -44,7 +44,7 @@ ID 服务支持 HTTP 和 HTTPS 调用。 使用 HTTPS 可从安全页面传递�
 
 ## 示例响应 {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-ID 服务会在 JSON 对象中返回数据，如下所示。 您收到的响应可能略有不同。
+访客ID服务会在JSON对象中返回数据，如下所示。 您收到的响应可能略有不同。
 
 ```js
 {
@@ -73,15 +73,15 @@ ID 服务会在 JSON 对象中返回数据，如下所示。 您收到的响应�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 访客 ID。 请参阅 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud 身份标识服务</a>。 </p> </td> 
+   <td colname="col2"> <p>ECID。 查看<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和访客ID服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 组织 ID。 有关查找此 ID 的帮助信息，请参阅 <a href="../reference/requirements.md" format="dita" scope="local">Experience Cloud 身份标识服务的要求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的IMS组织ID。 有关查找此ID的帮助，请参阅<a href="../reference/requirements.md" format="dita" scope="local">访客ID服务</a>的要求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>一个可选参数，用于将数据提供程序 ID (DPID)、独特用户 ID (DPUUID) 和<a href="../reference/authenticated-state.md" format="dita" scope="local">身份验证状态 ID</a> 传递给 ID 服务。 如代码示例中所示，DPID 和 DPUUID 使用非打印控制字符 <span class="codeph">%01</span> 来分隔。 </p> <p> <b>DPID 和 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 参数中，将每个相关的 DPID 和 DPUUID 组合分配到同一个 <span class="codeph">d_cid</span> 参数。 这样，您便可以在一个请求中返回多组 ID。 此外，需使用非打印控制字符 <span class="codeph">%01</span> 来分隔 DPID、DPUUID 和可选身份验证标记。 在以下示例中，提供程序 ID 和用户 ID 均以<b>粗体</b>文本突出显示。 </p> 
+   <td colname="col2"> <p>一个可选参数，用于将数据提供程序ID (DPID)、独特用户ID (DPUUID)和<a href="../reference/authenticated-state.md" format="dita" scope="local">身份验证状态ID</a>传递到访客ID服务。 如代码示例中所示，DPID 和 DPUUID 使用非打印控制字符 <span class="codeph">%01</span> 来分隔。 </p> <p> <b>DPID 和 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 参数中，将每个相关的 DPID 和 DPUUID 组合分配到同一个 <span class="codeph">d_cid</span> 参数。 这样，您便可以在一个请求中返回多组 ID。 此外，需使用非打印控制字符 <span class="codeph">%01</span> 来分隔 DPID、DPUUID 和可选身份验证标记。 在以下示例中，提供程序 ID 和用户 ID 均以<b>粗体</b>文本突出显示。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">语法：<span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">示例：<span class="codeph">...d_cid=123%01456%011...</span> </li> 
@@ -99,7 +99,7 @@ ID 服务会在 JSON 对象中返回数据，如下所示。 您收到的响应�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服务是一个地理上广泛分布的负载均衡系统。 ID 可标识处理调用的数据中心所在的区域。 请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
+   <td colname="col2"> <p>访客ID服务是一个地理上分散且负载平衡的系统。 ID 可标识处理调用的数据中心所在的区域。 请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 

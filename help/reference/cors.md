@@ -1,7 +1,7 @@
 ---
-description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。 Experience Cloud 身份标识服务支持可启用这些客户端跨域资源请求的 CORS 标准。 ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
-keywords: ID 服务
-title: Experience Cloud 身份标识服务中的 CORS 支持
+description: 浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。 访客ID服务支持可启用这些客户端跨域资源请求的CORS标准。 访客ID服务会在旧版浏览器或不支持CORS的浏览器上还原为JSONP请求。
+keywords: 访客 ID 服务
+title: Adobe访客ID服务中的CORS支持
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 TQID: https://experienceleague.adobe.com/eix2FaBue-Nf--wGzg5jBqB93QGIWtbM78Efjd8QZWM
 product_v2:
@@ -14,18 +14,18 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 93%
+source-wordcount: 639
+ht-degree: 64%
 
 ---
 
-# Experience Cloud 身份标识服务中的 CORS 支持 {#cors-support-in-the-experience-cloud-id-service}
+# Adobe访客ID服务中的CORS支持 {#cors-support-in-the-experience-cloud-id-service}
 
-浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。 Experience Cloud 身份标识服务支持可启用这些客户端跨域资源请求的 CORS 标准。 ID 服务会在旧版浏览器或不支持 CORS 的浏览器上还原为 JSONP 请求。
+浏览器使用跨域资源共享 (CORS) 从某个域而非当前域请求资源。 访客ID服务支持可启用这些客户端跨域资源请求的CORS标准。 访客ID服务会在旧版浏览器或不支持CORS的浏览器上还原为JSONP请求。
 
-## 同域策略和ID服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## 同域策略和访客ID服务请求的问题 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 同域策略是由 Web 浏览器强制实施的安全控制或限制。 在此级别强制实施这些策略后，Web 浏览器本身会确定是允许还是阻止从一个页面向另一个页面发出的资源请求。 为确定某个请求是否为同域请求，该浏览器会比较：
 
@@ -42,7 +42,7 @@ CORS 提供一种安全高效的方法来跨不同域请求资源。 CORS 规范
 * `Origin`：识别请求源的请求标头。
 * `Access-Control-Allow-Origin`：指示某个资源能否与请求者共享的响应标头。
 
-下面我们看一看这些标头的工作方式。 在此示例中，假设有一家金融服务公司在其网站`www.finance-website.com`上实施了[!DNL Experience Cloud] ID服务。 下表定义了 CORS 请求和响应标头如何检查对资源的访问权限。
+下面我们看一看这些标头的工作方式。 在此示例中，假设有一家金融服务公司在其网站`www.finance-website.com`上实施了访客ID服务。 下表定义了 CORS 请求和响应标头如何检查对资源的访问权限。
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -54,7 +54,7 @@ CORS 提供一种安全高效的方法来跨不同域请求资源。 CORS 规范
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>请求</b> </p> </td> 
-   <td colname="col2"> <p>加载金融公司页面时，浏览器向 <span class="codeph">dpm.demdex.net</span> 提出请求。 这会调用 ID 服务使用的数据收集服务器 (DCS) 的域。 此跨域请求包括以下标头： </p> <p> 
+   <td colname="col2"> <p>加载金融公司页面时，浏览器向 <span class="codeph">dpm.demdex.net</span> 提出请求。 这是对访客ID服务使用的数据收集服务器(DCS)域的调用。 此跨域请求包括以下标头： </p> <p> 
      <ul class="simplelist"> 
       <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
@@ -74,7 +74,7 @@ CORS 提供一种安全高效的方法来跨不同域请求资源。 CORS 规范
 
 ## 使用CORS的其他好处 {#section-6f44f30694c44f95bf9854b8a2af8449}
 
-下表介绍了 CORS 为使用 ID 服务的客户带来的一些优势。
+下表介绍了CORS为使用访客ID服务的客户带来的一些优势。
 
 <table id="table_AEB51A263D454F90B66E8C8D0513CF79"> 
  <thead> 
@@ -86,15 +86,15 @@ CORS 提供一种安全高效的方法来跨不同域请求资源。 CORS 规范
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>增强的安全性</b> </p> </td> 
-   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。 此方法比 JSONP 请求更安全。 它可确保无法执行任意 JavaScript，后者可能包含在来自 DCS 的响应中。 CORS XMLHttpRequest 响应载荷由 ID 服务 JavaScript 解析，而不只是在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。 此属性在 Chrome、Firefox、Internet Explorer (v10+)、Opera 和 Safari 中受支持。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 请求和传输数据。 此方法比 JSONP 请求更安全。 它可确保无法执行任意 JavaScript，后者可能包含在来自 DCS 的响应中。 CORS XMLHttpRequest响应负载由访客ID服务JavaScript解析，而不只是在回调函数中执行。 </p> <p> <p>注意：要接受 Cookie，<span class="codeph">XMLHttpRequest</span> 对象的 <span class="codeph">withCredentials</span> 属性需要设置为 <span class="codeph">true</span>。 此属性在 Chrome、Firefox、Internet Explorer (v10+)、Opera 和 Safari 中受支持。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>改进了性能</b> </p> </td> 
    <td colname="col2"> <p>CORS 有助于改进性能，这是因为： </p> 
     <ul id="ul_EC3A178003A94D70883B914050D7C464"> 
-     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">浏览器会管理资源请求。 请求过程对 ID 服务是透明的。 </li> 
+     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">浏览器会管理资源请求。 请求过程对访客ID服务是透明的。 </li> 
      <li id="li_C63E43A4CAB84210AB6A39100E5864BE">与异步 JSONP 请求不同，浏览器不会降低 CORS 请求的优先级并将其加入队列。 </li> 
-     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">ID 服务会允诺做出响应。 这意味着当 URL 作为 <span class="codeph">Origin</span> 传入时，ID 服务会向页面授予所需资源的访问权限。 </li> 
+     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">访客ID服务会允诺做出响应。 这意味着当URL作为<span class="codeph"> Origin</span>传入时，访客ID服务会授予所需资源的页面访问权限。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

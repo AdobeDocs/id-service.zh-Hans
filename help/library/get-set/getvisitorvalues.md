@@ -1,6 +1,6 @@
 ---
-description: 这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
-keywords: ID 服务
+description: 这是一个异步API，在默认情况下可返回Analytics和访客ID服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
+keywords: 访客 ID 服务
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
@@ -14,16 +14,16 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 95%
+source-wordcount: 420
+ht-degree: 73%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-这是一个异步 API，在默认情况下可返回 Analytics 和 ID 服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
+这是一个异步API，在默认情况下可返回Analytics和访客ID服务中的标识符、选择禁用数据收集的用户标识符、以及地理位置和元数据“blob”内容中的标识符。 此外，您还可以通过可选的 visitor.FIELDS 枚举来控制要返回哪些 ID。
 
 目录：
 
@@ -50,8 +50,8 @@ ht-degree: 95%
 此代码会返回标准数据集。 您的请求和响应可能类似于以下示例。
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{...}); 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{...}); 
    
 //Add your callback to the GET method to return IDs and data. 
 visitor.getVisitorValues(visitorIdsCallback);
@@ -72,11 +72,11 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## 用例2：请求自定义数据集 {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-此代码使用可选数组通过 `visitor.FIELDS` 枚举来返回一组特定的 ID。 在这种情况下，我们只需要访客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。 您的请求和响应可能类似于以下示例。
+此代码使用可选数组通过 `visitor.FIELDS` 枚举来返回一组特定的 ID。 在这种情况下，我们只需要访客的ECID (MCID)和Analytics ID (MCAID)。 您的请求和响应可能类似于以下示例。
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here", { ... });
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE", { ... });
 
 // Add an optional array to specify which IDs you want to return. 
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
@@ -110,7 +110,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>数据收集区域 ID。 这是用于标识特定 ID 服务数据中心的地理位置的数字标识符。 </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
+   <td colname="col2"> <p>数据收集区域 ID。 这是用于标识特定访客ID服务数据中心的地理位置的数字标识符。 </p> <p>请参阅 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hans" format="https" scope="external">DCS 区域 ID、位置和主机名</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -118,7 +118,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>访客的 Experience Cloud ID。 </p> <p>请参阅 <a href="../../introduction/cookies.md" format="dita" scope="local">Cookie 和 Experience Cloud 身份标识服务</a>。 </p> </td> 
+   <td colname="col2"> <p>访客的ECID。 </p> <p>查看<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie和访客ID服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
