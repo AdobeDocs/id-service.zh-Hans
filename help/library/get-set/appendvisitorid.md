@@ -1,23 +1,16 @@
 ---
-description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。 要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
-keywords: ID 服务
+description: 通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 ECID。 要使用此函数，您必须已实施访客ID服务并且拥有源域和目标域。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+keywords: 访客 ID 服务
 title: appendVisitorIDsTo（跨域跟踪）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 429
-ht-degree: 89%
+source-wordcount: 432
+ht-degree: 50%
 
 ---
 
@@ -27,7 +20,7 @@ ht-degree: 89%
 >
 >如果ECID最初被拒绝（或以前被拒绝），则跨域跟踪将无法按预期工作。 它不会检查通过URL传递的或以前存在于Cookie中的现有ID，考虑这些ID是同意设置为“NO”时的ID。
 
-通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 Experience Cloud ID。 要使用此函数，您必须已实施 ID 服务，并且拥有源域和目标域。 在 VisitorAPI.js 版本 1.7.0 或更高版本中可用。
+通过此函数，在浏览器阻止第三方 Cookie 时，您可以跨域共享访客的 ECID。 要使用此函数，您必须已实施访客ID服务并且拥有源域和目标域。 在`VisitorAPI.js`版本1.7.0或更高版本中可用。
 
 目录：
 
@@ -37,20 +30,18 @@ ht-degree: 89%
  </a> </li> 
 </ul>
 
-<!-- <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> Dynamic Tag Management (DTM) and SDK Support -->
-
 ## 在浏览器阻止第三方 Cookie 时跨域跟踪访客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-当某人访问您的网站时，ID 服务会将第一方和第三方 Cookie 写入浏览器（请参阅 [Cookie 和 Experience Cloud 身份标识服务](../../introduction/cookies.md)）。 第一方 Cookie 包含 MID，它是该访客的唯一 ID。 第三方 Cookie 包含 ID 服务用于生成 MID 的其他 ID。 如果浏览器阻止此第三方 Cookie，则 ID 服务无法执行以下操作：
+访客ID服务会在用户访问您的网站时将第一方和第三方Cookie写入浏览器（请参阅[Cookie和访客ID服务](../../introduction/cookies.md) ）。 第一方 Cookie 包含 MID，它是该访客的唯一 ID。 第三方Cookie包含访客ID服务用于生成MID的其他ID。 当浏览器阻止此第三方Cookie时，访客ID服务无法：
 
 * 当网站访客导航到其他域时，重新生成该网站访客的唯一 ID。
 * 跨组织拥有的不同域跟踪访客。
 
-要帮助解决此问题，请实施 `Visitor.appendVisitorIDsTo( *`url`*)`。 通过此属性，即使网站访客的浏览器阻止第三方 Cookie，ID 服务也可跨多个域跟踪网站访客。 其工作方式如下：
+要帮助解决此问题，请实施 `Visitor.appendVisitorIDsTo( *`url`*)`。 通过此属性，即使网站访客的浏览器阻止第三方Cookie，访客ID服务也可跨多个域跟踪网站访客。 其工作方式如下：
 
 * 当访客浏览您的其他域时，`Visitor.appendVisitorIDsTo( *`url`*)` 会将 MID 作为查询参数附加到从原始域到目标域的 URL 重定向中。
-* 目标域上的 ID 服务代码会从 URL 中提取 MID，而不是向 Adobe 发送请求以获取该访客的 ID。 此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
-* 目标页面上的 ID 服务代码使用传入的 MID 跟踪访客。
+* 目标域上的访客ID服务代码会从URL中提取MID，而不是向Adobe发送请求以获取该访客的ID。 此请求包含第三方 Cookie ID，而该 ID 在这种情况下不可用。
+* 目标页面上的访客ID服务代码使用传入的MID跟踪访客。
 
 有关详细信息，请参阅代码示例。
 
@@ -95,19 +86,19 @@ The following example can help you get started with `Visitor.appendVisitorIDsTo(
 //Code on Domain A 
 var destinationURL = "www.destination.com"; 
  
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance(...); 
  
 //Append visitor IDs to the destination URL 
 var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL); 
-     //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
+     //Result of appendVisitorIDsTo includes destination URL, ECID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
 ``` 
 -->
 
 <!--
-## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+## SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -118,15 +109,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> Set the appendVisitorIDTo Function in DTM </a> </p> </td> 
-  </tr> 
-  <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=zh-Hans" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=zh-Hans" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android Visitor ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS Visitor ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

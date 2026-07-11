@@ -1,24 +1,15 @@
 ---
 title: Google Chrome SameSite 标签更改
-description: 适用于 Adobe ECID（ID 服务）库的文档。
+description: Adobe ECID（访客ID服务）库的文档。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 TQID: https://experienceleague.adobe.com/VlmpxMM0Jm4ExEL1WdjeA3h9brGBslGoJCqgQ-xFaRs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 1125
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +31,7 @@ SameSite 属性可告知浏览器何时以及如何在第一方和第三方环�
 | `lax` | 仅当浏览器的 URL 中显示的域与 Cookie 的域匹配时，才发送具有此设置的 Cookie。 这是 Chrome 中新增的 Cookie 默认设置。 |
 | `none` | 具有此设置的 Cookie 可用于外部或第三方访问，如“跨站点”访问。 在进行此项更改之前，`none` 是 Cookie 的默认 SameSite 设置，因此使用该设置可以让 Cookie 的行为最接近其传统的工作方式。 但是，Google 现在要求任何具有此设置的 Cookie 都应指定安全标志，这意味着此类 Cookie 将只能通过 HTTPS 创建和发送请求。 Google 将会拒绝所有没有安全标志的跨站点 Cookie。 |
 
-## Adobe Experience Cloud 客户须知
+## Adobe CX Enterprise客户须知
 
 **无需执行 JavaScript 更新**
 
@@ -48,7 +39,7 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 
 **确保第三方端点使用 HTTPS**
 
-客户应确认其 JavaScript 配置正在使用 HTTPS 来调用 Adobe 服务。 Target、Audience Manager 和 Experience Cloud 身份标识服务 (ECID) 正在将第三方 HTTP 调用重定向到各自的 HTTPS 端点，该项操作可能会增加延迟。 这意味着您无需更改配置。 由于特定于 Analytics 的重定向可能会导致数据丢失，因此 Analytics 客户应更新其实施，以便能够专门使用 HTTPS。
+客户应确认其 JavaScript 配置正在使用 HTTPS 来调用 Adobe 服务。 Target、Audience Manager和访客ID服务(ECID)正在将第三方HTTP调用重定向到各自的HTTPS端点，这会增加延迟。 这意味着您无需更改配置。 由于特定于 Analytics 的重定向可能会导致数据丢失，因此 Analytics 客户应更新其实施，以便能够专门使用 HTTPS。
 
 **正确标记的 Cookies 应按照预期收集数据**
 
@@ -134,5 +125,5 @@ Adobe 产品已发布了服务器端更新，实现了用适当的属性来设�
 >
 >Adobe第三方Cookie在服务器端设置。
 
-有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=zh-Hans)。
+有关详细信息，请参阅文档 [Target 的 Google Chrome SameSite 策略](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)。
 

@@ -1,22 +1,16 @@
 ---
 description: 此函数主要用于 A4T 客户，旨在帮助解决与在单页站点/屏幕或应用程序上使用 ID 相关的问题。
-keywords: ID 服务
+keywords: 访客 ID 服务
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 377
-ht-degree: 99%
+ht-degree: 54%
 
 ---
 
@@ -26,10 +20,10 @@ ht-degree: 99%
 
 ## 用例 {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-作为使用 ID 服务的 A4T 客户，当您需要执行以下操作时，您可能要使用 `visitor.resetState()` 函数：
+作为使用访客ID服务的A4T客户，当您需要执行以下操作时，您可能要使用`visitor.resetState()`函数：
 
-* 通过重定向将 Supplemental Data ID (SDID) 或任何其他 ID 从一个页面/屏幕传递到另一个页面/屏幕。 通常，若不使用此函数，ID 服务便不会传递该 ID。
-* 使用仅通过 Ajax 调用更新页面或应用程序的特定部分的代码，并且您想跟踪这些操作。 例如，假设您有一个页面，当您在其中单击某个对象时，系统仅会加载或更改特殊部分。 在这种情况下，除非重新加载该页面，否则 ID 服务无法请求不同的 ID。 但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
+* 通过重定向将 Supplemental Data ID (SDID) 或任何其他 ID 从一个页面/屏幕传递到另一个页面/屏幕。 通常，如果没有此函数，访客ID服务将不会传递此ID。
+* 使用仅通过 Ajax 调用更新页面或应用程序的特定部分的代码，并且您想跟踪这些操作。 例如，假设您有一个页面，当您在其中单击某个对象时，系统仅会加载或更改特殊部分。 在这种情况下，除非重新加载页面，否则访客ID服务无法请求其他ID。 但是，通过 `visitor.resetState()`，您便可以在这种情况下请求新的 ID。
 
 请参阅下面的代码示例。
 
@@ -39,20 +33,20 @@ ht-degree: 99%
 
 ## 代码示例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的 ID 服务实施会影响您使用此函数的方式。 请参阅下表了解相关示例。
+您的访客ID服务实施会影响您使用此函数的方式。 请参阅下表了解相关示例。
 
 **服务器端实施**
 
-服务器端实施适用于具有 [!DNL Target]、[!DNL Analytics] 和 ID 服务混合服务器端和客户端实施的 A4T 客户。 如果您已通过此方法设置 ID 服务，则您只需将 `visitor.resetState()` 添加到页面中。 对 ID 服务的调用将会自动返回新的 ID 和服务器状态。
+服务器端实施适用于具有Target、Analytics和访客ID服务的混合服务器端和客户端实施的A4T客户。 如果您已通过此方法设置访客ID服务，则您只需将`visitor.resetState()`添加到页面中。 对访客ID服务的调用将自动返回新的ID和服务器状态。
 
 **非标准实施**（包含 ID）
 
-如果您已通过[非标准实施](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)设置 ID 服务，则需要配置一个变量对象，以包含您要通过 `visitor.resetState()` 传递的 SDID（或其他 ID）。 如下所示，这将包含您的[组织 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您要传递的 ID。 您的代码可能与以下示例类似。
+如果您已通过[非标准实施](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)设置访客ID服务，则需要配置一个变量对象，以包含您要通过`visitor.resetState()`传递的SDID（或其他ID）。 如下所示，这将包含您的[IMS组织ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)以及您要传递的ID。 您的代码可能与以下示例类似。
 
 ```js
 //Instantiate server state variable 
 var serverState = { 
-     "Insert Experience Cloud organization ID here": { 
+     "INSERT-IMS-ORG-ID-HERE": { 
           //Specify the SDID or other ID 
           supplementalDataIDCurrent: "1234", 
           supplementalDataIDCurrentConsumed: { 
@@ -61,8 +55,8 @@ var serverState = {
      } 
 }; 
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -76,8 +70,8 @@ visitor.resetState(serverState);
 
 ```js
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -95,8 +89,4 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
  
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
-
-**动态标记管理器 (DTM)**
-
-当前，`visitor.resetState()` 没有 DTM 配置路径。
 

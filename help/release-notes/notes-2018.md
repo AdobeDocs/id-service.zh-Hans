@@ -1,30 +1,22 @@
 ---
-description: 关于 2018 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
-keywords: ID 服务
+description: 关于2018版访客ID服务的功能发布、更新或更改。
+keywords: 访客 ID 服务
 title: 2018 版发行说明
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 488
+ht-degree: 66%
 
 ---
 
 # 2018 版发行说明 {#release-notes}
 
-关于 2018 版 Experience Cloud 身份标识服务的功能发布、更新或更改。
+关于2018版访客ID服务的功能发布、更新或更改。
 
 ## 版本 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +30,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>增强了 AMCV Cookie 安全性 </p> </td> 
-   <td colname="col2"> <p>在内部安全扫描过程中，发现当使用 DTM 库时，用于会话管理的 Cookie 无法指定适当属性。 这可能会导致无意中共享 Cookie 信息。 为解决此问题，我们引入了一种配置，允许客户将 AMCV Cookie 设为安全。 请参阅 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col2"> <p>在内部安全扫描期间，发现用于会话管理的Cookie无法指定适当的属性。 这可能会导致无意中共享 Cookie 信息。 为解决此问题，我们引入了一种配置，允许客户将 AMCV Cookie 设为安全。 请参阅 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +47,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>增强了 AMCV Cookie 安全性 </p> </td> 
-   <td colname="col2"> <p>在内部安全扫描过程中，发现当使用 DTM 库时，用于会话管理的 Cookie 无法指定适当属性。 这可能会导致无意中共享 Cookie 信息。 为解决此问题，我们引入了一种配置，允许客户将 AMCV Cookie 设为安全。 请参阅 secureCookie。 </p> </td> 
+   <td colname="col2"> <p>在内部安全扫描期间，发现用于会话管理的Cookie无法指定适当的属性。 这可能会导致无意中共享 Cookie 信息。 为解决此问题，我们引入了一种配置，允许客户将 AMCV Cookie 设为安全。 请参阅 secureCookie。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>集成代码和 ID 必须是数字或非空字符串 </p> </td> 
@@ -63,7 +55,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS 在公共 Git 代码库中提供 </td> 
-   <td colname="col2"> 现在，所有 Experience Cloud 客户都可在公共 Git 代码库中找到 ECID JS，网址为 https://github.com/Adobe-Marketing-Cloud/id-service/releases。 </td> 
+   <td colname="col2"> 现在，所有CX Enterprise客户都可以在公共Git存储库中找到ECID JS，网址为https://github.com/Adobe-Marketing-Cloud/id-service/releases。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +72,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>独特访客计数不切实际地增加 </p> </td> 
-   <td colname="col2"> <p>在 Experience Cloud 身份标识服务 3.1.0 中，我们发现了一个问题，即，在实施此版本后，独特访客计数会不切实际地增加。 只有在使用最新版 ECID (v3.1.0) 并且用户在 Safari 浏览器的隐私设置中选择了“仅允许当前网站”选项时，系统才会呈现此行为。 版本 3.1.2 修复了此问题。 </p> </td> 
+   <td colname="col2"> <p>在发布访客ID服务3.1.0后，我们发现了一个问题，即，在实施此版本后，独特访客计数会不切实际地增加。 只有在使用最新版 ECID (v3.1.0) 并且用户在 Safari 浏览器的隐私设置中选择了“仅允许当前网站”选项时，系统才会呈现此行为。 版本 3.1.2 修复了此问题。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +81,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->建议您尽早从版本 3.1.0 升级到最新版本。 请参阅版本 3.1.2 描述。 Adobe Experience Platform Launch、DTM 和 AppMeasurement 中提供了最新的软件包。
+>建议您尽早从版本 3.1.0 升级到最新版本。 请参阅版本 3.1.2 描述。 标记和AppMeasurement中提供了最新的捆绑包。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +118,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> <p>Internet Explorer 支持 </p> </td> 
-   <td colname="col2"> <p>ID 服务不再支持 Internet Explorer 6、7、8 和 9。 </p> </td> 
+   <td colname="col2"> <p>访客ID服务不再支持Internet Explorer 6、7、8和9。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>getInstance 文档更新 </p> </td> 

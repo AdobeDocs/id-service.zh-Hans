@@ -1,26 +1,21 @@
 ---
-description: ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。 VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
-keywords: ID 服务
+description: 访客ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中手动实施ID同步。 VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
+keywords: 访客 ID 服务
 title: 通过 URL 或数据源进行 ID 同步
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 TQID: https://experienceleague.adobe.com/93OKTlZcEibGqbwDnXIH90KyRT2S6Q7P50HgRATEenI
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 248
-ht-degree: 96%
+source-wordcount: 250
+ht-degree: 77%
 
 ---
 
 # 通过 URL 或数据源进行 ID 同步{#id-synchronization-by-url-or-data-source}
 
-ID 服务函数 idSyncByURL 和 idSyncByDataSource 允许您在目标发布 iFrame 中手动实施 ID 同步。 VisitorAPI.js 版本 1.10 或更高版本中提供了这些函数。
+访客ID服务函数idSyncByURL和idSyncByDataSource允许您在目标发布iFrame中手动实施ID同步。 这些功能在`VisitorAPI.js`版本1.10或更高版本中可用。
 
 ## 语法、属性和宏 {#section-90ac61617482463aaf4c57009b830332}
 

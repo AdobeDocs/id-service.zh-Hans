@@ -1,52 +1,47 @@
 ---
-description: ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。 这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
-keywords: PlayStation;ID 服务
-title: Cookie 和 Experience Cloud 身份标识服务
+description: 访客ID服务使用您的IMS组织ID、CX Enterprise AMCV Cookie和Demdex Cookie为网站访客创建并存储唯一的永久性标识符。 这些Cookie允许访客ID服务跨不同的域跟踪访客，并允许在不同的CX Enterprise解决方案之间共享数据。
+keywords: playstation；访客ID服务
+title: Cookie和Adobe访客ID服务
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 TQID: https://experienceleague.adobe.com/iLOFGQ9t-DqYfqOZs3K5yZI7903dMPEjANaJ7lH8K0o
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 968
-ht-degree: 100%
+source-wordcount: 990
+ht-degree: 42%
 
 ---
 
-# Cookie 和 Experience Cloud 身份标识服务{#cookies-and-the-experience-cloud-id-service}
+# Cookie和Adobe访客ID服务{#cookies-and-the-experience-cloud-id-service}
 
-ID 服务使用您的组织 ID、Experience Cloud AMCV Cookie 和 Demdex Cookie，为您的网站访客创建并存储唯一的永久性标识符。 这些 Cookie 允许 ID 服务跨不同的域跟踪访客，还允许在不同的 Experience Cloud 解决方案之间共享数据。
+访客ID服务使用您的IMS组织ID、CX Enterprise AMCV Cookie和Demdex Cookie为网站访客创建并存储唯一的永久性标识符。 这些Cookie允许访客ID服务跨不同的域跟踪访客，并允许在不同的CX Enterprise解决方案之间共享数据。
 
-## 了解 ID 服务 Cookie {#section-f438168beaec409ab8b2cc58bd021e26}
+## 了解访客ID服务Cookie {#section-f438168beaec409ab8b2cc58bd021e26}
 
-ID 服务依赖 AMCV、AMCVS 和 Demdex Cookie 来正常运行。 这些 Cookie 只是用于存储 ID 服务所使用的数据的文件。 这些 ID 服务 Cookie 没有危险、无恶意，而且与网站或服务在浏览器中存储的其他第一方或第三方 Cookie 没有什么不同，它们遵循的规则与管理其他第一方和第三方 Cookie 的规则相同。 请参阅下面的各个部分，以了解有关 ID 服务所用 Cookie 的更多信息。
+访客ID服务依赖AMCV、AMCVS和Demdex Cookie来正常运行。 这些Cookie只是存储访客ID服务所使用的数据的文件。 这些访客ID服务Cookie没有危险、无恶意，也没有与网站或服务在浏览器中存储的其他第一方或第三方Cookie不同，它们遵循的规则与管理其他第一方和第三方Cookie的规则相同。 有关访客ID服务所使用Cookie的更多信息，请参阅以下部分。
 
-### ID 服务 Cookie 可以执行的操作
+### 访客ID服务Cookie可以执行的操作
 
 * 为网站访客设置和存储唯一 ID (MID)。
-* 保留此唯一 ID，以便 ID 服务可以收集数据并与其他 Experience Cloud 解决方案共享数据。
-* 跨域跟踪用户。 但是，这要求您拥有其他域并在这些域上部署 ID 服务代码。
+* 保留此唯一ID ，以便访客ID服务可以收集数据并与其他CX企业解决方案共享数据。
+* 跨域跟踪用户。 但是，这要求您拥有其他域并在这些域上部署访客ID服务代码。
 
-### ID 服务 Cookie 无法执行的操作
+### 访客ID服务Cookie无法执行的操作
 
 * 存储、传输或执行计算机病毒。
 * 访问或存储个人身份信息 (PII)，如您的电子邮件地址。
 * 控制计算机硬件或软件。
 * 使计算机不稳定或导致性能问题。
-* 在未使用 ID 服务的网站上跟踪用户。
+* 在未使用访客ID服务的网站上跟踪用户。
 
 ## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
-ID 服务设置 Cookie 的以下属性。
+访客ID服务设置的Cookie的以下属性。
 
 **名称**
 
-AMCV Cookie 的名称应遵循语法 `AMCV_<variable name>@AdobeOrg`。 在名称中，`<variable name>` 元素是 Experience Cloud 组织 ID 部分的占位符。 此 ID 由 ID 服务代码中的 `Visitor.getInstance` 函数传递到 DCS。
+AMCV Cookie 的名称应遵循语法 `AMCV_<variable name>@AdobeOrg`。 在名称中，`<variable name>`元素是IMS组织ID部分的占位符。 此ID由访客ID服务代码中的`Visitor.getInstance`函数传递到DCS。
 
 一个具有完整形式的 Cookie 名称应该类似于下面的样子：
 
@@ -56,7 +51,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCV Cookie 包含 Experience Cloud 访客 ID 或 MID。 MID 存储在一个键值对中，它遵循以下语法：`MCMID|<Experience Cloud ID>`。
+AMCV Cookie包含ECID或MID。 MID 存储在一个键值对中，它遵循以下语法：`MCMID|<ECID>`。
 
 一个具有完整形式的键值对应该类似于下面的样子：
 
@@ -68,15 +63,15 @@ MCMID|20265673158980419722735089753036633573
 
 **域**
 
-AMCV Cookie 是在浏览器的第一方域中设置的。 这意味着它在用户当前访问的网站的域中设置。 因此，ID 服务代码和其他 Experience Cloud 代码库可以读取 AMCV Cookie 中存储的 MID。
+AMCV Cookie 是在浏览器的第一方域中设置的。 这意味着它在用户当前访问的网站的域中设置。 因此，访客ID服务代码和其他CX Enterprise代码库可以读取AMCV Cookie中存储的MID。
 
-但是，由于 AMCV Cookie 是在第一方域中设置的，它不能用于跟踪和识别不同域中的用户。 当网站访客导航到其他域时，ID 服务而是会依赖组织 ID 和 Demdex ID 来返回正确的 MID。
+但是，由于 AMCV Cookie 是在第一方域中设置的，它不能用于跟踪和识别不同域中的用户。 当网站访客导航到其他域时，访客ID服务而是会依赖于IMS组织ID和Demdex ID来返回正确的MID。
 
 ## AMCVS Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
 **名称**
 
-AMCVS Cookie 名称遵循语法 `AMCVS_####@AdobeOrg`。 在名称中，#### 元素是 Experience Cloud 组织 ID 部分的占位符。 此 ID 由 ID 服务代码中的 `theVisitor.getInstance` 函数传递到 DCS。
+AMCVS Cookie 名称遵循语法 `AMCVS_####@AdobeOrg`。 在名称中，####元素是IMS组织ID部分的占位符。 此ID由访客ID服务代码中的`theVisitor.getInstance`函数传递到DCS。
 
 一个具有完整形式的 Cookie 名称应该类似于下面的样子：
 
@@ -116,7 +111,7 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。 这意味着它在用
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>域</b> </p> </td> 
-   <td colname="col2"> <p>Demdex Cookie 是在浏览器的第三方 demdex.net 域中设置的。 该域不同于用户当前访问的网站。 </p> <p>与第一方 AMCV Cookie 不同，Demdex Cookie 和 ID 会跨不同域持续存在。 Demdex ID 和您的组织 ID 是常用值，它们允许 ID 服务返回并识别具有正确访客 ID 的网站访客。 </p> </td> 
+   <td colname="col2"> <p>Demdex Cookie 是在浏览器的第三方 demdex.net 域中设置的。 该域不同于用户当前访问的网站。 </p> <p>与第一方 AMCV Cookie 不同，Demdex Cookie 和 ID 会跨不同域持续存在。 Demdex ID和您的IMS组织ID是常用值，它们允许访客ID服务返回并识别具有正确访客ID的网站访客。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,15 +120,15 @@ AMCVS Cookie 是在浏览器的第一方域中设置的。 这意味着它在用
 
 有关相关信息，请阅读关于[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)的文档。
 
-## 生成 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
+## 生成ECID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Experience Cloud ID (MID) 是通过数学方法从您的组织 ID 和 Demdex ID 计算而来的。 只要这些 ID 保持不变，为特定用户生成正确的 MID 就只是一个数学问题。 使用相同的组织 ID 和 Demdex ID，您每次会获得相同的 MID 值。 这允许 ID 服务跨由您控制并配置了 ID 服务代码的域来跟踪访客。
+ECID是通过数学方法从IMS组织ID和Demdex ID计算而来的。 只要这些 ID 保持不变，为特定用户生成正确的 MID 就只是一个数学问题。 使用相同的IMS组织ID和Demdex ID，您每次会获得相同的MID值。 这允许访客ID服务跨由您控制并配置了访客ID服务代码的域跟踪访客。
 
-ID 服务在页面加载时开始创建 MID。 在此过程中，由 `visitorAPI.js` 代码库提供的代码会在事件调用中将您的组织 ID 发送至 ID 服务。 ID 服务会创建 MID 和 Demdex ID，并将其分别在 AMCV Cookie 和 Demdex Cookie 中返回。
+当页面加载时，访客ID服务将开始创建MID。 在此过程中，`VisitorAPI.js`代码库提供的代码会在事件调用中将您的IMS组织ID发送到访客ID服务。 访客ID服务分别在AMCV和Demdex Cookie中创建并返回MID和Demdex ID。
 
 ## Cookie 标记
 
-下表介绍了 Experience Cloud Cookie 标记：
+下表介绍了CX Enterprise Cookie的标记：
 
 | Cookie（设置方式） | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
@@ -145,5 +140,5 @@ ID 服务在页面加载时开始创建 MID。 在此过程中，由 `visitorAPI
 
 ## 后续步骤 {#section-8db1727a63bc4ff68b495f270315d453}
 
-请参阅 [Experience Cloud 身份标识服务如何请求和设置 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+查看[访客ID服务如何请求和设置ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
 

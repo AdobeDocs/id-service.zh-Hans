@@ -1,30 +1,25 @@
 ---
-description: 此配置允许您根据要更新的 ID 服务版本清除孤立或过时的 Experience Cloud ID (ECID)。
-keywords: ID 服务
+description: 此配置允许您根据要更新的访客ID服务版本清除孤立或过时的ECID (ECID)。
+keywords: 访客 ID 服务
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
 TQID: https://experienceleague.adobe.com/5aqi7F5QkybjotjVMJgDWCchFw1XOYa6qPOSUzDyeqE
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 254
-ht-degree: 87%
+source-wordcount: 257
+ht-degree: 41%
 
 ---
 
 # resetBeforeVersion{#resetbeforeversion}
 
-此配置允许您根据要更新的 ID 服务版本清除孤立或过时的 Experience Cloud ID (ECID)。
+此配置允许您根据要更新的访客ID服务版本清除孤立或过时的ECID (ECID)。
 
-如果将您的 ID 服务版本作为 `resetBeforeVersion` 变量的值提供，则将会导致从客户端 ID 清除过时的 ECID。
+如果将您的访客ID服务版本作为`resetBeforeVersion`变量的值提供，则将会导致从客户端ID清除过时的ECID。
 
-某些条件（例如会话超时）有时可能会导致系统生成客户端 ID，而 ID 服务不会成功获得服务器端 ID。 发生这种情况时，ID 服务会跟踪孤立的客户端 ID，而该 ID 无法被跨域跟踪，也无法与其他解决方案正确同步。 该行为会将当前 AMCV Cookie 中的版本与 `resetBeforeVersion` 的值进行比较。 如果Cookie不存在或者Cookie的版本比`resetBeforeVersion`的最新发布版本低（旧），则会删除AMCV Cookie并且ID服务会请求新的ECID。
+某些条件（例如会话超时）有时可能会导致生成客户端ID，而访客ID服务不会成功获取服务器端ID。 发生这种情况时，访客ID服务会跟踪孤立的客户端ID，而该ID无法跨域进行跟踪或与其他解决方案正确同步。 该行为会将当前 AMCV Cookie 中的版本与 `resetBeforeVersion` 的值进行比较。 如果Cookie不存在或者Cookie的版本比`resetBeforeVersion`的最新发布版本低（旧），则会删除AMCV Cookie并且访客ID服务会请求新的ECID。
 
 对于在浏览器上拥有第三方 Demdex Cookie 的访客，系统将会检查 ECID 以确定它是否是使用 Demdex Cookie 中的 UUID 正确生成的。 如果此项检查证明属实，则新 ECID 将相同，并且该访客将被视为新访客。 如果出于某种原因而未使用 Demdex Cookie 生成正被清理的 ECID，或没有任何 Demdex Cookie，该访客将收到新的 ECID 并会被视为新访客。
 
@@ -33,8 +28,8 @@ ht-degree: 87%
 **代码示例**
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here", { 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
   
     //Same as s.trackingServer 
     trackingServer: "Insert tracking server here ", 

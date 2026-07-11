@@ -3,21 +3,13 @@ description: 将他们的同意管理平台 (CMP) 与选择加入的适用于 IA
 title: 在 IAB 框架中使用选择加入服务
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 TQID: https://experienceleague.adobe.com/70QH1BoRSSbiw7cMfRjrHmiSxQLbuiHcWAG5b-xVOLw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 96%
+source-wordcount: 515
+ht-degree: 94%
 
 ---
 
@@ -46,7 +38,7 @@ ht-degree: 96%
 >
 >选择加入仅适用于 ECID 4.0 以上版本。
 
-使用 Adobe Experience Platform Launch 为您的站点实施选择加入的 IAB TCF 插件。 为选择加入手动启用 IAB 时，检查以确保在访客对象中将以下设置设置为 true：
+使用标记为您的站点实施选择加入的IAB TCF插件。 为选择加入手动启用 IAB 时，检查以确保在访客对象中将以下设置设置为 true：
 
 ```javascript
 Visitor.getInstance("YOUR_ORG_ID", {  

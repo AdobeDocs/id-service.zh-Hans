@@ -1,29 +1,22 @@
 ---
-description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。 如果您使用ID服务并具有严格的CSP（使用接受来自受信任域的资源），请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
-keywords: ID 服务
-title: 内容安全策略和 Experience Cloud 身份标识服务
+description: 内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。 如果您使用访客ID服务并具有严格的CSP，并使用接受来自受信任域的资源，请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
+keywords: 访客 ID 服务
+title: 内容安全策略和Adobe访客ID服务
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 TQID: https://experienceleague.adobe.com/UX0RWE7v912XEHJCJE49yt1sy13t1P0I0I79gG9Z7m8
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 530
-ht-degree: 64%
+source-wordcount: 527
+ht-degree: 49%
 
 ---
 
-# 内容安全策略和 Experience Cloud 身份标识服务 {#content-security-policies-and-the-experience-cloud-id-service}
+# 内容安全策略和Adobe访客ID服务 {#content-security-policies-and-the-experience-cloud-id-service}
 
-内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。 如果您使用ID服务并具有严格的CSP（使用接受来自受信任域的资源），请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
+内容安全策略 (CSP) 是一种 HTTP 标头和安全功能，该功能使浏览器能够控制在网页上加载的资源类型。 如果您使用访客ID服务并具有严格的CSP，并使用接受来自受信任域的资源，请查看此部分。 您需要将此处列出的Adobe域添加到您的CSP允许列表。
 
 ## CSP审查 {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -35,16 +28,16 @@ CSP 使用 HTTP 标头 `Content-Security-Policy` 来控制浏览器在页面上�
 * 网站篡改攻击。
 * 恶意软件分发。
 
-CSP 得到了广泛使用和认可。 本文档并非旨在详细介绍 CSP（有关更多信息，请访问下面提供的相关信息链接）。 让您了解在使用严格 CSP 策略时应该将哪些 Adobe 域名添加到 CSP 白名单中才是本文档的重点。 添加这些域后，访问您网站的访客浏览器便可以对您使用的 Experience Cloud 资源进行重要调用。
+CSP 得到了广泛使用和认可。 本文档并非旨在详细介绍 CSP（有关更多信息，请访问下面提供的相关信息链接）。 让您了解在使用严格 CSP 策略时应该将哪些 Adobe 域名添加到 CSP 白名单中才是本文档的重点。 添加这些域后，访问您网站的访客浏览器便可以对您使用的CX Enterprise资源进行重要调用。
 
-## 用于列入允许列表的Experience Cloud域 {#section-30693e9a96834edfbf04de9e698cf2aa}
+## 用于列入允许列表的CX企业域 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-对于您使用的每个 Experience Cloud 解决方案或服务，将这些域名或 URL 添加到您的 CSP 白名单中。
+对于您使用的每个CX Enterprise解决方案或服务，请将这些域名或URL添加到您的CSP中。
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
  <thead>
   <tr>
-   <th colname="col1" class="entry">Experience Cloud 解决方案或服务</th>
+   <th colname="col1" class="entry">CX企业级解决方案或服务</th>
    <th colname="col2" class="entry">描述</th>
   </tr>
  </thead>
@@ -71,7 +64,7 @@ CSP 得到了广泛使用和认可。 本文档并非旨在详细介绍 CSP（�
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID服务和Audience Manager</b></p>
+    <p><b>访客ID服务和Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>修改您的 CSP 以包含以下域。</p>
@@ -80,9 +73,9 @@ CSP 得到了广泛使用和认可。 本文档并非旨在详细介绍 CSP（�
      <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-     <li>如果您使用 Adobe Launch 来部署标记，则还必须将 <code>https://assets.adobedtm.com</code> 添加到域列表。</li>
+     <li>如果您使用标记，则还必须将<code>https://assets.adobedtm.com</code>添加到域列表。</li>
     </ul>
-    <p>对<span class="codeph">demdex.net</span>域的调用用于生成<a href="../introduction/cookies.md" format="dita" scope="local">Cookie和Experience Cloud Identity服务</a>并用于ID同步。 另请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans" format="https" scope="external">了解Demdex域调用</a>。</p>
+    <p>对<span class="codeph">demdex.net</span>域的调用用于生成<a href="../introduction/cookies.md" format="dita" scope="local">Cookie和访客ID服务</a>并用于ID同步。 另请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans" format="https" scope="external">了解Demdex域调用</a>。</p>
    </td>
   </tr>
   <tr>

@@ -1,20 +1,15 @@
 ---
 description: 此属性可设置要用于 ID 同步的数据源容器 ID。
-keywords: ID 服务
+keywords: 访客 ID 服务
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 91%
+source-wordcount: 328
+ht-degree: 57%
 
 ---
 
@@ -37,7 +32,7 @@ ht-degree: 91%
 **代码示例:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +43,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **容器**
 
-容器是由 [!DNL Audience Manager] 创建的对象。 虽然它们无法从外部访问，但这些容器会列出满足以下条件的所有数据源：
+容器是Audience Manager创建的对象。 虽然它们无法从外部访问，但这些容器会列出满足以下条件的所有数据源：
 
 * 可供您用于 ID 同步，但未使用。
 * 正用于 ID 同步。
 
-即使您不是 [!DNL Audience Manager] 客户，如果您正在与域中的不同页面上的不同数据源交换 ID，则您的帐户将拥有这些容器。 这是因为 [!DNL Audience Manager] 提供了可启用 ID 同步的技术和后端功能。
+即使您不是Audience Manager客户，如果您正在与域中的不同页面上的不同数据源交换ID，则您的帐户将拥有这些容器。 这是因为Audience Manager提供了可启用ID同步的技术和后端功能。
 
 **用例**
 
-根据您的情形，您可能需要也可能不需要将此配置添加到您的 ID 服务代码。
+根据您的情况，您可能需要也可能不需要将此配置添加到访客ID服务代码。
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +66,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    <td colname="col1"> <p> <b>不需要</b> </p> </td> 
    <td colname="col2"> <p>在以下情况下，您不需要使用此配置： </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">您将 ID 服务与任何 <span class="keyword">Experience Cloud</span> 解决方案结合使用，且不执行与其他数据源的 ID 同步操作。 在这种情况下，您的帐户有一个 ID 为 0 的默认容器，并且无需执行任何操作。 </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">您将“访客ID服务”用于任何CX Enterprise解决方案，且不执行与其他数据源的ID同步操作。 在这种情况下，您的帐户有一个 ID 为 0 的默认容器，并且无需执行任何操作。 </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">您的所有数据源都在一个容器中。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +82,10 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
  </tbody> 
 </table>
 
-## 使用DIL和VisitorAPI.js时设置容器ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## 使用DIL和`VisitorAPI.js`时设置容器ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-如果您在同一页面上部署了[!UICONTROL DIL] *和* VisitorAPI.js，则：
+如果您在同一页面上部署了[!UICONTROL DIL] *和* `VisitorAPI.js`：
 
-* 对于 ID 同步，访客 ID 服务代码会优先于 DIL。
-* 仅在 ID 服务代码中设置 `idSyncContainerID` 配置。
+* 对于ID同步，访客ID服务代码会优先于DIL。
+* 仅在访客ID服务代码中设置`idSyncContainerID`配置。
 
