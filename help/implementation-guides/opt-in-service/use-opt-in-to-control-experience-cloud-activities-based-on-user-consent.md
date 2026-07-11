@@ -40,7 +40,7 @@ Adobe [!UICONTROL Opt-in]对象是Adobe访客ID服务的一项扩展，旨在帮
 
 使用标记配置[!UICONTROL Opt-in]最为容易。 请观看以下简短视频，了解具体配置方法。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40337/?captions=chi_hans&quality=12)
 
 如果您未使用标记，则可以在全局访客对象的初始化中设置[!UICONTROL Opt-in]的配置，如[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=zh-Hans&lank=zh-Hans)中所示。
 
@@ -54,7 +54,7 @@ Adobe [!UICONTROL Opt-in]对象是Adobe访客ID服务的一项扩展，旨在帮
 
 在以下视频中，请观看此页面上的[!UICONTROL Opt-in]快速演示，以及它对CX企业解决方案是否可以设置Cookie、启动信标等将会产生何种影响。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40342/?captions=chi_hans&quality=12)
 
 **注意：**&#x200B;请务必注意，在撰写本文时，[!UICONTROL Opt-in]尚未内置到所有CX Enterprise应用程序的库中。 当前支持[!UICONTROL Opt-in]的库包括：
 
