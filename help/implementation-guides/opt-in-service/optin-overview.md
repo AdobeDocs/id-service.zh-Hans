@@ -27,7 +27,7 @@ ht-degree: 89%
 
 使用选择加入服务，您可以指定让访客立即选择加入 Adobe 解决方案，还是按照顺序显示解决方案，让访客分别授予权限。 批准流程完成并由客户记录后，即可从所有 Adobe 解决方案中检索 CMP 访客批准。
 
-通过将[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)与[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)结合使用，可轻松实施和配置选择加入服务。
+通过将[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)与[选择加入扩展](../../implementation-guides/opt-in-service/launch.md)结合使用，可轻松实施和配置选择加入服务。
 
 请参阅[设置选择加入服务](../../implementation-guides/opt-in-service/getting-started.md)以开始操作。
 

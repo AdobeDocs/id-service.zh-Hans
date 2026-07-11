@@ -34,7 +34,7 @@ ht-degree: 16%
 
 ## 标准实施
 
-标准实施使用[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)来帮助您开始使用访客ID服务，并将其与其他CX Enterprise解决方案相集成。 我们强烈建议您在实施访客ID服务时使用标记。
+标准实施使用[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)来帮助您开始使用访客ID服务，并将其与其他CX Enterprise解决方案相集成。 我们强烈建议您在实施访客ID服务时使用标记。
 
 ## 实施资源
 

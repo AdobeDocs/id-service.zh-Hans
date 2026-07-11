@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 员工做出的主要更改
 
-如果您是CX Enterprise解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，您应使用位于`https://github.com/Adobe-Enterprise-Docs/id-service.en`的专用存储库。
+如果您是CX Enterprise解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，您应使用位于`https://github.com/Adobe-Enterprise-Docs/id-service.zh-Hans`的专用存储库。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 

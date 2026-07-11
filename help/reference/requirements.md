@@ -34,7 +34,7 @@ ht-degree: 39%
 
 ### 标准实施
 
-请参阅Adobe Experience Platform数据收集中的[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)以了解您的标准实施。
+请参阅Adobe Experience Platform数据收集中的[标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)以了解您的标准实施。
 
 ### 非标准实施
 
@@ -62,7 +62,7 @@ ht-degree: 39%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不确定</b> </p> </td> 
-   <td colname="col2"> <p> 如果您不清楚公司的CX企业状态，请咨询您的Adobe帐户管理人员，确认公司成员是否可以使用Adobe ID登录<a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a>。 如果可以，则表示您已启用，并且管理员可以查看您的IMS组织ID。 要查找IMS组织ID，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=en" format="https" scope="external"> CX Enterprise Administration</a>中的“管理页面”部分。 </p> </td> 
+   <td colname="col2"> <p> 如果您不清楚公司的CX企业状态，请咨询您的Adobe帐户管理人员，确认公司成员是否可以使用Adobe ID登录<a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a>。 如果可以，则表示您已启用，并且管理员可以查看您的IMS组织ID。 要查找IMS组织ID，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=zh-Hans" format="https" scope="external"> CX Enterprise Administration</a>中的“管理页面”部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未启用</b> </p> </td> 
@@ -119,11 +119,11 @@ ht-degree: 39%
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">mbox 代码</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">mbox 代码</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">at.js 实施</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">at.js 实施</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 

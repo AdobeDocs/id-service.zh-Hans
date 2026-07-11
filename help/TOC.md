@@ -25,7 +25,7 @@ ht-degree: 45%
    + [实施方法](implementation-guides/implementation-methods.md)
    + [实施指南](implementation-guides/implementation-guides.md)
    + [使用标记实施](implementation-guides/ecid-implement-with-launch.md)
-   + [适用于Analytics的实施](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
+   + [适用于Analytics的实施](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/overview){target=_blank}
    + [为 Target 实施](implementation-guides/setup-target.md)
    + [为 Analytics 和 Audience Manager 实施](implementation-guides/setup-aam-analytics.md)
    + [为 Analytics、Audience Manager 和 Target 实施](implementation-guides/setup-aam-analytics-target.md)
