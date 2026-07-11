@@ -4,9 +4,15 @@ keywords: 访客 ID 服务
 title: 访客ID服务常见问题解答
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 824
@@ -70,23 +76,23 @@ ht-degree: 54%
 
 通常，使用 CORS 的资源请求要优于使用 JSONP 的资源请求。 使用 JSONP 时，某些浏览器会排列请求并取消其相对于页面上的其他同步调用和异步调用的优先级。 CORS 有助于确保在浏览器调用堆栈中以更高的优先级来处理这些请求。
 
-请参阅访客ID服务](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支持。
+请参阅访客ID服务[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支持。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **访客ID服务是否支持CORS？**
 
-是的。 请参阅访客ID服务](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支持。
+是的。 请参阅访客ID服务[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支持。
 
 **什么是 CORS？**
 
-*`Cross-Origin Resource Sharing`* 或 CORS 是浏览器用来请求资源的一种方法。 访客ID服务始终在支持ID服务的浏览器中使用CORS请求资源。 在不支持CORS的旧版浏览器中，访客ID服务会使用JSON-P请求资源。 请参阅访客ID服务](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支持。
+*`Cross-Origin Resource Sharing`* 或 CORS 是浏览器用来请求资源的一种方法。 访客ID服务始终在支持ID服务的浏览器中使用CORS请求资源。 在不支持CORS的旧版浏览器中，访客ID服务会使用JSON-P请求资源。 请参阅访客ID服务[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支持。
 
 **如果我的安全要求很严格，以至于我从未想要使用 JSONP，该怎么办？**
 
 如果您有严格的安全要求，请设置访客ID服务API配置`useCORSOnly: true`。 只有当您确信您的网站访客使用支持CORS的浏览器时，才应该启用此模式。
 
-请参阅访客ID服务](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支持[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+请参阅访客ID服务[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支持[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORELIKETHIS]
 >

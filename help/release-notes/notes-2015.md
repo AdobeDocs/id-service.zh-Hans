@@ -4,9 +4,17 @@ keywords: 访客 ID 服务
 title: 2015 版发行说明
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 457
@@ -22,7 +30,7 @@ ht-degree: 60%
 
 2015 年 11 月
 
-儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。 关注COPPA的客户可以在他们的访客ID服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置Cookie。 请参阅访客ID服务](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)中的[COPPA支持。 适用于版本 1.5.3 或更高版本。
+儿童在线隐私保护法 (COPPA) 禁止在未征得父母同意的情况下，在线收集 13 岁以下儿童的个人信息。 关注COPPA的客户可以在他们的访客ID服务代码中添加一个可选变量，以阻止在浏览器的第三方域中设置Cookie。 请参阅访客ID服务[&#128279;](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)中的COPPA支持。 适用于版本 1.5.3 或更高版本。
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
