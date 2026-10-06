@@ -3,13 +3,20 @@ description: 这是一个可选的布尔型配置，用于确定访客ID服务�
 keywords: 访客 ID 服务
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 8164b6bb0cfea56330c775d8ffb0b839a23ecf3f
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 68%
-
 ---
-
 # isCoopSafe{#iscoopsafe}
 
 这是一个可选的布尔型配置，用于确定访客ID服务是否会将数据发送到Adobe设备协作。
@@ -64,7 +71,7 @@ ht-degree: 68%
 
 **语法：**`isCoopSafe: true | false`
 
-布尔选项可确定设备协作是否可以使用客户数据。
+布尔选项用于确定设备协作是否使用客户数据。
 
 * `isCoopSafe: true`：通过 Mobile SDK 或网站收集的访客数据&#x200B;*可以*&#x200B;用来帮助构建设备图。
 
